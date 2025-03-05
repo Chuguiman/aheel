@@ -1,0 +1,75 @@
+{
+  "idsic": "412077",
+  "refClient": "",
+  "estado": "Caducado",
+  "fechaRadicacion": "2008-07-28",
+  "numeroSolicitud": "08077871",
+  "fechaPresentacion": "2008-07-28",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2009-01-28",
+  "publicacionInfo": {
+    "numeroGaceta": "602",
+    "fechaPublicacion": "2009-03-31"
+  },
+  "certificadoInfo": {
+    "certificado": "580197",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": "2019-01-30"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "10116555",
+          "identificacionOMPI": "JOSÉ MANUEL",
+          "fullName": "JOSÉ MANUEL GRISALES CALLE",
+          "direccion": "12 CUTE ST 1 ST FLOOR PAWTUCKET RHODE ISLAND RI 02860 (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "10116555",
+          "nombre": "JOSÉ MANUEL GRISALES CALLE",
+          "direccion": "12 CUTE ST 1 ST FLOOR",
+          "ciudad": "PAWTUCKET",
+          "codigoPostal": "RI 02860",
+          "pais": "US",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "30",
+        "descripcion": "CAFÉ, TE, CACAO, AZÚCAR, ARROZ, TAPIOCA, SAGÚ, SUCEDÁNEOS DEL CAFÉ; HARINAS Y PREPARACIONES HECHAS DE CEREALES, PAN, PASTELERÍA Y CONFITERÍA, HELADOS COMESTIBLES; MIEL, JARABE DE MELAZA; LEVADURA, POLVOS PARA ESPONJAR; SAL, MOSTAZA; VINAGRE, SALSAS (CONDIMENTOS); ESPECIAS; HIELO."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "30"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "JOSÉ GRISALES CAFÉ",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002801904d7"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=412077&fcoOp=EXTRA__Default",
+  "idProc": "412077"
+}

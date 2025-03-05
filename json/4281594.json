@@ -1,0 +1,75 @@
+{
+  "idsic": "4281594",
+  "refClient": "",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-26",
+  "numeroSolicitud": "SD2022/0075449",
+  "fechaPresentacion": "2022-07-26",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-09",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "901389544",
+          "identificacionOMPI": "",
+          "fullName": "THREEDI SAS",
+          "direccion": "Carrera 50b # 41b 35 sur of 603 BOGOTÁ D.C. 111631 (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79958831",
+          "nombre": "ARNOLD RICARDO GALINDO SABOGAL",
+          "direccion": "Carrera 50b # 41b 35 sur of 603",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "111631",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "25",
+        "descripcion": "Conjuntos de vestir; pantalones;prendas de punto; prendas de vestir* / ropa* / vestimenta; ropa de confección; ropa exterior; suéteres; trajes de disfraces; vestidos; camisetas; camisas de manga corta; calzado*;sombreros."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "25"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "BÍELA & JÉRO THE LOVE OF LIVING",
+  "reivindicacionDeColores": "Pantone white; pantone black",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817f73ad"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4281594&fcoOp=EXTRA__Default",
+  "idProc": "4281594"
+}

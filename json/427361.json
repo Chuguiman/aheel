@@ -1,0 +1,75 @@
+{
+  "idsic": "427361",
+  "refClient": "",
+  "estado": "Caducado",
+  "fechaRadicacion": "2008-11-14",
+  "numeroSolicitud": "08121851",
+  "fechaPresentacion": "2008-11-14",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2009-04-15",
+  "publicacionInfo": {
+    "numeroGaceta": "604",
+    "fechaPublicacion": "2009-05-29"
+  },
+  "certificadoInfo": {
+    "certificado": "580200",
+    "fechaRegistro": "2009-12-29",
+    "fechaRenovacion": "",
+    "vigencia": "2019-12-29"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "5535434",
+          "identificacionOMPI": "LUIS FELIPE",
+          "fullName": "LUIS FELIPE SUAREZ PACHECO",
+          "direccion": "CALLE 8 NO. 8-45 BRR GRAMALOTE VILLA DEL ROSARIO NORTE DE SANTANDER  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "37395403",
+          "nombre": "MONICA JOHANNA VELASCO TARAZONA",
+          "direccion": "Calle 22N #18E-65 Urbanización Niza",
+          "ciudad": "CUCUTA",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "19",
+        "descripcion": "MATERIALES DE CONSTRUCCIÓN NO METALICOS, PRODUCTOS DE MATERIALES DE ARCILLA, GRES Y AFINES."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "19"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "ARCILLAS DEL ROSARIO, TODO UN ARTE EN GRES",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=0900000280192290"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=427361&fcoOp=EXTRA__Default",
+  "idProc": "427361"
+}

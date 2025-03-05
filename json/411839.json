@@ -1,0 +1,81 @@
+{
+  "idsic": "411839",
+  "refClient": "",
+  "estado": "Cancelada",
+  "fechaRadicacion": "2008-07-25",
+  "numeroSolicitud": "08077267",
+  "fechaPresentacion": "2008-07-25",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2009-02-06",
+  "publicacionInfo": {
+    "numeroGaceta": "602",
+    "fechaPublicacion": "2009-03-31"
+  },
+  "certificadoInfo": {
+    "certificado": "579402",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "574746",
+          "identificacionOMPI": "",
+          "fullName": "PRICEWATERHOUSECOOPERS APPLICATIONS B.V.",
+          "direccion": "FASCINATIO BOULEVARD 350 ROTTERDAM NOT DEFINED  (NL)",
+          "codPais": "NL"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79143366",
+          "nombre": "ALVARO CORREA ORDOÑEZ",
+          "direccion": "Crr 16 No 88 -81 of 404",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2008-03-21",
+      "numeroDePrioridad": "77/428.136",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "PROGRAMAS DE COMPUTADOR EN EL CAMPO DE LA AUDITORIA FINANCIERA Y CONTABILIDAD FINANCIERA."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "AURA",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=411839&fcoOp=EXTRA__Default",
+  "idProc": "411839"
+}

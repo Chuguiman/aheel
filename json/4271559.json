@@ -1,0 +1,108 @@
+{
+  "idsic": "4271559",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073143",
+  "fechaPresentacion": "2022-04-14",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "978",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-01-25",
+    "fechaRenovacion": "2032-04-14",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1673386",
+    "fechaRegistroInternacional": "2022-04-14"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1456214",
+          "fullName": "MARCURIA, CABINET D'AVOCATS"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1456210",
+          "fullName": "SORARE",
+          "direccion": "5 avenue du Général de Gaulle F-94160 SAINT-MANDE    (FR)",
+          "codPais": "FR"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "51711267",
+          "nombre": "MONICA BELA WOLF WASSERMAN",
+          "direccion": "AK 7 No. 113-43 Of. 805 Torre Samsung",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "FRANCIA",
+      "fechaDePrioridad": "2022-04-12",
+      "numeroDePrioridad": "4860709",
+      "clase": "09",
+      "reivindicaciones": "Priority claimed for class 09, in respect of: Cromos de deportes descargables, en particular, programas informáticos con cromos de deportes descargables para utilizarse en mundos virtuales en línea"
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Software descargable; software de juegos descargables; software descargable que permite coleccionar fichas no fungibles inscritas en una red de cadena de bloques; software descargable de intercambio, compra y venta de fichas no fungibles inscritas en una red de cadena de bloques; software descargable de almacenamiento de fichas no fungibles inscritas en una red de cadena de bloques; software descargable de autenticación digital de usuarios; software descargable de conexión a carteras de activos digitales; software descargable de suministro de estadísticas en línea; programas informáticos descargables destinados a la gestión de bases de datos; cromos de deportes descargables, en particular, programas informáticos con cromos de deportes descargables para utilizarse en mundos virtuales en línea."
+      },
+      {
+        "clase": "28",
+        "descripcion": "Naipes."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Elaboración, compilación y publicación de estadísticas sobre resultados deportivos; promoción de actividades deportivas en el ámbito del fútbol; promoción de productos y servicios de terceros, mediante acuerdos contractuales, en particular de patrocinio y de licencias, que les ofrecen mayor notoriedad y una mejor imagen por asociación a la imagen derivada de dichas manifestaciones deportivas y culturales, en particular en el plano internacional; servicios de puesta a disposición de espacios comerciales en una red de cadena de bloques (blockchain) para intercambio, compra y venta de fichas no fungibles inscritas en esta red."
+      },
+      {
+        "clase": "38",
+        "descripcion": "Transferencia de datos digitales; servicios de acceso a bases de datos; suministro de acceso a una red de cadena de bloques; suministro de acceso a una red mundial de juegos en línea; transmisión de información a la plataforma de juegos; transmisión de datos relacionados con una red de cadena de bloques; suministro de foros de discusión en línea."
+      },
+      {
+        "clase": "41",
+        "descripcion": "Actividades deportivas y culturales; servicios recreativos; servicios de entretenimiento; organización de concursos (esparcimiento); competiciones y juegos organizados en línea por Internet; competiciones y juegos disponibles en línea a partir de una red informática; suministro de información sobre actividades recreativas; suministro de información sobre torneos ficticios de fútbol en línea; entretenimiento consistente en coleccionar fichas no fungibles en forma de tarjetas digitales que representan a jugadores de fútbol e inscritas en una red de cadena de bloques; juegos en línea a partir de fichas no fungibles en forma de tarjetas digitales que representan a jugadores de fútbol e inscritas en una red de cadena de bloques."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Programación informática; desarrollo de plataformas informáticas; elaboración (diseño) de software, instalación, mantenimiento, actualización o alquiler; desarrollo de software de juegos; servicios de puesta a disposición de infraestructuras informáticas que permiten coleccionar fichas no fungibles inscritas en una cadena de bloques (red blockchain); servicios de almacenamiento de datos, a saber, fichas no fungibles basadas en una cadena de bloques (blockchain); servicios de autenticación de usuarios mediante la tecnología de cadena de bloques; servicios de almacenamiento electrónico de datos; servicios informáticos de análisis de datos en línea."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9, 28, 35, 38, 41, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "SORARE",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817ead77"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4271559&fcoOp=EXTRA__Default",
+  "idProc": "4271559"
+}

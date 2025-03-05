@@ -1,0 +1,75 @@
+{
+  "idsic": "4282211",
+  "refClient": "",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-27",
+  "numeroSolicitud": "SD2022/0075752",
+  "fechaPresentacion": "2022-07-27",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-12",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "901030701",
+          "identificacionOMPI": "",
+          "fullName": "SOMIC SOLUCIONES S.A.S.",
+          "direccion": "CARRERA 23 # 19 - 43 P.2 BUCARAMANGA SANTANDER  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1095810636",
+          "nombre": "IVAN JOSE ROJAS CABRALES",
+          "direccion": "CARRERA 23 # 19 - 43 P.2",
+          "ciudad": "BUCARAMANGA",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "42",
+        "descripcion": "Servicios científicos y tecnológicos, así como servicios de investigación y diseño en estos ámbitos; servicios de análisis e investigación industriales; diseño y desarrollo de equipos informáticos y de software."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "42"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "MEDIMANTIS.ERP",
+  "reivindicacionDeColores": "verde y negro",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fac46"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4282211&fcoOp=EXTRA__Default",
+  "idProc": "4282211"
+}

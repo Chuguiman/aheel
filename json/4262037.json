@@ -1,0 +1,88 @@
+{
+  "idsic": "4262037",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071029",
+  "fechaPresentacion": "2021-08-17",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "1010",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2024-01-25",
+    "fechaRenovacion": "2031-08-17",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671876",
+    "fechaRegistroInternacional": "2021-08-17"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1403280",
+          "fullName": "KURATA MASATOSHI"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1403279",
+          "fullName": "FUJIFILM BUSINESS INNOVATION KABUSHIKI KAISHA (FUJIFILM BUSINESS INNOVATION CORP.)",
+          "direccion": "9-7-3, Akasaka, Minato-ku Tokyo 107-0052    (JP)",
+          "codPais": "JP"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "66783790",
+          "nombre": "CAROLINA MERCEDES DAZA MONTALVO",
+          "direccion": "CARRERA 11 No. 86 - 53 PISO 6",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "JAPÓN",
+      "fechaDePrioridad": "2021-03-12",
+      "numeroDePrioridad": "2021-029693",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Fotocopiadoras; fotocopiadoras digitales; copiadoras electrostáticas; fotocopiadoras y sus partes y piezas accesorias, a saber, equipos que incorporan la función de perforación para fotocopiadoras, equipos que incorporan la función de grapado para fotocopiadoras, equipos que incorporan la función de plegado de papel para fotocopiadoras, equipos que incorporan la función de clasificación para fotocopiadoras, dispositivo automático de alimentación de manuscritos para fotocopiadoras y bandeja de alimentación de papel para fotocopiadoras; máquinas de fax y sus partes y piezas accesorias, a saber, paneles de operación para máquinas de fax; máquinas y aparatos de telecomunicación; impresoras láser; impresoras de chorro de tinta; impresoras de sublimación; impresoras y sus partes y piezas accesorias, a saber, alimentadores de papel para impresoras, equipos que incorporan la función de perforación para impresoras, equipos que incorporan la función de grapado para impresoras, equipos que incorporan la función de plegado de papel para impresoras, equipos que incorporan la función de clasificación para impresoras, dispositivos automáticos de alimentación de manuscritos para impresoras, bandejas de alimentación de papel para impresoras e impresoras de etiquetas; escáneres y sus partes y piezas accesorias, a saber, sensor de imagen de contacto para escáner; copiadoras electrónicas multifunción con función de impresión, copia y escaneado; copiadoras electrónicas multifunción con función de copia, fax, escaneado e impresión; trazadores [plóteres]; impresoras con funciones de copia, fax y escaneo; tambores fotosensibles para fotocopiadoras electrostáticas; tambores fotosensibles para impresoras de ordenador; tambores fotosensibles para aparatos de fax; tambores fotorreceptores para copiadoras electrostáticas multifunción con funciones de impresión, fax, copia y escaneado; cabezales de impresoras térmicas; cabezales de chorro de tinta; cabezales de impresión de ledes; cabezales de impresión; diodos electroluminiscentes [ledes]; diodos láser; láseres que no sean para uso médico; diodos electroluminiscentes orgánicos [OLED]; elementos semiconductores; software informático de gestión de documentos y creación o procesamiento de documentos e imágenes; software para escanear imágenes y documentos; software informático de creación de documentos y gestión de flujos de trabajo; programas informáticos de procesamiento de datos; software y programas informáticos de procesamiento de imágenes; software para servidores de impresión informáticos; software informático para la evaluación y el diagnóstico de fallos; software informático para el desarrollo de aplicaciones de impresión digital; software de aplicaciones; programas informáticos; máquinas y aparatos electrónicos, a saber, unidades de visualización para ordenadores, tarjetas chip, lectores de tarjetas IC, programas informáticos descargables para vigilancia, software descargable salvapantallas, terminales de tarjetas de crédito, lectores de códigos de barras, circuitos electrónicos, dispositivos electrónicos de autenticación, proyectores de audio y vídeo, proyectores LCD, proyectores digitales, impresoras de tarjetas IC que utilizan máquinas multifunción con función de impresión, copia y escaneado, escritores de tarjetas IC; cartuchos de tóner vacíos; cartuchos de tóner vacíos para impresoras y fotocopiadoras; cartuchos de tinta vacíos; asistentes personales digitales (PDA); publicaciones electrónicas; partes y accesorios de máquinas y aparatos de telecomunicaciones, a saber, aparatos del sistema mundial de determinación de posición (GPS), hardware de telecomunicaciones para la supervisión y gestión de impresoras y fotocopiadoras de documentos, a saber, aparatos electrónicos de supervisión, con excepción de los destinados a fines médicos, dispositivos de gestión de la información de inicio de sesión, dispositivos de gestión de la información sobre errores, dispositivos de gestión de la información sobre bienes fungibles, encaminadores de red, hardware de LAN inalámbrica y dispositivos de seguridad de red; ordenadores y sus periféricos; plataformas de software informático grabado o descargable; lectores de caracteres ópticos; software de ordenador [programas grabados]; aplicaciones de software descargables; programas informáticos grabados; impresoras para ser utilizadas con ordenadores; programas informáticos descargables; aparatos de procesamiento de datos; software descargable de informática en la nube; servidores de red de informática en la nube; procesadores de datos de imágenes o documentos y sus accesorios; aparatos de captura de datos de documentos y datos de imágenes; software informático grabado y descargable para el procesamiento, el análisis y el archivo de datos de documentos; software para gestión de datos; software de gestión de bases de datos; software informático descargable de gestión de documentos; software informático para la gestión de documentos, grabado; software de conversión de imágenes de documentos a formato electrónico; software informático descargable para el procesamiento de textos."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Figurativa",
+  "denominacionDelSigno": "",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df705"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262037&fcoOp=EXTRA__Default",
+  "idProc": "4262037"
+}

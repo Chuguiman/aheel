@@ -1,0 +1,79 @@
+{
+  "idsic": "4288544",
+  "refClient": "",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-29",
+  "numeroSolicitud": "SD2022/0077129",
+  "fechaPresentacion": "2022-07-29",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-14",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "900243000",
+          "identificacionOMPI": "",
+          "fullName": "CORREDOR EMPRESARIAL S.A.",
+          "direccion": "SIN ESTABLECER BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "13491525",
+          "nombre": "JESUS MARIA MENDEZ BERMUDEZ",
+          "direccion": "AK 7 No. 113-43 Of. 805 Torre Samsung",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "Publicidad, gestión de negocios comerciales, gestión de negocios comerciales relacionados con la comercialización de juegos de suerte y azar, trabajos de oficina, publicidad, realización de promocionales con productos diversos, servicios de consultoría."
+      },
+      {
+        "clase": "41",
+        "descripcion": "Organización de campeonatos del futbol profesional, servicios de entretenimiento, principalmente actividades de juegos relacionados con loterías, bingos y en general todo tipo de juegos de azar y de casino. Servicios de juegos de azar prestados a través de internet Servicios de información sobre juegos de azar."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "35, 41"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Figurativa",
+  "denominacionDelSigno": "",
+  "reivindicacionDeColores": "Azul, amarillo, café  y morado",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=0900000281801d73"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4288544&fcoOp=EXTRA__Default",
+  "idProc": "4288544"
+}

@@ -1,0 +1,75 @@
+{
+  "idsic": "4285893",
+  "refClient": "Bolero Bar",
+  "estado": "Bajo Examen de Fondo",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076476",
+  "fechaPresentacion": "2022-07-28",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2024-06-14",
+  "publicacionInfo": {
+    "numeroGaceta": "1035",
+    "fechaPublicacion": "2024-06-17"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "8064526",
+          "identificacionOMPI": "Daniel Augusto",
+          "fullName": "DANIEL AUGUSTO BUITRAGO ALVAREZ",
+          "direccion": "Cra 39 # 55 - 37 MEDELLIN ANTIOQUIA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1035865943",
+          "nombre": "SARA RAMIREZ CADAVID",
+          "direccion": "CR 83 # 15A-23",
+          "ciudad": "MEDELLIN",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "43",
+        "descripcion": "Servicios de restauración (alimentación); servicios de bar."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "43"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "BOLERO BAR",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fde5f"
+  ],
+  "transliteracion": "Bolero Bar",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4285893&fcoOp=EXTRA__Default",
+  "idProc": "4285893"
+}

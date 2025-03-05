@@ -1,0 +1,80 @@
+{
+  "idsic": "4284699",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076175",
+  "fechaPresentacion": "2022-02-24",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "981",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-01-27",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674858",
+    "fechaRegistroInternacional": "2022-02-24"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1437682",
+          "fullName": "SHUNLI INTERNATIONAL INTELLECTUAL PROPERTY CO., LTD"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1437681",
+          "fullName": "SHENZHEN TECBOT INTELLIGENT ROBOT CO., LTD.",
+          "direccion": "8D, Maple Leaf Building, Nanyuan, No. 1088, Nanshan Avenue, Dengliang Community, Nanshan Street, Nanshan District, Shenzhen 518000 Guangdong Province    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "SHUNLI INTERNATIONAL INTELLECTUAL PROPERTY CO., LTD",
+          "direccion": "ADDSUIT B1913 INTL TRADE CENTER BUILDING, RENMIN RD, LUOHU SHENZHEN",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "7",
+        "descripcion": "Máquinas y aparatos eléctricos para lavar alfombras; aparatos electromecánicos para preparar alimentos; lavavajillas; máquinas de cocina eléctricas; robots industriales; cortadoras de césped; unidades de eliminación de residuos; transportadores [máquinas]; máquinas y aparatos eléctricos de limpieza; barredoras eléctricas inalámbricas."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "7"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "TECBOT",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fba5d"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284699&fcoOp=EXTRA__Default",
+  "idProc": "4284699"
+}

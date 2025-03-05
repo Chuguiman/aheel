@@ -1,0 +1,91 @@
+{
+  "idsic": "4275616",
+  "refClient": "224599207REG",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-22",
+  "numeroSolicitud": "SD2022/0074390",
+  "fechaPresentacion": "2022-07-22",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-13",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1134142",
+          "identificacionOMPI": "",
+          "fullName": "GRUPO LAMOSA, S.A. B. DE C.V.",
+          "direccion": "AVENIDA PEDRO RAMIREZ VAZQUEZ No. 200-1 PISO 9, COLONIA DEL VALLE ORIENTE C.P. 66260 SAN PEDRO GARZA GARCIA, NUEVO LEÓN, MEXICO SAN PEDRO GARZA GARCIA, NUEVO LEON 66260 (MX)",
+          "codPais": "MX"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79159313",
+          "nombre": "JUAN CARLOS URIBE RESTREPO",
+          "direccion": "CALLE 93B No. 12-48 PISO 4",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "1",
+        "descripcion": "Cemento adhesivo; adhesivos para suelos, techos y azulejos de pared; materiales adhesivos para losas y azulejos; adhesivos para la aplicación de revestimientos de paredes; adhesivos para revestimientos de cerámica; adhesivos para revestimiento de suelos; adhesivos para revestimientos de techo; adhesivos para la colocación de baldosas; adhesivos para la impermeabilización; compuestos impermeabilizantes (que no sean pinturas); composiciones químicas impermeabilizantes; adhesivos para mortero; junteador (adhesivo industrial); lechada de sellado química para su uso en la construcción; adhesivos para la industria de la construcción; aditivos químicos; masillas, rellenos y pastas para su uso en la industria productos químicos para la industria, la ciencia y la fotografía, así como para la agricultura, la horticultura y la silvicultura; resinas artificiales en bruto, materias plásticas en bruto; compuestos para la extinción de incendios y la prevención de incendios; preparaciones para templar y soldar metales; sustancias para curtir cueros y pieles de animales; masillas y otras materias de relleno en pasta; compost, abonos, fertilizantes; preparaciones biológicas para la industria y la ciencia."
+      },
+      {
+        "clase": "2",
+        "descripcion": "Aditivos para pinturas, aditivos para revestimientos, pinturas, barnices lacas; colorantes; estuco; revestimientos impermeabilizantes (pinturas); recubrimientos texturizados a base de pintura; materiales impermeabilizantes que no sean de metal en forma de pintura; revestimientos de protección para techos (pinturas), acabados de poliuretano (pinturas); revestimientos para paredes (pinturas); revestimientos para el acabado de obras de albañilería (pinturas o aceites); material colorante como aditivo en mortero, colorantes para lechadas; colorantes para morteros; selladores de hormigón (pinturas); selladores de pintura; materias selladoras (pinturas); revestimientos de acabado protectores para interiores (pinturas); composiciones de recubrimiento en forma de pintura; líquidos selladores (conservantes para la madera); productos contra la herrumbre y el deterioro de la madera; tintes; tintas de imprenta; tintas de marcado y tintas de grabado; resinas naturales en bruto; metales en hojas y en polvo para la pintura, la decoración, la imprenta y trabajos artísticos."
+      },
+      {
+        "clase": "17",
+        "descripcion": "Selladores de juntas para fines de construcción; juntas, selladores y material de relleno; impermeabilizante en rollo prefabricado para construcciones; adhesivos aislantes; selladores adhesivos y compuestos para calafatear; compuestos adhesivos de sellado; pinturas aislantes; pinturas aislantes para impermeabilizar; revestimientos aislantes; compuestos de sellado para juntas; materiales aislantes para techos; membranas aislantes de impermeabilización; membranas de protección para el aislamiento de filtración del agua; masilla para juntas; masilla para calafatear y en general caucho, gutapercha, goma, amianto y mica en bruto o semielaborados, así como sucedáneos de estos materiales; materias plásticas y resinas en forma extrudida utilizadas en procesos de fabricación; materiales para calafatear, estopar y aislar; tuberías, tubos y mangueras flexibles no metálicos."
+      },
+      {
+        "clase": "19",
+        "descripcion": "Materiales de construcción no metálicos; cemento, yeso, mortero, mortero adhesivo para fines de construcción; superficies texturizadas para muros y techos, junteador (material de construcción) que no sea adhesivo; emulsión de betún polimérico para impermeabilizar construcciones; pastas texturizadas (material de construcción); acabados de hormigón con textura; preparados para lechadas; tuberías rígidas no metálicas para la construcción; asfalto, pez, alquitrán y betún; construcciones transportables no metálicas; monumentos no metálicos."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Publicidad, marketing y servicios de promoción; servicios de comercialización en establecimientos y en línea de materiales de construcción, especialmente productos como: cementos, estucos, adhesivos, aditivos, impermeabilizantes, pinturas, empastes, emboquilladores, selladores, limpiadores así como pisos no metálicos, paredes no metálicas, losas y azulejos de materiales como cerámica, porcelana, mármol, piedra, granito, cemento, hormigón, concreto, duelas y madera, ladrillos y revestimientos para pisos, paredes y techos, estructuras y construcciones transportables no metálicas, superficies texturizadas para muros y techos, vigas de madera y hormigón, bloques."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "1, 2, 17, 19, 35"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "SOLUTEK",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817f0663"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4275616&fcoOp=EXTRA__Default",
+  "idProc": "4275616"
+}

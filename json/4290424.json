@@ -1,0 +1,73 @@
+{
+  "idsic": "4290424",
+  "refClient": "",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-08-01",
+  "numeroSolicitud": "SD2022/0077463",
+  "fechaPresentacion": "2022-08-01",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-19",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1083041247",
+          "identificacionOMPI": "Laura Vanessa",
+          "fullName": "LAURA VANESSA MANJARRÉS PERTUZ",
+          "direccion": "Carrera 17C #29-41. Conjunto Quintas del Rosario. Casa 6 SANTA MARTA MAGDALENA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1083041247",
+          "nombre": "LAURA VANESSA MANJARRÉS PERTUZ",
+          "direccion": "Carrera 17C #29-41. Conjunto Quintas del Rosario. Casa 6",
+          "ciudad": "SANTA MARTA",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "45",
+        "descripcion": "Servicios jurídicos."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "45"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "RM PENSIONES",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4290424&fcoOp=EXTRA__Default",
+  "idProc": "4290424"
+}

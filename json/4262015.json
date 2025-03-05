@@ -1,0 +1,88 @@
+{
+  "idsic": "4262015",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071007",
+  "fechaPresentacion": "2022-06-03",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "981",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-07-07",
+    "fechaRenovacion": "2032-06-03",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671575",
+    "fechaRegistroInternacional": "2022-06-03"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1291098",
+          "fullName": "KEVIN M. HAYES KLARQUIST SPARKMAN, LLP"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1459554",
+          "fullName": "DAIMLER TRUCK NORTH AMERICA LLC",
+          "direccion": "4555 N. Channel Avenue Portland OR 97217    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "KEVIN M. HAYES KLARQUIST SPARKMAN, LLP",
+          "direccion": "121 SW Salmon Street, Suite 1600, One World Trade Center Portland OR 97204",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "US",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2021-12-09",
+      "numeroDePrioridad": "97163481",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Fundas de protección para arneses de cables en forma de placas de cables y cableados; fundas protectoras para manguitos de conexión y cajas de conectores."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "TUFWRAP",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df84b"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262015&fcoOp=EXTRA__Default",
+  "idProc": "4262015"
+}

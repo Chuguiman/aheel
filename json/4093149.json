@@ -1,0 +1,87 @@
+{
+  "idsic": "4093149",
+  "refClient": "Solicitud marca HORECA CENTER SOLUCIONES INTEGRALES",
+  "estado": "Registrada",
+  "fechaRadicacion": "2020-08-21",
+  "numeroSolicitud": "SD2022/0029424",
+  "fechaPresentacion": "2020-08-21",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2020-01-15",
+  "publicacionInfo": {
+    "numeroGaceta": "904",
+    "fechaPublicacion": "2020-09-21"
+  },
+  "certificadoInfo": {
+    "certificado": "706719",
+    "fechaRegistro": "2022-05-16",
+    "fechaRenovacion": "",
+    "vigencia": "2032-05-16"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "8020035992",
+          "identificacionOMPI": "",
+          "fullName": "DISTRIBUCIONES NARANJO S.A.S.",
+          "direccion": "Calle 44 No. 43-115 BARRANQUILLA ATLÁNTICO  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "11235323",
+          "nombre": "JORGE MARTIN GARCIA GARCIA",
+          "direccion": "Calle 99 No. 10-57",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "110111",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "8",
+        "descripcion": "Herramientas e instrumentos de mano que funcionan manualmente; artículos de cuchillería, tenedores y cucharas."
+      },
+      {
+        "clase": "16",
+        "descripcion": "Bolsas de materias plásticas para embalar y empaquetar; bolsas de plástico y papel multiuso; artículos de papelería y artículos de oficina; papel higiénico y servilletas de papel."
+      },
+      {
+        "clase": "21",
+        "descripcion": "Utensilios y recipientes para uso doméstico y culinario; utensilios de cocina y vajilla; material de limpieza; artículos de cristalería, porcelana y loza; instrumentos de limpieza accionados manualmente."
+      },
+      {
+        "clase": "33",
+        "descripcion": "Vinos, bebidas a base de vino."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "8, 16, 21, 33"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "HORECA CENTER SOLUCIONES INSTITUCIONALES INTEGRALES",
+  "reivindicacionDeColores": "Azul: 003f87",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002816dbb3a"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4093149&fcoOp=EXTRA__Default",
+  "idProc": "4093149"
+}

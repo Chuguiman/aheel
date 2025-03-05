@@ -1,0 +1,73 @@
+{
+  "idsic": "4280964",
+  "refClient": "SOLICITUD RADIANT GEMS RAPID RESPIN",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-26",
+  "numeroSolicitud": "SD2022/0075268",
+  "fechaPresentacion": "2022-07-26",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-12",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1137563",
+          "identificacionOMPI": "",
+          "fullName": "LIGHT & WONDER, INC.",
+          "direccion": "6601 Bermuda Road, Las Vegas, Nevada 89119 Estados Unidos de America LAS VEGAS NEVADA 89119 (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "19489897",
+          "nombre": "MAURICIO BERTOLETTI LAGUADO",
+          "direccion": "CALLE 113 No. 7-21 OFC. 906",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "41",
+        "descripcion": "Servicios de esparcimiento, a saber, suministro de juegos de azar y apuestas en línea; suministro de juegos en línea para apuestas."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "41"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "RADIANT GEMS RAPID RESPIN",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4280964&fcoOp=EXTRA__Default",
+  "idProc": "4280964"
+}

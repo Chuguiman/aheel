@@ -1,0 +1,77 @@
+{
+  "idsic": "4288097",
+  "refClient": "",
+  "estado": "Bajo Examen de Fondo",
+  "fechaRadicacion": "2022-07-29",
+  "numeroSolicitud": "SD2022/0077002",
+  "fechaPresentacion": "2022-07-29",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-18",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "39584541",
+          "identificacionOMPI": "DIANA MILENA",
+          "fullName": "DIANA MILENA BELTRAN ROZO",
+          "direccion": "CALLE 24 # 14-74 Barrio Santa Lucia  TUNJA BOYACA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "18393182",
+          "nombre": "CARLOS FERNANDO MORENO GARCIA",
+          "direccion": "​Calle 64 No 09 - 05 ofc 302 y 303",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "5",
+        "descripcion": "PRODUCTOS FARMACÉUTICOS DE USO MÉDICO."
+      },
+      {
+        "clase": "29",
+        "descripcion": "CARNE, PESCADO, CARNE DE AVE Y CARNE DE CAZA; EXTRACTOS DE CARNE; FRUTAS Y VERDURAS, HORTALIZAS Y LEGUMBRES EN CONSERVA,CONGELADAS, SECAS Y COCIDAS; JALEAS, CONFITURAS, COMPOTAS; HUEVOS; LECHE, QUESOS, MANTEQUILLA, YOGURT Y OTROS PRODUCTOS LÁCTEOS; ACEITES Y GRASAS PARA USO ALIMENTICIO."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "5, 29"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "PLUS FORMA ADVANCE",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4288097&fcoOp=EXTRA__Default",
+  "idProc": "4288097"
+}

@@ -1,0 +1,88 @@
+{
+  "idsic": "4284722",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076197",
+  "fechaPresentacion": "2021-12-16",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1675153",
+    "fechaRegistroInternacional": "2021-12-16"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1310045",
+          "fullName": "KALEV KÄOSAAR PATENDIBÜROO KÄOSAAR OÜ"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1415117",
+          "fullName": "BOLT TECHNOLOGY OÜ",
+          "direccion": "Vana-Lõuna tn 15 EE-10134 Kesklinna linnaosa, Tallinn    (EE)",
+          "codPais": "EE"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "KALEV KÄOSAAR PATENDIBÜROO KÄOSAAR OÜ",
+          "direccion": "Põhja-Tallinna linnaosa, Suur-Patarei tn 2 EE-10415 Tallinn",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "EE",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTONIA",
+      "fechaDePrioridad": "2021-06-16",
+      "numeroDePrioridad": "M202100893",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "12",
+        "descripcion": "Vehículos terrestres no tripulados y sus partes; vehículos; vehículos transportadores sin conductor; vehículos geodésicos no tripulados; aeronaves sin piloto; vehículos aéreos; vehículos teledirigidos, que no sean juguetes; aeronaves; aparatos, máquinas y dispositivos de aeronáutica; ciclomotores."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "12"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "BOLT",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fc062"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284722&fcoOp=EXTRA__Default",
+  "idProc": "4284722"
+}

@@ -1,0 +1,79 @@
+{
+  "idsic": "4284307",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-27",
+  "numeroSolicitud": "SD2022/0076064",
+  "fechaPresentacion": "2022-07-27",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-16",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "745827",
+    "fechaRegistro": "2024-01-03",
+    "fechaRenovacion": "",
+    "vigencia": "2034-01-03"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "901461580",
+          "identificacionOMPI": "",
+          "fullName": "DWT COLOMBIA S.A.S.",
+          "direccion": "Carrera 38 No. 42 -17 Conjunto la Cabecera Torre B Apt.1702 BUCARAMANGA SANTANDER  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "570174",
+          "nombre": "DOMINIC FABIAN WOLF",
+          "direccion": "CR 38 # 42 -17 TORRE B APTO 1702 EDIFICIO LA CABECERA – BARRIO CABECERA DEL LLANO – MUNICIPIO BUCARAMANGA- SANTANDER",
+          "ciudad": "BUCARAMANGA",
+          "codigoPostal": "680002",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "29",
+        "descripcion": "Butifarras [salchichas]; carne de salchichas; cócteles de salchichas; pieles de salchichas a base de materiales sintéticos; pieles de salchichas a base de tripas naturales; salchichas; salchichas bratwurst; salchichas crudas; salchichas de francfort; salchichas de frankfurt; salchichas de frankfurt [salchichas]; salchichas de cerdo; salchichas de pavo; salchichas de pescado; salchichas en conserva; salchichas knockwurst; salchichas para perritos calientes; salchichas para perros calientes; salchichas rebozadas; salchichas vegetarianas; tripas artificiales para salchichas; tripas naturales para salchichas; carne de pavo; carne; carne cocida; carne de ave; carne de cerdo; ensalada de repollo; ensaladas de pollo; pollo; ensaladas de carne; ensaladas de patatas; papas fritas; knödel de patatas; patatas fritas; chucrut con guarnición [sauerkraut cocinado y servido con carne]; chucrut con guarnición en cuanto sauerkraut cocinado y servido con carne; atún [pescado]; pescado."
+      },
+      {
+        "clase": "43",
+        "descripcion": "Restaurantes de autoservicio; servicio de comidas y bebidas en restaurantes y bares; servicios de bares y restaurantes; servicios de hotel y restaurante; servicios de hotel, restaurante, cafetería y bar; servicios de catering; servicios de catering a domicilio; servicios de catering ambulante; facilitación de instalaciones para eventos; alquiler de espacios de recepción para eventos sociales; servicios de catering para eventos especiales; servicios de catering para eventos sociales."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "29, 43"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "LA SALCHICHA DE DOMINIC",
+  "reivindicacionDeColores": "Blanco #FFFFFF Negro #1D1D1BRojo #BE1622Amarillo #FFDE00Dorado #E5BA05#FAE7DDAzul #009FE3",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fafd8"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284307&fcoOp=EXTRA__Default",
+  "idProc": "4284307"
+}

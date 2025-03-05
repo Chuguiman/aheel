@@ -1,0 +1,75 @@
+{
+  "idsic": "398821",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2008-04-24",
+  "numeroSolicitud": "08042114",
+  "fechaPresentacion": "2008-04-24",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2008-11-13",
+  "publicacionInfo": {
+    "numeroGaceta": "599",
+    "fechaPublicacion": "2008-12-31"
+  },
+  "certificadoInfo": {
+    "certificado": "619347",
+    "fechaRegistro": "2019-05-18",
+    "fechaRenovacion": "",
+    "vigencia": "2029-05-18"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1039709",
+          "identificacionOMPI": "",
+          "fullName": "UNILEVER N.V.",
+          "direccion": "WEENA 455, 3013 AL ROTTERDAM ROTTERDAM ZUID-HOLLAND  (NL)",
+          "codPais": "NL"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "39690713",
+          "nombre": "ALICIA LLOREDA RICAURTE",
+          "direccion": "CALLE 72A No. 5-83, PISO 3",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "3",
+        "descripcion": "JABONES; DETERGENTES; PREPARACIONES PARA BLANQUEAR, PREPARACIONES PARA LIMPIAR; PERFUMERÍA, AGUAS DE TOCADOR, COLONIAS PARA DESPUÉS DE LA AFEITADA, COLONIAS; ACEITES ESENCIALES; PRODUCTOS PARA LA AROMATERAPIA, NO PARA USO MÉDICO; PREPARACIONES PARA MASAJES, NO PARA USO MÉDICO; DESODORANTES Y ANTIPERSPIRANTES; PREPARACIONES PARA EL CUIDADO   DE   LA   CALVICIE   Y   EL   CABELLO;   CHAMPÚS  Y ACONDICIONADORES; COLORANTES PARA EL CABELLO; PRODUCTOS PARA ESTILIZAR EL CABELLO; CREMA O PASTA PARA LOS DIENTES; ENJUAGUES BUCALES, NO PARA USO MÉDICO; PREPARACIONES PARA EL CUIDADO DE LA BOCA Y LOS DIENTES; ENJUAGUES BUCALES, NO PARA USO MÉDICO; PREPARACIONES PARA EL CUIDADO DE LA BOCA Y LOS DIENTES; PREPARACIONES DE TOCADOR NO MEDICADAS; PREPARACIONES PARA EL BAÑO Y LA DUCHA; PREPARACIONES PARA EL CUIDADO DE LA PIEL; ACEITES, CREMAS Y LOCIONES PARA LA PIEL; PREPARACIONES PARA LA AFEITADA; PREPARACIONES PARA ANTES Y DESPUÉS DE LA AFEITADA; PREPARACIONES DEPILATORIAS; PREPARACIONES PARA BRONCEARSE Y PROTEGERSE DEL SOL; COSMÉTICOS; MAQUILLAJES Y PREPARACIONES PARA REMOVER EL MAQUILLAJE; GELATINAS DE PETRÓLEO; PREPARACIONES PARA EL CUIDADO DE LOS LABIOS; POLVOS DE TALCO; ALGODÓN ABSORBENTE NO PARA USO MÉDICO, COPITOS DE ALGODÓN; ALMOHADILLAS COSMÉTICAS, ALMOHADILLAS O TOALLITAS; ALMOHADILLAS O TOALLITAS PARA LIMPIAR PRE-HÚMEDAS O IMPREGNADAS; MASCARILLAS DE BELLEZA, PAQUETES FACIALES."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "3"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "3D",
+  "denominacionDelSigno": "",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=090000028018e7fa"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=398821&fcoOp=EXTRA__Default",
+  "idProc": "398821"
+}

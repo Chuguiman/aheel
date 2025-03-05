@@ -1,0 +1,75 @@
+{
+  "idsic": "406976",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2008-06-18",
+  "numeroSolicitud": "08062875",
+  "fechaPresentacion": "2008-06-18",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2009-01-23",
+  "publicacionInfo": {
+    "numeroGaceta": "602",
+    "fechaPublicacion": "2009-03-31"
+  },
+  "certificadoInfo": {
+    "certificado": "616581",
+    "fechaRegistro": "2019-04-04",
+    "fechaRenovacion": "",
+    "vigencia": "2029-04-04"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "825370",
+          "identificacionOMPI": "",
+          "fullName": "LATIN AMERICAN POKER TOUR (LAPT) LIMITED",
+          "direccion": "10 HILL STREET, DOUGLAS, ISLE OF MAN, IM1 1EF DOUGLAS NOT DEFINED  (XM)",
+          "codPais": "XM"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "51711267",
+          "nombre": "MONICA BELA WOLF WASSERMAN",
+          "direccion": "AK 7 No. 113-43 Of. 805 Torre Samsung",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "PROGRAMAS DE COMPUTADOR¡JUEGOS DE COMPUTADOR TALES COMO: JUEGOS DE CASINO, JUEGO DE CARTAS, POKER; JUEGOS O APUESTAS; PROGRAMAS DE COMPUTADOR DESCARGABLES POR INTERNET, EQUIPOS DE COMPUTACIÓN; APARATOS E INSTRUMENTOS PARA GRABAR, TRANSMITIR O REPRODUCIR SONIDOS, INFORMACIÓN Y/OIMÁGENES, SOPORTES MAGNÉTICOS DE DATOS; DISCOS GRABABLES, CDS VÍRGENES Y PRE-GRABADOS, DISCOS, CINTAS, PARTES Y ACCESORIOS PARA TODOS LOS BIENES MENCIONADOS ANTERIORMENTE, PUBLICACIONES ELECTRÓNICAS DESCARGABLES DE INTERNET; INFORMACIÓN RELACIONADA CON CUALQUIERA DE LOS BIENES MENCIONADOS ANTERIORMENTE, LA CUAL PUEDE SER DESCARGADA DE LAS BASES DE DATOS QUE SE ENCUENTRAN DISPONIBLES EN INTERNET."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "LAPT LATIN AMERICAN POKER TOUR",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=090000028018fc82"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=406976&fcoOp=EXTRA__Default",
+  "idProc": "406976"
+}

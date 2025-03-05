@@ -1,0 +1,80 @@
+{
+  "idsic": "4262066",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071058",
+  "fechaPresentacion": "2022-04-21",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672444",
+    "fechaRegistroInternacional": "2022-04-21"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1460714",
+          "fullName": "CHONGQING JINGYAN INTELLECTUAL PROPERTY AGENCY CO., LTD."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1460712",
+          "fullName": "CHONGQING MEBAY TECHNOLOGY CO., LTD",
+          "direccion": "No.6-2, Building 4, Gang'an Second Road, Jiangbei District Chongqing    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "CHONGQING JINGYAN INTELLECTUAL PROPERTY AGENCY CO., LTD.",
+          "direccion": "No. 5, Yusong 1st Road, Longshan Subdistrict, Yubei District Chongqing",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Dispositivos de medición eléctricos; instrumentos de medición; contadores para motores de combustión interna; armarios de distribución [electricidad]; consolas de distribución [electricidad]; inversores [electricidad]; instalaciones eléctricas para el control remoto de operaciones industriales; sistemas de automatización para centrales eléctricas; cargadores de baterías."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "MEBAY",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df870"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262066&fcoOp=EXTRA__Default",
+  "idProc": "4262066"
+}

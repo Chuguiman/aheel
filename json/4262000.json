@@ -1,0 +1,136 @@
+{
+  "idsic": "4262000",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0070992",
+  "fechaPresentacion": "2021-11-29",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2022-12-21",
+    "fechaRenovacion": "2031-11-29",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671325",
+    "fechaRegistroInternacional": "2021-11-29"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1432926",
+          "fullName": "LEGAL BRAND PROTECTION - GSK"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1454045",
+          "fullName": "GLAXOSMITHKLINE CONSUMER HEALTHCARE (UK) IP LIMITED",
+          "direccion": "980 Great West Road Brentford, Middlesex TW8 9GS    (GB)",
+          "codPais": "GB"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "80416654",
+          "nombre": "JUAN PABLO CONCHA DELGADO",
+          "direccion": "AVENIDA 82 No. 10-62 PISO 5",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "JAMAICA",
+      "fechaDePrioridad": "2021-07-21",
+      "numeroDePrioridad": "83851",
+      "clase": "03, 05, 09, 10, 21, 29, 30, 32, 35, 41, 42, 44",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "3",
+        "descripcion": "Preparaciones para limpiar, pulir, fregar y raspar; jabones; aceites esenciales; productos cosméticos; champús para el cuero cabelludo y el cabello; preparaciones no medicinales para la limpieza y el cuidado de la piel; cremas para la piel, lociones para la piel y el cabello, geles para la piel, ungüentos para la piel, cremas frías; preparaciones para el cuidado de la piel; preparaciones para la protección solar; preparaciones para blanquear la piel; dentífricos y enjuagues bucales, que no sean para uso médico; productos para refrescar el aliento; geles dentales; pastas de dientes; preparaciones para decolorar los dientes, preparaciones para pulir los dientes, preparaciones para blanquear los dientes y aceleradores, preparaciones cosméticas para eliminar las manchas de los dientes; preparaciones de tocador no medicinales; productos no medicinales para cuidados bucales; preparaciones para limpiar, lavar, pulir y desodorizar dentaduras postizas."
+      },
+      {
+        "clase": "5",
+        "descripcion": "Preparaciones y sustancias farmacéuticas y medicinales; agentes terapéuticos (medicinales); parches adhesivos para uso médico; parches adhesivos para uso quirúrgico; parches adhesivos con preparaciones farmacéuticas; parches medicinales, emplastos y apósitos para el tratamiento de enfermedades, afecciones y trastornos cutáneos; vacunas; vitaminas, minerales y suplementos alimenticios; preparaciones dietéticas; sustancias dietéticas, incluidos alimentos y bebidas para uso médico; alimentos para niños y enfermos; preparaciones para perder peso; preparaciones medicinales para cuidados bucales, a saber, pastas de dientes medicionales, enjuagues bucales medicinales; preparaciones medicinales para blanquear; preparaciones para esterilizar dentaduras postizas; goma de mascar y pastillas medicinales para higiene dental; adhesivos para dentaduras postizas, fijadores para dentaduras postizas, geles dentales medicinales; preparaciones para dejar de fumar."
+      },
+      {
+        "clase": "9",
+        "descripcion": "Aparatos e instrumentos científicos; software informático que permite a los profesionales sanitarios acceder a información sobre productos y servicios farmacéuticos y médicos; Software eléctrico e informático; equipos de diagnóstico; aplicaciones de software utilizados con dispositivos médicos; dispositivos electrónicos de vigilancia; aparatos eléctricos de medición; puesta a disposición de aplicaciones de software (apps) en línea o como aplicaciones descargables; software y/o aplicaciones de software (apps) para aplicaciones médicas y/o quirúrgicas; sistemas de recopilación de datos para uso médico."
+      },
+      {
+        "clase": "10",
+        "descripcion": "Aparatos e instrumentos médicos y quirúrgicos; aparatos para el cuidado de los dientes; bandejas para dentistas; dilatadores nasales; aparatos e instrumentos de pruebas médicas para ser utilizados en el diagnóstico y el tratamiento de enfermedades, afecciones y trastornos; piel artificial; materiales de sutura; punzones para biopsias; aparatos de pruebas de diagnóstico médico para la piel; instrumentos médicos para pruebas de alergia; dispositivos de neuroestimulación eléctrica transcutánea (TENS); dispositivos para mejorar la postura; dispositivos de monitorización del sueño; dispositivos de terapia electromagnética; dispositivos de terapia de rayos infrarrojos; dispositivos de terapia de ultrasonido; dispositivos de terapia láser; aparatos de diagnóstico para uso médico; instrumentos electrónicos para uso médico; termómetros para uso médico; compresas frías para uso médico; parches térmicos desechables para uso terapéutico."
+      },
+      {
+        "clase": "21",
+        "descripcion": "Cepillos de dientes, cepillos de dientes eléctricos, hilo dental, palillos, palilleros que no sean de metales preciosos y recipientes de plástico para colocar cepillos de dientes."
+      },
+      {
+        "clase": "29",
+        "descripcion": "Carne, pescado, carne de ave y de caza; extractos de carne; frutas y hortalizas en conserva, secas y cocidas; jaleas, mermeladas, compotas de frutas; huevos, leche y productos lácteos; aceites y grasas comestibles."
+      },
+      {
+        "clase": "30",
+        "descripcion": "Café, té, cacao y sucedáneos del café; arroz, pasta y fideos; tapioca y sagú; harina y preparaciones a base de cereales; pan, productos de pastelería y confitería; chocolate; helados cremosos, sorbetes y helados comestibles; azúcar, miel, jarabe de melaza; levadura, polvos de hornear; sal, condimentos, especias, hierbas en conserva; vinagre, salsas y otros condimentos; hielo."
+      },
+      {
+        "clase": "32",
+        "descripcion": "Aguas minerales y aguas gaseosas; bebidas de frutas; productos para beber sin alcohol, a saber, productos para beber gaseosos; bebidas sin alcohol con sabor a té; bebidas sin alcohol que contienen zumos de frutas; preparaciones para elaborar productos para beber, a saber, bebidas energéticas y bebidas de frutas; bebidas para deportistas enriquecidas con vitaminas, minerales, nutrientes; zumos de frutas y bebidas energéticas con suplementos nutricionales; extractos de frutas sin alcohol para hacer bebidas."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Servicios de promoción y publicidad; prestación de los servicios anteriormente mencionados en línea, por cable o Internet; suministro de información promocional y publicitaria relacionada con productos farmacéuticos, médicos, sanitarios y de mantenimiento físico mediante una red informática en línea; servicios de venta minorista o mayorista de preparaciones farmacéuticas, veterinarias y sanitarias, así como de suministros médicos; servicios de venta minorista o mayorista de productos farmacéuticos."
+      },
+      {
+        "clase": "36",
+        "descripcion": "Recaudación de fondos de beneficencia; distribución de fondos y becas con fines benéficos; distribución de fondos y becas para operaciones de socorro en casos de desastre; distribución de fondos de contrapartida en forma de donaciones; servicios financieros para facilitar donaciones con fines caritativos; suministro de información sobre donaciones corporativas y donaciones de nóminas de empleados."
+      },
+      {
+        "clase": "41",
+        "descripcion": "Servicios educativos relacionados con la industria farmacéutica, de diagnóstico, de las vacunas, los medicamentos patentados, la salud, la medicina, los productos de tocador, el cuidado de la piel y la cosmética; educación, formación, entretenimiento, servicios educativos y formación en relación con el control del hábito de fumar y para dejar de fumar; servicios de educación en pérdida de peso, dieta, nutrición y acondicionamiento físico."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Investigación científica con fines médicos y de atención sanitaria."
+      },
+      {
+        "clase": "44",
+        "descripcion": "Cuidados médicos, higiénicos y de belleza; servicios de atención sanitaria; facilitación de información y prestación de servicios médicos; información para pacientes y profesionales de la salud sobre productos farmacéuticos, vacunas, enfermedades y trastornos médicos, así como los correspondientes tratamientos por Internet; terapia genética y celular; servicios de consultoría médica y psicológica; servicios médicos y de atención sanitaria."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "3, 5, 9, 10, 21, 29, 30, 32, 35, 36, 41, 42, 44"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "CREDIA",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df840"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262000&fcoOp=EXTRA__Default",
+  "idProc": "4262000"
+}

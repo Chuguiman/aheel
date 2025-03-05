@@ -1,0 +1,75 @@
+{
+  "idsic": "4262761",
+  "refClient": "Homeko",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-08-04",
+  "numeroSolicitud": "SD2022/0079149",
+  "fechaPresentacion": "2022-08-04",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-14",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "744336",
+    "fechaRegistro": "2024-01-03",
+    "fechaRenovacion": "",
+    "vigencia": "2034-01-03"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "860013720",
+          "identificacionOMPI": "",
+          "fullName": "PONTIFICIA UNIVERSIDAD JAVERIANA",
+          "direccion": "Carrera 7, No. 40-62 Edificio Emilio Arango Piso 4, Vicerrectoria De Investigación Bogotá D.C. BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "13873393",
+          "nombre": "SANTIAGO JOSÉ PINILLA VALDIVIESO",
+          "direccion": "SIN ESTABLECER",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "37",
+        "descripcion": "Servicios de construcción; servicios de reparación; servicios de instalación."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "37"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "HOMEKO",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=090000028180d552"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262761&fcoOp=EXTRA__Default",
+  "idProc": "4262761"
+}

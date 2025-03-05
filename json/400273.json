@@ -1,0 +1,75 @@
+{
+  "idsic": "400273",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2008-05-07",
+  "numeroSolicitud": "08045837",
+  "fechaPresentacion": "2008-05-07",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2008-07-23",
+  "publicacionInfo": {
+    "numeroGaceta": "595",
+    "fechaPublicacion": "2008-08-29"
+  },
+  "certificadoInfo": {
+    "certificado": "579891",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "71332752",
+          "identificacionOMPI": "JUAN FELIPE",
+          "fullName": "JUAN FELIPE QUIÑONES SERNA",
+          "direccion": "CARRERA 76 NO. 51-60 APTO 420 MEDELLIN ANTIOQUIA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "71378527",
+          "nombre": "MAURICIO ANDRES MACHADO ALVARADO",
+          "direccion": "CALLE 48 No 65 - 10",
+          "ciudad": "MEDELLIN",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "SERVICIOS PUBLICITARIOS PRESTADOS A TRAVÉS DE TECNOLOGÍAS DE INFORMACIÓN, GESTIÓN DE NEGOCIOS COMERCIALES; ADMINISTRACIÓN COMERCIAL; TRABAJOS DE OFICINA. SERVICIOS DE PUBLICIDAD ALTERNATIVA."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "35"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "EASYWAY",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=090000028018e842"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=400273&fcoOp=EXTRA__Default",
+  "idProc": "400273"
+}

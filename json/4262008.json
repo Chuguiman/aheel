@@ -1,0 +1,80 @@
+{
+  "idsic": "4262008",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071000",
+  "fechaPresentacion": "2022-03-21",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "977",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2024-03-27",
+    "fechaRenovacion": "2032-03-21",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671466",
+    "fechaRegistroInternacional": "2022-03-21"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1451829",
+          "fullName": "VIVEK SINGH"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1451827",
+          "fullName": "ATHER ENERGY PRIVATE LIMITED",
+          "direccion": "3rd Floor, Tower-D, IBC Knowledge Park, Bannerghetta Main Road, Bengaluru Karnataka 560029    (IN)",
+          "codPais": "IN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "42128592",
+          "nombre": "JULIANA  ECHEVERRI MOLINA",
+          "direccion": "Calle 67 4 15",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "12",
+        "descripcion": "Vehículos; aparatos de locomoción terrestre, aérea o acuática; patinetes; vehículos eléctricos; automóviles; motocicletas; motores de vehículos terrestres; chasis de automóviles; amortiguadores de suspensión para vehículos; muelles de suspensión para vehículos; motores de vehículos terrestres; carrocerías para vehículos comprendidas en esta clase."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "12"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "ATHER GRID",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df6ca"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262008&fcoOp=EXTRA__Default",
+  "idProc": "4262008"
+}

@@ -1,0 +1,73 @@
+{
+  "idsic": "4281007",
+  "refClient": "SOLICITUD RAGING RHINO",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-26",
+  "numeroSolicitud": "SD2022/0075277",
+  "fechaPresentacion": "2022-07-26",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-12",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1125943",
+          "identificacionOMPI": "",
+          "fullName": "SG GAMING, INC.",
+          "direccion": "6601 Bermuda Road LAS VEGAS NEVADA 89119 (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "19489897",
+          "nombre": "MAURICIO BERTOLETTI LAGUADO",
+          "direccion": "CALLE 113 No. 7-21 OFC. 906",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "41",
+        "descripcion": "Servicios de esparcimiento, en concreto, suministro de juegos de azar y apuestas en línea; proporcionar juegos en línea para apostar."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "41"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "RAGING RHINO",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4281007&fcoOp=EXTRA__Default",
+  "idProc": "4281007"
+}

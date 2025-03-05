@@ -1,0 +1,75 @@
+{
+  "idsic": "4076707",
+  "refClient": "Registro de la marca PEGATANKE BLANCA PTK clases 16,17",
+  "estado": "Registrada",
+  "fechaRadicacion": "2021-01-13",
+  "numeroSolicitud": "SD2022/0024896",
+  "fechaPresentacion": "2021-01-13",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2021-07-08",
+  "publicacionInfo": {
+    "numeroGaceta": "932",
+    "fechaPublicacion": "2021-07-09"
+  },
+  "certificadoInfo": {
+    "certificado": "703942",
+    "fechaRegistro": "2022-04-20",
+    "fechaRenovacion": "",
+    "vigencia": "2032-04-20"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1119779",
+          "identificacionOMPI": "",
+          "fullName": "PTKDELECUADOR S.A.",
+          "direccion": "Av. 113 Calle Oliva Miranda y Calle 48, Multibodegas No. 6 y 7, Manta, Ecuador. MANTA MANABI  (EC)",
+          "codPais": "EC"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79339809",
+          "nombre": "JUAN CARLOS CUESTA QUINTERO",
+          "direccion": "CLL 72 # 10 -07 OFC 603",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "16",
+        "descripcion": "Adhesivos (pegamentos) de papelería o para uso doméstico; pegamentos de papelería o para uso doméstico."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "16"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "PEGATANKE BLANCA PTK",
+  "reivindicacionDeColores": "COLOR PANTONE 2746 C, COLOR PANTONE 311 C, COLOR ROJO, COLOR NEGRO, COLOR BLANCO",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002816c2cb1"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4076707&fcoOp=EXTRA__Default",
+  "idProc": "4076707"
+}

@@ -1,0 +1,73 @@
+{
+  "idsic": "4285039",
+  "refClient": "",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076287",
+  "fechaPresentacion": "2022-07-28",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-09",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "899999084",
+          "identificacionOMPI": "",
+          "fullName": "EMPRESA DE LICORES DE CUNDINAMARCA",
+          "direccion": "CARRERA 36 NO. 10 - 95 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1026252232",
+          "nombre": "JUAN GUILLERMO ORTIZ ROJAS",
+          "direccion": "NOU CENTRO EMPRESARIAL OFICINA 507",
+          "ciudad": "CAJICA",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "33",
+        "descripcion": "Bebidas alcohólicas (excepto cervezas)."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "33"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "LA RUTA OFICIAL DEL AGUARDIENTE",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4285039&fcoOp=EXTRA__Default",
+  "idProc": "4285039"
+}

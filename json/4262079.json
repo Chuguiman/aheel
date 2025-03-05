@@ -1,0 +1,100 @@
+{
+  "idsic": "4262079",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071071",
+  "fechaPresentacion": "2022-05-13",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2022-12-12",
+    "fechaRenovacion": "2032-05-13",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672568",
+    "fechaRegistroInternacional": "2022-05-13"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1377707",
+          "fullName": "BOULT WADE TENNANT LLP"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1459388",
+          "fullName": "PLASTIC ENERGY LIMITED",
+          "direccion": "65 Carter Lane London EC4V 5DY    (GB)",
+          "codPais": "GB"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "BOULT WADE TENNANT LLP",
+          "direccion": "Salisbury Square House, 8 Salisbury Square London EC4Y 8AP",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "GB",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "REINO UNIDO",
+      "fechaDePrioridad": "2021-11-22",
+      "numeroDePrioridad": "UK00003724175",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "1",
+        "descripcion": "Productos químicos destinados a la industria, la ciencia y la fotografía, así como a la agricultura, la horticultura y la silvicultura; resinas artificiales sin procesar; materias plásticas sin procesar; materias plásticas en bruto; productos químicos finos; productos químicos en bruto; productos químicos derivados del petróleo; productos químicos para la refinación de hidrocarburos líquidos."
+      },
+      {
+        "clase": "4",
+        "descripcion": "Aceites y grasas para uso industrial; lubricantes; carburantes y combustibles para iluminación; combustibles; combustibles diésel; diésel; combustibles biodiésel; gases de petróleo líquidos; gasolina; gas embotellado; queroseno; combustibles para vehículos; combustibles para cocinar; gas líquido; energía eléctrica producida a partir de fuentes de energía renovables; energía eléctrica no procedente de fuentes de energía renovable."
+      },
+      {
+        "clase": "17",
+        "descripcion": "Materias plásticas recicladas."
+      },
+      {
+        "clase": "40",
+        "descripcion": "Tratamiento de materiales; tratamiento de materiales residuales; servicios de tratamiento de combustibles; producción y procesamiento de combustibles; conversión de materias plásticas en combustibles; reciclaje de materias plásticas; procesamiento de materias plásticas; procesamiento de productos químicos; producción de energía."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "1, 4, 17, 40"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Figurativa",
+  "denominacionDelSigno": "",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df75a"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262079&fcoOp=EXTRA__Default",
+  "idProc": "4262079"
+}

@@ -1,0 +1,88 @@
+{
+  "idsic": "4284723",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076198",
+  "fechaPresentacion": "2021-11-30",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1675161",
+    "fechaRegistroInternacional": "2021-11-30"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1426227",
+          "fullName": "KEDA IP"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1426224",
+          "fullName": "PAVO CAPITAL JOINT STOCK COMPANY",
+          "direccion": "No. 14-16-18 Chu Manh Trinh Street, Ben Nghe Ward, District 1 Ho Chi Minh City    (VN)",
+          "codPais": "VN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "KEDA IP",
+          "direccion": "P7 - 37.OT06, The Park 7 Vinhomes Central Park, 720A Dien Bien Phu Street, Ward 22, Binh Thanh District Ho Chi Minh City",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "VN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "VIETNAM",
+      "fechaDePrioridad": "2021-11-15",
+      "numeroDePrioridad": "4-2021-44417",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "5",
+        "descripcion": "Productos farmacéuticos; preparaciones farmacéuticas; desinfectantes para uso médico; alimentos funcionales para uso médico; suplementos nutricionales."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "5"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "MOVINAVIR",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fc064"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284723&fcoOp=EXTRA__Default",
+  "idProc": "4284723"
+}

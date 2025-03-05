@@ -1,0 +1,75 @@
+{
+  "idsic": "4276767",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-23",
+  "numeroSolicitud": "SD2022/0074443",
+  "fechaPresentacion": "2022-07-23",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-12",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "740552",
+    "fechaRegistro": "2023-01-05",
+    "fechaRenovacion": "",
+    "vigencia": "2033-01-05"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1110560210",
+          "identificacionOMPI": "Lina Johana",
+          "fullName": "LINA JOHANA SUARIQUE GONGORA",
+          "direccion": "Cra 46 sur# 158 116 barrio san martin casa 62 a IBAGUE TOLIMA 730001 (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1110560210",
+          "nombre": "LINA JOHANA SUARIQUE GONGORA",
+          "direccion": "Cra 46 sur# 158 116 barrio san martin casa 62 a",
+          "ciudad": "IBAGUE",
+          "codigoPostal": "730001",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "10",
+        "descripcion": "Alargadores de pene [artículos de estimulación sexual para adultos]; penes artificiales; penes artificiales [artículos de estimulación sexual para adultos]; artículos de estimulación sexual para adultos; bolas chinas [artículos de estimulación sexual para adultos]; dispositivos para actividades sexuales; juguetes sexuales; muñecas eróticas [muñecas sexuales]; vaginas artificiales [artículos de estimulación sexual para adultos]; vibradores [artículos de estimulación sexual para adultos]; consoladores."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "10"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "SHEQU",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817f0dd9"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4276767&fcoOp=EXTRA__Default",
+  "idProc": "4276767"
+}

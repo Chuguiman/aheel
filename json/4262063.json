@@ -1,0 +1,88 @@
+{
+  "idsic": "4262063",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071055",
+  "fechaPresentacion": "2022-06-16",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672354",
+    "fechaRegistroInternacional": "2022-06-16"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1413061",
+          "fullName": "KEVIN C. PARKS  LEYDIG, VOIT & MAYER, LTD."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1460310",
+          "fullName": "DOT EARTH INC.",
+          "direccion": "#722 3450 Sacramento St. San Francisco CA 94118    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "KEVIN C. PARKS  LEYDIG, VOIT & MAYER, LTD.",
+          "direccion": "Two Prudential Plaza, 180 North Stetson Suite 4900 Chicago IL 60601",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "US",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2021-12-20",
+      "numeroDePrioridad": "97180895",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "42",
+        "descripcion": "Suministro de una plataforma de alojamiento web de metaverso para el descubrimiento, la navegación y la infraestructura técnica para aplicaciones descentralizadas y experiencias gráficas de usuario."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "DOT EARTH",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df86d"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262063&fcoOp=EXTRA__Default",
+  "idProc": "4262063"
+}

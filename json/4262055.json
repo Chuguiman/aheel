@@ -1,0 +1,80 @@
+{
+  "idsic": "4262055",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071047",
+  "fechaPresentacion": "2022-05-11",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-10-31",
+    "fechaRenovacion": "2032-05-11",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672228",
+    "fechaRegistroInternacional": "2022-05-11"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1458939",
+          "fullName": "CARLOS PEREZ GOMEZ DE ZAMORA (436.890)"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1458936",
+          "fullName": "BCHANGE MINDSET MANAGEMENT, SL",
+          "direccion": "Cidacos, 1 E-28002 Madrid    (ES)",
+          "codPais": "ES"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "80186559",
+          "nombre": "ALONSO JOSÉ CASTRILLÓN FORERO",
+          "direccion": "CALLE 129B NO. 55 - 20, INT 3, APARTAMENTO 701",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "41",
+        "descripcion": "Educación; formación, servicios de entretenimiento, actividades culturales, servicios de consultoría relacionados con la educación y formación de directivos y personal, servicios de consultoría relacionados con la formación y educación empresarial, suministro de información y preparación de informes de desarrollo en el ámbito de la educación y formación, servicios de educación y formación en el ámbito de orientación vital."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "41"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "DIGITAL MINDSET MANAGEMENT",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df729"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262055&fcoOp=EXTRA__Default",
+  "idProc": "4262055"
+}

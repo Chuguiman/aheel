@@ -1,0 +1,79 @@
+{
+  "idsic": "4083666",
+  "refClient": "103033/1 TAQUILLA LIVE",
+  "estado": "Registrada",
+  "fechaRadicacion": "2021-01-10",
+  "numeroSolicitud": "SD2022/0026682",
+  "fechaPresentacion": "2021-01-10",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2021-12-07",
+  "publicacionInfo": {
+    "numeroGaceta": "947",
+    "fechaPublicacion": "2021-12-10"
+  },
+  "certificadoInfo": {
+    "certificado": "706476",
+    "fechaRegistro": "2022-05-16",
+    "fechaRenovacion": "",
+    "vigencia": "2032-05-16"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "9013031283",
+          "identificacionOMPI": "",
+          "fullName": "TAQUILLALIVE S.A.S",
+          "direccion": "Cl 80 Km 1.5 Via Cota COTA CUNDINAMARCA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "11342699",
+          "nombre": "MAURICIO PATIÑO BONNET",
+          "direccion": "CARRERA 9 No. 74-08 OFICINA 305",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "Servicios prestados por centros de convenciones y centros comerciales; alquiler de espacios publicitarios y anuncios publicitarios; decoración de escaparates; demostración de productos; organización de desfiles, exposiciones y ferias con fines comerciales; servicios de información comercial y de asesoramiento al consumidor; promoción de ventas para terceros; programas de entretenimiento con fines publicitarios."
+      },
+      {
+        "clase": "41",
+        "descripcion": "Servicios de esparcimiento, actividades deportivas, culturales, artísticas, centros de convenciones; centros culturales, organización y dirección de exposiciones, coliseos para espectáculos, conciertos, simposios, congresos, ferias, conferencias y eventos; servicios de entretenimiento y diversión; esparcimiento y juegos de azar; casinos, servicios prestados por centros comerciales tales como salones de juego, cinemas y centros de diversión; servicios de taquilla para espectáculos y todo tipo de eventos; servicios de venta de boletos para espectáculos y todo tipo de eventos."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "35, 41"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "TAQUILLA LIVE",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002816cd433"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4083666&fcoOp=EXTRA__Default",
+  "idProc": "4083666"
+}

@@ -1,0 +1,84 @@
+{
+  "idsic": "4262064",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071056",
+  "fechaPresentacion": "2022-03-15",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "977",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672376",
+    "fechaRegistroInternacional": "2022-03-15"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1318285",
+          "fullName": "ALBERT BORDAS, ESQ ALBERT BORDAS, P.A."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1435592",
+          "fullName": "AIC HOTEL GROUP",
+          "direccion": "55 MIRACLE MILE MIAMI FL 33134    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "51663741",
+          "nombre": "CLEMENCIA DELGADO VILLEGAS",
+          "direccion": "Avenida Carrera  24 # 37-31 Oficina 202",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "36",
+        "descripcion": "Administración inmobiliaria de casas de vacaciones; gestión inmobiliaria de clubes de vacaciones; servicios inmobiliarios; servicios de gestión de alquiler de casas de vacaciones."
+      },
+      {
+        "clase": "43",
+        "descripcion": "Servicios de hoteles; servicios de hoteles para clientes preferentes; servicios de hotel y restaurante; servicios de hotel, bar y restaurante; servicios de hoteles, moteles, restaurantes, bares y catering; reservación de hoteles por cuenta de terceros; suministro de información sobre hoteles mediante un sitio web; suministro de información mediante un sitio web sobre hoteles y alojamiento temporal para viajeros; suministro de reservas de alojamiento y alojamiento temporal en línea; suministro de reservas y reservaciones en línea de alojamientos temporales y alojamientos para familias, parejas, viajeros en solitario, viajeros de grupo y miembros de clubes de vacaciones; puesta a disposición de sitios web con información sobre hoteles y alojamiento temporal para viajeros; reserva de habitaciones de hotel para viajeros; servicios de agencias de viajes, a saber, servicios de reserva de alojamiento temporal para otras agencias de viajes, proveedores de viajes, y empresas, en línea mediante redes informáticas; alquiler de residencias de vacaciones; servicios de alojamiento temporal en casas de vacaciones."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "36, 43"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "DOMA RESIDENCES",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df86e"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262064&fcoOp=EXTRA__Default",
+  "idProc": "4262064"
+}

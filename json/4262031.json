@@ -1,0 +1,80 @@
+{
+  "idsic": "4262031",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071023",
+  "fechaPresentacion": "2022-06-13",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2022-12-20",
+    "fechaRenovacion": "2032-06-13",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671805",
+    "fechaRegistroInternacional": "2022-06-13"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1459606",
+          "fullName": "BESTOC INTELLECTUAL PROPERTY CO., LTD"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1459605",
+          "fullName": "WINSTARS TECHNOLOGY LTD",
+          "direccion": "1-5F, No. 5, Taisong Industrial Park, Dalang Community, Dalang Street, Longhua District, Shenzhen 518109 Guangdong Province    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "BESTOC INTELLECTUAL PROPERTY CO., LTD",
+          "direccion": "B2322, Baoan Small and Medium-sized Enterprises Incubator Center, Tangtou Avenue, Shiyan, Baoan District, Shenzhen Guangdong",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Periféricos informáticos; interfaces de ordenador; dispositivos de comunicación en red; tableros de conexión; módems; transpondedores; tarjetas de circuitos integrados [tarjetas inteligentes]; receptores de audio y vídeo; aparatos de proyección; hilos eléctricos; cargadores de baterías; conectores [electricidad]; circuitos integrados; aparatos de control remoto; cerraduras eléctricas."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "WAVLINK",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df6f9"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262031&fcoOp=EXTRA__Default",
+  "idProc": "4262031"
+}

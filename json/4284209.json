@@ -1,0 +1,83 @@
+{
+  "idsic": "4284209",
+  "refClient": "1088287847",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-27",
+  "numeroSolicitud": "SD2022/0076021",
+  "fechaPresentacion": "2022-07-27",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-19",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1088287847",
+          "identificacionOMPI": "Ivonne",
+          "fullName": "IVONNE CARVAJAL MARIN",
+          "direccion": "carrera 83 aa #17-78 MEDELLIN ANTIOQUIA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1088287847",
+          "nombre": "IVONNE  CARVAJAL MARIN",
+          "direccion": "carrera 83 aa #17-78",
+          "ciudad": "MEDELLIN",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "3",
+        "descripcion": "Champús capilares; champúes para el cabello; champús para el cabello; champús no medicinales; champús para el cabello humano; champús para el cabello y el cuerpo; champús y acondicionadores; champús no medicinales contra la caspa; champúes para bebés; cremas cosméticas para el tratamiento de los labios; preparaciones cosméticas para el tratamiento de la piel; preparaciones para tratamientos capilares; preparados cosméticos para el tratamiento de la piel; productos y tratamientos para el cabello; cosméticos para tratamiento de belleza cosméticos para el cuidado de belleza; cremas no medicinales para el tratamiento del cuero cabelludo; preparaciones cosméticas no medicinales para tratamientos capilares; preparaciones cosméticas no medicamentosas para tratamientos capilares."
+      },
+      {
+        "clase": "5",
+        "descripcion": "Champú para el crecimiento del cabello."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Investigación en laboratorio en el ámbito de los productos cosméticos; desarrollo y pruebas de métodos de producción química."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "3, 5, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "LORGANIQUE",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fb1eb"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284209&fcoOp=EXTRA__Default",
+  "idProc": "4284209"
+}

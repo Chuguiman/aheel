@@ -1,0 +1,80 @@
+{
+  "idsic": "4261996",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0070989",
+  "fechaPresentacion": "2022-05-05",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671285",
+    "fechaRegistroInternacional": "2022-05-05"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1433690",
+          "fullName": "FIAMMENGHI FIAMMENGHI S.R.L."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1433682",
+          "fullName": "ILLVA SARONNO S.P.A.",
+          "direccion": "Via Archimede 243 I-21047 SARONO (VA)    (IT)",
+          "codPais": "IT"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79339809",
+          "nombre": "JUAN CARLOS CUESTA QUINTERO",
+          "direccion": "CLL 72 # 10 -07 OFC 603",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "33",
+        "descripcion": "Bebidas espirituosas; licores; cócteles."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "33"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "TIA MARIA",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df83d"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4261996&fcoOp=EXTRA__Default",
+  "idProc": "4261996"
+}

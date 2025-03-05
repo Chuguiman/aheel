@@ -1,0 +1,92 @@
+{
+  "idsic": "4271558",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073142",
+  "fechaPresentacion": "2022-03-30",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1673357",
+    "fechaRegistroInternacional": "2022-03-30"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1453534",
+          "fullName": "MARCO & ASOCIADOS PATENTES Y MARCAS, S.L."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1453532",
+          "fullName": "YS FAMILY MAYORISTA 2021 SLU",
+          "direccion": "Avenida de la Industria, 64-66 E-28970 Humanes de Madrid, Madrid    (ES)",
+          "codPais": "ES"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "MARCO & ASOCIADOS PATENTES Y MARCAS, S.L.",
+          "direccion": "C/ Carpinteros, 6 Planta 2ª, Oficina 35,  (Parque Empresarial Pinares Llanos) E-28670 Villaviciosa de Odon (Madrid)",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "ES",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "8",
+        "descripcion": "Herramientas e instrumentos de mano que funcionan manualmente; artículos de cuchillería, tenedores y cucharas; cubertería de mesa, atizadores, alisadores de plomo (herramientas de mano), afiladores, piedras de afilar, abridores de latas (manuales), sierras de arco, punzones (de mano), brocas (herramientas de mano), herramientas de corte, limas (manuales), estuches para maquinillas de afeitar, cuchillos de mano para verduras, abrelatas no eléctricos, morteros, cortadores de pizzas, alicates, tijeras."
+      },
+      {
+        "clase": "20",
+        "descripcion": "Muebles, espejos, marcos; contenedores no metálicos de almacenamiento o transporte; hueso, cuerno, ballena o nácar, en bruto o semielaborados; conchas; espuma de mar; ámbar amarillo, unidades de almacenaje (mobiliario), cajas de madera o plásticos, perchas para ropa."
+      },
+      {
+        "clase": "21",
+        "descripcion": "Utensilios y recipientes para uso doméstico y culinario; utensilios de cocina y vajilla, excepto tenedores, cuchillos y cucharas; peines y esponjas; cepillos; materiales para fabricar cepillos; material de limpieza; vidrio en bruto o semielaborado, excepto vidrio de construcción; artículos de cristalería, porcelana y loza; teteras, esponjas, manoplas exfoliantes; cajas para la mantequilla, cajas para jabón, cajas de cristal, distribuidores de jabón; bidones de residuos, bañeras de plástico para niños, esponjas para baño, tablas para amasar; instrumentos de riego, tiestos; porcelana de mesa, cepillos de lavar; rodillos de pastelería, bote para el pan, boles, cubiletes, copas para fruta, cepillos para quitar el polvo, plumeros; vasos, coladores, platos, botellas, moldes de cocina, moldes para cubitos de hielo, tapaderas de cacharros, guantes para uso doméstico, guantes para pulir, baldes, utensilios domésticos no metálicos, cubos para conservar el hielo, moldes para pasteles, bandejas para pasteles, medidas para pasteles (moldes); jarras, ollas, reposaplatos, artículos de cerámica para uso doméstico; pinzas para la ropa, saca-botas, marmitas, hueveras, sacacorchos, cacerolas, especieros; escobas, neveras portátiles, neveras portátiles que no sean eléctricas; utensilios de cocina metálicos, artículos de loza; arandelas de palmatorias de metales preciosos, palmatorias que no sean de metales preciosos; campanas para mantequilla, tapas para fuentes; cajas para la merienda, escobas de flecos, cepos, cepillos para uñas; tapas de queseras, bandejas de papel para uso doméstico, maletines para picnic; porcelanas, brochas de afeitar, ralladores, ratoneras (trampas para ratones), mezcladores manuales (cocteleras), hormas para el calzado, calzadores, cuencos de cristal; tablas de planchas, sartenes para freír; cepillos de dientes, recipientes isotérmicos; escobillas para la limpieza de inodoros, utensilios de tocador, bayetas de cocina para la vajilla; regaderas, woks, freidoras no eléctricas; jarras para cerveza, cestas para el pan, botelleros, centros de mesa."
+      },
+      {
+        "clase": "24",
+        "descripcion": "Tejidos y sus sucedáneos; ropa de hogar; cortinas de materias textiles o de materias plásticas, manteles, mantelerías, servilletas de mesa de materias textiles, manteles individuales de materias textiles."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "8, 20, 21, 24"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "FAMILY",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817ea3b1"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4271558&fcoOp=EXTRA__Default",
+  "idProc": "4271558"
+}

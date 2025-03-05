@@ -1,0 +1,88 @@
+{
+  "idsic": "4262012",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071004",
+  "fechaPresentacion": "2022-03-02",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "977",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-06-27",
+    "fechaRenovacion": "2032-03-02",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671537",
+    "fechaRegistroInternacional": "2022-03-02"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1459429",
+          "fullName": "GRETCHEN STROUD"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1440220",
+          "fullName": "GILEAD SCIENCES IRELAND UC",
+          "direccion": "IDA Business and Technology Park, Carrigtohill  Co. Cork    (IE)",
+          "codPais": "IE"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "GRETCHEN STROUD",
+          "direccion": "Gilead Sciences, Inc. 333 Lakeside Drive Foster City CA 94404",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "US",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "IRLANDA",
+      "fechaDePrioridad": "2021-01-10",
+      "numeroDePrioridad": "2021/01926",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "5",
+        "descripcion": "Preparaciones farmacéuticas."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "5"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "ZAFZELD",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df848"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262012&fcoOp=EXTRA__Default",
+  "idProc": "4262012"
+}

@@ -1,0 +1,75 @@
+{
+  "idsic": "401527",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2008-05-16",
+  "numeroSolicitud": "08049638",
+  "fechaPresentacion": "2008-05-16",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2008-06-23",
+  "publicacionInfo": {
+    "numeroGaceta": "594",
+    "fechaPublicacion": "2008-07-31"
+  },
+  "certificadoInfo": {
+    "certificado": "579888",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "900131935",
+          "identificacionOMPI": "",
+          "fullName": "URBANIA S.A.",
+          "direccion": "ED. BANCO DEL ESTADO OF 803 CARTAGENA BOLIVAR  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "92504394",
+          "nombre": "BELISARIO SEGUNDO YANEZ CONTRERAS",
+          "direccion": "VIA MAMONAL KM 1 NO. 12-31",
+          "ciudad": "CARTAGENA",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "41",
+        "descripcion": "EDUCACIÓN; FORMACIÓN; ESPARCIMIENTO; ACTIVIDADES DEPORTIVAS Y CULTURALES."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "41"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "URBANIA",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=090000028018e572"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=401527&fcoOp=EXTRA__Default",
+  "idProc": "401527"
+}

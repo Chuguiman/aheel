@@ -1,0 +1,79 @@
+{
+  "idsic": "4284571",
+  "refClient": "21-1398",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076332",
+  "fechaPresentacion": "2022-07-28",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-09",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "746239",
+    "fechaRegistro": "2023-12-01",
+    "fechaRenovacion": "",
+    "vigencia": "2033-12-01"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1134609",
+          "identificacionOMPI": "",
+          "fullName": "VOISO LIMITED",
+          "direccion": "Igoumenitsas, 12, CONNECTEDSKY HOUSE, Strovolos, 2027, Nicosia, Cyprus. NICOSIA LIMASSOL  (CY)",
+          "codPais": "CY"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "41575435",
+          "nombre": "LUZ HELENA ADARVE GOMEZ",
+          "direccion": "CRA 7 No. 71-52 Torre B Piso 9",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Programas informáticos para la gestión y el mantenimiento de centros de atención al cliente, programas informáticos de telefonía que permiten realizar actividades telefónicas a través de un computador."
+      },
+      {
+        "clase": "38",
+        "descripcion": "Telecomunicaciones; servicios de buzón de voz; comunicaciones por teléfono; servicios telefónicos; servicios de enrutamiento y empalme de telecomunicaciones; comunicaciones por ordenador; intercambio electrónico de datos, vídeo, audio, texto a través de redes informáticas y de telecomunicaciones; suministro de foros en línea; comunicación mediante blogs en línea; servicios de sala de chat; servicios de centro de llamadas; servicios de consultoría, información y asesoramiento relacionados con todos los servicios mencionados."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9, 38"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "VOISO",
+  "reivindicacionDeColores": "RGB 131 179 255; RGB 181 215 255; RGB 255 186 123; RGB 255 133 199.",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fd794"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284571&fcoOp=EXTRA__Default",
+  "idProc": "4284571"
+}

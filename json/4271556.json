@@ -1,0 +1,92 @@
+{
+  "idsic": "4271556",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073140",
+  "fechaPresentacion": "2022-06-20",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "977",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2022-12-12",
+    "fechaRenovacion": "2032-06-20",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1673341",
+    "fechaRegistroInternacional": "2022-06-20"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1461580",
+          "fullName": "PETER A. CHIABOTTI AKERMAN LLP"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1461578",
+          "fullName": "PEOPLE 2.0 GLOBAL, LLC",
+          "direccion": "2520 Renaissance Blvd., Suite 130 King of Prussia PA 19406    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "PETER A. CHIABOTTI AKERMAN LLP",
+          "direccion": "777 S. Flagler Dr., Ste. 1100 West Tower West Palm Beach FL 33401",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "US",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2021-12-20",
+      "numeroDePrioridad": "97181008",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "Oficinas de empleo; servicios de registro de empleadores, a saber, procesamiento de nóminas, servicios de administración de empleados, verificación de empleos; agencias de servicios de registros, a saber, procesamiento de nóminas, servicios de administración de empleados, verificación de empleos; facturación y administración de cuentas por cuenta de contratistas independientes; gestión integral de la mano de obra, a saber, dotación de personal y servicios comerciales en forma de verificación de las credenciales de contratistas independientes para terceros; servicios de gestión de recursos humanos para terceros; servicios completos de externalización de procesos comerciales y de oficina para empleados y contratistas independientes, a saber, teneduría de registros financieros para seguros, gestión de riesgos, nóminas, indemnizaciones de trabajadores y prestaciones."
+      },
+      {
+        "clase": "45",
+        "descripcion": "Administración de informes gubernamentales, a saber, consultoría sobre el cumplimiento normativo en materia de seguros, gestión de riesgos, nóminas, indemnizaciones de trabajadores y prestaciones; servicios de consultoría, a saber, revisión de normas y prácticas para garantizar el cumplimiento de leyes y reglamentos de contratistas independientes y empleados."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "35, 45"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "FLEXLIFE",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817ead74"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4271556&fcoOp=EXTRA__Default",
+  "idProc": "4271556"
+}

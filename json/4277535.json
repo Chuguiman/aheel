@@ -1,0 +1,75 @@
+{
+  "idsic": "4277535",
+  "refClient": "",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-25",
+  "numeroSolicitud": "SD2022/0074514",
+  "fechaPresentacion": "2022-07-25",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-09",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1015466426",
+          "identificacionOMPI": "María Catalina",
+          "fullName": "MARÍA CATALINA ENRIQUEZ CERÓN",
+          "direccion": "carrera 69 # 100 39 BOGOTÁ D.C. 111121 (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1015466426",
+          "nombre": "MARÍA CATALINA ENRIQUEZ CERÓN",
+          "direccion": "carrera 69 # 100 39",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "111121",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "25",
+        "descripcion": "Albornoces / salidas de baño; antifaces para dormer\t\t\t; bandanas [pañuelos para el cuello]; bandas para la cabeza [prendas de vestir]; batas [saltos de cama] / batines / saltos de cama; bodis [ropa interior]; bragas* / blúmers* / bombachas* / pantaletas*; calcetines* / soquetes [calcetines]; calentadores de piernas; calzones de baño / shorts de baño; combinaciones [ropa interior]; corsés [ropa interior]; fajas [ropa interior]; kimonos; ligas [ropa interior]; ligueros / portaligas; pijamas; ropa interior / lencería; trajes de baño [bañadores] / bañadores / mallas [bañadores]; vestidos; prendas de punto."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "25"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "LA MARÍA HANDMADE LINGERIE",
+  "reivindicacionDeColores": "#e7d6d4; #000000",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817f2be9"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4277535&fcoOp=EXTRA__Default",
+  "idProc": "4277535"
+}

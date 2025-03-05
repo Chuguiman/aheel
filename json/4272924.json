@@ -1,0 +1,79 @@
+{
+  "idsic": "4272924",
+  "refClient": "LUTF1436850/CO",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073481",
+  "fechaPresentacion": "2022-07-21",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-09",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "766705",
+    "fechaRegistro": "2024-10-29",
+    "fechaRenovacion": "",
+    "vigencia": "2034-10-29"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1131620",
+          "identificacionOMPI": "",
+          "fullName": "OPELLA HEALTHCARE GROUP SAS",
+          "direccion": "82 Avenue Raspail, 94250 GENTILLY, FRANCE GENTILLY VAL-DE-MARNE  (FR)",
+          "codPais": "FR"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "052250482",
+          "nombre": "DIANA ROMERO CALVO",
+          "direccion": "Calle 72 No. 10-07 Oficina 603",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "11023",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "Servicios de publicidad, marketing y promoción; prestación de los servicios mencionados en línea, por cable y/o por Internet; Suministro de información sobre negocios, marketing, sobre las ventas de productos y comercial, relacionada con productos farmacéuticos, médicos, sanitarios y de fitness a través de una red informática en línea; servicios de venta minorista y mayorista en relación con preparaciones farmacéuticas y sanitarias y suministros médicos; servicios de venta minorista y mayorista en relación con los productos farmacéuticos; distribución de material publicitario, de marketing y promocional; demostración de productos; servicios de presentación de productos."
+      },
+      {
+        "clase": "44",
+        "descripcion": "Servicios médicos; servicios de cuidados de higiene y de belleza; servicios de consultoría en materia de farmacia y salud; programas de sensibilización e información en el ámbito de la salud; Suministro de información médica y científica; suministro de información médica en cualquier medio, incluso en línea a través de internet y redes sociales."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "35, 44"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "HEALTH IN YOUR HANDS",
+  "reivindicacionDeColores": "Pantone Black C - C0 M0 Y0 K100, Pantone 266C - C65 M85 Y0 K0",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817ec69e"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4272924&fcoOp=EXTRA__Default",
+  "idProc": "4272924"
+}

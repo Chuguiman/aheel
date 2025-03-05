@@ -1,0 +1,75 @@
+{
+  "idsic": "4287323",
+  "refClient": "BEZOE",
+  "estado": "Bajo Examen de Fondo",
+  "fechaRadicacion": "2022-07-29",
+  "numeroSolicitud": "SD2022/0076898",
+  "fechaPresentacion": "2022-07-29",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-16",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "900920478",
+          "identificacionOMPI": "",
+          "fullName": "ZOE ESTUDIO DE DISEÑO S A S",
+          "direccion": "Carrera 13 Bis 110 49 Oficina 307 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "71394353",
+          "nombre": "JUAN CAMILO VILLA BETANCOURT",
+          "direccion": "Calle 1 #29-110 - Medellín",
+          "ciudad": "MEDELLIN",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "25",
+        "descripcion": "Bermudas [prendas de vestir]; blusas [prendas de vestir]; bodys [prendas de vestir]; mallas [prendas de mediería]; pieles [prendas de vestir]; blusas; blusas [ropa de negocios]; blusas camiseras; blusas de espalda descubierta; blusas de manga larga; leggings [pantalones]; pantalones cortos; suéteres; suéteres con escote en v; suéteres de cuello alto; suéteres de cuello redondo; suéteres de lana; suéteres de señora; suéteres ligeros; suéteres para adultos; chaquetas; prendas de vestir bordadas; prendas de vestir compostables; prendas de vestir cortaviento; prendas de vestir de cachemira; prendas de vestir de cuero; prendas de vestir de plumón; prendas de vestir para hombres; prendas de vestir para la intemperie; prendas de vestir para mujeres; prendas de vestir para mujeres, hombres y niños; prendas de vestir para niños; prendas de vestir para niños pequeños; prendas de vestir para seres humanos."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "25"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "BEZOÉ",
+  "reivindicacionDeColores": "PANTONE 706 CPANTONE P 48-8 C",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=0900000281800c1f"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4287323&fcoOp=EXTRA__Default",
+  "idProc": "4287323"
+}

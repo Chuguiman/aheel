@@ -1,0 +1,80 @@
+{
+  "idsic": "4262060",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071052",
+  "fechaPresentacion": "2022-05-11",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672290",
+    "fechaRegistroInternacional": "2022-05-11"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1460613",
+          "fullName": "SHENZHEN AIDISEN INTELLECTUAL PROPERTY OFFICE"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1460612",
+          "fullName": "SHENZHEN YUWEN E-COMMERCE CO., LTD.",
+          "direccion": "Room 703, 7th Floor, (beside the gate of Gonghe Garden) Zhonghui Finance Building, 153 Donghuan 1st Road, Longhua Street, Longhua New District    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "SHENZHEN AIDISEN INTELLECTUAL PROPERTY OFFICE",
+          "direccion": "Room 4C, Tower A, Xuesong Building, No.52, Tairan 6th Road, Tian 'an Community, Shatou Street, Futian District, Shenzhen Guangdong",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "10",
+        "descripcion": "Aparatos para análisis de sangre; aparatos de masaje; aparatos e instrumentos médicos; tensiómetros; aspiradores nasales; monitores de composición corporal; aparatos de galvanoterapia; electrodos para uso médico; aparatos de fisioterapia; sillas con orinal."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "10"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "AUVON",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df86b"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262060&fcoOp=EXTRA__Default",
+  "idProc": "4262060"
+}

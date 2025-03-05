@@ -1,0 +1,75 @@
+{
+  "idsic": "406972",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2008-06-18",
+  "numeroSolicitud": "08062873",
+  "fechaPresentacion": "2008-06-18",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2009-01-23",
+  "publicacionInfo": {
+    "numeroGaceta": "602",
+    "fechaPublicacion": "2009-03-31"
+  },
+  "certificadoInfo": {
+    "certificado": "616580",
+    "fechaRegistro": "2019-04-04",
+    "fechaRenovacion": "",
+    "vigencia": "2029-04-04"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "825370",
+          "identificacionOMPI": "",
+          "fullName": "LATIN AMERICAN POKER TOUR (LAPT) LIMITED",
+          "direccion": "10 HILL STREET, DOUGLAS, ISLE OF MAN, IM1 1EF DOUGLAS NOT DEFINED  (XM)",
+          "codPais": "XM"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "51711267",
+          "nombre": "MONICA BELA WOLF WASSERMAN",
+          "direccion": "AK 7 No. 113-43 Of. 805 Torre Samsung",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "41",
+        "descripcion": "SERVICIOS DE ENTRETENIMIENTO, SERVICIOS DE TELEVISIÓN PARA EL ENTRETENIMIENTO; PROGRAMAS DE TELEVISIÓN, SERVICIOS DE JUEGOS, SERVICIOS DE APUESTAS, SERVICIOS DE CASINO, SERVICIOS DE JUEGO DE CARTAS, ORGANIZACIÓN, PRODUCCIÓN Y PRESENTACIÓN DE TORNEOS, COMPETENCIAS, CONCURSOS, JUEGOS Y EVENTOS; ORGANIZACIÓN, PRODUCCIÓN Y PRESENTACIÓN DE JUEGOS, JUEGOS DE POKER, JUEGOS DE CARTAS Y TORNEOS DE CASINO, COMPETENCIAS, CONCURSOS JUEGOS Y EVENTOS, SERVICIOS DE JUEGOS DE POKER, SERVICIOS DE ENTRENAMIENTO, ORGANIZACIÓN Y TRANSMISIÓN EN DIRECTO DE TORNEOS, COMPETENCIAS, CONCURSOS, JUEGOS, SERVICIOS DE APUESTAS, SERVICIOS DE CASINO, SERVICIOS DE JUEGO DE CARTAS Y SERVICIOS DE JUEGOS DE POKER; SUMINISTRO DE CUALQUIERA DE LOS SERVICIOS MENCIONADOS ANTERIORMENTE, EN VIVO O A TRAVÉS DE TELEVISIÓN, INTERNET O DESDE UNA BASE DE DATOS DE UN COMPUTADOR; SERVICIOS DE JUEGOS ELECTRÓNICOS SUMINISTRADOS A TRAVÉS DE INTERNET, JUEGOS DE CARTAS PARA VARIOS JUGADORES, SALAS DE JUEGO Y JUEGOS A LOS QUE SE ACCEDE VÍA INTERNET, ORGANIZACIÓN, PRODUCCIÓN Y PRESENTACIÓN DE CUALQUIERA DE LOS SERVICIOS ANTES MENCIONADOS, SUMINISTRO DE NOTICIAS, SERVICIOS DE INFORMACIÓN Y ASESORÍA RELACIONADOS CON CUALQUIERA DE LOS SERVICIOS MENCIONADOS; SUMINISTRO DE PUBLICACIONES ELECTRÓNICAS EN LÍNEA; PERIÓDICOS ELECTRÓNICOS DISTRIBUIDOS VÍA INTERNET Y POR CORREO ELECTRÓNICO."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "41"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "LAPT LATIN AMERICAN POKER TOUR",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=090000028018fc3d"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=406972&fcoOp=EXTRA__Default",
+  "idProc": "406972"
+}

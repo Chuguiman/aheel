@@ -1,0 +1,77 @@
+{
+  "idsic": "4267660",
+  "refClient": "Dinet",
+  "estado": "Registrada",
+  "fechaRadicacion": "2021-01-10",
+  "numeroSolicitud": "SD2022/0072329",
+  "fechaPresentacion": "2021-01-10",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2021-01-13",
+  "publicacionInfo": {
+    "numeroGaceta": "939",
+    "fechaPublicacion": "2021-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "715900",
+    "fechaRegistro": "2022-01-06",
+    "fechaRenovacion": "",
+    "vigencia": "2032-01-06"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "9011196064",
+          "identificacionOMPI": "",
+          "fullName": "TECNIPAGOS S.A.",
+          "direccion": "Ak 68 # 75A - 50, piso 5 BOGOTÁ D.C. 111211 (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "35455268",
+          "nombre": "HELENA CAMARGO WILLIAMSON",
+          "direccion": "CARRERA 7 N° 71-52 TORRE A, PISO 5",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "36",
+        "descripcion": "Inversiones financieras; investigaciones financieras; operaciones financieras; operaciones financieras, monetarias e inmobiliarias; previsiones financieras; asesoramiento sobre seguros de propiedades y accidentes y riesgos diversos; consultoría de seguros; consultoría en materia de finanzas y seguros; consultoría en materia de reaseguros; consultoría en suscripción de seguros; consultoría sobre seguros."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Servicios científicos y tecnológicos; servicios científicos y tecnológicos, así como de investigación y desarrollo en estos ámbitos; servicios científicos y tecnológicos, así como servicios de investigación y diseño conexos; servicios científicos y tecnológicos, así como servicios de investigación y diseño en estos ámbitos; servicios de análisis científicos asistidos por ordenador; servicios de análisis e investigación científicos e industriales; servicios de información y datos sobre investigación y desarrollo científicos y tecnológicos; servicios de información, consultoría y asesoramiento científicos en materia de compensación de las emisiones de carbono; servicios de investigación y desarrollo científicos; servicios de investigación, comprobación y análisis científicos; servicios de investigación, comprobación y análisis científicos asistidos por ordenador; servicios de laboratorios científicos; suministro de estudios científicos; suministro de información y datos sobre investigación y desarrollo científicos y tecnológicos; suministro de información, consultoría y asesoramiento científicos sobre la compensación de emisiones de carbono."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "36, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "DINET",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4267660&fcoOp=EXTRA__Default",
+  "idProc": "4267660"
+}

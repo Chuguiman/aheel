@@ -1,0 +1,75 @@
+{
+  "idsic": "426325",
+  "refClient": "",
+  "estado": "Caducado",
+  "fechaRadicacion": "2007-01-19",
+  "numeroSolicitud": "07004931",
+  "fechaPresentacion": "2007-01-19",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2007-02-09",
+  "publicacionInfo": {
+    "numeroGaceta": "574",
+    "fechaPublicacion": "2007-03-30"
+  },
+  "certificadoInfo": {
+    "certificado": "579309",
+    "fechaRegistro": "2007-07-30",
+    "fechaRenovacion": "",
+    "vigencia": "2017-07-30"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "74324421",
+          "identificacionOMPI": "EDVAR",
+          "fullName": "EDVAR OCHOA OCHOA",
+          "direccion": "CRA 101 · 51 A-  60 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "74324421",
+          "nombre": "EDVAR OCHOA OCHOA",
+          "direccion": "CRA 101 · 51 A-  60",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "44",
+        "descripcion": "SERVICIOS MÉDICOS ODONTOLÓGICOS."
+      }
+    ],
+    "versionInfo": {
+      "version": "8",
+      "clases": "44"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "DENTAL'S PRO CLINICAS ODONTOLÓGICAS",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002801c5e64"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=426325&fcoOp=EXTRA__Default",
+  "idProc": "426325"
+}

@@ -1,0 +1,80 @@
+{
+  "idsic": "4284746",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076220",
+  "fechaPresentacion": "2022-02-03",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "977",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1447743",
+    "fechaRegistroInternacional": "2018-01-04"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1092532",
+          "fullName": "MURAT ELTUTAN- ELTUTAN FIKRI MÜLKIYET HIZMETLERI LTD. STI."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1135737",
+          "fullName": "KNR KAGIT KOZMETIK ITHALAT IHRACAT SANAYI VE TICARET LIMITED SIRKETI",
+          "direccion": "3. Organize Sanayi Bölgesi 83324 Cad. 4/A Sehitkamil  Gaziantep    (TR)",
+          "codPais": "TR"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1144046943",
+          "nombre": "JULIANA CARMONA VELASQUEZ",
+          "direccion": "Calle 77 # 10 -28",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "0000",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "3",
+        "descripcion": "Cosméticos, en particular cremas, champús, preparaciones en aerosol para peluquería y cuidado del cabello, lacas para el cabello, preparaciones para teñir y decolorar el cabello, preparaciones para ondular y rizar el cabello de forma permanente."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "3"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "CRÉÉ",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fbaad"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284746&fcoOp=EXTRA__Default",
+  "idProc": "4284746"
+}

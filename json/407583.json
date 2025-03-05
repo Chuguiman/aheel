@@ -1,0 +1,75 @@
+{
+  "idsic": "407583",
+  "refClient": "",
+  "estado": "Caducado",
+  "fechaRadicacion": "2008-06-23",
+  "numeroSolicitud": "08064525",
+  "fechaPresentacion": "2008-06-23",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2008-08-21",
+  "publicacionInfo": {
+    "numeroGaceta": "596",
+    "fechaPublicacion": "2008-09-30"
+  },
+  "certificadoInfo": {
+    "certificado": "580182",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": "2024-01-04"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "860031945",
+          "identificacionOMPI": "",
+          "fullName": "ABC LABORATORIOS SAS",
+          "direccion": "CALLE 24 # 27 A- 40 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "40440752",
+          "nombre": "JAHEL CECILIA CASASFRANCO MELO",
+          "direccion": "CALLE 85 A Nº 20-61",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "5",
+        "descripcion": "BOTIQUINES DE PRIMEROS AUXILIOS Y EQUIPOS DE EMERGENCIA, PRODUCTOS FARMACÉUTICOS, VETERINARIOS E HIGIÉNICOS; PRODUCTOS FARMACÉUTICOS, VETERINARIOS E HIGIÉNICOS; SUSTANCIAS DIETÉTICAS PARA USO MÉDICO, ALIMENTOS PARA BEBÉS; EMPLASTOS, MATERIAL PARA APÓSITOS; MATERIAL PARA EMPASTAR LOS DIENTES Y PARA MOLDES DENTALES; DESINFECTANTES; PRODUCTOS PARA DESTRUCCIÓN DE ANIMALES DAÑINOS; FUNGICIDAS, HERBICIDAS."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "5"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "ABC",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=090000028018fbc5"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=407583&fcoOp=EXTRA__Default",
+  "idProc": "407583"
+}

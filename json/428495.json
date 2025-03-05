@@ -1,0 +1,75 @@
+{
+  "idsic": "428495",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2007-01-03",
+  "numeroSolicitud": "06204605",
+  "fechaPresentacion": "2007-01-03",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2007-06-21",
+  "publicacionInfo": {
+    "numeroGaceta": "578",
+    "fechaPublicacion": "2007-07-31"
+  },
+  "certificadoInfo": {
+    "certificado": "579315",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "16686487",
+          "identificacionOMPI": "HECTOR ARMANDO",
+          "fullName": "HECTOR ARMANDO DAZA MEJÍA",
+          "direccion": "CARRERA 59 # 1D - 46 CALI VALLE DEL CAUCA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "16583121",
+          "nombre": "NESTOR ORLANDO JARAMILLO AGUDELO",
+          "direccion": "CALLE 5B 5 NO. 36 - 126",
+          "ciudad": "CALI",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "44",
+        "descripcion": "PRESTACIÓN DE SERVICIOS DE CARDIOLOGÍA."
+      }
+    ],
+    "versionInfo": {
+      "version": "8",
+      "clases": "44"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "LATIDOS",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002801cf38b"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=428495&fcoOp=EXTRA__Default",
+  "idProc": "428495"
+}

@@ -1,0 +1,80 @@
+{
+  "idsic": "4262059",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071051",
+  "fechaPresentacion": "2022-04-18",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-07-13",
+    "fechaRenovacion": "2032-04-18",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672284",
+    "fechaRegistroInternacional": "2022-04-18"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1460795",
+          "fullName": "S P.C.& ASSOCIATES INTELLECTUAL PROPERTY"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1460793",
+          "fullName": "GUANGDONG KAYU MACHINERY TECHNOLOGY LIMITED",
+          "direccion": "No. 2 Longqian xipang, Pengzhou beimen, Jinping District, Shantou Guangdong    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "S P.C.& ASSOCIATES INTELLECTUAL PROPERTY",
+          "direccion": "9th Floor, Scitech Tower, No.22 Jian Guo Men Wai Avenue, Chaoyang District Beijing",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "7",
+        "descripcion": "Prensas de imprenta; máquinas trenzadoras; máquinas de tejer; cortadoras de fibras; prensa de impresión para usos textiles; máquinas de teñir; máquinas de coser; máquinas para cortar telas; máquinas para envolver; máquinas de procesamiento de materias plásticas."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "7"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "KAYU",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df732"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262059&fcoOp=EXTRA__Default",
+  "idProc": "4262059"
+}

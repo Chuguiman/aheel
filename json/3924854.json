@@ -1,0 +1,84 @@
+{
+  "idsic": "3924854",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-02-17",
+  "numeroSolicitud": "SD2022/0014365",
+  "fechaPresentacion": "2021-12-22",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "1013",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2024-02-21",
+    "fechaRenovacion": "2031-12-22",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1644831",
+    "fechaRegistroInternacional": "2021-12-22"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "856432",
+          "fullName": "ARSUAGA SANTOS, ELISA"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1412074",
+          "fullName": "GRUPO LOGISCENTER SL",
+          "direccion": "Fuerteventura 4 E-28703 San Sebastián de los Reyes    (ES)",
+          "codPais": "ES"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "42128592",
+          "nombre": "JULIANA  ECHEVERRI MOLINA",
+          "direccion": "Calle 67 4 15",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Software de reconocimiento óptico de códigos de barras; terminales de códigos de barras; lectores e impresoras de códigos de barras; programas de ordenador que proporcionan control de acceso o entrada."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Intermediación y cierre de transacciones comerciales para terceros; intermediación y formalización de operaciones comerciales para terceros; compra de productos y servicios para otras empresas; venta al por menor, al por mayor y a través de redes mundiales de informática de impresoras de etiquetas, impresoras de tickets, lectores de códigos de barras, impresoras portátiles, terminales PDAs y tablets, impresoras de tarjetas, terminales TPV (POS); venta al por menor, al por mayor y a través de redes mundiales de informática de terminales de pago, software, programas de ordenador, impresoras TPV, cajones portamonedas, pantallas táctiles, quioscos verificadores de precios, visores displays cliente, aplicadores manuales de etiquetas, monitores, pantallas, etiquetas, motores de impresión, consumibles, enchufes, cabezales térmicos, terminales de control horario y de acceso."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9, 35"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "LOGISCENTER",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002816870e4"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=3924854&fcoOp=EXTRA__Default",
+  "idProc": "3924854"
+}

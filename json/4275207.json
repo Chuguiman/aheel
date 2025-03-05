@@ -1,0 +1,75 @@
+{
+  "idsic": "4275207",
+  "refClient": "Pulga Ptoject",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-22",
+  "numeroSolicitud": "SD2022/0074421",
+  "fechaPresentacion": "2022-07-22",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-11",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1144065928",
+          "identificacionOMPI": "Juan Carlos",
+          "fullName": "JUAN CARLOS GIRALDO CAJIAO",
+          "direccion": "Calle 7 Oeste # 2-33 CALI VALLE DEL CAUCA 760001 (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1144065928",
+          "nombre": "JUAN CARLOS  GIRALDO CAJIAO",
+          "direccion": "Calle 7 Oeste # 2-33",
+          "ciudad": "CALI",
+          "codigoPostal": "760001",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "25",
+        "descripcion": "Camisetas de yoga de manga corta; camisetas; camisetas con logotipos de diseño; camisetas de deporte; camisetas de deporte sin mangas; camisetas de manga corta; camisetas de manga corta estampadas; camisetas interiores de manga corta; camisetas sin mangas; gorras con visera; bermudas; bermudas [prendas de vestir]; shorts; shorts de baño; trajes de baño; trajes de baño para caballero; vestidos de baño."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "25"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "THE PULGA PROJECT",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817f08b9"
+  ],
+  "transliteracion": "Rostro de Personaje Pulga y tipografía original de la marca diseñada con cuadricula.",
+  "traduccionEspanol": "El Proyecto de Pulga",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4275207&fcoOp=EXTRA__Default",
+  "idProc": "4275207"
+}

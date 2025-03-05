@@ -1,0 +1,80 @@
+{
+  "idsic": "4284683",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076158",
+  "fechaPresentacion": "2022-02-26",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "979",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-02-17",
+    "fechaRenovacion": "2032-02-26",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674742",
+    "fechaRegistroInternacional": "2022-02-26"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1437785",
+          "fullName": "WORLDWIDE INTELLEC"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1437784",
+          "fullName": "HERO MOTOCORP LIMITED",
+          "direccion": "The Grand Plaza, Plot No.2, Nelson Mandela Road, Vasant Kunj - Phase -ii New Delhi 110070    (IN)",
+          "codPais": "IN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "51711267",
+          "nombre": "MONICA BELA WOLF WASSERMAN",
+          "direccion": "AK 7 No. 113-43 Of. 805 Torre Samsung",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "16",
+        "descripcion": "Productos de imprenta; artículos de papelería; publicaciones impresas, a saber, guías impresas, manuales impresos, folletos impresos, libros, revistas, todos en el ámbito de los vehículos terrestres de motor."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "16"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "V",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fba37"
+  ],
+  "transliteracion": "The mark consists of a stylised representation of alphabet \"V\".",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284683&fcoOp=EXTRA__Default",
+  "idProc": "4284683"
+}

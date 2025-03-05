@@ -1,0 +1,75 @@
+{
+  "idsic": "4280845",
+  "refClient": "osslo jewelry",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-27",
+  "numeroSolicitud": "SD2022/0075250",
+  "fechaPresentacion": "2022-07-27",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-12",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "52510385",
+          "identificacionOMPI": "LAURA CRISTINA",
+          "fullName": "LAURA CRISTINA VASQUEZ GUZMAN",
+          "direccion": "Carrera 5 # 44-09 Edificio Piedra Pintada XI, apto 408 , Barrio Piedra Pintada IBAGUE TOLIMA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "52510385",
+          "nombre": "LAURA CRISTINA VASQUEZ GUZMAN",
+          "direccion": "Carrera 5 # 44-09 Edificio Piedra Pintada XI, apto 408 , Barrio Piedra Pintada",
+          "ciudad": "IBAGUE",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "14",
+        "descripcion": "Metales preciosos y sus aleaciones; artículos de joyería, piedras preciosas y semipreciosas; artículos de relojería e instrumentos cronométricos."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "14"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "OSSLO JEWELRY",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817f965c"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "La palabra Jewelry, traduce joyería en español.",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4280845&fcoOp=EXTRA__Default",
+  "idProc": "4280845"
+}

@@ -1,0 +1,75 @@
+{
+  "idsic": "403205",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2008-05-23",
+  "numeroSolicitud": "08053017",
+  "fechaPresentacion": "2008-05-23",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2008-07-18",
+  "publicacionInfo": {
+    "numeroGaceta": "595",
+    "fechaPublicacion": "2008-08-29"
+  },
+  "certificadoInfo": {
+    "certificado": "583118",
+    "fechaRegistro": "2008-11-28",
+    "fechaRenovacion": "",
+    "vigencia": "2028-11-28"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "811039458",
+          "identificacionOMPI": "",
+          "fullName": "WEB CREATIVA S.A.S.",
+          "direccion": "CARRERA 43 C NO. 7 D - 71 MEDELLIN, ANTIOQUIA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "43015585",
+          "nombre": "INES CONSUELO BENJUMEA RENDON",
+          "direccion": "Carrera 42 No. 3 Sur 81 Oficina 1013, Torre 2 Edificio Milla de Oro, Distrito de Negocios.",
+          "ciudad": "MEDELLIN",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "PUBLICIDAD. GESTIÓN DE NEGOCIOS COMERCIALES. ADMINISTRACIÓN COMERCIAL. TRABAJOS DE OFICINA."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "35"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "WEBCREATIVA STUDIOWEB",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=090000028018f918"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=403205&fcoOp=EXTRA__Default",
+  "idProc": "403205"
+}

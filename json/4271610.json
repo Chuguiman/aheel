@@ -1,0 +1,80 @@
+{
+  "idsic": "4271610",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073193",
+  "fechaPresentacion": "2022-04-04",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "979",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1618244",
+    "fechaRegistroInternacional": "2021-04-09"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1346303",
+          "fullName": "PEDRO DIÉGUEZ GARBAYO"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1346301",
+          "fullName": "TASTY DRINK, S.L.",
+          "direccion": "c/ José Dominguez, n° 8, Quart de Poblet E-46930 Valencia    (ES)",
+          "codPais": "ES"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "PEDRO DIÉGUEZ GARBAYO",
+          "direccion": "C/ Orense, 10-1-Of.12 E-28020 Madrid",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "ES",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "32",
+        "descripcion": "Zumos de frutas."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "32"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "ZUTEC",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817ead5e"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4271610&fcoOp=EXTRA__Default",
+  "idProc": "4271610"
+}

@@ -1,0 +1,84 @@
+{
+  "idsic": "4262026",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071018",
+  "fechaPresentacion": "2022-05-12",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-07-17",
+    "fechaRenovacion": "2032-05-12",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671720",
+    "fechaRegistroInternacional": "2022-05-12"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1224902",
+          "fullName": "ISONO INTERNATIONAL PATENT OFFICE, P.C."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1457463",
+          "fullName": "COCOCHI COSME CO., LTD.",
+          "direccion": "PMO Nihonbashi Mitsukoshimae, 3-4-5 Nihonbashihoncho, Chuo-Ku Tokyo 103-0023    (JP)",
+          "codPais": "JP"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "ISONO INTERNATIONAL PATENT OFFICE, P.C.",
+          "direccion": "11F Hulic Toranomon Bldg. 1-1-18,  Toranomon, Minato-ku Tokyo 105-0001",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "JP",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "3",
+        "descripcion": "Cosméticos; preparaciones para pulir; productos de perfumería; dentífricos; papel para pulir; incienso; preparaciones para refrescar el aliento."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Publicidad televisada; demostración de productos; publicidad exterior; publicidad; redacción de textos publicitarios; servicios de modelos con fines publicitarios o de promoción de ventas; producción de películas publicitarias; organización de exposiciones con fines comerciales o publicitarios; distribución de muestras; organización de desfiles de moda con fines promocionales."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "3, 35"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "COCOCHI COSME",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002818722f9"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262026&fcoOp=EXTRA__Default",
+  "idProc": "4262026"
+}

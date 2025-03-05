@@ -1,0 +1,80 @@
+{
+  "idsic": "4090161",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-03-24",
+  "numeroSolicitud": "SD2022/0028638",
+  "fechaPresentacion": "2022-01-21",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "1011",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1652009",
+    "fechaRegistroInternacional": "2022-01-21"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1026471",
+          "fullName": "EIKOH PATENT FIRM, P.C."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1526359",
+          "fullName": "I-PRO CO., LTD.",
+          "direccion": "15-1, Konan 2-chome, Minato-ku Tokyo 108-6014    (JP)",
+          "codPais": "JP"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "80410337",
+          "nombre": "JUAN PABLO CADENA SARMIENTO",
+          "direccion": "CALLE 70A No. 4-41 PISO 4",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Máquinas y aparatos fotográficos; máquinas y aparatos cinematográficos; máquinas y aparatos ópticos; aparatos e instrumentos de laboratorio; máquinas e instrumentos de medición o prueba; sensores; sistemas de seguridad con sensores y alarmas para detectar y notificar intrusiones; cámaras de vigilancia; cámaras de red; grabadoras de vídeo digitales; máquinas y aparatos de telecomunicación; asistentes personales digitales (PDA); programas informáticos; máquinas y aparatos electrónicos, a saber, partes de sensores, sistemas de seguridad con sensores y alarmas para detectar y notificar intrusiones, cámaras de videovigilancia, cámaras de red, grabadores de vídeo digitales, asistentes personales digitales."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "I-PRO",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002816d6d5d"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4090161&fcoOp=EXTRA__Default",
+  "idProc": "4090161"
+}

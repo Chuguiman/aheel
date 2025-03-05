@@ -1,0 +1,75 @@
+{
+  "idsic": "428291",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2008-11-24",
+  "numeroSolicitud": "08124661",
+  "fechaPresentacion": "2008-11-24",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2009-06-05",
+  "publicacionInfo": {
+    "numeroGaceta": "606",
+    "fechaPublicacion": "2009-07-31"
+  },
+  "certificadoInfo": {
+    "certificado": "580201",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "900066334",
+          "identificacionOMPI": "",
+          "fullName": "AGRINOVA LTDA",
+          "direccion": "KM 1 ZONA INDUSTRIAL EL PAPAYO BODEGA 5 IBAGUE TOLIMA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79331671",
+          "nombre": "JOHN JAIRO ZAPATA GONZALEZ",
+          "direccion": "CALLE 12B No. 6-21 OFC. 202",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "PUBLICIDAD Y GESTIÓN DE NEGOCIOS. ADMINISTRACION COMERCIAL. GERENCIA DISTRIBUCION Y COMERCIALIZACION AL POR MAYOR Y AL  DETAL DE MERCANCIAS EXPUESTAS AL PUBLICO TALES COMO;  QUIMICOS DESTINADOS A LA INDUSTRIA, CIENCIA, AGRICULTURA, HORTICULTURA, ABONOS PARA LA TIERRA QUIMICOS DESTINADOS A CONSERVAR LOS ALIMENTOS. INSUMOS AGROPECUARIOS. LA DISTRIBUCION,  COMERCIALIZACION , IMPORTACION Y EXPORTACION DE MERCANCIAS EXPUESTAS AL PUBLICO."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "35"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "AGRINOVA",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=090000028019238a"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=428291&fcoOp=EXTRA__Default",
+  "idProc": "428291"
+}

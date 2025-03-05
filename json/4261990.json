@@ -1,0 +1,80 @@
+{
+  "idsic": "4261990",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0070983",
+  "fechaPresentacion": "2022-04-25",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "979",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671181",
+    "fechaRegistroInternacional": "2022-04-25"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1454062",
+          "fullName": "SELIM INTELLECTUAL PROPERTY LAW FIRM"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1454059",
+          "fullName": "SAMSUNG ELECTRONICS CO., LTD.",
+          "direccion": "129, Samsung-ro, Yeongtong-gu, Suwon-si Gyeonggi-do    (KR)",
+          "codPais": "KR"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "SELIM INTELLECTUAL PROPERTY LAW FIRM",
+          "direccion": "10th Floor Taewoo Bldg., 285, Gangnam-daero, Seocho-gu Seoul 06729",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "KR",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "11",
+        "descripcion": "Aparatos de climatización; esterilizadores de aire; lámparas de diodos electroluminiscentes; hornos de microondas; cocinas de gas integradas en mesas; estufas de gas; calentadores de agua a gas; almohadillas térmicas activadas químicamente para calentar las manos o los pies, que no sean para uso médico; neveras fijas para uso doméstico; lámparas; radiadores eléctricos; dispositivos e instalaciones de ventilación; bidés; hornos de cocción a gas para uso doméstico; deshumidificadores para uso doméstico; secadoras de ropa eléctricas; refrigeradores eléctricos para fermentar y almacenar Kinchi; refrigeradores eléctricos; bodegas eléctricas para vino; hornos de inducción."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "11"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "METAL COOLING",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df837"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4261990&fcoOp=EXTRA__Default",
+  "idProc": "4261990"
+}

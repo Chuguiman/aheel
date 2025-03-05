@@ -1,0 +1,80 @@
+{
+  "idsic": "4262036",
+  "refClient": "Referencia del solicitante",
+  "estado": "Archivada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071028",
+  "fechaPresentacion": "2022-03-25",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2022-12-15",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671860",
+    "fechaRegistroInternacional": "2022-03-25"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1371933",
+          "fullName": "MARK JANSEN FENWICK & WEST LLP"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1439534",
+          "fullName": "SUPERPLASTIC, INC.",
+          "direccion": "47 Maple Street, #300 Burlington VT 05401    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "80410337",
+          "nombre": "JUAN PABLO CADENA SARMIENTO",
+          "direccion": "CALLE 70A No. 4-41 PISO 4",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "41",
+        "descripcion": "Suministro de videojuegos interactivos en línea; servicios de entretenimiento, a saber, facilitación de uso temporal de videojuegos no descargables; servicios recreativos; servicios de entretenimiento, a saber, servicios de distribución de espectáculos y programas de televisión por cuenta de terceros por medios electrónicos; suministro de noticias de entretenimiento por medios electrónicos con textos y gráficos relacionados con caracteres originales en dos y tres dimensiones; suministro de información sobre entretenimiento en relación con caracteres originales en dos y tres dimensiones, mediante un sitio web; servicios de entretenimiento, a saber, suministro de información sobre entretenimiento en relación con grabaciones audiovisuales y gráficos con personajes en dos y tres dimensiones; servicios de entretenimiento, a saber, suministro de videojuegos en línea; servicios de entretenimiento, a saber, prestación de servicios de entretenimiento a través de una red mundial de comunicación en forma de juegos en línea y suministro de textos no descargables relacionados con caracteres originales en dos y tres dimensiones y gráficos no descargables, a saber, caracteres originales en dos y tres dimensiones mediante un sitio web; servicios de entretenimiento en línea, a saber, suministro de contenidos en línea en forma de juegos electrónicos en línea, gráficos no descargables en línea y cuentos no descargables en línea, todos con dos caracteres originales en dos y tres dimensiones como si fuera de la perspectiva de caracteres originales y de fantasía."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "41"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "SHUDOGG",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df85b"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262036&fcoOp=EXTRA__Default",
+  "idProc": "4262036"
+}

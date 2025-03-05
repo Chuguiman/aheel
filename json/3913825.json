@@ -1,0 +1,104 @@
+{
+  "idsic": "3913825",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2019-07-04",
+  "numeroSolicitud": "SD2022/0012111",
+  "fechaPresentacion": "2019-04-04",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "871",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2022-03-01",
+    "fechaRenovacion": "2028-10-31",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1460792A",
+    "fechaRegistroInternacional": "2018-10-31"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1094040",
+          "fullName": "MISHCON DE REYA LLP"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1070508",
+          "fullName": "BADOO MEDIA LIMITED",
+          "direccion": "332 Agiou Andreou Street, Patrician Chambers CY-3035 Limassol    (CY)",
+          "codPais": "CY"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "80421942",
+          "nombre": "MAURICIO JARAMILLO CAMPUZANO",
+          "direccion": "Calle 67 No. 7-35 Of 1204",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "REINO UNIDO",
+      "fechaDePrioridad": "2018-10-05",
+      "numeroDePrioridad": "UK00003343524",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Software informático; software de aplicación para teléfonos móviles; juegos informáticos; programas de juegos electrónicos; herramientas de desarrollo de software; software utilizado como interfaz de programación de aplicaciones (API) que permitan el acceso a servicios en línea para presentaciones sociales, redes sociales y concertación de citas, software y aplicaciones de software para la transmisión, acceso, organización y gestión de mensajería de textos, mensajería instantánea, enlaces web e imágenes por Internet y otras redes de comunicación; software de creación de aplicaciones de presentaciones sociales, redes sociales y citas, y de recuperación, carga, descarga, acceso y gestión de datos; software de telecarga, descarga, acceso, publicación, visualización, transmisión en flujo continuo, enlace, intercambio o de algún modo proporcionar medios electrónicos o información mediante redes informáticas y de comunicación; software descargable en el ámbito de presentaciones sociales, redes sociales y citas; software descargable como aplicación móvil; software descargable en forma de aplicaciones móviles para presentaciones sociales, redes sociales y citas; software de aplicación para servicios de presentaciones sociales, redes sociales y citas por Internet; publicaciones electrónicas descargables; incluidas partes y accesorios para todos los productos antes mencionados."
+      },
+      {
+        "clase": "38",
+        "descripcion": "Servicios de telecomunicación, a saber, transmisión electrónica de datos, mensajes e información entre ordenadores, dispositivos móviles y de bolsillo y dispositivos de comunicación por cable e inalámbricos; servicios de telecomunicación, a saber, transmisión por parte de usuarios, de mensajes, comentarios, archivos multimedia, vídeos, obras cinematográficas, películas y fotografías, archivos de audio, animaciones, ilustraciones, imágenes, textos, información y otros contenidos generados por los usuarios mediante una red informática mundial y otras redes informáticas y de comunicaciones; suministro de enlaces de comunicación en línea que remiten a los usuarios a otros sitios web; servicios de foros, salas de charla y tablones de anuncios electrónicos en línea para que los usuarios puedan publicar, buscar, mirar, intercambiar, opinar, evaluar y comentar temas de interés; servicios de salas de chat para presentaciones sociales, redes sociales y citas; servicios de acceso a bases de datos electrónicas, informáticas y en línea; servicios de difusión de archivos de audio, texto, vídeo y contenidos multimedia mediante de redes informáticas y redes de comunicación electrónica, a saber, telecarga, publicación, presentación, etiquetado y transmisión electrónica de datos, audio y vídeo; suministro de acceso a bases de datos informáticas sobre entretenimiento y educación; servicios de acceso a bases de datos informáticas en los ámbitos de redes sociales, presentaciones sociales y citas; suministro de instalaciones de telecomunicación que permiten intercambiar bitácoras, fotografías, vídeos, archivos de audio descargables y otros contenidos audiovisuales; suministro de instalaciones de telecomunicación que permiten crear y actualizar páginas web personales electrónicas con contenido generado por el usuario; información, asesoramiento y consultoría sobre todos los servicios mencionados."
+      },
+      {
+        "clase": "41",
+        "descripcion": "Servicios educativos y recreativos; suministro y alojamiento de seminarios, presentaciones y grupos de discusión y formación en los ámbitos del desarrollo personal, la construcción de relaciones y las redes de trabajo; Servicios de publicación electrónica por cuenta de terceros; servicios de publicación electrónica y en línea; alojamiento de exposiciones, conferencias, seminarios y acontecimientos para crear redes de contacto con fines comerciales, educativos y culturales; organización y dirección de acontecimientos sobre formación y educación en línea, incluidos seminarios y reuniones virtuales; publicaciones electrónicas (no descargables); redacción de textos, excepto textos publicitarios; servicios de clubes sociales con fines de entretenimiento; publicación de documentos sobre asuntos sociales; información, asesoramiento y consultoría sobre todos los servicios mencionados."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Diseño y diseño de artes gráficas para crear páginas web en Internet; escritura por encargo de programas informáticos, software y códigos para la creación de páginas web en Internet; creación, mantenimiento y alojamiento de sitios web de terceros; diseño y desarrollo de hardware y software; servicios de proveedores de aplicaciones; software como servicio [SaaS]; puesta a disposición de motores de búsqueda para Internet; suministro de motores de búsqueda para obtener datos mediante redes de comunicación; servicios de asesoramiento informático para el análisis de datos; extracción de datos; investigación científica en el ámbito de medios sociales; información, asesoramiento y consultoría sobre todos los servicios mencionados."
+      },
+      {
+        "clase": "45",
+        "descripcion": "Servicios de presentaciones sociales, redes sociales y concertación de citas; servicios de encuentros, amistades, presentación y redes sociales en línea; servicios de encuentros por Internet; servicios de presentaciones sociales, redes sociales y concertación de citas en función de la ubicación; servicios de clubes de encuentros prestados por redes sociales; servicios de presentaciones sociales en línea, redes sociales y citas disponibles mediante aplicaciones móviles descargables; servicios de presentaciones sociales, redes sociales y concertación de citas prestados mediante aplicaciones de software para dispositivos electrónicos portátiles; agencias de presentaciones sociales; servicios de presentación personal en línea, servicios de presentación personal por Internet, servicios de citas, búsqueda de pareja y presentaciones personales por Internet; concesión de licencias de software y otras tecnologías; información, asesoramiento y consultoría sobre todos los servicios mencionados."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9, 38, 41, 42, 45"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "BADOO",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=0900000281678c34"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=3913825&fcoOp=EXTRA__Default",
+  "idProc": "3913825"
+}

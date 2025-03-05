@@ -1,0 +1,80 @@
+{
+  "idsic": "4271604",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073187",
+  "fechaPresentacion": "2022-07-05",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "1011",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "0943682",
+    "fechaRegistroInternacional": "2007-01-18"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "717581",
+          "fullName": "CANTALUPPI & PARTNERS S.R.L."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1038017",
+          "fullName": "SAFILO - SOCIETA' AZIONARIA  FABBRICA ITALIANA LAVORAZIONE OCCHIALI S.P.A.",
+          "direccion": "VII Strada, 15 - Zona Industriale I-35129 PADOVA    (IT)",
+          "codPais": "IT"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "72292765",
+          "nombre": "EDUARDO VARELA PEZZANO",
+          "direccion": "CARRERA 4 NO. 72 - 35",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Aparatos e instrumentos ópticos; gafas y gafas de sol; monturas, estuches, bisagras, patillas y lentes para gafas y gafas de sol; viseras protectoras, gemelos prismáticos, gafas de ventisca para esquiar, cascos protectores y gafas de protección; lentes de contacto y estuches para las mismas; partes y accesorios de gafas."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "ULTRAPOLAR",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817eada2"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4271604&fcoOp=EXTRA__Default",
+  "idProc": "4271604"
+}

@@ -1,0 +1,75 @@
+{
+  "idsic": "397394",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2006-06-21",
+  "numeroSolicitud": "06060115",
+  "fechaPresentacion": "2006-06-21",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2006-06-29",
+  "publicacionInfo": {
+    "numeroGaceta": "566",
+    "fechaPublicacion": "2006-07-31"
+  },
+  "certificadoInfo": {
+    "certificado": "609738",
+    "fechaRegistro": "2018-12-08",
+    "fechaRenovacion": "",
+    "vigencia": "2028-12-08"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1111993",
+          "identificacionOMPI": "",
+          "fullName": "ALDO GROUP INTERNATIONAL AG",
+          "direccion": "Schochenmuehlestrasse 6 BAAR ZUG 6340 (CH)",
+          "codPais": "CH"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "53907508",
+          "nombre": "MARIA CLAUDIA MARTINEZ BELTRAN",
+          "direccion": "Carrera 7 No. 71 - 21 Torre B Of 602",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "25",
+        "descripcion": "CALZADO PARA HOMBRES. MUJERES Y NIÑOS ES DECIR, ZAPATOS, BOTAS MOCASINES, CALZADO PARA CAMINAR, CALZADO PARA TROTAR, CALZADO ATLÉTICO. SANDALIAS Y ZAPATILLAS: ROPA PARA HOMBRES Y MUJERES, ES DECIR, ABRIGOS, CHAQUETAS, TRAJES PANTALONES, SUÉTERES, CAMISAS, CAMISETAS, LIGAS, BUFANDAS; ROPA DEPORTIVA PARA HOMBRES Y MUJERES, ES DECIR, CAMISAS EN ALGODÓN. PANTALONES EN ALGODÓN, CHAQUETAS EN ALGODÓN Y VESTIDOS EN ALGODÓN; ROPA IMPERMEABLE PARA HOMBRES Y MUJERES, ES DECIR, ABRIGOS. CHAQUETAS SOMBREROS Y SOMBRILLAS; ROPA PARA ESQUIAR, ES DECIR, CHAQUETAS SUÉTERES, BLUSAS, PANTALONES Y GAFAS PARA ESQUIAR; ROPA PARA DORMIR Y DE BAÑO, ES DECIR, FALDAS, PANTALONETAS, BATAS, ROPA DE MUJERES, BLUSAS Y ROPA INTERIOR, CALCETINES, SOMBREROS, MEDIA PANTALÓN; ROPA INTERIOR DE HOMBRE; ROPA PARA HOMBRES Y MUJERES EN CUERO Y ANTE, ES DECIR, ABRIGOS, CHAQUETAS, FALDAS PANTALONES, CINTURONES."
+      }
+    ],
+    "versionInfo": {
+      "version": "8",
+      "clases": "25"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "ALDO SPIRIT",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002801c2670"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=397394&fcoOp=EXTRA__Default",
+  "idProc": "397394"
+}

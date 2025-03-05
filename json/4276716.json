@@ -1,0 +1,75 @@
+{
+  "idsic": "4276716",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-23",
+  "numeroSolicitud": "SD2022/0074433",
+  "fechaPresentacion": "2022-07-23",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-11",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "744560",
+    "fechaRegistro": "2023-11-03",
+    "fechaRenovacion": "",
+    "vigencia": "2033-11-03"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1093763219",
+          "identificacionOMPI": "Fabian Andres",
+          "fullName": "FABIAN ANDRES ROMERO ACEVEDO",
+          "direccion": "Av 2AE # 6-08 Barrio Popular Cúcuta  CUCUTA NORTE DE SANTANDER  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1093763219",
+          "nombre": "FABIAN ANDRES  ROMERO ACEVEDO",
+          "direccion": "Av 2AE # 6-08 Barrio Popular Cúcuta",
+          "ciudad": "CUCUTA",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "39",
+        "descripcion": "Transporte; organización de viajes."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "39"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "VISIT CÚCUTA",
+  "reivindicacionDeColores": "PANTONE 207 CPANTONE BLACK 6 CPANTONE 000C",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817f09f5"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4276716&fcoOp=EXTRA__Default",
+  "idProc": "4276716"
+}

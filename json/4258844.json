@@ -1,0 +1,73 @@
+{
+  "idsic": "4258844",
+  "refClient": "TM16652CO45; TM17265CO42",
+  "estado": "Bajo Examen de Fondo",
+  "fechaRadicacion": "2022-07-12",
+  "numeroSolicitud": "SD2022/0070208",
+  "fechaPresentacion": "2022-07-12",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-09",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1134351",
+          "identificacionOMPI": "",
+          "fullName": "STARA S/A INDÚSTRIA DE IMPLEMENTOS AGRÍCOLAS",
+          "direccion": "Av. Stara, 519, Não-Me-Toque, RS, Brazil, zip code: 99470-000 NAO ME TOQUE RIO GRANDE DO SUL  (BR)",
+          "codPais": "BR"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79339809",
+          "nombre": "JUAN CARLOS CUESTA QUINTERO",
+          "direccion": "CLL 72 # 10 -07 OFC 603",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "42",
+        "descripcion": "Servicios de monitorización consistentes en proporcionar un servicio de acceso remoto en la agricultura que conecta la máquina, en tiempo real, con el técnico de postventa en la fábrica."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "CONECTA STARA",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4258844&fcoOp=EXTRA__Default",
+  "idProc": "4258844"
+}

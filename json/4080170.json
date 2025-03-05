@@ -1,0 +1,100 @@
+{
+  "idsic": "4080170",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-03-17",
+  "numeroSolicitud": "SD2022/0025774",
+  "fechaPresentacion": "2021-08-20",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "1015",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2024-03-22",
+    "fechaRenovacion": "2031-08-20",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1650270",
+    "fechaRegistroInternacional": "2021-08-20"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1394446",
+          "fullName": "LUTHER RECHTSANWALTSGESELLSCHAFT MBH"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1394445",
+          "fullName": "SPINDEL- UND LAGERUNGSTECHNIK FRAUREUTH GMBH",
+          "direccion": "Fabrikgelände 5 08427 Fraureuth    (DE)",
+          "codPais": "DE"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "80421942",
+          "nombre": "MAURICIO JARAMILLO CAMPUZANO",
+          "direccion": "Calle 67 No. 7-35 Of 1204",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ALEMANIA",
+      "fechaDePrioridad": "2021-02-22",
+      "numeroDePrioridad": "30 2021 003 611",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "4",
+        "descripcion": "Lubricantes y grasas, ceras y líquidos industriales; lubricantes; aceites lubricantes [lubricantes industriales]; lubricantes para máquinas; aceites y grasas para uso industrial; aceites lubricantes; aceites para uso técnico; aceites lubricantes; aceites para rodamientos de rodillos; grasas lubricantes; grasas técnicas; grasas lubricantes; grasas para rodamientos de rodillos; lubricantes sólidos para uso industrial; lubricantes sólidos para rodamientos de rodillos."
+      },
+      {
+        "clase": "9",
+        "descripcion": "Dispositivos de medición para rodamientos de rodillos y husillos."
+      },
+      {
+        "clase": "37",
+        "descripcion": "Instalación de máquinas y sus partes; instalación de cojinetes; limpieza, reparación y mantenimiento de máquinas y sus partes; limpieza, reparación y mantenimiento de cojinetes; reacondicionamiento de husillos; reparación de husillos; mantenimiento de husillos; reparación de husillos; servicios de husillo, a saber, limpieza, reparación, instalación y mantenimiento de husillos; reparación y cuidado (mantenimiento) de unidades de husillo; reacondicionamiento de rodamientos de rodillos; reparación de rodamientos de rodillos; cuidado (mantenimiento) de rodamientos de rodillos; reparación de rodamientos de rodillos; servicios de rodamientos de rodillos, a saber, limpieza, reparación, instalación y mantenimiento de rodamientos de rodillos; reparación y cuidado (mantenimiento) de unidades de rodamientos de rodillos; reconstrucción de husillos; reparación de máquinas y partes de máquinas; reparación de husillos, rodamientos, manguitos, carcasas, juntas, anillos y otras partes de máquinas; servicios de consultoría en relación con la reparación e instalación de rodamientos de rodillos para maquinarias; servicios de consultoría en relación con la reparación e instalación de husillos para máquinas."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Servicios científicos y tecnológicos; servicios de ingeniería; consultoría técnica sobre el desarrollo de productos; desarrollo técnico de rodamientos para máquinas para terceros; desarrollo técnico de husillos para máquinas para terceros; servicios de desarrollo industrial; servicios de desarrollo de productos; servicios de ingeniería relacionados con la reparación, el reacondicionamiento y el uso de cojinetes para máquinas para terceros; servicios de ingeniería relativos a la reparación, el reacondicionamiento y el uso de husillos para máquinas para terceros; consultoría sobre ingeniería; servicios de consultoría tecnológica sobre el uso de rodamientos de rodillos para maquinarias; servicios de consultoría tecnológica sobre el uso de husillos para máquinas; desarrollo de hardware; desarrollo de sistemas informáticos; desarrollo de software informático; diseño de bases de datos informáticas; diseño y desarrollo de hardware y software informáticos, en particular para el cálculo, el dimensionamiento y el desarrollo de rodamientos de rodillos y husillos."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "4, 9, 37, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "FRAUREUTH.SLF",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002816c8163"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4080170&fcoOp=EXTRA__Default",
+  "idProc": "4080170"
+}

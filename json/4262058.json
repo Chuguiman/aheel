@@ -1,0 +1,88 @@
+{
+  "idsic": "4262058",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071050",
+  "fechaPresentacion": "2022-06-17",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-07-13",
+    "fechaRenovacion": "2032-06-17",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672283",
+    "fechaRegistroInternacional": "2022-06-17"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1460736",
+          "fullName": "YIWU XUJIE TRADEMARK OFFICE CO., LTD."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1460734",
+          "fullName": "ZHEJIANG HENGBA ELECTRONIC TECHNOLOGY CO., LTD.",
+          "direccion": "Fotang Town Industrial Zone, Yiwu 322000 Zhejiang    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "YIWU XUJIE TRADEMARK OFFICE CO., LTD.",
+          "direccion": "Room 301, No. 178 Zongze Road, Houcheng street, Yiwu City Zhejiang Province",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "CHINA",
+      "fechaDePrioridad": "2022-01-27",
+      "numeroDePrioridad": "62428537",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Baterías eléctricas; cajas de acumuladores; cargadores de baterías; baterías solares; baterías recargables; pilas secas; dispositivos de carga de baterías; plomo de baterías."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "HICELL",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df730"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262058&fcoOp=EXTRA__Default",
+  "idProc": "4262058"
+}

@@ -1,0 +1,84 @@
+{
+  "idsic": "4271593",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073176",
+  "fechaPresentacion": "2022-04-21",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2024-10-17",
+    "fechaRenovacion": "2032-04-21",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1673941",
+    "fechaRegistroInternacional": "2022-04-21"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1214368",
+          "fullName": "CYNTHIA JOHNSON WALDEN"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1443247",
+          "fullName": "AMYLYX PHARMACEUTICALS, INC.",
+          "direccion": "43 Thorndike Street Cambridge MA 02141    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79159313",
+          "nombre": "JUAN CARLOS URIBE RESTREPO",
+          "direccion": "CALLE 93B No. 12-48 PISO 4",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "5",
+        "descripcion": "Preparaciones farmacéuticas para el tratamiento de enfermedades neurológicas y enfermedades neurodegenerativas."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Investigación y desarrollo farmacéuticos; desarrollo de fármacos; pruebas de productos farmacéuticos."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "5, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "AMYLYX",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817ead93"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4271593&fcoOp=EXTRA__Default",
+  "idProc": "4271593"
+}

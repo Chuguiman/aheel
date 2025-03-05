@@ -1,0 +1,73 @@
+{
+  "idsic": "4289550",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-31",
+  "numeroSolicitud": "SD2022/0077299",
+  "fechaPresentacion": "2022-07-31",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-12",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "723913",
+    "fechaRegistro": "2022-12-09",
+    "fechaRenovacion": "",
+    "vigencia": "2032-12-09"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1134648",
+          "identificacionOMPI": "",
+          "fullName": "PRODUCTOS DOLORES, S.A. DE C.V.",
+          "direccion": "Avenida Puerto Mazatlán No. 406-B, Parque Industrial Alfredo V. Bonfil MAZATLAN SINALOA  (MX)",
+          "codPais": "MX"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "93400379",
+          "nombre": "DIEGO FERNANDO HERNANDEZ QUINTERO",
+          "direccion": "CALLE+13+NO.8-23+OF.+318",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "29",
+        "descripcion": "ATUN ENLATADO."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "29"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "DOLORES",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "DOLORES",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4289550&fcoOp=EXTRA__Default",
+  "idProc": "4289550"
+}

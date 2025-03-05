@@ -1,0 +1,92 @@
+{
+  "idsic": "4262004",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0070996",
+  "fechaPresentacion": "2021-12-20",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "1031",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2024-01-25",
+    "fechaRenovacion": "2031-12-20",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671334",
+    "fechaRegistroInternacional": "2021-12-20"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1279456",
+          "fullName": "POTTER CLARKSON A/S"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1423168",
+          "fullName": "G-CORE INNOVATIONS S.À.R.L",
+          "direccion": "2-4, rue Edmond Reuter L-5326 Contern    (LU)",
+          "codPais": "LU"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "17192062",
+          "nombre": "HUMBERTO RUBIO CAMACHO",
+          "direccion": "Carrera 53 No. 103 B 42 Oficinas 602/605",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "111111",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Software; software de acceso, actualización, manipulación, modificación, organización, almacenamiento, respaldo, sincronización, transmisión e intercambio de datos, documentos, archivos, información y contenidos multimedia por una red informática mundial; software de aplicación (en la nube) descargable y grabado para el suministro de un sistema de red social que incluye servicios de transmisión secuencial de música, transmisión secuencial de películas, transmisión secuencial de vídeos, servicios de sistemas de nombres de dominio (DNS) gestionados, software de ciberseguridad informática; software grabado y descargable de ciberseguridad y pruebas de software."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Gestión de bases de datos; Servicios de evaluación de riesgos comerciales en relación con la ciberseguridad."
+      },
+      {
+        "clase": "38",
+        "descripcion": "Suministro de acceso a Internet que permite a los usuarios de ordenadores acceder, actualizar, manipular, modificar, organizar, almacenar, crear copias de seguridad, sincronizar, transmitir y compartir datos, documentos, archivos, información y contenidos multimedia por una red informática mundial; transmisión en secuencias de material de audio, visual y audiovisual mediante una red informática mundial."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Consultoría sobre software; servicios de programación informática; consultoría sobre redes y aplicaciones de informática en la nube; Servicios de diseño y desarrollo de software; alojamiento de software y aplicaciones de software para terceros; informática en la nube; servicios de almacenamiento en la nube de archivos y datos electrónicos; servicios de proveedores públicos y privados de alojamiento en la nube; servicios científicos y tecnológicos, así como servicios de investigación y diseño conexos; diseño y desarrollo de hardware informático, servicios informáticos en la nube de software; servicios de ASP (proveedor de servicios de aplicación); servicios de proveedores de servicios de aplicaciones (ASP) con software para ser utilizado en sistemas de nombres de dominio (DNS) y la gestión de nombres de dominio; alojamiento de software para ser utilizado en DNS; mantenimiento de software de bases de datos; servicios de seguridad informática [diseño y desarrollo de hardware, software y sistemas, todos en relación con servicios de ciberseguridad]; servicios de asesoramiento sobre software de ciberseguridad; consultoría sobre ciberseguridad; almacenamiento electrónico de archivos y documentos."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9, 35, 38, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "G CORE",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df6c2"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262004&fcoOp=EXTRA__Default",
+  "idProc": "4262004"
+}

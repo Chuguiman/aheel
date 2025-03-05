@@ -1,0 +1,96 @@
+{
+  "idsic": "4262102",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071094",
+  "fechaPresentacion": "2022-06-16",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "981",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1662449",
+    "fechaRegistroInternacional": "2022-01-05"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1362380",
+          "fullName": "LAURA M. KONKEL MICHAEL BEST & FRIEDRICH LLP"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1351041",
+          "fullName": "1-800 CONTACTS, INC.",
+          "direccion": "261 West Data Drive Draper UT 84020    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "LAURA M. KONKEL MICHAEL BEST & FRIEDRICH LLP",
+          "direccion": "790 N. Water Street, Suite 2500 Milwaukee WI 53202",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "US",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2021-12-17",
+      "numeroDePrioridad": "97176860",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Software descargable para asistir a minoristas y marcas en la venta de sus productos mediante el suministro de guarniciones virtuales para que los usuarios puedan probar productos, y recomendaciones de productos mediante sugerencias a los usuarios, y con software de realidad aumentada para guarniciones de productos virtuales para que los usuarios puedan probar productos; software descargable que permite a los usuarios probarse virtualmente artículos de óptica para la vista antes de su selección y compra; software descargable para medir y evaluar la agudeza visual; software descargable para medir y evaluar anomalías de la visión; software descargable para medir y evaluar los errores de refracción de los ojos; software descargable para medir y evaluar la distancia entre pupilas; software descargable para ser utilizado en la realización de exámenes oculares; software descargable para extraer; o leer parámetros visuales de gafas, lentes ópticas, aparatos ópticos e instrumentos ópticos; software descargable para determinar la potencia de las lentes ópticas, software descargable para determinar los parámetros de las lentes ópticas; Software descargable para la renovación de recetas de lentes de contacto; software descargable para la compra de artículos de óptica para la vista, lentes de contacto y productos conexos; software descargable de gestión empresarial; software descargable de gestión de consultas para profesionales del cuidado de los ojos y de la óptica; software descargable para la gestión de inventarios; software descargable para la gestión de pedidos; software descargable para la gestión de recetas; software descargable para la gestión y visualización de registros de clientes y pacientes; software descargable para la programación de citas; software descargable para hacer pagos; software descargable de facturación; software descargable para el análisis de datos comerciales; software descargable para análisis de negocios, clientes y pacientes; software descargable para realizar citas de telemedicina; software descargable para ser utilizado en la gestión de las relaciones con los clientes y los pacientes; software descargable para la comunicación, el compromiso y la gestión de clientes y pacientes; artículos de óptica para la vista; gafas ópticas; gafas; gafas de sol; lentes de contacto; sistemas de quioscos informáticos interactivos compuestos esencialmente de ordenadores, hardware informático, periféricos informáticos y pantallas táctiles de ordenador utilizados para probarse virtualmente artículos de óptica para la vista, medir y evaluar la agudeza visual, medir y evaluar anomalías de la visión, medir y evaluar errores de refracción de los ojos, medir y evaluar la distancia de la pupila, realizar exámenes oculares, extraer o leer parámetros visuales de gafas, determinar la potencia de lentes ópticas, determinar los parámetros de lentes ópticas, renovar y recetar artículos de óptica para la vista y lentes de contacto, comprobar el seguro relacionado con la vista y vender artículos de óptica para la vista, lentes de contacto y productos conexos."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Servicios minoristas que proponen artículos de óptica para la vista, lentes de contacto y productos conexos; servicios de distribución comercial en los ámbitos de los artículos de óptica para la vista, lentes de contacto y productos conexos; servicios de pruebas virtuales; suministro de recomendaciones de artículos de óptica para la vista a consumidores basadas en una evaluación digital virtual de la forma y las características faciales."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Suministro de software en línea no descargable para asistir a minoristas y marcas en la venta de sus productos mediante el suministro de guarniciones virtuales para que los usuarios puedan probar productos, y recomendaciones de productos mediante sugerencias a los usuarios, y con software de realidad aumentada para guarniciones de productos virtuales para que los usuarios puedan probar productos; suministro de software en línea no descargable que permite a los usuarios probarse virtualmente artículos de óptica para la vista antes de su selección y compra; suministro de software en línea no descargable para medir y evaluar la agudeza visual; suministro de software en línea no descargable para medir y evaluar anomalías de la visión; suministro de software en línea no descargable para medir y evaluar los errores de refracción de los ojos; suministro de software en línea no descargable para medir y evaluar la distancia de la pupila; suministro de software en línea no descargable para ser utilizado en la realización de exámenes oculares; suministro de software en línea no descargable para extraer o leer parámetros visuales de gafas, lentes ópticas, aparatos ópticos e instrumentos ópticos; suministro de software en línea no descargable para determinar la potencia de lentes ópticas; suministro de software en línea no descargable para determinar los parámetros de lentes ópticas; suministro de software en línea no descargable para renovar recetas de lentes de contacto; suministro de software en línea no descargable para comprar artículos de óptica para la vista, lentes de contacto y productos conexos; suministro en línea de software no descargable de gestión de negocios; suministro de software en línea no descargable de gestión de consultas para profesionales del cuidado de los ojos y de la óptica; suministro de software en línea no descargable para la gestión de inventarios; suministro de software en línea no descargable para la gestión de pedidos; suministro de software en línea no descargable para la gestión de recetas; suministro de software en línea no descargable para la gestión y visualización de registros de clientes y pacientes; suministro de software en línea no descargable para la programación de citas; suministro de software en línea no descargable para realización de pagos; suministro de software en línea no descargable de facturación; suministro de software en línea no descargable para el análisis de datos comerciales; suministro de software en línea no descargable para el análisis de negocios, clientes y pacientes; suministro de software en línea no descargable para la realización de citas de telemedicina; suministro de software en línea no descargable para ser utilizado en la gestión de las relaciones con los clientes y los pacientes; suministro de software en línea no descargable para la comunicación, el compromiso y la gestión de clientes y pacientes; creación de entornos virtuales en línea para pruebas virtuales."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9, 35, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "LUNA",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df836"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262102&fcoOp=EXTRA__Default",
+  "idProc": "4262102"
+}

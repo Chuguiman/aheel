@@ -1,0 +1,75 @@
+{
+  "idsic": "4269741",
+  "refClient": "Proceso de Registro de Marca PLUMA BLANCA",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-19",
+  "numeroSolicitud": "SD2022/0073038",
+  "fechaPresentacion": "2022-07-19",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-19",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "765363",
+    "fechaRegistro": "2024-10-04",
+    "fechaRenovacion": "",
+    "vigencia": "2034-10-04"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "901440947",
+          "identificacionOMPI": "",
+          "fullName": "INDUSTRIAS ALDIX S.A.S",
+          "direccion": "CALLE 94 # 129-93 KM VIA BOQUERON MEDELLIN ANTIOQUIA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "8259995",
+          "nombre": "RODRIGO  VANEGAS GAVIRIA",
+          "direccion": "CALLE 52 # 47-28 OF.329",
+          "ciudad": "MEDELLIN",
+          "codigoPostal": "050001",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "3",
+        "descripcion": "Preparaciones blanqueadoras; productos blanqueadores para lavar la ropa; productos blanqueadores para uso doméstico; sustancias blanqueadoras para uso en la limpieza doméstica; agentes y preparaciones de limpieza; geles de limpieza de inodoros; paños de limpieza impregnados con detergente; preparaciones de limpieza para azulejos; preparaciones de limpieza para cristales; preparaciones de limpieza para el baño; preparaciones de limpieza para el hogar; preparaciones de limpieza para uso doméstico; preparaciones de limpieza para uso en los inodoros; productos de limpieza; detergentes para uso doméstico con propiedades desinfectantes."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "3"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "PLUMA BLANCA",
+  "reivindicacionDeColores": "Azul #004E9EAmarillo #ffed00Blanco",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817e9f03"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4269741&fcoOp=EXTRA__Default",
+  "idProc": "4269741"
+}

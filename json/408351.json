@@ -1,0 +1,75 @@
+{
+  "idsic": "408351",
+  "refClient": "",
+  "estado": "Caducado",
+  "fechaRadicacion": "2008-07-01",
+  "numeroSolicitud": "08066991",
+  "fechaPresentacion": "2008-07-01",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2008-08-25",
+  "publicacionInfo": {
+    "numeroGaceta": "596",
+    "fechaPublicacion": "2008-09-30"
+  },
+  "certificadoInfo": {
+    "certificado": "580183",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": "2019-05-27"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "900215669",
+          "identificacionOMPI": "",
+          "fullName": "FRANCESSK BELLEZA A FLOR DE PIEL EU",
+          "direccion": "CARRERA 32 NO. 21 A - 32 PASTO NARIÑO  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "13069543",
+          "nombre": "JUAN PABLO MORÁN MAYA",
+          "direccion": "CRA. 32 NO. 21 A 32",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "3",
+        "descripcion": "PERFUMERÍA, ACEITES ESENCIALES, COSMÉTICOS, LOCIONES PARA EL CABELLO."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "3"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "FRANCESCA BELLEZA A FLOR DE PIEL",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=090000028018f926"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=408351&fcoOp=EXTRA__Default",
+  "idProc": "408351"
+}

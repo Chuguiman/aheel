@@ -1,0 +1,96 @@
+{
+  "idsic": "4043765",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-02-24",
+  "numeroSolicitud": "SD2022/0017169",
+  "fechaPresentacion": "2021-08-13",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "1010",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-11-22",
+    "fechaRenovacion": "2031-08-13",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1646240",
+    "fechaRegistroInternacional": "2021-08-13"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1401161",
+          "fullName": "LKGLOBAL | LORENZ & KOPF  PARTG MBB PATENTANWÄLTE"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1401152",
+          "fullName": "HAELTHY GROUP B.V.",
+          "direccion": "Keizersveld 50K,  Kamer 0.10 NL-5803 AN Venray    (NL)",
+          "codPais": "NL"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "39773330",
+          "nombre": "XIMENA CASTELLANOS ABONDANO",
+          "direccion": "Calle 117 No. 5A - 35 piso 3",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ALEMANIA",
+      "fechaDePrioridad": "2021-04-14",
+      "numeroDePrioridad": "30 2021 106 530",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "30",
+        "descripcion": "Café; té; cacao; sucedáneos del café; arroz; pastas alimenticias; fideos; tapioca; sagú; harinas; preparaciones a base de cereales; pan; masa para productos de pastelería; chocolate; helados; sorbetes (helados); azúcar; miel; jarabe de melaza; levadura; polvos de hornear; sal; condimentos; especias; hierbas en conserva; vinagre; salsas; otros condimentos; helados [helados de agua]; mostaza."
+      },
+      {
+        "clase": "31",
+        "descripcion": "Productos agrícolas, hortícolas, acuícolas y forestales en bruto y sin transformar; semillas y semillas de siembra en bruto y sin procesar; frutas frescas; hortalizas frescas; hierbas frescas; plantas naturales; flores naturales; bulbos para plantar; plantones para plantar; semillas para sembrar; animales vivos; productos alimenticios para animales; bebidas para animales; malta."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Servicios de venta mayorista y minorista relacionados con productos alimenticios y productos alimenticios orgánicos; Servicios de venta mayorista y minorista relacionados con miel, azúcar, harinas, arroz, preparaciones a base de cereales, pasta, productos de pastelería, helados cremosos, especias, en especial producidos orgánicamente, jarabe de melaza, levadura, polvos de hornear; sal, mostaza, vinagre, salsas [condimentos], café, té, cacao, pan, productos de pastelería, sal, aguas minerales y otros productos para beber sin alcohol, bebidas de frutas y zumos de frutas, siropes y otras preparaciones para hacer productos para beber; los servicios de venta mayorista y minorista antes mencionados, excepto servicios de venta mayorista y minorista relacionados con caramelos que no sean para uso médico, en particular caramelos de deporte, caramelos energéticos y caramelos de frutas (en todas sus formas, tales como caramelos duros, caramelos blandos, caramelos (toffee), pastillas, grageas, comprimidos, caramelos de goma, dextrosa, etc.), caramelos para la garganta y la tos, caramelos con vitaminas, caramelos con suplementos alimenticios, bebidas energéticas y para deportistas, bebidas dietéticas, suplementos alimenticios, polvos instantáneos para hacer productos para beber."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "30, 31, 35"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "HAELTHY",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=0900000281696149"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4043765&fcoOp=EXTRA__Default",
+  "idProc": "4043765"
+}

@@ -1,0 +1,79 @@
+{
+  "idsic": "4268825",
+  "refClient": "",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-19",
+  "numeroSolicitud": "SD2022/0072600",
+  "fechaPresentacion": "2022-07-19",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-18",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1001227484",
+          "identificacionOMPI": "MANUEL ALEJANDRO",
+          "fullName": "MANUEL ALEJANDRO MARQUEZ OSPINA",
+          "direccion": "CR 77AA NO 45 80 IN 1303 MEDELLIN ANTIOQUIA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1001227484",
+          "nombre": "MANUEL ALEJANDRO  MARQUEZ OSPINA",
+          "direccion": "CR 77AA NO 45 80 IN 1303",
+          "ciudad": "MEDELLIN",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "Comercialización; comercialización de productos; comercialización de productos para terceros; servicios de comercialización; servicios de presentación de productos de comercialización para fines comerciales."
+      },
+      {
+        "clase": "44",
+        "descripcion": "Planificación y supervisión de dietas para adelgazar; servicios de asesoramiento relacionados con la dieta; asesoramiento en nutrición; asesoramiento sobre dietética y nutrición; asesoramiento sobre nutrición; consultoría en nutrición; consultoría en nutrición y dietética; facilitación de información relativa a la nutrición; servicios de asesoramiento sobre dietética y nutrición; servicios de bienestar en cuanto asesoramiento en salud y nutrición; servicios de consultoría en dietética y nutrición; servicios de consultoría en nutrición y dietética; suministro de información en materia de orientación en dietética y nutrición; consultoría sobre salud mental y bienestar; suministro de información sobre complementos dietéticos y nutricionales."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "35, 44"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "SABBER COMER",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817e9669"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4268825&fcoOp=EXTRA__Default",
+  "idProc": "4268825"
+}

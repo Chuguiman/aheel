@@ -1,0 +1,73 @@
+{
+  "idsic": "394853",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2003-10-24",
+  "numeroSolicitud": "03094944",
+  "fechaPresentacion": "2003-10-24",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2003-11-25",
+  "publicacionInfo": {
+    "numeroGaceta": "535",
+    "fechaPublicacion": "2003-12-30"
+  },
+  "certificadoInfo": {
+    "certificado": "607550",
+    "fechaRegistro": "2018-11-10",
+    "fechaRenovacion": "",
+    "vigencia": "2028-11-10"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "24678",
+          "identificacionOMPI": "FRANCISCO",
+          "fullName": "FRANCISCO ESLAVA ESLAVA",
+          "direccion": "\tCRA 33 # 14-96 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "21067863",
+          "nombre": "MARIA DEL CONSUELO ZARAMA URDANETA",
+          "direccion": "CALLE 76 N 8-56",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "7",
+        "descripcion": "MAQUINAS Y MAQUINAS HERRAMIENTAS, APARATOS PARA TODA CLASE DE INDUSTRIAS, PARTES, REPUESTOS Y ACCESORIOS PARA LOS MISMOS, NO INCLUIDOS EN OTRAS CLASES; MAQUINAS ROTATIVAS PARA FILTROS, FILTROS DE PRESION PARA MAQUINAS ESPECIALMENTE FILTROS  DE  AIRE,  COMBUSTIBLE, ACEITE, QUE SEAN ELEMENTOS DE SISTEMA DE ENGRASE DE MOTORES DE COMBUSTION INTERNA O SEAN FILTROS PARA ACEITE Y COMBUSTIBLE DE VEHICULOS MOTORES Y MAQUINARIA AGRICOLA E INDUSTRIAL; FILTROS PARA LA LIMPIEZA DEL AIRE DE ENFRIAMIENTO PARA LOS MOTORES, NO INCLUIDOS EN OTRAS CLASES."
+      }
+    ],
+    "versionInfo": {
+      "version": "8",
+      "clases": "7"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "SPIN-ON",
+  "reivindicacionDeColores": "No",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=394853&fcoOp=EXTRA__Default",
+  "idProc": "394853"
+}

@@ -1,0 +1,79 @@
+{
+  "idsic": "4257120",
+  "refClient": "Solicitud de registro de la marca comercial BELLAHAIR (Mixta) en las clases 8 y 11",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-15",
+  "numeroSolicitud": "SD2022/0071625",
+  "fechaPresentacion": "2022-07-15",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-09",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "15205760",
+          "identificacionOMPI": "GHASSAN OMAR",
+          "fullName": "GHASSAN OMAR FAKIH",
+          "direccion": "Carrera 10 No. 12-12 MAICAO GUAJIRA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "52747714",
+          "nombre": "GINNA CATHERINE SIERRA PEÑA",
+          "direccion": "Diagonal  15 A  99 - 34  T  9 - 603",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "8",
+        "descripcion": "Alicates para uñas; aparatos de depilación eléctricos o no; aparatos de depilación eléctricos o no eléctricos para el cuidado cosmético de las cejas; cortacallos; cortadoras de cabello eléctricas y a pilas; cortadoras de cabello de accionamiento manual; cortamechas; cortapelos; cortapelos, eléctricos o a pilas; cortapelos eléctricos o no; cortaúñas eléctricos; cortauñas de bebés; cortaúñas; cortaúñas eléctricos o no; cortauñas no eléctricos; esquiladoras [instrumentos de mano]; estuches de manicura; estuches de pedicura; estuches especialmente diseñados para planchas eléctricas para rizar el cabello; estuches para navajas y maquinillas de afeitar; herramientas abrasivas de accionamiento manual; herramientas de corte; herramientas de corte de accionamiento manual; herramientas de corte para lechada, mortero o cemento [herramientas de mano]; herramientas de pedicura; hojas de afeitar; hojas de tijeras; hojas [herramientas de mano]; instrumentos de afilar; instrumentos de manicura; instrumentos de mano accionados manualmente; instrumentos de mano de aseo personal y arte corporal; instrumentos de mano eléctricos de aseo personal y arte corporal; instrumentos de mano eléctricos y no eléctricos de aseo personal y arte corporal; instrumentos de piercing para la lengua; instrumentos de piercing para las cejas; instrumentos de piercing para las orejas; limadoras de uñas con baterías para animales; lijadoras accionadas manualmente; limas de cartón; limas de esmeril; limas de mano; limas de pedicura y manicura; limas de uñas; limas de uñas [eléctricas]; limas para callos; limas para los pies [instrumentos de pedicura]; maquinillas de afeitar; máquinas cosméticas de tatuaje; maquinillas de afeitar eléctricas; maquinillas de afeitar desechables; maquinillas eléctricas o no para cortar el cabello; maquinillas para cortar la barba; maquinillas para recortar el bigote y la barba; navajas; navajas de afeitar; neceseres de afeitar; perforadoras [herramientas de mano]; pinzas de depilar; pinzas pequeñas; planchas eléctricas de mano para peinar el cabello; planchas eléctricas para ondular el cabello; planchas eléctricas para planchar la ropa; planchas eléctricas para rizar el cabello; planchas enfriadoras del cabello para el acondicionamiento del cabello; planchas no eléctricas para ondular el cabello; rizadores; rizadores de pestañas; rizadores de pestañas eléctricos; rizadores no eléctricos; tijeras; tijeras de uñas; tiradores de espinillas, accionados manualmente."
+      },
+      {
+        "clase": "11",
+        "descripcion": "Aparatos de calefacción, producción de vapor, secado, secadores de cabello eléctricos; secadores de cabello eléctricos de mano; secadores de casco para el cabello; secadores de pelo; secadores de pelo para salones de belleza."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "8, 11"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "BELLAHAIR",
+  "reivindicacionDeColores": "CMYK 27/ 100/78/29/, RGB 146/ 24/ 39/ , HEX #921827; NEGRO CMYK0/0/0/100, RGB 29/29/27, HEX #1d1d1b; CMYK 24/ 84/53/18/, RGB 169/61/ 79/.",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=0900000281855168"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4257120&fcoOp=EXTRA__Default",
+  "idProc": "4257120"
+}

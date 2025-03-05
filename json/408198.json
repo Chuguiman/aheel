@@ -1,0 +1,73 @@
+{
+  "idsic": "408198",
+  "refClient": "",
+  "estado": "Caducado",
+  "fechaRadicacion": "2008-06-27",
+  "numeroSolicitud": "08066366",
+  "fechaPresentacion": "2008-06-27",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2008-08-13",
+  "publicacionInfo": {
+    "numeroGaceta": "596",
+    "fechaPublicacion": "2008-09-30"
+  },
+  "certificadoInfo": {
+    "certificado": "580181",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": "2019-05-21"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "805022672",
+          "identificacionOMPI": "",
+          "fullName": "ALLIANCE MANAGEMENT SOLUTIONS & CO. EU",
+          "direccion": "CRA. 73 NO. 13A-221 CALI VALLE DEL CAUCA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "19090572",
+          "nombre": "LUIS CARLOS URQUIJO ILLERA",
+          "direccion": "CARRERA 7 No. 17-01 OFC. 711",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "5",
+        "descripcion": "PRODUCTOS FARMACÉUTICOS, VETERINARIOS E HIGIÉNICOS, SUSTANCIAS DIETÉTICAS PARA USO MÉDICO, SUPLEMENTOS DIETARIOS, ALIMENTOS PARA BEBE; EMPLASTOS, MATERIAL PARA CURAS (APÓSITOS); MATERIAS PARA EMPASTAR LOS DIENTES Y PARA MOLDES DENTALES; DESINFECTANTES; PRODUCTOS PARA LA DESTRUCCIÓN DE LOS ANIMALES DAÑINOS; FUNGICIDAS, HERBICIDAS."
+      }
+    ],
+    "versionInfo": {
+      "version": "9",
+      "clases": "5"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "NOXARIN",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=408198&fcoOp=EXTRA__Default",
+  "idProc": "408198"
+}

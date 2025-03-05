@@ -1,0 +1,251 @@
+{
+  "idsic": "4074024",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-02-22",
+  "numeroSolicitud": "SD2022/0024344",
+  "fechaPresentacion": "2022-02-22",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "SD Solicitud de Signos Distintivos",
+  "publicacionInfo": {
+    "numeroGaceta": "",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "707263",
+    "fechaRegistro": "2022-05-23",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "64739",
+          "identificacionOMPI": "",
+          "fullName": "FIDUCIARÍA COLOMBIANA DE COMERCIO EXTERIOR S.A. - FIDUCOLDEX - ACTUANDO COMO VOCERA DEL FIDEICOMISO DE PROMOCIÓN DE EXPORTACIONES PROCOLOMBIA",
+          "direccion": "Calle 28 No.13A - 24 Piso 6 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "51780128",
+          "nombre": "ELIZABETH CADENA FERNÁNDEZ",
+          "direccion": "Calle 28 No.13A - 24",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "1",
+        "descripcion": "Marca País - Decisión 876 de 2021. Productos químicos para la industria, la ciencia y la fotografía, así como para la agricultura, la horticultura y la silvicultura; resinas artificiales en bruto, materias plásticas en bruto; abonos para el suelo; composiciones extintoras; preparaciones para templar y soldar metales; productos químicos para conservar alimentos; materias curtientes; adhesivos (pegamentos) para la industria."
+      },
+      {
+        "clase": "2",
+        "descripcion": "Marca País - Decisión 876 de 2021. Pinturas, barnices, lacas; productos contra la herrumbre y el deterioro de la madera; materias tintóreas; mordientes; resinas naturales en bruto; metales en hojas y en polvo para la pintura, la decoración, la imprenta y trabajos artísticos."
+      },
+      {
+        "clase": "3",
+        "descripcion": "Marca País - Decisión 876 de 2021. Preparaciones para blanquear y otras sustancias para lavar la ropa; preparaciones para limpiar, pulir, desengrasar y raspar; jabones no medicinales; productos de perfumería, aceites esenciales, cosméticos no medicinales, lociones capilares no medicinales; dentífricos no medicinales."
+      },
+      {
+        "clase": "4",
+        "descripcion": "Marca País - Decisión 876 de 2021. Aceites y grasas para uso industrial; lubricantes; composiciones para absorber, rociar y asentar el polvo; combustibles (incluida la gasolina para motores) y materiales de alumbrado; velas y mechas de iluminación."
+      },
+      {
+        "clase": "5",
+        "descripcion": "Marca País - Decisión 876 de 2021. Productos farmacéuticos, preparaciones para uso médico y veterinario; productos higiénicos y sanitarios para uso médico; alimentos y sustancias dietéticas para uso médico o veterinario, alimentos para bebés; complementos alimenticios para personas o animales; emplastos, material para apósitos; material para empastes e improntas dentales; desinfectantes; productos para eliminar animales dañinos; fungicidas, herbicidas."
+      },
+      {
+        "clase": "6",
+        "descripcion": "Marca País - Decisión 876 de 2021. Metales comunes y sus aleaciones, minerales metalíferos; materiales de construcción y edificación metálicos; construcciones transportables metálicas; cables e hilos metálicos no eléctricos; pequeños artículos de ferretería metálicos; recipientes metálicos de almacenamiento y transporte; cajas de caudales."
+      },
+      {
+        "clase": "7",
+        "descripcion": "Marca País - Decisión 876 de 2021. Máquinas y máquinas herramientas; motores (excepto motores para vehículos terrestres); acoplamientos y elementos de transmisión (excepto para vehículos terrestres); instrumentos agrícolas que no sean accionados manualmente; incubadoras de huevos; distribuidores automáticos."
+      },
+      {
+        "clase": "8",
+        "descripcion": "Marca País - Decisión 876 de 2021. Herramientas e instrumentos de mano accionados manualmente; artículos de cuchillería, tenedores y cucharas; armas blancas; maquinillas de afeitar."
+      },
+      {
+        "clase": "9",
+        "descripcion": "Marca País - Decisión 876 de 2021. Aparatos e instrumentos científicos, náuticos, geodésicos, fotográficos, cinematográficos, ópticos, de pesaje, de medición, de señalización, de control (inspección), de salvamento y de enseñanza; aparatos e instrumentos de conducción, distribución, transformación, acumulación, regulación o control de la electricidad; aparatos de grabación, transmisión o reproducción de sonido o imágenes; soportes de registro magnéticos, discos acústicos; discos compactos, DVD y otros soportes de grabación digitales; mecanismos para aparatos de previo pago; cajas registradoras, máquinas de calcular, equipos de procesamiento de datos, ordenadores; software; extintores."
+      },
+      {
+        "clase": "10",
+        "descripcion": "Marca País - Decisión 876 de 2021. Aparatos e instrumentos quirúrgicos, médicos, odontológicos y veterinarios; miembros, ojos y dientes artificiales; artículos ortopédicos; material de sutura; dispositivos terapéuticos y de asistencia para personas discapacitadas; aparatos de masaje; aparatos, dispositivos y artículos de puericultura; aparatos, dispositivos y artículos para actividades sexuales."
+      },
+      {
+        "clase": "11",
+        "descripcion": "Marca País - Decisión 876 de 2021. Aparatos de alumbrado, calefacción, producción de vapor, cocción, refrigeración, secado, ventilación y distribución de agua, así como instalaciones sanitarias."
+      },
+      {
+        "clase": "12",
+        "descripcion": "Marca País - Decisión 876 de 2021. Vehículos; aparatos de locomoción terrestre, aérea o acuática."
+      },
+      {
+        "clase": "13",
+        "descripcion": "Marca País - Decisión 876 de 2021. Armas de fuego; municiones y proyectiles; explosivos; fuegos artificiales."
+      },
+      {
+        "clase": "14",
+        "descripcion": "Marca País - Decisión 876 de 2021. Metales preciosos y sus aleaciones; artículos de joyería, piedras preciosas y semipreciosas; artículos de relojería e instrumentos cronométricos."
+      },
+      {
+        "clase": "15",
+        "descripcion": "Marca País - Decisión 876 de 2021. Instrumentos musicales; atriles para partituras y soportes para instrumentos musicales; batutas."
+      },
+      {
+        "clase": "16",
+        "descripcion": "Marca País - Decisión 876 de 2021. Papel y cartón; productos de imprenta; material de encuadernación; fotografías; artículos de papelería y artículos de oficina, excepto muebles; adhesivos (pegamentos) de papelería o para uso doméstico; material para artistas y material de dibujo; pinceles; material de instrucción y material didáctico; hojas, películas y bolsas de materias plásticas para embalar y empaquetar; caracteres de imprenta, clichés de imprenta."
+      },
+      {
+        "clase": "17",
+        "descripcion": "Marca País - Decisión 876 de 2021. Caucho, gutapercha, goma, amianto y mica en bruto o semielaborados, así como sucedáneos de estos materiales; materias plásticas y resinas semielaboradas; materiales para calafatear, estopar y aislar; tubos flexibles no metálicos."
+      },
+      {
+        "clase": "18",
+        "descripcion": "Marca País - Decisión 876 de 2021. Cuero y cuero de imitación; pieles de animales; artículos de equipaje y bolsas de transporte; paraguas y sombrillas; bastones; fustas, arneses y artículos de guarnicionería; collares, correas y ropa para animales."
+      },
+      {
+        "clase": "19",
+        "descripcion": "Marca País - Decisión 876 de 2021. Materiales de construcción no metálicos; tubos rígidos no metálicos para la construcción; asfalto, pez y betún; construcciones transportables no metálicas; monumentos no metálicos."
+      },
+      {
+        "clase": "20",
+        "descripcion": "Marca País - Decisión 876 de 2021. Muebles, espejos, marcos; contenedores no metálicos de almacenamiento o transporte; hueso, cuerno, ballena o nácar, en bruto o semielaborados; conchas; espuma de mar; ámbar amarillo."
+      },
+      {
+        "clase": "21",
+        "descripcion": "Marca País - Decisión 876 de 2021. Utensilios y recipientes para uso doméstico y culinario; peines y esponjas; cepillos; materiales para fabricar cepillos; material de limpieza; vidrio en bruto o semielaborado, excepto el vidrio de construcción; artículos de cristalería, porcelana y loza."
+      },
+      {
+        "clase": "22",
+        "descripcion": "Marca País - Decisión 876 de 2021. Cuerdas y cordeles; redes; tiendas de campaña y lonas; toldos de materias textiles o sintéticas; velas de navegación; sacos para el transporte y almacenamiento de mercancías a granel; materiales de acolchado y relleno, excepto el papel, cartón, caucho o materias plásticas; materias textiles fibrosas en bruto y sus sucedáneos."
+      },
+      {
+        "clase": "23",
+        "descripcion": "Marca País - Decisión 876 de 2021. Hilos para uso textil."
+      },
+      {
+        "clase": "24",
+        "descripcion": "Marca País - Decisión 876 de 2021. Tejidos y sus sucedáneos; ropa de hogar; cortinas de materias textiles o de materias plásticas."
+      },
+      {
+        "clase": "25",
+        "descripcion": "Marca País - Decisión 876 de 2021. Prendas de vestir, calzado, artículos de sombrerería."
+      },
+      {
+        "clase": "26",
+        "descripcion": "Marca País - Decisión 876 de 2021. Encajes y bordados, cintas y cordones; botones, ganchos y ojetes, alfileres y agujas; flores artificiales; adornos para el cabello; cabello postizo."
+      },
+      {
+        "clase": "27",
+        "descripcion": "Marca País - Decisión 876 de 2021. Alfombras, felpudos, esteras, linóleo y otros revestimientos de suelos; tapices murales que no sean de materias textiles."
+      },
+      {
+        "clase": "28",
+        "descripcion": "Marca País - Decisión 876 de 2021. Juegos y juguetes; aparatos de videojuegos; artículos de gimnasia y deporte; adornos para árboles de Navidad."
+      },
+      {
+        "clase": "29",
+        "descripcion": "Marca País - Decisión 876 de 2021. Carne, pescado, carne de ave y carne de caza; extractos de carne; frutas y verduras, hortalizas y legumbres en conserva, congeladas, secas y cocidas; jaleas, confituras, compotas; huevos; leche y productos lácteos; aceites y grasas comestibles."
+      },
+      {
+        "clase": "30",
+        "descripcion": "Marca País - Decisión 876 de 2021. Café, té, cacao y sucedáneos del café; arroz; tapioca y sagú; harinas y preparaciones a base de cereales; pan, productos de pastelería y confitería; helados; azúcar, miel, jarabe de melaza; levadura, polvos de hornear; sal; mostaza; vinagre, salsas (condimentos); especias; hielo."
+      },
+      {
+        "clase": "31",
+        "descripcion": "Marca País - Decisión 876 de 2021. Productos agrícolas, acuícolas, hortícolas y forestales en bruto y sin procesar; granos y semillas en bruto o sin procesar; frutas y verduras, hortalizas y legumbres frescas, hierbas aromáticas frescas; plantas y flores naturales; bulbos, plantones y semillas para plantar; animales vivos; productos alimenticios y bebidas para animales; malta."
+      },
+      {
+        "clase": "32",
+        "descripcion": "Marca País - Decisión 876 de 2021. Cervezas; aguas minerales y otras bebidas sin alcohol; bebidas a base de frutas y zumos de frutas; siropes y otras preparaciones para elaborar bebidas."
+      },
+      {
+        "clase": "33",
+        "descripcion": "Marca País - Decisión 876 de 2021. Bebidas alcohólicas (excepto cervezas)."
+      },
+      {
+        "clase": "34",
+        "descripcion": "Marca País - Decisión 876 de 2021. Tabaco; artículos para fumadores; cerillas."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Marca País - Decisión 876 de 2021. Publicidad; gestión de negocios comerciales; administración comercial; trabajos de oficina."
+      },
+      {
+        "clase": "36",
+        "descripcion": "Marca País - Decisión 876 de 2021. Servicios de seguros; operaciones financieras; operaciones monetarias; negocios inmobiliarios."
+      },
+      {
+        "clase": "37",
+        "descripcion": "Marca País - Decisión 876 de 2021. Servicios de construcción; servicios de reparación; servicios de instalación."
+      },
+      {
+        "clase": "38",
+        "descripcion": "Marca País - Decisión 876 de 2021. Telecomunicaciones."
+      },
+      {
+        "clase": "39",
+        "descripcion": "Marca País - Decisión 876 de 2021. Transporte; embalaje y almacenamiento de mercancías; organización de viajes."
+      },
+      {
+        "clase": "40",
+        "descripcion": "Marca País - Decisión 876 de 2021. Tratamiento de materiales."
+      },
+      {
+        "clase": "41",
+        "descripcion": "Marca País - Decisión 876 de 2021. Educación; formación; servicios de entretenimiento; actividades deportivas y culturales."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Marca País - Decisión 876 de 2021. Servicios científicos y tecnológicos, así como servicios de investigación y diseño en estos ámbitos; servicios de análisis e investigación industriales; diseño y desarrollo de equipos informáticos y de software."
+      },
+      {
+        "clase": "43",
+        "descripcion": "Marca País - Decisión 876 de 2021. Servicios de restauración (alimentación); hospedaje temporal."
+      },
+      {
+        "clase": "44",
+        "descripcion": "Marca País - Decisión 876 de 2021. Servicios médicos; servicios veterinarios; tratamientos de higiene y de belleza para personas o animales; servicios de agricultura, horticultura y silvicultura."
+      },
+      {
+        "clase": "45",
+        "descripcion": "Marca País - Decisión 876 de 2021. Servicios jurídicos; servicios de seguridad para la protección física de bienes materiales y personas; servicios personales y sociales prestados por terceros para satisfacer necesidades individuales."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "LA RESPUESTA ES CO COLOMBIA",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002816bf096"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4074024&fcoOp=EXTRA__Default",
+  "idProc": "4074024"
+}

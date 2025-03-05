@@ -1,0 +1,75 @@
+{
+  "idsic": "4283951",
+  "refClient": "ASAVATI",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-27",
+  "numeroSolicitud": "SD2022/0075997",
+  "fechaPresentacion": "2022-07-27",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-12",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "6498966",
+          "identificacionOMPI": "ANDRES FERNANDO",
+          "fullName": "ANDRES FERNANDO VALENCIA HERRERA",
+          "direccion": "CL 30A 41 - 18 APTO. 202 TULUA VALLE DEL CAUCA 763021 (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "6498966",
+          "nombre": "ANDRES FERNANDO VALENCIA HERRERA",
+          "direccion": "CL 30A 41 - 18 APTO. 202",
+          "ciudad": "TULUA",
+          "codigoPostal": "763021",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "Administración comercial; gestión de negocios comerciales; administración comercial para terceros; administración comercial para tramitar ventas realizadas por internet; comercialización por internet; consultoría comercial; gestión comercial; gestión comercial de tiendas mayoristas y minoristas; gestión comercial en relación con franquicias; gestión y consultoría comercial en relación con las actividades de marketing y el lanzamiento de nuevos productos; marketing comercial; negociación y conclusión de transacciones comerciales para terceros; organización y realización de ferias comerciales; preparación de material de promoción y de comercialización para terceros; preparación de transacciones comerciales para terceros, a través de tiendas en línea; promoción comercial; servicios de administración comercial para el procesamiento de ventas realizadas por internet; servicios de comercialización; servicios de distribución comercial; servicios de distribución comercial mayorista de alimentos y bebidas; servicios de exhibición de productos de comercialización; servicios de información comercial prestados por internet."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "35"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "ASAVATI, AMAMOS TU SALUD, VALORAMOS TU TIEMPO",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002818591bd"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4283951&fcoOp=EXTRA__Default",
+  "idProc": "4283951"
+}

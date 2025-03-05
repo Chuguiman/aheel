@@ -1,0 +1,75 @@
+{
+  "idsic": "392026",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2006-05-15",
+  "numeroSolicitud": "06046014",
+  "fechaPresentacion": "2006-05-15",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2006-05-24",
+  "publicacionInfo": {
+    "numeroGaceta": "565",
+    "fechaPublicacion": "2006-06-30"
+  },
+  "certificadoInfo": {
+    "certificado": "621834",
+    "fechaRegistro": "2018-12-03",
+    "fechaRenovacion": "",
+    "vigencia": "2028-12-03"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1039709",
+          "identificacionOMPI": "",
+          "fullName": "UNILEVER N.V.",
+          "direccion": "WEENA 455, 3013 AL ROTTERDAM ROTTERDAM ZUID-HOLLAND  (NL)",
+          "codPais": "NL"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "39690713",
+          "nombre": "ALICIA LLOREDA RICAURTE",
+          "direccion": "CALLE 72A No. 5-83, PISO 3",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "30",
+        "descripcion": "COCOA, PASTELERÍA, CONFITERÍA Y POSTRES; HELADOS COMESTIBLES; HELADOS DE AGUA; CONFITES Y DULCES CONGELADOS Y CRISTALIZADOS; HELADOS; PREPARACIONES PARA ELABORAR LOS ARTÍCULOS MENCIONADOS, PRODUCTOS NO INCLUIDOS EN OTRAS CLASES."
+      }
+    ],
+    "versionInfo": {
+      "version": "8",
+      "clases": "30"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "M",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002801c15d0"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=392026&fcoOp=EXTRA__Default",
+  "idProc": "392026"
+}

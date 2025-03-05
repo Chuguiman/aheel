@@ -1,0 +1,92 @@
+{
+  "idsic": "4262018",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071010",
+  "fechaPresentacion": "2022-03-15",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "981",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-06-30",
+    "fechaRenovacion": "2032-03-15",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671615",
+    "fechaRegistroInternacional": "2022-03-15"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1430019",
+          "fullName": "CHANG TSI & PARTNERS"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1458540",
+          "fullName": "MIDEA GROUP CO., LTD.",
+          "direccion": "B26-28F, Midea Headquarter Building, No.6 Midea Avenue, Beijiao, Shunde, Foshan Guangdong    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "CHANG TSI & PARTNERS",
+          "direccion": "Room 701, Floor 7, Building 17, Bei Zhan Bei Jie Street, Xicheng District 100044 Beijing",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "CHINA",
+      "fechaDePrioridad": "2022-01-27",
+      "numeroDePrioridad": "62432603",
+      "clase": "09",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Monitores [programas informáticos]; aplicaciones para software de teléfonos inteligentes, descargables; acopladores [equipos de procesamiento de datos]; módulos de memoria; aparatos de procesamiento de datos; programas informáticos grabados; aparatos e instrumentos de pesaje; módems; transpondedores; aparatos electrodinámicos de control remoto de señales; equipos de transmisión de telecomunicaciones basados en el protocolo binario; detectores; sensores; placas de circuitos electrónicos; módulos de circuitos integrados; chips [circuitos integrados]; aparatos de control remoto; chips electrónicos."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Investigación en el ámbito de la tecnología de las telecomunicaciones; investigación tecnológica; diseño industrial; instalación de software informático; actualización de software informático; desarrollo de software informático; diseño de software; investigación y desarrollo de software informático; análisis de sistemas informáticos; plataforma como servicio [paas]; software como servicio [SaaS]; diseño y desarrollo de software; puesta a disposición de motores de búsqueda para Internet; copia de seguridad de datos fuera del sitio; Creación de programas de control para los componentes de control y accionamiento del funcionamiento eléctrico; suministro de sistemas informáticos virtuales mediante informática en la nube."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "NETHOME PLUS",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df84e"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262018&fcoOp=EXTRA__Default",
+  "idProc": "4262018"
+}

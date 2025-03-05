@@ -1,0 +1,92 @@
+{
+  "idsic": "4284707",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076182",
+  "fechaPresentacion": "2022-03-25",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-07-18",
+    "fechaRenovacion": "2032-03-25",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674934",
+    "fechaRegistroInternacional": "2022-03-25"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1088993",
+          "fullName": "BOEHMERT & BOEHMERT  ANWALTSPARTNERSCHAFT MBB - PATENTANWÄLTE RECHTSANWÄLTE"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1440131",
+          "fullName": "MONDU GMBH",
+          "direccion": "Stresemannstraße 123 C 10963 Berlin    (DE)",
+          "codPais": "DE"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "BOEHMERT & BOEHMERT  ANWALTSPARTNERSCHAFT MBB - PATENTANWÄLTE RECHTSANWÄLTE",
+          "direccion": "Kurfürstendamm 185 10707 Berlin",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "DE",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "OFICINA DE PROPIEDAD INTELECTUAL DE LA UNIÓN EUROPEA (EUIPO)",
+      "fechaDePrioridad": "2021-01-29",
+      "numeroDePrioridad": "018568805",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "Consultoría empresarial; servicios administrativos [para terceros]; asistencia empresarial; facturación; servicios de contabilidad."
+      },
+      {
+        "clase": "36",
+        "descripcion": "Servicios financieros; servicios de pago electrónico; servicios de procesamiento de pagos; financiación de préstamos; arrendamiento con opción de compra (leasing)."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "35, 36"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "MONDU",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fc051"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284707&fcoOp=EXTRA__Default",
+  "idProc": "4284707"
+}

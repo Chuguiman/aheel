@@ -1,0 +1,88 @@
+{
+  "idsic": "4090150",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-03-24",
+  "numeroSolicitud": "SD2022/0028627",
+  "fechaPresentacion": "2022-02-09",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "981",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1651855",
+    "fechaRegistroInternacional": "2022-02-09"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1427618",
+          "fullName": "ROBERT S. KATZ BANNER & WITCOFF, LTD."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1692371",
+          "fullName": "SWIFT IP, LLC",
+          "direccion": "15499 SW 12th Street, Suite 501 Sunrise FL 33326    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "39773330",
+          "nombre": "XIMENA CASTELLANOS ABONDANO",
+          "direccion": "Calle 117 No. 5A - 35 piso 3",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2021-01-22",
+      "numeroDePrioridad": "97039102",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "19",
+        "descripcion": "Mezclas para juntas de cemento; pastas de relleno para juntas de cemento."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "19"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "FLOOD PROTECTION",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002816d6f21"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4090150&fcoOp=EXTRA__Default",
+  "idProc": "4090150"
+}

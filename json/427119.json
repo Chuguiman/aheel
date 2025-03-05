@@ -1,0 +1,73 @@
+{
+  "idsic": "427119",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2007-01-25",
+  "numeroSolicitud": "07007119",
+  "fechaPresentacion": "2007-01-25",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2007-01-29",
+  "publicacionInfo": {
+    "numeroGaceta": "573",
+    "fechaPublicacion": "2007-02-28"
+  },
+  "certificadoInfo": {
+    "certificado": "579387",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "890900161",
+          "identificacionOMPI": "",
+          "fullName": "PRODUCTOS FAMILIA S.A",
+          "direccion": "Autopista Sur Carrera 50 # 8 Sur -117 MEDELLIN ANTIOQUIA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "80412281",
+          "nombre": "JUAN GUILLERMO MOURE PEREZ",
+          "direccion": "CARRERA 5 No. 34-03",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "5",
+        "descripcion": "TOALLAS SANITARIAS, PROTECTORES DIARIOS, TAMPONES Y OTROS ARTÍCULOS DE PROTECCIÓN MENSTRUAL, PANTALONES SANITARIOS."
+      }
+    ],
+    "versionInfo": {
+      "version": "8",
+      "clases": "5"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "CENTRO AZUL",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=427119&fcoOp=EXTRA__Default",
+  "idProc": "427119"
+}

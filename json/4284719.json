@@ -1,0 +1,80 @@
+{
+  "idsic": "4284719",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076194",
+  "fechaPresentacion": "2022-05-26",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1675133",
+    "fechaRegistroInternacional": "2022-05-26"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1384147",
+          "fullName": "SHENZHEN HAII ENTERPRISE MANAGEMENT CO., LTD."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1611060",
+          "fullName": "SHENZHEN LOBOO MOTOR ACCESSORIES CO., LTD",
+          "direccion": "(Manufacture is located at 101, No.30-4, Dishan Laiyin Road, Xinsheng Community, Longgang Street, Longgang District, Shenzhen), 301, No.30-10, Laiyin Road, Xinsheng Community, Longgang Street, Longgang District Shenzhen    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "SHENZHEN HAII ENTERPRISE MANAGEMENT CO., LTD.",
+          "direccion": "B4103, Rongchao Economy and Trade Center, No. 4028 Jintian Road, Fuzhong Community, Lianhua Street, Futian District, Shenzhen City Guangdong Province",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "25",
+        "descripcion": "Gorras de béisbol; medias absorbentes del sudor; camisas de manga corta; prendas de vestir; ropa impermeable; prendas interiores absorbentes del sudor; ropa de automovilismo; abrigos impermeables; pantalones impermeables; botas; botas de motociclista; artículos de sombrerería."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "25"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "LOBOO",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fb8ec"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284719&fcoOp=EXTRA__Default",
+  "idProc": "4284719"
+}

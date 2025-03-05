@@ -1,0 +1,92 @@
+{
+  "idsic": "4284685",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076160",
+  "fechaPresentacion": "2022-04-04",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "979",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674749",
+    "fechaRegistroInternacional": "2022-04-04"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1407872",
+          "fullName": "ELAD TSABARI, ADV."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1446960",
+          "fullName": "TWENTY FOUR SEVEN FASHION LTD",
+          "direccion": "Arie Shenkar 13 Rishon Leziyyon    (IL)",
+          "codPais": "IL"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "ELAD TSABARI, ADV.",
+          "direccion": "32 Habarzel St. Tel Aviv",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "IL",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ISRAEL",
+      "fechaDePrioridad": "2021-11-18",
+      "numeroDePrioridad": "345689",
+      "clase": "25",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "25",
+        "descripcion": "Prendas de vestir, calzado, artículos de sombrerería."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Comercialización minorista y mayorista de perfumería, artículos de moda, prendas de vestir y calzado, tocados, cinturones, pañuelos, bolsos, monederos y carteras, joyas, gafas y accesorios para todos ellos; gestión y explotación de tiendas, cadenas de tiendas, galerías y centros comerciales para la venta de todos los productos antes mencionados."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "25, 35"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "TWENTYFOURSEVEN",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fba3c"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284685&fcoOp=EXTRA__Default",
+  "idProc": "4284685"
+}

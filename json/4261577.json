@@ -1,0 +1,79 @@
+{
+  "idsic": "4261577",
+  "refClient": "M-001723",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-13",
+  "numeroSolicitud": "SD2022/0070921",
+  "fechaPresentacion": "2022-07-13",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-09",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "739098",
+    "fechaRegistro": "2023-10-03",
+    "fechaRenovacion": "",
+    "vigencia": "2033-10-03"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1134372",
+          "identificacionOMPI": "",
+          "fullName": "QIK BANCO DIGITAL DOMINICANO, S.A.- BANCO MÚLTIPLE",
+          "direccion": "Ave. John F. Kennedy No. 20, Esq. Máximo Gómez, Ens. Miraflores SANTO DOMINGO DISTRITO NACIONAL  (DO)",
+          "codPais": "DO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79939115",
+          "nombre": "JOSE ROBERTO HERRERA DIAZ",
+          "direccion": "CLL 90 # 13 A - 20 OF 204",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "Publicidad; gestión de negocios comerciales; administración comercial; trabajos de oficina."
+      },
+      {
+        "clase": "36",
+        "descripcion": "Servicios de operaciones financieras o monetarias, a saber: los servicios de instituciones bancarias o instituciones afines, tales como las operaciones de cambio o de compensación; los servicios de instituciones de crédito que no sean bancos, tales como las cooperativas de crédito, las compañías financieras individuales y los prestamistas; Servicios de sociedades de inversión y de sociedades de cartera; Servicios de corredores de bienes y valores; Servicios relacionados con negocios operaciones monetarias con garantía de agentes fiduciarios; Servicios de emisión de cheques de viaje y de cartas de crédito; Servicios de arrendamiento con opción de compra (leasing); Servicios de administradores de propiedades, servicios de alquiler, tasación de bienes inmuebles o financiación; Servicios de seguros, tales como los servicios prestados por agentes o corredores de seguros. Servicios prestados a los asegurados y servicios de suscripción de seguros."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "35, 36"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "QIK BANCO DIGITAL",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817deb23"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4261577&fcoOp=EXTRA__Default",
+  "idProc": "4261577"
+}

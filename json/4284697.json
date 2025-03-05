@@ -1,0 +1,88 @@
+{
+  "idsic": "4284697",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076173",
+  "fechaPresentacion": "2022-06-27",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "981",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-06-30",
+    "fechaRenovacion": "2032-06-27",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674824",
+    "fechaRegistroInternacional": "2022-06-27"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1463995",
+          "fullName": "GABRIELLE A. HOLLEY HOLLEY & MENKER, P.A."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1463994",
+          "fullName": "NORMALYZE, INC.",
+          "direccion": "1276 Nightingale Court Los Altos CA 94024    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "GABRIELLE A. HOLLEY HOLLEY & MENKER, P.A.",
+          "direccion": "P.O. Box 96 Solana Beach CA 92075",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "US",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2022-02-11",
+      "numeroDePrioridad": "97264188",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "42",
+        "descripcion": "Servicios de software como servicio (SaaS) con software para la protección de datos y la protección de la informática en la nube."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "NORMALYZE",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fc047"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284697&fcoOp=EXTRA__Default",
+  "idProc": "4284697"
+}

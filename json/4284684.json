@@ -1,0 +1,80 @@
+{
+  "idsic": "4284684",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076159",
+  "fechaPresentacion": "2022-03-02",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "979",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2024-02-23",
+    "fechaRenovacion": "2032-03-02",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674743",
+    "fechaRegistroInternacional": "2022-03-02"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1218683",
+          "fullName": "WORLDWIDE INTELLEC"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1437784",
+          "fullName": "HERO MOTOCORP LIMITED",
+          "direccion": "The Grand Plaza, Plot No.2, Nelson Mandela Road, Vasant Kunj - Phase -ii New Delhi 110070    (IN)",
+          "codPais": "IN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "51711267",
+          "nombre": "MONICA BELA WOLF WASSERMAN",
+          "direccion": "AK 7 No. 113-43 Of. 805 Torre Samsung",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "28",
+        "descripcion": "Artículos de gimnasia y deporte no comprendidos en otras clases; juguetes y modelos de juguete en miniatura de vehículos terrestres de motor."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "28"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "VIDA",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fba39"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284684&fcoOp=EXTRA__Default",
+  "idProc": "4284684"
+}

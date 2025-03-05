@@ -1,0 +1,81 @@
+{
+  "idsic": "4286655",
+  "refClient": "Marca QUALIPAFT (Nominativa), clases 35, 37 y 42",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076688",
+  "fechaPresentacion": "2022-07-28",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-09",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "860518299",
+          "identificacionOMPI": "",
+          "fullName": "PURIFICACION Y ANALISIS DE FLUIDOS S.A.S., PAF SAS",
+          "direccion": "CALLE 93 NO 45 - 25 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "41654860",
+          "nombre": "CLARA INÉS ALVÁREZ GIRALDO",
+          "direccion": "Calle 84 No. 18-38 Of. 604",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "Gestión de negocios comerciales; administración comercial; comercialización y venta de productos y servicios en general; en especial la comercialización, compra, venta, importación, exportación y representación de materias primas; de reactivos para diagnóstico clínico e investigación; de máquinas y equipos; de aparatos y elementos utilizados en la industria farmacéutica, química, cosmética, veterinaria, agrícola y alimenticia. La venta y comercialización de productos y servicios en centros de investigación, universidades, entidades estatales o públicas de asistencia social y hospitalaria, en entidades privadas hoteleras, de enseñanza médica y hospitalaria."
+      },
+      {
+        "clase": "37",
+        "descripcion": "Instalación, mantenimiento y reparación de máquinas."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Servicios científicos y tecnológicos, sobre aspectos teóricos y prácticos de sectores complejos de actividades, prestados por químicos, físicos, biológicos, microbiológicos, ingenieros, así como servicios de investigación y diseño relativos a ellos; servicios de análisis y de investigación."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "35, 37, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "QUALIPAFT",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4286655&fcoOp=EXTRA__Default",
+  "idProc": "4286655"
+}

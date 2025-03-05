@@ -1,0 +1,88 @@
+{
+  "idsic": "4271570",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073154",
+  "fechaPresentacion": "2022-04-19",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "978",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1673650",
+    "fechaRegistroInternacional": "2022-04-19"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1444594",
+          "fullName": "BAYLOS"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1461595",
+          "fullName": "INSTITUTO DE EMPRESA, S.L.",
+          "direccion": "Maria de Molina 13 E-28006 Madrid    (ES)",
+          "codPais": "ES"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "17192062",
+          "nombre": "HUMBERTO RUBIO CAMACHO",
+          "direccion": "Carrera 53 No. 103 B 42 Oficinas 602/605",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "111111",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Aparatos e instrumentos científicos, náuticos, geodésicos, fotográficos, cinematográficos, ópticos, de pesaje, de medición, de señalización, de control (inspección), de salvamento y de enseñanza; aparatos e instrumentos de conducción, distribución, transformación, acumulación, regulación o control de la electricidad; aparatos de grabación, transmisión o reproducción de sonido o imágenes; soportes de registro magnéticos, discos acústicos; discos compactos, DVD y otros soportes de grabación digitales; mecanismos para aparatos de previo pago; cajas registradoras, máquinas de calcular, equipos de procesamiento de datos, ordenadores; software; extintores."
+      },
+      {
+        "clase": "16",
+        "descripcion": "Papel y cartón; productos de imprenta; material de encuadernación; fotografías; artículos de papelería; adhesivos (pegamentos) de papelería o para uso doméstico; material para artistas; pinceles; máquinas de escribir y artículos de oficina (excepto muebles); material de instrucción o material didáctico (excepto aparatos); materias plásticas para embalar; caracteres de imprenta; clichés de imprenta; publicaciones impresas, publicaciones periódicas."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Servicios de promoción de ventas para terceros; publicidad; gestión de negocios comerciales; administración comercial; trabajos de oficina; servicios de ayuda en la gestión de negocios comerciales o funciones comerciales de una empresa industrial o comercial; agencias de importación-exportación y servicios de representación de negocios comerciales; servicios de estudio y análisis de mercado, de realización de estudios sobre organización de empresas, de planificación, de control, dirección y peritaje de empresas y verificación de tratamiento de datos; gestión de cuentas de negocios; servicios de ventas al por menor, al por mayor o a través de redes mundiales de informática en relación con material de enseñanza, vestimenta (uniformes) y vestimenta deportiva."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9, 16, 35"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "IE",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817ea3cc"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4271570&fcoOp=EXTRA__Default",
+  "idProc": "4271570"
+}

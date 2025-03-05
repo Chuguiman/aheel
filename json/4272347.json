@@ -1,0 +1,73 @@
+{
+  "idsic": "4272347",
+  "refClient": "fun tasty",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073340",
+  "fechaPresentacion": "2022-07-21",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-09",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1014856009",
+          "identificacionOMPI": "FRANCESCA",
+          "fullName": "FRANCESCA MELO QUIMBAY",
+          "direccion": "av cra 9 113 52 of 1901 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1014856009",
+          "nombre": "FRANCESCA  MELO QUIMBAY",
+          "direccion": "av cra 9 113 52 of 1901",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "43",
+        "descripcion": "Asesoramiento en la preparación de alimentos; consultoría en la preparación de alimentos; decoración de alimentos; facilitación de información en materia de preparación de alimentos y bebidas; preparación de alimentos; preparación de alimentos para terceros en régimen de externalización; preparación de alimentos y bebidas; provisión de alimentos a personas necesitadas; provisión de alimentos a personas necesitadas [servicios de beneficencia]; provisión de alimentos y bebidas a pacientes y huéspedes; servicios de asesoramiento en materia de preparación de alimentos; servicios de consultoría relacionados con la preparación de alimentos; servicios de preparación de alimentos; servicios de preparación de alimentos y bebidas; suministro de alimentos y bebidas; suministro de información en materia de preparación de alimentos y bebidas."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "43"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "MCFIORI FUN TASTY",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4272347&fcoOp=EXTRA__Default",
+  "idProc": "4272347"
+}

@@ -1,0 +1,73 @@
+{
+  "idsic": "394851",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2003-10-24",
+  "numeroSolicitud": "03094942",
+  "fechaPresentacion": "2003-10-24",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2003-11-25",
+  "publicacionInfo": {
+    "numeroGaceta": "535",
+    "fechaPublicacion": "2003-12-30"
+  },
+  "certificadoInfo": {
+    "certificado": "572986",
+    "fechaRegistro": "2017-07-17",
+    "fechaRenovacion": "",
+    "vigencia": "2027-07-17"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "860041265",
+          "identificacionOMPI": "",
+          "fullName": "COLCHONES EL DORADO S A",
+          "direccion": "CRA 13 N°79-80 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "21067863",
+          "nombre": "MARIA DEL CONSUELO ZARAMA URDANETA",
+          "direccion": "CALLE 76 N 8-56",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "SERVICIOS DE AYUDA A LA EXPLOTACIÓN O DIRECCIÓN DE NEGOCIOS, ADMINISTRACIÓN COMERCIAL, DISTRIBUCIÓN, COMERCIALIZACIÓN, EXPORTACIÓN E IMPORTACIÓN DE MUEBLES, COLCHONES, SOMIERS, ALMOHADAS, LENCERÍA Y PROTECCIÓN PARA COLCHÓN"
+      }
+    ],
+    "versionInfo": {
+      "version": "8",
+      "clases": "35"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "POWERCOIL",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=394851&fcoOp=EXTRA__Default",
+  "idProc": "394851"
+}

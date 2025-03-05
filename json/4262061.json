@@ -1,0 +1,80 @@
+{
+  "idsic": "4262061",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071053",
+  "fechaPresentacion": "2022-04-22",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672291",
+    "fechaRegistroInternacional": "2022-04-22"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1460621",
+          "fullName": "GUANGZHOU JIECHENG INTELLECTUAL PROPERTY AGENCY CO., LTD."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1460620",
+          "fullName": "GUANGZHOU HUIHUANG ELECTRONICS CO., LTD.",
+          "direccion": "No. 28 Yongxing Middle Street, Taihe Town, Baiyun District, Guangzhou City Guangdong Province    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "GUANGZHOU JIECHENG INTELLECTUAL PROPERTY AGENCY CO., LTD.",
+          "direccion": "Room 1812, No. 33 Jiansheliu Road, Yuexiu District, Guanghzhou City Guangdong Province",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Aparatos de procesamiento de datos; lectores [equipos de procesamiento de datos]; periféricos informáticos; acopladores [equipos de procesamiento de datos]; cascos auriculares; hilos telefónicos; cables de fibra óptica; acumuladores eléctricos; cargadores de baterías; baterías eléctricas."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "JOKADE",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df736"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262061&fcoOp=EXTRA__Default",
+  "idProc": "4262061"
+}

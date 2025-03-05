@@ -1,0 +1,75 @@
+{
+  "idsic": "4090110",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-03-24",
+  "numeroSolicitud": "SD2022/0028586",
+  "fechaPresentacion": "2021-01-17",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2024-08-30",
+    "fechaRenovacion": "2031-01-17",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1651233",
+    "fechaRegistroInternacional": "2021-01-17"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1394979",
+          "fullName": "INTERNATIONAL CONTAINER TERMINAL SERVICES, INC. (ICTSI)",
+          "direccion": "ICTSI Administration Building, Manila International Container Terminal, MICT South Access Road City of Manila Metro Manila    (PH)",
+          "codPais": "PH"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "80412281",
+          "nombre": "JUAN GUILLERMO MOURE PEREZ",
+          "direccion": "CARRERA 5 No. 34-03",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "39",
+        "descripcion": "Gestión, explotación y desarrollo de terminales que impliquen la manipulación de contenedores, cargas líquidas y secas a granel, instalaciones de almacenamiento refrigerado, complejo de almacenes, almacenamiento de contenedores y/o almacenamiento de cargas de todo tipo, el transporte de mercancías y otras cargas hacia y desde las terminales portuarias del país destinadas a la entrega desde el extranjero y/o el envío al extranjero."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "39"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "INTERNATIONAL CONTAINER TERMINAL SERVICES, INC.",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002816d68ec"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4090110&fcoOp=EXTRA__Default",
+  "idProc": "4090110"
+}

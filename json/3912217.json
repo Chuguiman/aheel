@@ -1,0 +1,100 @@
+{
+  "idsic": "3912217",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-02-10",
+  "numeroSolicitud": "SD2022/0011709",
+  "fechaPresentacion": "2021-07-21",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "1006",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1643058",
+    "fechaRegistroInternacional": "2021-07-21"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1270302",
+          "fullName": "KATHRYN STARSHAK K&L GATES LLP"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1370287",
+          "fullName": "KKI HOLDINGS, LLC",
+          "direccion": "Suite 170, 7801 E. Gray Rd. Scottsdale AZ 85260    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "72292765",
+          "nombre": "EDUARDO VARELA PEZZANO",
+          "direccion": "CARRERA 4 NO. 72 - 35",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2021-01-22",
+      "numeroDePrioridad": "90482014",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "7",
+        "descripcion": "Generadores de energía electromagnéticos; generadores de energía autónomos; generadores de energía con acceso inalámbrico y funciones de monitorización inalámbrica."
+      },
+      {
+        "clase": "37",
+        "descripcion": "Instalación, mantenimiento y reparación de generadores de energía; instalación, mantenimiento y reparación de dispositivos de generación de energía; instalación, mantenimiento y reparación de maquinaria eléctrica y de generación de energía."
+      },
+      {
+        "clase": "40",
+        "descripcion": "Generación de electricidad; generación de energía eléctrica; consultoría en el ámbito de la producción de energía eléctrica; producción, a saber, fabricación por encargo de equipos de generación de energía eléctrica; servicios de consultoría relativa a la integración de redes de energía; suministro de información educativa en el ámbito de la producción de energía mediante un sitio web."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Diseño para terceros en el ámbito de los sistemas de energía conectados a la red y fuera de la red; servicios de ingeniería en los ámbitos de la energía, la electricidad, la generación de energía, la tecnología energética y la eficiencia energética; suministro de uso temporal en línea de software informático no descargable para la monitorización y el control de generadores de energía y generadores electromagnéticos; suministro de uso temporal en línea de software informático no descargable para la gestión de energía, a saber, software para la monitorización del uso de energía y la notificación a los usuarios sobre el consumo de energía; suministro de plataformas de software informático como servicio (PaaS) en línea con plataformas de software para el suministro de una interfaz de red que automatiza, monitorea e informa sobre los sistemas de energía distribuida, agrega los sistemas de almacenamiento de energía y monitorea y valida los sistemas energéticos; suministro de uso temporal de software informático en línea no descargable para ser utilizado en relación con sistemas de energía solar, para la monitorización y el seguimiento de la generación de energía y el uso de energía, y para la gestión del uso de energía y los costes de energía."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "7, 37, 40, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "MATTUR",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=0900000281677737"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=3912217&fcoOp=EXTRA__Default",
+  "idProc": "3912217"
+}

@@ -1,0 +1,80 @@
+{
+  "idsic": "4262030",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071022",
+  "fechaPresentacion": "2022-05-11",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671798",
+    "fechaRegistroInternacional": "2022-05-11"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1459597",
+          "fullName": "WHALEMARKS SERVICE LIMITED"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1459596",
+          "fullName": "YIWU BAITUAN COMMODITIES CO., LTD",
+          "direccion": "Unit 2, Building 32, District B, Xiazhu Village, Jiangdong Street, Yiwu City, Jinhua City  322099 Zhejiang Province    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "WHALEMARKS SERVICE LIMITED",
+          "direccion": "2-1-106, 2/F, Jia 1 Building, No. Jia3 Shilipu, Chaoyang Beijing",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "21",
+        "descripcion": "Utensilios de cocina; artículos de cerámica para uso doméstico; boles; tazas; platos; moldes para pasteles; utensilios para uso doméstico; recipientes de cocina; recipientes térmicos para alimentos."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "21"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "DANNY HOME",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df6f7"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262030&fcoOp=EXTRA__Default",
+  "idProc": "4262030"
+}

@@ -1,0 +1,75 @@
+{
+  "idsic": "4276541",
+  "refClient": "Melo",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-22",
+  "numeroSolicitud": "SD2022/0074424",
+  "fechaPresentacion": "2022-07-22",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-11",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1110552991",
+          "identificacionOMPI": "Nicolas",
+          "fullName": "NICOLAS OVIEDO GUZMAN",
+          "direccion": "cra 46 sur No 158 116 Barrio San Martin, Casa 57A IBAGUE TOLIMA 730001 (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1110552991",
+          "nombre": "NICOLAS OVIEDO GUZMAN",
+          "direccion": "cra 46 sur No 158 116 Barrio San Martin, Casa 57A",
+          "ciudad": "IBAGUE",
+          "codigoPostal": "730001",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "10",
+        "descripcion": "Alargadores de pene [artículos de estimulación sexual para adultos]; penes artificiales; penes artificiales [artículos de estimulación sexual para adultos]; artículos de estimulación sexual para adultos; bolas chinas [artículos de estimulación sexual para adultos]; dispositivos para actividades sexuales; juguetes sexuales; muñecas eróticas [muñecas sexuales]; vaginas artificiales [artículos de estimulación sexual para adultos]; vibradores [artículos de estimulación sexual para adultos]; consoladores."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "10"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "MELO",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817f08d2"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4276541&fcoOp=EXTRA__Default",
+  "idProc": "4276541"
+}

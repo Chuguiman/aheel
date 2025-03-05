@@ -1,0 +1,108 @@
+{
+  "idsic": "4284710",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076185",
+  "fechaPresentacion": "2022-04-01",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2022-12-27",
+    "fechaRenovacion": "2032-04-01",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674981",
+    "fechaRegistroInternacional": "2022-04-01"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1452368",
+          "fullName": "JOSHUA S. JARVIS, ESQ. FOLEY HOAG LLP"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1452366",
+          "fullName": "HOPPER INC.",
+          "direccion": "5795 Ave de Gaspe, Ste. 100 Montreal, QC H2S 2X3    (CA)",
+          "codPais": "CA"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "JOSHUA S. JARVIS, ESQ. FOLEY HOAG LLP",
+          "direccion": "155 Seaport Boulevard Boston MA 02210",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "US",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2022-01-24",
+      "numeroDePrioridad": "97235216",
+      "clase": "41, 42",
+      "reivindicaciones": "Priority claimed for class 41, in respect of: Servicios de educación, a saber, suministro de cursos, seminarios y talleres en línea en los ámbitos de la certificación de agentes de viajes, la planificación de viajes y los viajes y la hospitalidad, y distribución de planes de estudio y materiales educativos conexos\n\nPriority claimed for class 42, in respect of: Servicios de software como servicio (SaaS) con software para el acceso y la interacción con cursos en línea, seminarios, talleres y materiales educativos relacionados en los ámbitos de la certificación de agentes de viajes, la planificación de viajes y los viajes y la hostelería"
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Documentos electrónicos descargables en los ámbitos de la certificación de agencias de viajes, la planificación de viajes, los viajes y la hostelería; software informático descargable para acceder a información personalizada de vuelos y billetes de avión y para notificar a usuarios de cambios en dicha información; aplicaciones móviles para acceder a información personalizada de vuelos y billetes de avión y para notificar a usuarios de cambios en dicha información."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Suministro de información general y temática sobre precios de aerolíneas, tendencias de precios de aerolíneas, comparaciones de precios de aerolíneas y utilización de la capacidad de aerolíneas, a saber, información comercial sobre la productividad de las aerolíneas basada en la capacidad de asientos, el número de aeronaves totales y las rutas voladas por cada aeronave; promoción de productos y servicios de terceros mediante el suministro de información sobre comparaciones de precios mediante sitios web; suministro de productos y servicios de otros vendedores mediante un sitio web consultable; servicios de análisis de precios de compras relacionadas con viajes para clientes mediante un sitio web; facilitación en línea de comparaciones de precios de servicios de viaje y alojamiento."
+      },
+      {
+        "clase": "39",
+        "descripcion": "Suministro de información general y temática sobre horarios de vuelos de líneas aéreas y reserva de líneas aéreas mediante redes informáticas mundiales; suministro de información sobre viajes mediante redes informáticas mundiales; reserva de pasajes; reservación de billetes de viaje; servicios de reserva de billetes de viaje y servicios de reserva de medios de transporte en línea; suministro de información sobre viajes mediante un sitio web; suministro de información sobre viajes desde una base de datos informática consultable en línea; suministro de información sobre viajes mediante bases de datos informáticas consultables en línea; servicios de agencias de viajes, a saber, servicios de reserva de transporte; agencias de reserva de viajes; servicios de reserva de billetes de viajes."
+      },
+      {
+        "clase": "41",
+        "descripcion": "Servicios de educación, a saber, suministro de cursos, seminarios y talleres en línea en los ámbitos de la certificación de agentes de viajes, la planificación de viajes y los viajes y la hospitalidad, y distribución de planes de estudio y materiales educativos conexos."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Servicios de software como servicio (SaaS) con software para el acceso y la interacción con cursos en línea, seminarios, talleres y materiales educativos relacionados en los ámbitos de la certificación de agentes de viajes, la planificación de viajes y los viajes y la hostelería."
+      },
+      {
+        "clase": "43",
+        "descripcion": "Suministro de información sobre alojamientos por redes informáticas mundiales, a saber, suministro de listados de alojamientos temporales e información para la realización de reservas de alojamientos temporales."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9, 35, 39, 41, 42, 43"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Figurativa",
+  "denominacionDelSigno": "",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fb8d9"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284710&fcoOp=EXTRA__Default",
+  "idProc": "4284710"
+}

@@ -1,0 +1,108 @@
+{
+  "idsic": "4262038",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071030",
+  "fechaPresentacion": "2022-01-08",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-07-17",
+    "fechaRenovacion": "2032-01-08",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1671882",
+    "fechaRegistroInternacional": "2022-01-08"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1427079",
+          "fullName": "EQUIPP B.V."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1441141",
+          "fullName": "MEDIAMONKS MULTIMEDIA HOLDING B.V.",
+          "direccion": "Oude Amersfoortseweg 125 NL-1212 AA Hilversum    (NL)",
+          "codPais": "NL"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "EQUIPP B.V.",
+          "direccion": "Reyer Anslostraat 4 NL-1054 KV Amsterdam",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "NL",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "BENELUX",
+      "fechaDePrioridad": "2021-07-09",
+      "numeroDePrioridad": "1446606",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Software informático, software de inteligencia artificial, software de aplicaciones móviles, aplicaciones móviles, grabaciones de audio, vídeo, digitales y multimedia y publicaciones electrónicas para, relativos a o en el ámbito de la publicidad, el marketing, la promoción y las relaciones públicas y la tecnología publicitaria (Adtech); juegos informáticos descargables; los productos antes mencionados no son relativos a la ciberseguridad o la protección de datos."
+      },
+      {
+        "clase": "16",
+        "descripcion": "Materiales impresos de publicidad, marketing, promoción y relaciones públicas; publicaciones impresas."
+      },
+      {
+        "clase": "35",
+        "descripcion": "Servicios de agencia de publicidad, relaciones públicas y marketing; servicios de publicidad, relaciones públicas y marketing; promoción de ventas para terceros; marketing digital; marketing por Internet; marketing directo; desarrollo, creación y organización de campañas publicitarias y de marketing; redacción publicitaria con fines publicitarios o promocionales; organización, gestión y prestación de servicios de eventos de marketing y promoción de ventas; servicios de consultoría en medios de comunicación, a saber, planificación, compra y negociación de tiempo y espacio de publicidad y medios de comunicación; colocación y difusión de anuncios publicitarios, de marketing, promocionales y de relaciones públicas; alquiler de espacios publicitarios; producción de campañas de publicidad, marketing, promoción y relaciones públicas; servicios de creación de marcas, servicios de posicionamiento y estrategia de marca, a saber, desarrollo de marcas, identidad de marcas y marketing de marcas, incluida la producción de grabaciones de audio, vídeo, digitales y multimedia para tales fines; desarrollo de publicidad mediante campañas de medios de comunicación; consultoría en el ámbito de la publicidad y el marketing digital, incluidas estrategias, planificación, adquisición, optimización y evaluación de todo tipo de anuncios, publicidad y marketing; análisis, evaluación y elaboración de informes de campañas publicitarias; investigación y asesoramiento sobre investigación de mercados estratégicos; gestión de negocios comerciales; administración de empresas; trabajos de oficina; datos comerciales y análisis de mercados; consultoría y gestión empresarial sobre publicidad, marketing, promoción y relaciones públicas; diseño de material publicitario, marketing, promoción y relaciones públicas; asesoramiento sobre marketing en medios sociales; servicios de publicidad y marketing por medios sociales; consultoría, información y asesoramiento en relación con los servicios mencionados; incluidos los servicios mencionados prestados en línea, mediante una base de datos o Internet; servicios de diseño relativos a la creación de marcas, desarrollo de marcas, identidad de marcas."
+      },
+      {
+        "clase": "38",
+        "descripcion": "Servicios de acceso de usuario a redes informáticas mundiales (proveedores de servicios); suministro de acceso a bases de datos, páginas web, portales, foros y salas de charla; consultoría, información y asesoramiento en relación con los servicios mencionados; incluidos los servicios mencionados prestados en línea, mediante una base de datos o Internet; los servicios antes mencionados no son relativos a la ciberseguridad o la protección de datos."
+      },
+      {
+        "clase": "41",
+        "descripcion": "Servicios recreativos; servicios de entretenimiento prestados en línea, incluido el suministro de juegos informáticos no descargables; dirección, producción y composición de grabaciones de audio, vídeo, digitales y multimedia; producción de dibujos animados; producción de animaciones con efectos especiales para películas y vídeos, producción y edición de películas, vídeos y otros contenidos multimedia; servicios de estudios de grabación, a saber, masterización de discos; servicios de subtitulado; creación de grabaciones originales; servicios de estudios de grabación de sonido, tales como producción de grabaciones sonoras, edición, masterización y grabación de efectos especiales; edición de textos escritos; fotografía y servicios fotográficos; imágenes digitales [edición de imágenes]; producción de películas y películas en vídeo; servicios de educación; servicios de publicación; servicios de publicación multimedia; formación; organización o dirección de eventos, conferencias, seminarios, talleres y exposiciones con fines culturales, deportivos, educativos o de entretenimiento; servicios de biblioteca fotográfica; consultoría, información y asesoramiento en relación con los servicios mencionados; incluidos los servicios mencionados prestados en línea, mediante una base de datos o Internet."
+      },
+      {
+        "clase": "42",
+        "descripcion": "Servicios de diseño; diseño, desarrollo e implementación de juegos informáticos y aplicaciones de software; diseño y desarrollo de software de realidad virtual (VR) y realidad aumentada (AR); servicios de diseño industrial; servicios de diseño relativos a la creación de marcas, desarrollo de marcas, identidad de marcas; servicios de diseño gráfico; diseño, desarrollo y mantenimiento de sitios web; diseño y desarrollo de juegos en línea; creación, diseño y realización de animaciones y visualización en 3D; diseño y desarrollo de animaciones y modelos en 3D informáticos con fines publicitarios; diseño y desarrollo de aplicaciones de vídeo en línea con fines publicitarios; digitalización electrónica de fotografías en soportes legibles por odenador; diseño gráfico para la compilación de páginas Web en Internet; compilación de páginas web para Internet; creación, mantenimiento y alojamiento de sitios web, aplicaciones y medios sociales en relación con campañas de medios sociales de terceros; programación de software para portales, salas de charla, líneas de charla y foros de Internet; consultoría sobre automatización para aplicaciones multimedia; servicios informáticos, a saber, implementación de software en redes para terceros en el ámbito de la publicidad digital y el marketing y la integración de redes y sistemas informáticos para terceros en el ámbito de la publicidad y el marketing digitales; desarrollo y actualización de software; diseño de software y programación informática para aplicaciones digitales; consultoría sobre software; consultoría sobre tecnologías informáticas; consultoría sobre el diseño y desarrollo de hardware; servicios de consultoría sobre tecnologías de la información; plataforma como servicio [PaaS] y software como servicio [SaaS] en los ámbitos de la publicidad, marketing, promoción y relaciones públicas; consultoría, información y asesoramiento en relación con todos los servicios mencionados; incluidos los servicios mencionados prestados en línea, mediante una base de datos o Internet; los servicios antes mencionados no son relativos a la ciberseguridad o la protección de datos; diseño y desarrollo de animaciones y modelos en 3D con fines publicitarios; diseño y desarrollo de juegos en línea con fines publicitarios; procesamiento digital de grabaciones audiovisuales y de vídeo."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9, 16, 35, 38, 41, 42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "MEDIA.MONKS",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002819e86d7"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262038&fcoOp=EXTRA__Default",
+  "idProc": "4262038"
+}

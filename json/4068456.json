@@ -1,0 +1,88 @@
+{
+  "idsic": "4068456",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-03-10",
+  "numeroSolicitud": "SD2022/0023017",
+  "fechaPresentacion": "2022-01-19",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "1011",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-12-07",
+    "fechaRenovacion": "2032-01-19",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1649842",
+    "fechaRegistroInternacional": "2022-01-19"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1302715",
+          "fullName": "NAM & NAM"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1422478",
+          "fullName": "KIA CORPORATION",
+          "direccion": "12, Heolleung-ro, Seocho-gu Seoul 06797    (KR)",
+          "codPais": "KR"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "17192062",
+          "nombre": "HUMBERTO RUBIO CAMACHO",
+          "direccion": "Carrera 53 No. 103 B 42 Oficinas 602/605",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "111111",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "REPÚBLICA DE COREA",
+      "fechaDePrioridad": "2021-11-01",
+      "numeroDePrioridad": "4020210221451",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "42",
+        "descripcion": "Pruebas/inspección o investigación de productos farmacéuticos/cosméticos o productos alimenticios; peritajes terrestres, aéreos y marítimos; investigación y desarrollo de productos; servicios de asesoría tecnológica en relación con el análisis de ingeniería de máquinas; investigación sobre ingeniería mecánica; servicios de ingeniería sobre robótica; alquiler de robots de laboratorio; ensayo de nuevos productos; servicios de ingeniería de la industria de los vehículos terrestres; diseño de vehículos de motor; diseño de equipos mecánicos para la fabricación de automóviles; diseño de productos; diseño de aparatos y máquinas de llenado; diseño de robots para uso industrial; servicios de diseño de partes de vehículos de motor; servicios de diseño de materias textiles para la ornamentación de vehículos de motor; desarrollo de programas de procesamiento de datos; programación de aplicaciones multimedia; ingeniería de software; diseño y desarrollo de software; diseño y desarrollo de software de aplicación para el metaverso; servicios de programación informática para la gestión a distancia de datos de instrumentos de diagnóstico médico; servicios de tecnología, desarrollo e investigación y diseño de equipos informáticos y software para la fabricación de vehículos; programación informática; diseño y desarrollo de software informático; desarrollo de hardware informático; servicios de pruebas, inspección e investigación sobre agricultura, ganadería y piscicultura; desarrollo de tecnologías para la fabricación de circuitos para la comunicación inalámbrica, el procesamiento electrónico de datos, dispositivos electrónicos de consumo, dispositivos electrónicos para automóviles; desarrollo de vehículos; investigación tecnológica en relación con automóviles, incluidos coches autónomos, coches eléctricos, coches híbridos, coches de hidrógeno y coches conectados."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "42"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "KIA MOVEMENT THAT INSPIRES",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002816b6bdc"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4068456&fcoOp=EXTRA__Default",
+  "idProc": "4068456"
+}

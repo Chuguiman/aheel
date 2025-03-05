@@ -1,0 +1,75 @@
+{
+  "idsic": "4282876",
+  "refClient": "",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-27",
+  "numeroSolicitud": "SD2022/0076018",
+  "fechaPresentacion": "2022-07-27",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-19",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1020832898",
+          "identificacionOMPI": "Valentina",
+          "fullName": "VALENTINA MORELLI OSORIO",
+          "direccion": "Carrera 7 #140-08 apto 301 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1020832898",
+          "nombre": "VALENTINA MORELLI OSORIO",
+          "direccion": "Carrera 7 #140-08 apto 301",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "30",
+        "descripcion": "Tortillas de harina o maíz; tortillas de harina o maíz para hacer fajitas; tortillas de maíz para tacos; nachos; nachos [chips de tortillas de maíz]; snacks a base de arroz; snacks a base de cereales; snacks a base de maíz; aderezos alimenticios [salsas]; aliños alimenticios [salsas]; salsas; salsas [condimentos]; salsas a base de tomate; salsas concentradas; salsas de miel y mostaza; salsas de pimientos; salsas dulces; salsas par rociar; salsas para cocinar; salsas saladas; harina de arroz; harina de cereales; harina de yuca; harinas*; mezclas de especias; mezclas para salsas; salsa picante; sal condimentada."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "30"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "BENEDETTO MORELLI BITES",
+  "reivindicacionDeColores": "RGB: 173 102 68 - RGB 252 244 221",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fb1ad"
+  ],
+  "transliteracion": "Benedetto Morelli Bites: Es un nombre de fantasía que se da de la combinación de 3 Palabras, 2 del idioma Español, entre ellas el apellido de la titular de la marca y 1 en ingles, que al unirse evocan el espíritu de la marca.",
+  "traduccionEspanol": "Benedetto Morelli Bites: Benedetto Morelli Bocados",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4282876&fcoOp=EXTRA__Default",
+  "idProc": "4282876"
+}

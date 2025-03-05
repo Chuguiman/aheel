@@ -1,0 +1,104 @@
+{
+  "idsic": "4284676",
+  "refClient": "Referencia del solicitante",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076151",
+  "fechaPresentacion": "2022-07-01",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674687",
+    "fechaRegistroInternacional": "2022-07-01"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1175086",
+          "fullName": "MICHELLE L. ZIMMERMANN LEYDIG, VOIT & MAYER, LTD."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1321998",
+          "fullName": "UNITED INDUSTRIES CORPORATION",
+          "direccion": "Suite 300, 1 Rider Trail Plaza Drive Earth City MO 63045    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "72292765",
+          "nombre": "EDUARDO VARELA PEZZANO",
+          "direccion": "CARRERA 4 NO. 72 - 35",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2022-01-06",
+      "numeroDePrioridad": "97206358",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "4",
+        "descripcion": "Velas (iluminación); velas que contienen repelente de insectos."
+      },
+      {
+        "clase": "5",
+        "descripcion": "Insecticidas; pesticidas; Preparaciones antifricción para evitar rozaduras de la piel; ungüentos antiprurito; gel desinfectante antibacteriano a base de alcohol para la piel; vendas para apósitos; soluciones limpiadoras para uso médico; preparaciones para desinfectar las manos; repelentes de insectos; lociones medicinales para el tratamiento de afecciones cutáneas; lociones medicinales para el tratamiento de las cicatrices; preparaciones farmacéuticas para heridas cutáneas; preparaciones farmacéuticas para picaduras de insectos; lociones farmacéuticas para la piel; toallitas medicinales prehumedecidas; preparaciones de uso médico para limpiar la piel; preparaciones desinfectantes para uso doméstico y personal; preparaciones medicinales para eliminar verrugas; apósitos para heridas; preparaciones desinfectantes antimicrobianas para las manos."
+      },
+      {
+        "clase": "7",
+        "descripcion": "Dispensadores portátiles accionados por motor para acoplar a recipientes y dispensar líquidos."
+      },
+      {
+        "clase": "11",
+        "descripcion": "Faroles eléctricos."
+      },
+      {
+        "clase": "21",
+        "descripcion": "Recipientes difusores para repelentes de insectos; dispositivos eléctricos para atraer y eliminar insectos; difusores eléctricos para repelentes de insectos; trampas para moscas; trampas para insectos."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "4, 5, 7, 11, 21"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "ECLIPSE",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fc030"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284676&fcoOp=EXTRA__Default",
+  "idProc": "4284676"
+}

@@ -1,0 +1,75 @@
+{
+  "idsic": "4266911",
+  "refClient": "",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-18",
+  "numeroSolicitud": "SD2022/0072221",
+  "fechaPresentacion": "2022-07-18",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-12",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "901243581",
+          "identificacionOMPI": "",
+          "fullName": "INVERSIONES SPRON S.A.S.",
+          "direccion": "Calle 10 B No. 36 -32 Of 601 MEDELLIN ANTIOQUIA NA (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "43220472",
+          "nombre": "LISSETTE JUREMA ACEVEDO MEDINA",
+          "direccion": "GT AEROPUERTO JMC 200MTS VIA LAS PALMAS BG LA REGIONAL BG 46",
+          "ciudad": "MEDELLIN",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "33",
+        "descripcion": "Bebidas alcohólicas (excepto cervezas)."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "33"
+    }
+  },
+  "reivindicaColorDistintivo": true,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "HIJOS DEL SOL AGUARDIENTE COLOMBIA",
+  "reivindicacionDeColores": "#DB904A#985C29#7E2C12#56634B#53B08F#F9EEC4#F5D993#A68754#CB5A1E#EBBO84#C73E14#518569#789D7C#657D5B#65B190#569473#347C61#67C49F#1E443C#86CCAC",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817e5878"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4266911&fcoOp=EXTRA__Default",
+  "idProc": "4266911"
+}

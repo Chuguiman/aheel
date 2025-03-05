@@ -1,0 +1,80 @@
+{
+  "idsic": "4284705",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076180",
+  "fechaPresentacion": "2022-06-27",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-08-03",
+    "fechaRenovacion": "2032-06-27",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674901",
+    "fechaRegistroInternacional": "2022-06-27"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1464758",
+          "fullName": "SHENZHEN VITM INTELLECTUAL PROPERTY CO., LTD"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1464757",
+          "fullName": "SHENZHEN WENJOY TECHNOLOGY CO.,LTD.",
+          "direccion": "Room 1008, Floor 10, Block B, Tongxin Technology Building, Qiaotou Community, Fuhai Street, Baoan District, Shenzhen City Guangdong Province    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "SHENZHEN VITM INTELLECTUAL PROPERTY CO., LTD",
+          "direccion": "Room 109, Floor 1, Building F, No. 663, Bulong Road, Dafapu Community, Bantian Street, Longgang District, Shenzhen City Guangdong Province",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "CN",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "Tabletas electrónicas; ordenadores portátiles ponibles; relojes inteligentes [aparatos de procesamiento de datos]; robots humanoides con inteligencia artificial para la investigación científica; aparatos de telecomunicación en forma de artículos de joyería; seguidores de actividad ponibles; estuches para teléfonos inteligentes; enrutadores inalámbricos; películas protectoras para teléfonos inteligentes; cascos auriculares; lectores de libros electrónicos; cajas de altavoces; cables USB para teléfonos celulares; reductores [electricidad]; auriculares inalámbricos; sistemas estereofónicos; cámaras fotográficas; instalaciones eléctricas antirrobo; gafas tridimensionales; baterías eléctricas; cargadores de baterías; cargadores de batería para tabletas informáticas."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "TELZEAL",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fba67"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284705&fcoOp=EXTRA__Default",
+  "idProc": "4284705"
+}

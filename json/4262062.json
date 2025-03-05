@@ -1,0 +1,92 @@
+{
+  "idsic": "4262062",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071054",
+  "fechaPresentacion": "2022-05-31",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-08-08",
+    "fechaRenovacion": "2032-05-31",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672336",
+    "fechaRegistroInternacional": "2022-05-31"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1453926",
+          "fullName": "CANDICE E. KIM GREENBERG TRAURIG, LLP"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1453925",
+          "fullName": "DISTRIBUTION PERFORMANCE SOLUTIONS",
+          "direccion": "4335 E. Wood St. Phoenix AZ 85040    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "CANDICE E. KIM GREENBERG TRAURIG, LLP",
+          "direccion": "1840 Century Park East, Suite 1900 Los Angeles CA 90067",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "US",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "ESTADOS UNIDOS DE AMÉRICA",
+      "fechaDePrioridad": "2022-05-20",
+      "numeroDePrioridad": "97422309",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "Servicios de consultoría empresarial relacionados con la distribución de productos, servicios de gestión de operaciones y sistemas de producción y soluciones de distribución; Servicios de consultoría empresarial sobre distribución de productos, logística, logística inversa, cadenas de suministro y sistemas de producción y soluciones de distribución."
+      },
+      {
+        "clase": "39",
+        "descripcion": "Servicios de distribución, a saber, reparto de productos; servicios de logística y logística inversa de la cadena de suministro, a saber, almacenamiento, transporte y distribución de mercancías por cuenta de terceros por avión, tren, barco o camión."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "35, 39"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "DCPERFORM",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df86c"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262062&fcoOp=EXTRA__Default",
+  "idProc": "4262062"
+}

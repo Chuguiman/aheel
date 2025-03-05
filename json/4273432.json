@@ -1,0 +1,73 @@
+{
+  "idsic": "4273432",
+  "refClient": "Marca la preferida",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073655",
+  "fechaPresentacion": "2022-07-21",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-16",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "759240",
+    "fechaRegistro": "2024-07-16",
+    "fechaRenovacion": "",
+    "vigencia": "2034-07-16"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "860501145",
+          "identificacionOMPI": "",
+          "fullName": "DUQUESA S.A.",
+          "direccion": "CARRERA 106 NO. 17B-86 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1020744382",
+          "nombre": "BEATRIZ ALICIA  CARREÑO TAMAYO",
+          "direccion": "calle 72 # 6-30 piso 13",
+          "ciudad": "BOGOTA",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "29",
+        "descripcion": "Margarina; aceites comestibles; aceites vegetales para uso alimenticio; aceites vegetales para uso culinario; grasas comestibles para ser utilizadas en la fabricación industrial de productos alimenticios; grasas para uso alimenticio; grasas vegetales para uso alimenticio; mantequilla; manteca [mantequilla]; aceite de palma para uso alimenticio; aceite de palma para uso culinario; aceite de oliva para uso alimenticio; aceite de oliva para uso culinario."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "29"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "LA PREFERIDA DE NUESTRO CAMPO A LA MESA",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4273432&fcoOp=EXTRA__Default",
+  "idProc": "4273432"
+}

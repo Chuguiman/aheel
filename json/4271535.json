@@ -1,0 +1,88 @@
+{
+  "idsic": "4271535",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-21",
+  "numeroSolicitud": "SD2022/0073118",
+  "fechaPresentacion": "2022-05-27",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "1027",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2024-06-11",
+    "fechaRenovacion": "2032-05-27",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672971",
+    "fechaRegistroInternacional": "2022-05-27"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1461979",
+          "fullName": "CHANG TSI & PARTNER"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1461978",
+          "fullName": "ZHEJIANG GEELY HOLDING GROUP CO., LTD.",
+          "direccion": "1760 JIANGLING ROAD, BINJIANG DISTRICT, HANGZHOU ZHEJIANG    (CN)",
+          "codPais": "CN"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "80412281",
+          "nombre": "JUAN GUILLERMO MOURE PEREZ",
+          "direccion": "CARRERA 5 No. 34-03",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "CHINA",
+      "fechaDePrioridad": "2022-02-23",
+      "numeroDePrioridad": "62805011",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "12",
+        "descripcion": "Vehículos eléctricos; vehículos de locomoción terrestre, aérea, acuática y ferroviaria; mecanismos de propulsión para vehículos terrestres; cajas de cambios de vehículos terrestres; automóviles; patinetes eléctricos autoequilibrados; tapizados para vehículos; cambios de velocidades para vehículos terrestres; acoplamientos para vehículos terrestres; motores de vehículos terrestres; motores de vehículos terrestres; motores eléctricos para vehículos terrestres; embragues de vehículos terrestres; convertidores del par motor para vehículos terrestres; motores de automóviles."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "12"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Figurativa",
+  "denominacionDelSigno": "",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817ea382"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4271535&fcoOp=EXTRA__Default",
+  "idProc": "4271535"
+}

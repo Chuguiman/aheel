@@ -1,0 +1,88 @@
+{
+  "idsic": "4284659",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076134",
+  "fechaPresentacion": "2022-05-17",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2022-12-12",
+    "fechaRenovacion": "2032-05-17",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674443",
+    "fechaRegistroInternacional": "2022-05-17"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1460242",
+          "fullName": "NOVAGRAAF FRANCE, MADAME PASCALINE BOURREAU"
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1454137",
+          "fullName": "ACM",
+          "direccion": "17 rue de Neuilly, Impasse Passoir F-92110 CLICHY    (FR)",
+          "codPais": "FR"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "NOVAGRAAF FRANCE, MADAME PASCALINE BOURREAU",
+          "direccion": "Bâtiment O2, 2 rue Sarah Bernhardt, CS90017 F-92665 ASNIERES-SUR-SEINE",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "FR",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "FRANCIA",
+      "fechaDePrioridad": "2021-11-23",
+      "numeroDePrioridad": "4819874",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "3",
+        "descripcion": "Jabones cosméticos; perfumes; cosméticos; aceites esenciales; preparaciones y cremas no medicinales para el cuidado de la piel, del rostro y del cuerpo; preparaciones para la limpieza corporal y cuidados de belleza; agua micelar; sueros para uso cosmético; preparaciones cosméticas de protección solar; lociones para el cabello; champús; todos estos productos pertenecen al ámbito dermatológico, no son para uso médico y no están compuestos a base de sales, ni son para ser utilizados para baños ni baños de burbujas (bañeras de hidromasaje)."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "3"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "AZEANE",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fc01c"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284659&fcoOp=EXTRA__Default",
+  "idProc": "4284659"
+}

@@ -1,0 +1,73 @@
+{
+  "idsic": "403257",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2006-08-02",
+  "numeroSolicitud": "06075920",
+  "fechaPresentacion": "2006-08-02",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2006-08-15",
+  "publicacionInfo": {
+    "numeroGaceta": "568",
+    "fechaPublicacion": "2006-09-29"
+  },
+  "certificadoInfo": {
+    "certificado": "609347",
+    "fechaRegistro": "2018-12-01",
+    "fechaRenovacion": "",
+    "vigencia": "2028-12-01"
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "801005",
+          "identificacionOMPI": "",
+          "fullName": "MICROSOFT CORPORATION",
+          "direccion": "ONE MICROSOFT WAY, REDMOND, WASHINGTON 98052-6399 REDMOND WASHINGTON  (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "17066629",
+          "nombre": "DARIO CARDENAS NAVAS",
+          "direccion": "CARRERA 7 No. 71-52 TORRE B PISO 9",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "9",
+        "descripcion": "RATONES PARA COMPUTADOR Y JUEGOS DE COMPUTADOR."
+      }
+    ],
+    "versionInfo": {
+      "version": "8",
+      "clases": "9"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "HABU",
+  "reivindicacionDeColores": "No",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=403257&fcoOp=EXTRA__Default",
+  "idProc": "403257"
+}

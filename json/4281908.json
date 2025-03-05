@@ -1,0 +1,75 @@
+{
+  "idsic": "4281908",
+  "refClient": "",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-07-27",
+  "numeroSolicitud": "SD2022/0075547",
+  "fechaPresentacion": "2022-07-27",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-12",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1007614917",
+          "identificacionOMPI": "JUAN MANUEL",
+          "fullName": "JUAN MANUEL ESCOBAR LONDOÑO",
+          "direccion": "CR 56C NO 80 SUR 87  LA ESTRELLA ANTIOQUIA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1007614917",
+          "nombre": "JUAN MANUEL ESCOBAR LONDOÑO",
+          "direccion": "CR 56C NO 80 SUR 87",
+          "ciudad": "LA ESTRELLA",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "3",
+        "descripcion": "Aceites y sales de baño que no sean para uso médico; geles y sales de baño y de ducha no medicinales; sales de baño; sales de baño cosméticas; sales de baño no medicinales; sales de baño para uso cosmético; sales de baño perfumadas; sales de baño que no sean para uso médico; sales para el baño; aceites perfumados que difunden aromas al ser calentados; aromas [aceites esenciales]; aromas para fragancias."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "3"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "SAVIA DEL PRADO",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817f9668"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4281908&fcoOp=EXTRA__Default",
+  "idProc": "4281908"
+}

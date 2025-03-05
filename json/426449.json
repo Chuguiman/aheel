@@ -1,0 +1,73 @@
+{
+  "idsic": "426449",
+  "refClient": "",
+  "estado": "Registrada",
+  "fechaRadicacion": "2007-01-19",
+  "numeroSolicitud": "07005120",
+  "fechaPresentacion": "2007-01-19",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2007-05-22",
+  "publicacionInfo": {
+    "numeroGaceta": "577",
+    "fechaPublicacion": "2007-06-29"
+  },
+  "certificadoInfo": {
+    "certificado": "579329",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "800221624",
+          "identificacionOMPI": "",
+          "fullName": "CREAR PAIS S.A.",
+          "direccion": "CARRERA 7 No. 33 - 42 PISO 14 BOGOTÁ D.C.  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79732340",
+          "nombre": "ALFREDO CAMACHO RUEDA",
+          "direccion": "AV. AMERICAS NO. 37-35",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "35",
+        "descripcion": "PUBLICIDAD, GESTIÓN DE NEGOCIOS COMERCIALES, ADMINISTRACIÓN COMERCIAL, TRABAJOS DE OFICINA."
+      }
+    ],
+    "versionInfo": {
+      "version": "8",
+      "clases": "35"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "BANPAÍS",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=426449&fcoOp=EXTRA__Default",
+  "idProc": "426449"
+}

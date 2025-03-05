@@ -1,0 +1,84 @@
+{
+  "idsic": "4262056",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-14",
+  "numeroSolicitud": "SD2022/0071048",
+  "fechaPresentacion": "2022-06-14",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "975",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2023-06-30",
+    "fechaRenovacion": "2032-06-14",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1672251",
+    "fechaRegistroInternacional": "2022-06-14"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1189935",
+          "fullName": "GLORIA TSUI-YIP GOTTLIEB, RACKMAN & REISMAN, P.C."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1459979",
+          "fullName": "OUIDAD LICENSING LLC",
+          "direccion": "55 Mall Drive, Suite A Commack NY 11725    (US)",
+          "codPais": "US"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "GLORIA TSUI-YIP GOTTLIEB, RACKMAN & REISMAN, P.C.",
+          "direccion": "270 Madison Ave., 8th Floor New York NY 10016",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "US",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "3",
+        "descripcion": "Kits para el cuidado del cabello compuestos de preparaciones no medicinales para el cuidado del cabello, a saber, mascarillas para el cabello, geles para el cabello, lacas para el cabello y aceites para el cabello; kits para el cuidado del cabello compuestos de preparaciones no medicinales para el cuidado del cabello, a saber, champús, acondicionadores para el cabello, lacas para el cabello, geles para el cabello; preparaciones para el cuidado del cabello; cremas para el cabello; preparaciones para desenredar el cabello; geles para el cabello; brillantina; lociones capilares; mascarillas para el cabello; espumas para el cabello; aceites para el cabello; lacas para el cabello; preparaciones para limpiar el cabello; preparaciones para rizar el cabello; champús para el cabello; pulverizadores para dar brillo al cabello; gel para peinar el cabello; lacas para fijar el cabello; preparaciones para peinar el cabello; cremas texturizantes para el cabello; preparaciones para ondular el cabello; champús acondicionadores; champús; acondicionadores para el cabello; pomadas para el cabello; preparaciones cosméticas no medicinales para tratamientos capilares; lociones capilares reparadoras no medicinales; sueros no medicinales para el cabello; aceites suavizantes para el cabello; espumas para el peinado; sprays para peinar el cabello rizado."
+      },
+      {
+        "clase": "21",
+        "descripcion": "Cepillos para el cabello; peines; cepillos para desenredar el cabello."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "3, 21"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": true,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "OUIDAD",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817df86a"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4262056&fcoOp=EXTRA__Default",
+  "idProc": "4262056"
+}

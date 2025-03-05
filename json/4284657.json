@@ -1,0 +1,88 @@
+{
+  "idsic": "4284657",
+  "refClient": "Referencia del solicitante",
+  "estado": "Registrada",
+  "fechaRadicacion": "2022-07-28",
+  "numeroSolicitud": "SD2022/0076132",
+  "fechaPresentacion": "2022-03-24",
+  "tipoSolicitud": "SD Solicitud de Extensión Territorial",
+  "fechaOrdenPublicacion": "",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": ""
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "2022-12-12",
+    "fechaRenovacion": "2032-03-24",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "1674425",
+    "fechaRegistroInternacional": "2022-03-24"
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [
+        {
+          "identificacionOMPI": "1244248",
+          "fullName": "BERMEJO & JACOBSEN PATENTES-MARCAS S.L."
+        }
+      ],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "",
+          "identificacionOMPI": "1456571",
+          "fullName": "TOSKANI S.L.",
+          "direccion": "Passatge Ciutadans, 4 E-08005 BARCELONA    (ES)",
+          "codPais": "ES"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "",
+          "nombre": "BERMEJO & JACOBSEN PATENTES-MARCAS S.L.",
+          "direccion": "Av. De Europa 14 E-28108 Alcobendas (Madrid)",
+          "ciudad": "",
+          "codigoPostal": "",
+          "pais": "ES",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [
+    {
+      "pais": "OFICINA DE PROPIEDAD INTELECTUAL DE LA UNIÓN EUROPEA (EUIPO)",
+      "fechaDePrioridad": "2021-12-20",
+      "numeroDePrioridad": "018586780",
+      "clase": "",
+      "reivindicaciones": ""
+    }
+  ],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "5",
+        "descripcion": "Preparaciones farmacéuticas; sustancias dietéticas adaptadas a uso médico; preparaciones sanitarias para uso medicinal; aminoácidos para uso medicinal y preparaciones de vitaminas; suplementos dietéticos consistentes en aminoácidos; extractos de plantas para uso farmacéutico; píldoras antioxidantes; ungüentos para fines farmacéuticos y médicos; preparaciones químicas para uso farmacéutico y médico; preparaciones biológicas para uso farmacéutico y médico; preparaciones enzimáticas para uso médico; tónicos restaurativos [fármacos]; tónicos (medicamentos); emplastos adhesivos; relleno dérmico inyectable; productos farmacéuticos inyectables; productos higiénicos y sanitarios para uso médico, para el tratamiento de enfermedades de la piel; aminoácidos para uso médico y preparaciones de vitaminas; ácidos para uso farmacéutico; antitoxinas; sustancias dietéticas para uso médico, a saber complementos alimenticios a base de plantas, preparaciones de vitaminas y minerales; suplementos vitamínicos y minerales; pomadas para uso médico; preparaciones químicas para uso farmacéutico y uso médico; tónicos reconstituyentes [medicamento]; emplastos para uso médico; material para apósitos; crema cosmética para uso médico."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "5"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "TOSKANIMED",
+  "reivindicacionDeColores": "",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=09000002817fb9fe"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4284657&fcoOp=EXTRA__Default",
+  "idProc": "4284657"
+}

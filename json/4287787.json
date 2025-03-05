@@ -1,0 +1,73 @@
+{
+  "idsic": "4287787",
+  "refClient": "1107077440",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-01-14",
+  "numeroSolicitud": "SD2022/0094758",
+  "fechaPresentacion": "2022-01-14",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-17",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "1107077440",
+          "identificacionOMPI": "YANCELLY LORENA",
+          "fullName": "YANCELLY LORENA ARISTIZABAL RAMIREZ",
+          "direccion": "cra 7 # 13-70 CALI VALLE DEL CAUCA  (CO)",
+          "codPais": "CO"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "1107077440",
+          "nombre": "YANCELLY LORENA  ARISTIZABAL RAMIREZ",
+          "direccion": "cra 7 # 13-70",
+          "ciudad": "CALI",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "25",
+        "descripcion": "Prendas de vestir para mujeres, hombres y niños."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "25"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Nominativa",
+  "denominacionDelSigno": "FIORE BLU",
+  "reivindicacionDeColores": "",
+  "media": [],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4287787&fcoOp=EXTRA__Default",
+  "idProc": "4287787"
+}

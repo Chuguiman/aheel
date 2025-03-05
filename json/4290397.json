@@ -1,0 +1,75 @@
+{
+  "idsic": "4290397",
+  "refClient": "9324-TMBE-37298",
+  "estado": "Negada",
+  "fechaRadicacion": "2022-08-01",
+  "numeroSolicitud": "SD2022/0077461",
+  "fechaPresentacion": "2022-08-01",
+  "tipoSolicitud": "SD Solicitud de Signos Distintivos",
+  "fechaOrdenPublicacion": "2022-01-19",
+  "publicacionInfo": {
+    "numeroGaceta": "974",
+    "fechaPublicacion": "2022-09-20"
+  },
+  "certificadoInfo": {
+    "certificado": "",
+    "fechaRegistro": "",
+    "fechaRenovacion": "",
+    "vigencia": ""
+  },
+  "registroInternacionalInfo": {
+    "numeroRegistroInternacional": "",
+    "fechaRegistroInternacional": ""
+  },
+  "solicitantesInfo": [
+    {
+      "representantesInternacionales": [],
+      "solicitantes": [
+        {
+          "numeroIdentificacion": "886540",
+          "identificacionOMPI": "",
+          "fullName": "NEUGEBAUER ALIMENTOS S/A.",
+          "direccion": "RODOVIA RS 130, KM 74 NO. 2258 BARRIO MEDIANEIRA ARROIO DO MEIO RIO GRANDE DO SUL  (BR)",
+          "codPais": "BR"
+        }
+      ],
+      "contacto": [
+        {
+          "numeroIdentificacion": "79339809",
+          "nombre": "JUAN CARLOS CUESTA QUINTERO",
+          "direccion": "CLL 72 # 10 -07 OFC 603",
+          "ciudad": "BOGOTÁ",
+          "codigoPostal": "",
+          "pais": "CO",
+          "tipoDireccion": "Dirección Física"
+        }
+      ]
+    }
+  ],
+  "prioridadInfo": [],
+  "multiclases": {
+    "clasesInfo": [
+      {
+        "clase": "30",
+        "descripcion": "Caramelos; caramelos blandos; chocolate; productos de confitería; productos de confitería de azucar; gomas de mascar; pastillas [productos de confitería]; Dulces comestibles; Chocolate en polvo [para cocinar, excepto para hacer bebidas]."
+      }
+    ],
+    "versionInfo": {
+      "version": "11",
+      "clases": "30"
+    }
+  },
+  "reivindicaColorDistintivo": false,
+  "caracteresEstandar": false,
+  "tipoDeSignoDistintivo": "Marca",
+  "naturaleza": "Mixta",
+  "denominacionDelSigno": "BIB’S",
+  "reivindicacionDeColores": "No",
+  "media": [
+    "https://sipi.sic.gov.co/sipi/Common/Utils/GetFile.aspx?&id=0900000281805a6b"
+  ],
+  "transliteracion": "",
+  "traduccionEspanol": "",
+  "redirectUrl": "https://sipi.sic.gov.co/sipi/Extra/Default.aspx?op=EXTRA_CB&headerVisible=0&idProc=4290397&fcoOp=EXTRA__Default",
+  "idProc": "4290397"
+}
