@@ -2,3 +2,5 @@ node -e "const { SicScraper } = require('./src/services/scraper.js'); async func
 
 node src/integrated-workflow.js --downloadLimit=10 --processLimit=30 --autoConfirm=true --cleanupAfterUpload=false
 node src/integrated-workflow.js --downloadLimit=20 --processLimit=30 --autoConfirm=true --cleanupAfterUpload=true
+
+https://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@github.com/Chuguiman/aheel.git
