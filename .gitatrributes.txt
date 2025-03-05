@@ -1,0 +1,10 @@
+# Establecer comportamiento predeterminado para normalizar automáticamente finales de línea
+* text=auto
+
+# Declarar explícitamente archivos de texto que quieres normalizar
+*.json text
+*.php text
+*.js text
+*.html text
+*.css text
+*.md text
