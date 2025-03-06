@@ -1,12 +1,12 @@
 node_modules
 .DS_Store
 
-# Ignorar el contenido de carpetas temporales pero mantener las carpetas
+# Ignorar contenido de carpetas temporales
 /json/*
 /origen/*
 /media/*
 
-# No ignorar los archivos .gitkeep
-!*/json/.gitkeep
-!*/origen/.gitkeep
-!*/media/.gitkeep
+# No ignorar archivos .gitkeep
+!json/.gitkeep
+!origen/.gitkeep
+!media/.gitkeep
