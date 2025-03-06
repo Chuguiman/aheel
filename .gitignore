@@ -1,2 +1,6 @@
 node_modules
-.env
+
+# Ignorar carpetas temporales
+/json/
+/origen/
+/media/
