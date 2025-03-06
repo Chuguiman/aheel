@@ -12,6 +12,7 @@ const { extractDataWithErrorHandling, insertToSimPrecarga } = require('./service
 const batchProcessor = require('./database/batch-processor');
 const { randomDelay } = require('./helpers/utils');
 
+
 /**
  * Obtiene la lista de expedientes que tienen HTML pero no JSON
  */
