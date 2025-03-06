@@ -93,6 +93,7 @@ function askToContinue() {
   });
 }
 
+
 // Función principal
 async function main() {
   if (!isMainThread) {

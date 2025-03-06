@@ -137,45 +137,165 @@ class SicScraper extends Scraper {
     }
   }
 
-  /**
-   * Descarga archivos relacionados con el expediente
-   * @param {string} expediente - Identificador del expediente
-   */
-  async downloadRelatedFiles(expediente) {
-    try {
-      // Buscar enlaces a archivos multimedia
-      const deviceURLs = await this.page.$$eval('.device a', links => 
-        links.map(a => a.href)
-      );
 
-      if (!deviceURLs || deviceURLs.length === 0) {
-        console.log(`ℹ️ No se encontraron archivos multimedia para expediente: ${expediente}`);
-        return;
-      }
-
-      // Crear directorio para archivos multimedia si no existe
-      await ensureDirectoryExists('media');
+/**
+ * Descarga y categoriza archivos relacionados con el expediente
+ * @param {string} expediente - Identificador del expediente
+ * @returns {Object} - Objeto con tipos de medios para actualizar el JSON
+ */
+async downloadRelatedFiles(expediente) {
+  try {
+    // Buscar todos los enlaces a archivos con sus clases
+    const mediaLinksData = await this.page.$$eval(
+      'a.device, a.devicePopup, a.devicePdf, a.deviceMusic, .device a[href]', 
+      links => links.map(a => ({
+        url: a.href,
+        className: a.className || ''
+      }))
+    );
+    
+    // Si no hay archivos, salir sin crear directorios
+    if (!mediaLinksData || mediaLinksData.length === 0) {
+      console.log(`ℹ️ No se encontraron archivos multimedia para expediente: ${expediente}`);
+      return {};
+    }
+    
+    console.log(`🔍 Encontrados ${mediaLinksData.length} archivos multimedia`);
+    
+    // Objeto para almacenar IDs de medios y sus tipos detectados
+    const mediaTypes = {};
+    let directoryCreated = false;
+    const mediaDir = path.join('media', expediente);
+    
+    // Procesar cada URL
+    for (let i = 0; i < mediaLinksData.length; i++) {
+      const mediaData = mediaLinksData[i];
+      const mediaUrl = mediaData.url;
+      const elementClass = mediaData.className || '';
       
-      // Procesar cada URL
-      for (const deviceURL of deviceURLs) {
-        const parsedUrl = url.parse(deviceURL);
-        const queryParams = new URLSearchParams(parsedUrl.query);
-        const fileId = queryParams.get('id');
-
-        if (!fileId) {
-          console.error('💔 No se encontró el ID en la URL:', deviceURL);
-          continue;
-        }
-
-        // Determinar la extensión del archivo
-        const extension = parsedUrl.pathname.endsWith('.aspx') ? '.pdf' : '';
-        const filePath = path.join('media', `${fileId}${extension}`);
-
-        // Descargar el archivo
-        await this.downloadFile(deviceURL, filePath);
+      const parsedUrl = url.parse(mediaUrl);
+      const queryParams = new URLSearchParams(parsedUrl.query);
+      const fileId = queryParams.get('id');
+      
+      if (!fileId) {
+        console.error('💔 No se encontró el ID en la URL:', mediaUrl);
+        continue;
       }
-    } catch (error) {
-      console.error('❌ Error al descargar archivos relacionados:', error);
+      
+      try {
+        // Descargar contenido del archivo
+        const response = await axios({
+          url: mediaUrl,
+          method: 'GET',
+          responseType: 'arraybuffer'
+        });
+        
+        const buffer = Buffer.from(response.data);
+        
+        // Realizar detección de tipo
+        let detectedType = 'unknown';
+        if (elementClass.includes('deviceMusic')) {
+          detectedType = 'audio';
+        } else if (elementClass.includes('devicePdf')) {
+          detectedType = 'pdf';
+        } else {
+          detectedType = this.detectFileType(buffer);
+        }
+        
+        // Crear el directorio solo cuando tenemos un archivo válido para guardar
+        if (!directoryCreated) {
+          await ensureDirectoryExists(mediaDir);
+          directoryCreated = true;
+        }
+        
+        // Guardar el archivo con la extensión correcta
+        const extension = this.getExtensionByType(detectedType);
+        const filePath = path.join(mediaDir, `${fileId}${extension}`);
+        await fs.promises.writeFile(filePath, buffer);
+        
+        // Guardar el tipo detectado para el JSON
+        mediaTypes[fileId] = detectedType;
+        
+        console.log(`📥 Archivo ${i+1}/${mediaLinksData.length} descargado: ${fileId} (${detectedType})`);
+      } catch (error) {
+        console.error(`❌ Error al descargar archivo ${fileId}:`, error.message);
+      }
+    }
+    
+    // Guardar la información de tipos solo si se creó el directorio
+    if (directoryCreated && Object.keys(mediaTypes).length > 0) {
+      const typesFilePath = path.join(mediaDir, 'media_types.json');
+      await fs.promises.writeFile(typesFilePath, JSON.stringify(mediaTypes, null, 2));
+      console.log(`✅ ${Object.keys(mediaTypes).length} archivos multimedia procesados correctamente`);
+    } else {
+      console.log(`ℹ️ No se guardaron archivos para el expediente: ${expediente}`);
+    }
+    
+    return mediaTypes;
+  } catch (error) {
+    console.error(`❌ Error al descargar archivos relacionados para ${expediente}:`, error);
+    return {};
+  }
+}
+
+/**
+ * Detecta el tipo de archivo basado en sus primeros bytes
+ * @param {Buffer} buffer - Buffer con el contenido del archivo
+ * @returns {string} - Tipo de archivo ('image', 'pdf', 'audio', 'unknown')
+ */
+detectFileType(buffer) {
+  // Sin contenido o buffer demasiado pequeño
+  if (!buffer || buffer.length < 4) {
+    return 'unknown';
+  }
+  
+  // Detectar MP3 (ID3v2 header)
+  if (buffer[0] === 0x49 && buffer[1] === 0x44 && buffer[2] === 0x33) {
+    return 'audio';
+  }
+  
+  // Detectar MP3 (MPEG frame sync)
+  if ((buffer[0] === 0xFF && (buffer[1] & 0xE0) === 0xE0)) {
+    return 'audio';
+  }
+  
+  // Detectar WAV
+  if (buffer[0] === 0x52 && buffer[1] === 0x49 && 
+      buffer[2] === 0x46 && buffer[3] === 0x46) {
+    return 'audio';
+  }
+  
+  // Detectar PDF
+  if (buffer[0] === 0x25 && buffer[1] === 0x50 && 
+      buffer[2] === 0x44 && buffer[3] === 0x46) {
+    return 'pdf';
+  }
+  
+  // Detectar JPEG
+  if (buffer[0] === 0xFF && buffer[1] === 0xD8) {
+    return 'image';
+  }
+  
+  // Detectar PNG
+  if (buffer[0] === 0x89 && buffer[1] === 0x50 && 
+      buffer[2] === 0x4E && buffer[3] === 0x47) {
+    return 'image';
+  }
+  
+  return 'unknown';
+}
+
+  /**
+   * Obtiene la extensión correcta basada en el tipo de archivo
+   * @param {string} type - Tipo de archivo detectado
+   * @returns {string} - Extensión del archivo con punto
+   */
+  getExtensionByType(type) {
+    switch (type) {
+      case 'audio': return '.mp3';
+      case 'image': return '.jpg';
+      case 'pdf': return '.pdf';
+      default: return '.pdf';
     }
   }
 
