@@ -1,4 +1,4 @@
-node -e "const { SicScraper } = require('./src/services/scraper.js'); async function test() { const scraper = new SicScraper(); await scraper.initialize(); await scraper.processExpediente('4074024'); await scraper.close(); } test().catch(console.error);"
+node -e "const { SicScraper } = require('./src/services/scraper.js'); async function test() { const scraper = new SicScraper(); await scraper.initialize(); await scraper.processExpediente('5578338'); await scraper.close(); } test().catch(console.error);"
 
 node src/integrated-workflow.js --downloadLimit=10 --processLimit=30 --autoConfirm=true --cleanupAfterUpload=false
 node src/integrated-workflow.js --downloadLimit=20 --processLimit=30 --autoConfirm=true --cleanupAfterUpload=true

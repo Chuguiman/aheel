@@ -173,52 +173,101 @@ async downloadRelatedFiles(expediente) {
       const mediaUrl = mediaData.url;
       const elementClass = mediaData.className || '';
       
-      const parsedUrl = url.parse(mediaUrl);
-      const queryParams = new URLSearchParams(parsedUrl.query);
-      const fileId = queryParams.get('id');
-      
-      if (!fileId) {
-        console.error('💔 No se encontró el ID en la URL:', mediaUrl);
+      // Utilizar WHATWG URL API
+      let fileId;
+      try {
+        const parsedUrl = new URL(mediaUrl);
+        fileId = parsedUrl.searchParams.get('id');
+      } catch (urlError) {
+        console.error(`❌ URL inválida (${i+1}/${mediaLinksData.length}):`, mediaUrl);
         continue;
       }
       
-      try {
-        // Descargar contenido del archivo
-        const response = await axios({
-          url: mediaUrl,
-          method: 'GET',
-          responseType: 'arraybuffer'
-        });
-        
-        const buffer = Buffer.from(response.data);
-        
-        // Realizar detección de tipo
-        let detectedType = 'unknown';
-        if (elementClass.includes('deviceMusic')) {
-          detectedType = 'audio';
-        } else if (elementClass.includes('devicePdf')) {
-          detectedType = 'pdf';
-        } else {
-          detectedType = this.detectFileType(buffer);
+      if (!fileId) {
+        console.error(`💔 No se encontró el ID en la URL (${i+1}/${mediaLinksData.length}):`, mediaUrl);
+        continue;
+      }
+      
+      // Implementar sistema de reintentos
+      let attempts = 0;
+      const maxAttempts = 3;
+      let downloadSuccess = false;
+      
+      while (attempts < maxAttempts && !downloadSuccess) {
+        try {
+          attempts++;
+          
+          // Descargar contenido del archivo con timeout
+          const response = await axios({
+            url: mediaUrl,
+            method: 'GET',
+            responseType: 'arraybuffer',
+            timeout: 30000 // 30 segundos de timeout
+          });
+          
+          const buffer = Buffer.from(response.data);
+          
+          // Validación básica del contenido
+          if (!buffer || buffer.length < 100) {
+            console.warn(`⚠️ Archivo ${fileId} con tamaño sospechoso: ${buffer.length} bytes. Reintentando...`);
+            if (attempts < maxAttempts) {
+              await new Promise(resolve => setTimeout(resolve, 1500 * attempts));
+              continue;
+            }
+          }
+          
+          // Realizar detección de tipo
+          let detectedType = 'unknown';
+          if (elementClass.includes('deviceMusic')) {
+            detectedType = 'audio';
+          } else if (elementClass.includes('devicePdf')) {
+            detectedType = 'pdf';
+          } else {
+            detectedType = this.detectFileType(buffer);
+          }
+          
+          // Crear el directorio solo cuando tenemos un archivo válido para guardar
+          if (!directoryCreated) {
+            await ensureDirectoryExists(mediaDir);
+            directoryCreated = true;
+          }
+          
+          // Guardar el archivo con la extensión correcta
+          const extension = this.getExtensionByType(detectedType);
+          const filePath = path.join(mediaDir, `${fileId}${extension}`);
+          await fs.promises.writeFile(filePath, buffer);
+          
+          // Guardar el tipo detectado para el JSON
+          mediaTypes[fileId] = detectedType;
+          
+          console.log(`📥 Archivo ${i+1}/${mediaLinksData.length} descargado: ${fileId} (${detectedType})`);
+          
+          // Marcar como descargado exitosamente
+          downloadSuccess = true;
+          
+        } catch (downloadError) {
+          // Manejo de errores específicos
+          const errorMessage = downloadError.message || 'Error desconocido';
+          
+          if (downloadError.code === 'ECONNABORTED') {
+            console.error(`⏱️ Timeout al descargar ${fileId} (intento ${attempts}/${maxAttempts}): La solicitud tardó demasiado tiempo`);
+          } else if (downloadError.response) {
+            console.error(`🔴 Error HTTP ${downloadError.response.status} al descargar ${fileId} (intento ${attempts}/${maxAttempts}): ${downloadError.response.statusText}`);
+          } else if (downloadError.request) {
+            console.error(`📶 Error de red al descargar ${fileId} (intento ${attempts}/${maxAttempts}): No se recibió respuesta del servidor`);
+          } else {
+            console.error(`❌ Error al descargar archivo ${fileId} (intento ${attempts}/${maxAttempts}):`, errorMessage);
+          }
+          
+          // Si hay más intentos disponibles, esperar antes de reintentar
+          if (attempts < maxAttempts) {
+            const delayTime = 2000 * attempts; // Retraso progresivo
+            console.log(`⏳ Esperando ${delayTime/1000} segundos antes de reintentar...`);
+            await new Promise(resolve => setTimeout(resolve, delayTime));
+          } else {
+            console.error(`❌ Agotados todos los intentos para descargar ${fileId}`);
+          }
         }
-        
-        // Crear el directorio solo cuando tenemos un archivo válido para guardar
-        if (!directoryCreated) {
-          await ensureDirectoryExists(mediaDir);
-          directoryCreated = true;
-        }
-        
-        // Guardar el archivo con la extensión correcta
-        const extension = this.getExtensionByType(detectedType);
-        const filePath = path.join(mediaDir, `${fileId}${extension}`);
-        await fs.promises.writeFile(filePath, buffer);
-        
-        // Guardar el tipo detectado para el JSON
-        mediaTypes[fileId] = detectedType;
-        
-        console.log(`📥 Archivo ${i+1}/${mediaLinksData.length} descargado: ${fileId} (${detectedType})`);
-      } catch (error) {
-        console.error(`❌ Error al descargar archivo ${fileId}:`, error.message);
       }
     }
     
@@ -233,7 +282,7 @@ async downloadRelatedFiles(expediente) {
     
     return mediaTypes;
   } catch (error) {
-    console.error(`❌ Error al descargar archivos relacionados para ${expediente}:`, error);
+    console.error(`❌ Error general en downloadRelatedFiles para ${expediente}:`, error.message);
     return {};
   }
 }
