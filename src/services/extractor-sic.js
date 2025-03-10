@@ -7,132 +7,6 @@ const path = require('path');
 const cheerio = require('cheerio');
 const mysql = require('mysql2/promise');
 
-/**
- * Función principal para extraer datos del HTML de un expediente
- * @param {string} expediente - Identificador del expediente
- * @returns {Promise<Object>} - Datos extraídos en formato JSON
- */
-/* async function extractDataWithErrorHandling(expediente) {
-  try {
-    // Leer el archivo HTML
-    const htmlPath = path.join(process.cwd(), 'origen', `${expediente}.html`);
-    const html = await fs.readFile(htmlPath, 'utf8');
-    
-    // Cargar el HTML en cheerio
-    const $ = cheerio.load(html);
-    
-    // Extraer y formatear datos primero
-    const fechaRadicacionOriginal = extraerSoloFecha(getFechaSolicitud($)) || '';
-    const fechaPresentacionOriginal = getFechaPresentacion($) || '';
-    const fechaOrdenPublicacionOriginal = getFechaOrdenPublicacion($) || '';
-    const fechaPublicacionOriginal = getPublicacionInfo($).fechaPublicacion || '';
-    const fechaRegistroOriginal = getFechaRegistro($) || '';
-    const fechaRenovacionOriginal = getFechaRenovacion($) || '';
-    const vigenciaOriginal = getVigencia($) || '';
-    const fechaRegistroInternacionalOriginal = getFechaRegistroInternacional($) || '';
-    
-    // Obtener información de prioridad y formatear fechas
-    const prioridadInfoOriginal = getPrioridadInfo($);
-    const prioridadInfoFormateada = prioridadInfoOriginal.map(prioridad => {
-      // Crear un nuevo objeto para no modificar el original
-      return {
-        ...prioridad,
-        fechaDePrioridad: formatearFecha(prioridad.fechaDePrioridad) || prioridad.fechaDePrioridad
-      };
-    });
-    
-    console.log(`DEBUG - Fecha prioridad original: ${prioridadInfoOriginal[0]?.fechaDePrioridad}`);
-    console.log(`DEBUG - Fecha prioridad formateada: ${prioridadInfoFormateada[0]?.fechaDePrioridad}`);
-
-    // Crear la estructura exacta del JSON original con fechas formateadas
-    const data = {
-      idsic: expediente,
-      refClient: getRefCliente($) || '',
-      estado: getEstado($) || '',
-      fechaRadicacion: formatearFecha(fechaRadicacionOriginal) || fechaRadicacionOriginal,
-      numeroSolicitud: getNumeroSolicitud($) || '',
-      fechaPresentacion: formatearFecha(fechaPresentacionOriginal) || fechaPresentacionOriginal,
-      tipoSolicitud: getTipoSolicitud($) || 'SD Solicitud de Signos Distintivos',
-      fechaOrdenPublicacion: formatearFecha(fechaOrdenPublicacionOriginal) || fechaOrdenPublicacionOriginal,
-      
-      // Objetos anidados como en el original
-      publicacionInfo: {
-        numeroGaceta: getPublicacionInfo($).numeroGaceta || '',
-        fechaPublicacion: formatearFecha(fechaPublicacionOriginal) || fechaPublicacionOriginal
-      },
-      
-      certificadoInfo: {
-        certificado: getCertificado($) || '',
-        fechaRegistro: formatearFecha(fechaRegistroOriginal) || fechaRegistroOriginal,
-        fechaRenovacion: formatearFecha(fechaRenovacionOriginal) || fechaRenovacionOriginal,
-        vigencia: formatearFecha(vigenciaOriginal) || vigenciaOriginal
-      },
-      
-      registroInternacionalInfo: {
-        numeroRegistroInternacional: getNumeroRegistroInternacional($) || '',
-        fechaRegistroInternacional: formatearFecha(fechaRegistroInternacionalOriginal) || fechaRegistroInternacionalOriginal
-      },
-      
-      solicitantesInfo: [
-        {
-          representantesInternacionales: getRepresentanteInternacionalInfo($) || [],
-          solicitantes: getSolicitantesInfo($) || [],
-          contacto: getContactoInfo($) || []
-        }
-      ],
-      
-      prioridadInfo: prioridadInfoFormateada,
-      
-      solicitantesInfo: [
-        {
-          representantesInternacionales: getRepresentanteInternacionalInfo($) || [],
-          solicitantes: getSolicitantesInfo($) || [],
-          contacto: getContactoInfo($) || []
-        }
-      ],
-      
-      prioridadInfo: getPrioridadInfo($) || [],
-      
-      multiclases: {
-        clasesInfo: getClasesInfo($) || [],
-        versionInfo: {
-          version: getVersionNiza($) || '',
-          clases: getClasesString($) || ''
-        }
-      },
-      
-      // Agregar datos del signo distintivo
-      reivindicaColorDistintivo: getReivindicaColorDistintivo($) || false,
-      caracteresEstandar: getCaracteresEstandar($) || false,
-      tipoDeSignoDistintivo: getTipoSignoDistintivo($) || '',
-      naturaleza: getNaturaleza($) || '',
-      denominacionDelSigno: getDenominacion($) || '',
-      reivindicacionDeColores: getReivindicacionColores($) || '',
-      media: getImagenUrl($) ? [getImagenUrl($)] : [],
-      
-      // Agregar transliteración y traducción
-      transliteracion: getTransliteracion($) || '',
-      traduccionEspanol: getTraduccionEspanol($) || ''
-    };
-    
-    // Agregar redirección si existe
-    const redirectMatch = html.match(/<div id="first-redirect-url">First Redirect URL: <a href="([^"]+)"/);
-    if (redirectMatch && redirectMatch[1]) {
-      data.redirectUrl = redirectMatch[1];
-      
-      // Extraer idProc si está disponible
-      const idProcMatch = redirectMatch[1].match(/idProc=([0-9]+)/);
-      if (idProcMatch && idProcMatch[1]) {
-        data.idProc = idProcMatch[1];
-      }
-    }
-    
-    return data;
-  } catch (error) {
-    console.error(`❌ Error al extraer datos para ${expediente}:`, error);
-    throw error;
-  }
-} */
 
   /**
  * Función principal para extraer datos del HTML de un expediente
@@ -280,7 +154,7 @@ async function insertToSimPrecarga(data, config) {
       fecha_publicacion: data.publicacionInfo?.fechaPublicacion || null,
       prioridad: prioridadFormateada || null,
       certi: data.certificadoInfo?.certificado || null,
-      vigencia: data.certificadoInfo?.vigencia || null,
+      vigencia: data.certificadoInfo?.vigencia || data.certificadoInfo?.fechaRenovacion || null,
       estado: data.estado || null,
       idsic: data.idsic || null,
       regintal: data.registroInternacionalInfo?.numeroRegistroInternacional || null,
@@ -510,6 +384,116 @@ function getPublicacionInfo($) {
   };
 }
 
+/**
+ * Obtiene el certificado de registro con soporte mejorado para diferentes estructuras HTML
+ */
+function getCertificado($) {
+  let certificado = '';
+  
+  // Búsqueda mejorada para el certificado
+  // 1. Estructura original
+  certificado = $('#MainContent_ctrlTM_trDtRegistration .data').first().text().trim();
+  if (certificado) return certificado;
+  
+  // 2. Estructura alternativa
+  certificado = $('#MainContent_ctrlIRD_txtIdRegistration').text().trim();
+  if (certificado) return certificado;
+  
+  // 3. Estructura específica adicional
+  certificado = $('#MainContent_ctrlIRD_trDtRegisration .data').first().text().trim();
+  if (certificado) return certificado;
+  
+  // 4. Buscar en cualquier tabla con la etiqueta correcta
+  $('tr').each((i, elem) => {
+    const labelText = $(elem).find('.label').first().text().trim();
+    if (labelText.includes('Certificado de Registro')) {
+      certificado = $(elem).find('.data').first().text().trim();
+      return false; // Salir del each
+    }
+  });
+  
+  return certificado;
+}
+
+/**
+ * Obtiene la fecha de registro con soporte mejorado
+ */
+function getFechaRegistro($) {
+  let fechaRegistro = '';
+  
+  // 1. Estructura tradicional
+  fechaRegistro = $('#MainContent_ctrlTM_trDtRegistration .data').last().text().trim();
+  if (fechaRegistro) return fechaRegistro;
+  
+  // 2. Estructura alternativa con label
+  fechaRegistro = $('#MainContent_ctrlIRD_lblDtRegistration').parent().next('.data').text().trim();
+  if (fechaRegistro) return fechaRegistro;
+  
+  // 3. Estructura específica con ID
+  fechaRegistro = $('#MainContent_ctrlIRD_trDtRegisration .data').last().text().trim();
+  if (fechaRegistro) return fechaRegistro;
+  
+  // 4. Buscar en cualquier tabla con la etiqueta correcta
+  $('tr').each((i, elem) => {
+    const labelText = $(elem).find('.label').text().trim();
+    if (labelText.includes('Registrado / Protegido')) {
+      fechaRegistro = $(elem).find('.data').last().text().trim();
+      return false; // Salir del each
+    }
+  });
+  
+  return fechaRegistro;
+}
+
+/**
+ * Obtiene la fecha de renovación con soporte mejorado
+ */
+function getFechaRenovacion($) {
+  let fechaRenovacion = '';
+  
+  // 1. Estructura tradicional
+  fechaRenovacion = $('#MainContent_ctrlIRD_lblDtRenewal').parent().next('.data').text().trim();
+  if (fechaRenovacion) return fechaRenovacion;
+  
+  // 2. Buscar en cualquier tabla con la etiqueta correcta
+  $('tr').each((i, elem) => {
+    const labelText = $(elem).find('.label').text().trim();
+    if (labelText.includes('Siguiente Fecha de renovación')) {
+      fechaRenovacion = $(elem).find('.data').last().text().trim();
+      return false; // Salir del each
+    }
+  });
+  
+  return fechaRenovacion;
+}
+
+/**
+ * Obtiene la vigencia con soporte mejorado
+ */
+function getVigencia($) {
+  let vigencia = '';
+  
+  // 1. Estructura tradicional
+  vigencia = $('#MainContent_ctrlTM_trDtExpiration .data').last().text().trim();
+  if (vigencia) return vigencia;
+  
+  // 2. Estructura alternativa con label
+  vigencia = $('#MainContent_ctrlIRD_lblDtExpiration').parent().next('.data').text().trim();
+  if (vigencia) return vigencia;
+  
+  // 3. Buscar en cualquier tabla con la etiqueta correcta
+  $('tr').each((i, elem) => {
+    const labelText = $(elem).find('.label').text().trim();
+    if (labelText.includes('Vigente hasta')) {
+      vigencia = $(elem).find('.data').last().text().trim();
+      return false; // Salir del each
+    }
+  });
+  
+  return vigencia;
+}
+
+/* 
 function getCertificado($) {
   return $('#MainContent_ctrlTM_trDtRegistration .data').first().text().trim() || 
          $('#MainContent_ctrlIRD_txtIdRegistration').text().trim();
@@ -527,7 +511,7 @@ function getFechaRenovacion($) {
 function getVigencia($) {
   return $('#MainContent_ctrlTM_trDtExpiration .data').last().text().trim() ||
          $('#MainContent_ctrlIRD_lblDtExpiration').parent().next('.data').text().trim();
-}
+} */
 
 function getNumeroRegistroInternacional($) {
   return $('#MainContent_ctrlIRD_txtIntIdRegistration').text().trim();
@@ -564,22 +548,6 @@ function getRepresentanteInternacionalInfo($) {
 }
 
 
-/* function getRepresentanteInternacionalInfo($) {
-  const representantes = [];
-  
-  // Seleccionar todas las filas de representantes
-  $('#MainContent_ctrlIRD_ctrlApplicant_ctrlWIPORepresentative_gvCustomers tr.alt1').each(function() {
-    const representante = {};
-    
-    representante.identificacionOMPI = $(this).find('td').eq(1).text().trim();
-    representante.nombre = $(this).find('td').eq(2).text().trim();
-    representante.apellido = $(this).find('td').eq(3).text().trim();
-    
-    representantes.push(representante);
-  });
-  
-  return representantes;
-} */
 
 /**
  * Obtiene información del representante o apoderado
@@ -612,66 +580,6 @@ function getRepresentanteInfo($) {
   return representantes;
 }
 
-/* function getSolicitantesInfo($) {
-  const solicitantes = [];
-  
-  // Primera opción
-  let solicitanteRows = $('#MainContent_ctrlIRD_ctrlApplicant_ctrlApplicant_gvCustomers tr.alt1');
-  
-  // Segunda opción
-  if (solicitanteRows.length === 0) {
-    solicitanteRows = $('#MainContent_ctrlTM_ctrlApplicant_ctrlApplicant_gvCustomers tr.alt1');
-  }
-  
-  // Tercera opción
-  if (solicitanteRows.length === 0) {
-    solicitanteRows = $('#MainContent_ctrlIRA_ctrlApplicant_ctrlApplicant_gvCustomers tr.alt1');
-  }
-  
-  solicitanteRows.each(function() {
-    const solicitante = {};
-    
-    solicitante.numeroIdentificacion = $(this).find('td').eq(0).text().trim();
-    
-    if (solicitante.numeroIdentificacion.includes('Mostrar / Ocultar columnas')) {
-      return;
-    }
-    
-    solicitante.identificacionOMPI = $(this).find('td').eq(1).text().trim();
-    
-    // Pueden haber diferentes columnas dependiendo del expediente
-    const tdCount = $(this).find('td').length;
-    let nombreIdx = 1;
-    let apellidoIdx = 2;
-    let direccionIdx = 3;
-    
-    if (tdCount > 4) {
-      nombreIdx = 2;
-      apellidoIdx = 3;
-      direccionIdx = 4;
-    }
-    
-    const nombre = $(this).find('td').eq(nombreIdx).text().trim();
-    const apellido = tdCount > apellidoIdx ? $(this).find('td').eq(apellidoIdx).text().trim() : '';
-    solicitante.fullName = apellido ? `${nombre} ${apellido}` : nombre;
-    
-    let direccion = $(this).find('td').eq(direccionIdx).text().trim() || 
-                  $(this).find('td').last().text().trim();
-    direccion = direccion.replace('Dirección Física : ', '');
-    solicitante.direccion = direccion;
-    
-    const match = direccion.match(/\(([^)]+)\)$/);
-    if (match) {
-      solicitante.codPais = match[1];
-    } else {
-      solicitante.codPais = 'CO'; // Por defecto
-    }
-    
-    solicitantes.push(solicitante);
-  });
-  
-  return solicitantes;
-} */
 
   /**
  * Normaliza un texto: elimina espacios innecesarios y convierte a mayúsculas
@@ -782,84 +690,6 @@ function getContactoInfo($) {
   return contactos;
 }
 
-
-/* 
-function getContactoInfo($) {
-  const contactos = [];
-  
-  // Seleccionar filas de contacto
-  $('#MainContent_ctrlTM_ctrlApplicant_ctrlAddressForService_gvAddresses tr, #MainContent_ctrlIRD_ctrlApplicant_ctrlAddressForService_gvAddresses tr').each(function(i) {
-    if (i === 1) { // Primera fila después del encabezado
-      const contacto = {};
-      
-      const tds = $(this).find('td');
-      contacto.numeroIdentificacion = tds.eq(0).text().trim();
-      contacto.nombre = tds.eq(1).text().trim();
-      contacto.direccion = tds.eq(2).text().trim();
-      contacto.ciudad = tds.eq(3).text().trim();
-      contacto.codigoPostal = tds.eq(4).text().trim();
-      contacto.pais = tds.eq(5).text().trim();
-      contacto.tipoDireccion = tds.eq(6).text().trim();
-      
-      contactos.push(contacto);
-    }
-  });
-  
-  return contactos;
-} */
-
-/**
- * Obtiene información de prioridad del expediente
- * @param {Object} $ - Objeto cheerio con el HTML cargado
- * @returns {Array} - Array de objetos con información de prioridad
- */
-
-/* function getPrioridadInfo($) {
-  const prioridades = [];
-  
-  console.log('DEBUG - Buscando información de prioridad...');
-  
-  // Selector específico para la tabla de prioridades
-  const selector = '#MainContent_ctrlTM_ctrlConvPrio_gvwPriorityList tr.alt1';
-  
-  // Iterar por las filas de prioridad
-  $(selector).each(function() {
-    const columns = $(this).find('td');
-    if (columns.length >= 3) {
-      const pais = columns.eq(0).text().trim();
-      const fechaDePrioridadOriginal = columns.eq(1).text().trim();
-      const numeroDePrioridad = columns.eq(2).text().trim();
-      const clase = columns.length > 3 ? columns.eq(3).text().trim() : '';
-      const reivindicaciones = columns.length > 4 ? columns.eq(4).text().trim() : '';
-      
-      console.log(`DEBUG - Encontrada prioridad: ${pais}, ${fechaDePrioridadOriginal}, ${numeroDePrioridad}, ${clase}`);
-      
-      // Solo agregar si tenemos datos significativos y parece una prioridad real
-      if (pais && fechaDePrioridadOriginal && numeroDePrioridad && 
-          !pais.includes('Solicitud') && !pais.includes('Contacto') && 
-          !pais.includes('Número de la gaceta')) {
-        
-        // Formatear la fecha antes de agregarla al objeto
-        const fechaFormateada = formatearFecha(fechaDePrioridadOriginal);
-        
-        const prioridad = {
-          pais: pais,
-          fechaDePrioridad: fechaFormateada || fechaDePrioridadOriginal, // Usar la formateada o la original como fallback
-          numeroDePrioridad: numeroDePrioridad,
-          clase: clase,
-          reivindicaciones: reivindicaciones
-        };
-        
-        prioridades.push(prioridad);
-      }
-    }
-  });
-  
-  // Log para depuración
-  console.log(`DEBUG - Total de prioridades válidas encontradas: ${prioridades.length}`);
-  
-  return prioridades;
-} */
 
 /**
  * Obtiene información de prioridad del expediente
@@ -1096,11 +926,50 @@ function getReivindicacionColores($) {
 }
 
 /**
- * Obtiene información detallada de los medios asociados al expediente
+ * Obtiene información de los medios asociados al expediente como un array de nombres
  * @param {Object} $ - Objeto cheerio con el HTML cargado
- * @returns {Array} - Array con objetos que contienen ID y tipo de cada medio
+ * @returns {Array} - Array con nombres de los archivos multimedia
  */
 function getMediaInfo($) {
+  const mediaNames = [];
+  const processedNames = new Set(); // Para evitar duplicados
+  
+  // Buscar todos los enlaces de dispositivos con múltiples selectores para cubrir todas las variantes
+  const selectors = [
+    'a.device', 'a.devicePopup', 'a.devicePdf', 
+    '.device a', '#MainContent_ctrlTM_ctrlPictureList_lvDocumentView a', 
+    '#MainContent_ctrlIRD_ctrlPictureList_lvDocumentView a',
+    '#galeria img', '#MainContent_ctrlDM_rptDocumentos_imgThumb'
+  ];
+  
+  $(selectors.join(', ')).each(function() {
+    // Obtener URL del elemento (href para enlaces, src para imágenes)
+    const url = $(this).attr('href') || $(this).attr('src');
+    if (!url) return;
+    
+    // Extraer el nombre del archivo de la URL
+    let fileName;
+    
+    // Intentar extraer el ID del parámetro de la URL
+    const idMatch = url.match(/[?&]id=([^&]+)/);
+    if (idMatch && idMatch[1]) {
+      fileName = idMatch[1];
+    } else {
+      // Si no hay parámetro id, extraer el nombre del archivo de la ruta
+      const pathParts = url.split('/');
+      fileName = pathParts[pathParts.length - 1].split('?')[0]; // Obtener última parte de la ruta y quitar parámetros
+    }
+    
+    // Evitar nombres vacíos o duplicados
+    if (fileName && !processedNames.has(fileName)) {
+      processedNames.add(fileName);
+      mediaNames.push(fileName);
+    }
+  });
+  
+  return mediaNames;
+}
+/* function getMediaInfo($) {
   const mediaItems = [];
   const processedIds = new Set(); // Para evitar duplicados
   
@@ -1141,7 +1010,7 @@ function getMediaInfo($) {
   });
   
   return mediaItems;
-}
+} */
 
 function getTransliteracion($) {
   return $('#MainContent_ctrlIRD_trTransliteration .data').text().trim() || 
@@ -1153,7 +1022,10 @@ function getTraduccionEspanol($) {
          $('#MainContent_ctrlTM_trSpanishTrans .data').text().trim();
 }
 
-// Detecta y formatea fechas en formato español a formato ISO YYYY-MM-DD
+/**
+ * Detecta y formatea fechas en formato español a formato ISO YYYY-MM-DD
+ */
+
 function formatearFecha(fechaTexto) {
   if (!fechaTexto) return null;
   
@@ -1212,8 +1084,8 @@ function formatearFecha(fechaTexto) {
   
   // Si llegamos aquí, no se pudo formatear
   return fechaTexto;
-
 }
+
 
 // Función auxiliar para extraer solo la fecha de un texto que puede contener más información
 function extraerSoloFecha(texto) {

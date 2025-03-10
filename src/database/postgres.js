@@ -41,17 +41,19 @@ async function insertExpediente(expediente) {
 
     try {
       const query = `
-        INSERT INTO expedientes (idsic, numero_solicitud, country_id, datos_completos)
-        VALUES ($1, $2, $3, $4)
-        ON CONFLICT (idsic) DO UPDATE SET 
+        INSERT INTO expedientes (idsic, numero_solicitud, country_id, datos_completos, created_at)
+        VALUES ($1, $2, $3, $4, now())
+        ON CONFLICT (id) DO UPDATE SET 
+
             numero_solicitud = EXCLUDED.numero_solicitud,
             datos_completos = EXCLUDED.datos_completos;
       `;
+    
 
       const values = [
         idsic,
         numeroSolicitud,
-        47, // Country ID fijo
+        48, // Country ID fijo Colombia
         JSON.stringify(expediente) // Guardamos el JSON completo
       ];
 
