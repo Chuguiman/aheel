@@ -8,8 +8,8 @@ const cheerio = require('cheerio');
 const mysql = require('mysql2/promise');
 
 
-  /**
- * Función principal para extraer datos del HTML de un expediente
+/**
+ * Función principal para extraer datos del HTML
  * @param {string} expediente - Identificador del expediente
  * @returns {Promise<Object>} - Datos extraídos en formato JSON
  */
@@ -21,6 +21,11 @@ async function extractDataWithErrorHandling(expediente) {
     
     // Cargar el HTML en cheerio
     const $ = cheerio.load(html);
+    
+    // Extraer información de solicitantes, contactos y representantes con formato para BD
+    const solicitantesInfo = getSolicitantesInfo($);
+    const contactoInfo = getContactoInfo($);
+    const representanteInfo = getRepresentanteInternacionalInfo($);
     
     // Extraer información de prioridad con fechas ya formateadas
     const prioridadInfo = getPrioridadInfo($);
@@ -54,11 +59,12 @@ async function extractDataWithErrorHandling(expediente) {
         fechaRegistroInternacional: formatearFecha(getFechaRegistroInternacional($)) || getFechaRegistroInternacional($) || ''
       },
       
+      // Información de solicitantes, contactos y representantes (arrays de objetos)
       solicitantesInfo: [
         {
-          representantesInternacionales: getRepresentanteInternacionalInfo($) || [],
-          solicitantes: getSolicitantesInfo($) || [],
-          contacto: getContactoInfo($) || []
+          representantesInternacionales: representanteInfo.representantes || [],
+          solicitantes: solicitantesInfo.solicitantes || [],
+          contacto: contactoInfo.contactos || []
         }
       ],
       
@@ -105,6 +111,7 @@ async function extractDataWithErrorHandling(expediente) {
   }
 }
 
+
 /**
  * Inserta los datos en las tablas de la base de datos
  * @param {Object} data - Datos extraídos del expediente
@@ -134,11 +141,12 @@ async function insertToSimPrecarga(data, config) {
     // Determinar tipo de signo distintivo
     const tipoSigno = (data.tipoDeSignoDistintivo || '').toLowerCase();
     const esEnseñaONombreComercial = tipoSigno.includes('enseña') || tipoSigno.includes('nombre comercial');
+    const escapedDenominacion = escapeForSQL(data.denominacionDelSigno);
     
     // Preparar datos para inserción según el formato de la tabla
     const insertData = {
       tiporeg: data.tipoSolicitud || null,
-      denominacion: data.denominacionDelSigno || null,
+      denominacion: escapedDenominacion || null,
       tipo_denomi: data.tipoDeSignoDistintivo || null,
       tipomarca: data.naturaleza || null,
       expediente: data.numeroSolicitud || null,
@@ -522,13 +530,15 @@ function getFechaRegistroInternacional($) {
 }
 
 
+
 /**
- * Obtiene información de representantes internacionales
+ * Obtiene información de representantes internacionales y la devuelve formateada para la base de datos
  * @param {Object} $ - Objeto cheerio con el HTML cargado
- * @returns {Array} - Array con información de representantes internacionales
+ * @returns {Object} - Objeto con datos formateados para la BD
  */
 function getRepresentanteInternacionalInfo($) {
   const representantes = [];
+  let nombresConcatenados = '';
   
   // Seleccionar todas las filas de representantes
   $('#MainContent_ctrlIRD_ctrlApplicant_ctrlWIPORepresentative_gvCustomers tr.alt1').each(function() {
@@ -541,12 +551,24 @@ function getRepresentanteInternacionalInfo($) {
     // Normalizar el nombre completo: eliminar espacios innecesarios y convertir a mayúsculas
     representante.fullName = normalizeText(apellido ? `${nombre} ${apellido}` : nombre);
     
+    // Añadir al array de representantes
     representantes.push(representante);
+    
+    // Añadir a la concatenación de nombres
+    if (representante.fullName) {
+      if (nombresConcatenados) {
+        nombresConcatenados += ' | ';
+      }
+      nombresConcatenados += representante.fullName;
+    }
   });
   
-  return representantes;
+  // Devolver un objeto con ambos: el array de representantes y los datos formateados para la BD
+  return {
+    representantes: representantes,
+    nombresConcatenados: nombresConcatenados
+  };
 }
-
 
 
 /**
@@ -594,12 +616,15 @@ function normalizeText(text) {
 }
 
 /**
- * Obtiene información de los solicitantes
+ * Obtiene información de los solicitantes y la devuelve formateada para la base de datos
  * @param {Object} $ - Objeto cheerio con el HTML cargado
- * @returns {Array} - Array con información de solicitantes
+ * @returns {Object} - Objeto con datos formateados para la BD
  */
 function getSolicitantesInfo($) {
   const solicitantes = [];
+  let nombresConcatenados = '';
+  let direccionPrimero = '';
+  let paisPrimero = 'CO';
   
   // Primera opción
   let solicitanteRows = $('#MainContent_ctrlIRD_ctrlApplicant_ctrlApplicant_gvCustomers tr.alt1');
@@ -614,7 +639,7 @@ function getSolicitantesInfo($) {
     solicitanteRows = $('#MainContent_ctrlIRA_ctrlApplicant_ctrlApplicant_gvCustomers tr.alt1');
   }
   
-  solicitanteRows.each(function() {
+  solicitanteRows.each(function(index) {
     const solicitante = {};
     
     solicitante.numeroIdentificacion = $(this).find('td').eq(0).text().trim();
@@ -643,53 +668,109 @@ function getSolicitantesInfo($) {
     // Normalizar el nombre completo: eliminar espacios innecesarios y convertir a mayúsculas
     solicitante.fullName = normalizeText(apellido ? `${nombre} ${apellido}` : nombre);
     
-    let direccion = $(this).find('td').eq(direccionIdx).text().trim() || 
+    // Procesar la dirección - extraer solo la primera dirección física para cada solicitante
+    let direccionCompleta = $(this).find('td').eq(direccionIdx).text().trim() || 
                   $(this).find('td').last().text().trim();
-    direccion = direccion.replace('Dirección Física : ', '');
-    solicitante.direccion = direccion;
     
-    const match = direccion.match(/\(([^)]+)\)$/);
+    // Extraer solo la primera dirección física
+    const direccionesFisicas = direccionCompleta.split('Dirección Física :');
+    if (direccionesFisicas.length > 1) {
+      // Tomar solo la primera dirección y limpiarla
+      const primeraDireccion = direccionesFisicas[1].split('Dirección Física :')[0].trim();
+      direccionCompleta = "Dirección Física : " + primeraDireccion;
+    }
+    
+    solicitante.direccion = direccionCompleta;
+    
+    // Extraer el código de país de la dirección
+    const match = direccionCompleta.match(/\(([^)]+)\)$/);
     if (match) {
       solicitante.codPais = match[1];
     } else {
       solicitante.codPais = 'CO'; // Por defecto
     }
     
+    // Para el primer solicitante, guardar información separada para la base de datos
+    if (index === 0) {
+      direccionPrimero = solicitante.direccion;
+      paisPrimero = solicitante.codPais;
+    }
+    
+    // Añadir al array de solicitantes
     solicitantes.push(solicitante);
-  });
-  
-  return solicitantes;
-}
-
-/**
- * Obtiene información de contacto
- * @param {Object} $ - Objeto cheerio con el HTML cargado
- * @returns {Array} - Array con información de contacto
- */
-function getContactoInfo($) {
-  const contactos = [];
-  
-  // Seleccionar filas de contacto
-  $('#MainContent_ctrlTM_ctrlApplicant_ctrlAddressForService_gvAddresses tr, #MainContent_ctrlIRD_ctrlApplicant_ctrlAddressForService_gvAddresses tr').each(function(i) {
-    if (i === 1) { // Primera fila después del encabezado
-      const contacto = {};
-      
-      const tds = $(this).find('td');
-      contacto.numeroIdentificacion = tds.eq(0).text().trim();
-      contacto.nombre = normalizeText(tds.eq(1).text().trim()); // Normalizar nombre
-      contacto.direccion = tds.eq(2).text().trim();
-      contacto.ciudad = tds.eq(3).text().trim();
-      contacto.codigoPostal = tds.eq(4).text().trim();
-      contacto.pais = tds.eq(5).text().trim();
-      contacto.tipoDireccion = tds.eq(6).text().trim();
-      
-      contactos.push(contacto);
+    
+    // Añadir a la concatenación de nombres
+    if (solicitante.fullName) {
+      if (nombresConcatenados) {
+        nombresConcatenados += ' | ';
+      }
+      nombresConcatenados += solicitante.fullName;
     }
   });
   
-  return contactos;
+  // Devolver un objeto con ambos: el array de solicitantes y los datos formateados para la BD
+  return {
+    solicitantes: solicitantes,
+    nombresConcatenados: nombresConcatenados,
+    direccionPrimero: direccionPrimero,
+    paisPrimero: paisPrimero
+  };
 }
 
+/**
+ * Obtiene información de contacto y la devuelve formateada para la base de datos
+ * @param {Object} $ - Objeto cheerio con el HTML cargado
+ * @returns {Object} - Objeto con datos formateados para la BD
+ */
+function getContactoInfo($) {
+  const contactos = [];
+  let nombresConcatenados = '';
+  let direccionPrimero = '';
+  let paisPrimero = 'CO';
+  
+  // Seleccionar filas de contacto
+  $('#MainContent_ctrlTM_ctrlApplicant_ctrlAddressForService_gvAddresses tr, #MainContent_ctrlIRD_ctrlApplicant_ctrlAddressForService_gvAddresses tr').each(function(i) {
+    if (i > 0 && !$(this).hasClass('gridview_header')) { // Omitir encabezado
+      const contacto = {};
+      
+      const tds = $(this).find('td');
+      if (tds.length >= 7) { // Verificar que tenga suficientes columnas
+        contacto.numeroIdentificacion = tds.eq(0).text().trim();
+        contacto.nombre = normalizeText(tds.eq(1).text().trim()); // Normalizar nombre
+        contacto.direccion = tds.eq(2).text().trim();
+        contacto.ciudad = tds.eq(3).text().trim();
+        contacto.codigoPostal = tds.eq(4).text().trim();
+        contacto.pais = tds.eq(5).text().trim();
+        contacto.tipoDireccion = tds.eq(6).text().trim();
+        
+        // Para el primer contacto, guardar información separada para la base de datos
+        if (contactos.length === 0) {
+          direccionPrimero = contacto.direccion;
+          paisPrimero = contacto.pais;
+        }
+        
+        // Añadir al array de contactos
+        contactos.push(contacto);
+        
+        // Añadir a la concatenación de nombres
+        if (contacto.nombre) {
+          if (nombresConcatenados) {
+            nombresConcatenados += ' | ';
+          }
+          nombresConcatenados += contacto.nombre;
+        }
+      }
+    }
+  });
+  
+  // Devolver un objeto con ambos: el array de contactos y los datos formateados para la BD
+  return {
+    contactos: contactos,
+    nombresConcatenados: nombresConcatenados,
+    direccionPrimero: direccionPrimero,
+    paisPrimero: paisPrimero
+  };
+}
 
 /**
  * Obtiene información de prioridad del expediente
@@ -905,6 +986,11 @@ function getDenominacion($) {
          $('td.label:contains("Denominación del Signo")').next('td.data').text().trim();
   
   return denom.toUpperCase(); // Asegurar que esté en mayúsculas como en el original
+}
+
+function escapeForSQL(str) {
+  if (typeof str !== 'string') return str;
+  return str.replace(/'/g, "''");
 }
 
 function getReivindicacionColores($) {

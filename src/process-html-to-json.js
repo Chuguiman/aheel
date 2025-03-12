@@ -110,6 +110,12 @@ function extractRedirectUrl(html) {
 /**
  * Procesa un solo archivo HTML, extrae datos y guarda como JSON
  */
+// Modificación para process-html-to-json.js
+
+/**
+ * Procesa un solo archivo HTML, extrae datos y guarda como JSON
+ * Versión mejorada que gestiona mejor las direcciones duplicadas y caracteres especiales
+ */
 async function processSingleHtml(expediente) {
   try {
     console.log(`🔍 Procesando HTML para expediente: ${expediente}`);
@@ -142,6 +148,10 @@ async function processSingleHtml(expediente) {
     // Extraer datos del HTML (con el extractor existente)
     console.log(`🧮 Extrayendo datos para expediente ${expediente}...`);
     const data = await extractDataWithErrorHandling(expediente);
+    
+    // Validar y limpiar los datos antes de guardarlos
+    cleanAndValidateData(data);
+    
     console.log(`✅ Datos extraídos exitosamente para ${expediente}`);
     
     // Guardar como JSON
@@ -182,6 +192,66 @@ async function processSingleHtml(expediente) {
     }
     return false;
   }
+}
+
+/**
+ * Función para limpiar y validar los datos antes de guardarlos
+ * - Escapa caracteres especiales en los campos críticos
+ * - Asegura que no haya direcciones duplicadas
+ * - Trunca campos que podrían exceder las longitudes de columna en MySQL
+ */
+function cleanAndValidateData(data) {
+  // 1. NO modificamos las comillas simples en denominacionDelSigno para mantener el formato original
+  
+  // 2. Limpiar y asegurarse que solo haya una dirección por solicitante
+  if (data.solicitantesInfo && data.solicitantesInfo.length > 0 && data.solicitantesInfo[0].solicitantes) {
+    data.solicitantesInfo[0].solicitantes.forEach(solicitante => {
+      if (solicitante.direccion) {
+        // Eliminar "Dirección Física : " del inicio
+        solicitante.direccion = solicitante.direccion.replace(/^Dirección Física : /, "");
+        
+        // Eliminar las comillas escapadas \"...\"
+        solicitante.direccion = solicitante.direccion.replace(/\\"/g, "");
+        
+        // Si aún hay múltiples direcciones, tomar solo la primera
+        if (solicitante.direccion.includes('Dirección Física :')) {
+          const direcciones = solicitante.direccion.split('Dirección Física :');
+          solicitante.direccion = direcciones[0].trim();
+        }
+      }
+    });
+  }
+  
+  // 3. Truncar campos que podrían exceder los límites de MySQL
+  if (data.refClient && data.refClient.length > 50) {
+    data.refClient = data.refClient.substring(0, 50);
+  }
+  
+  if (data.reivindicacionDeColores && data.reivindicacionDeColores.length > 1000) {
+    data.reivindicacionDeColores = data.reivindicacionDeColores.substring(0, 1000);
+  }
+  
+  // 4. Asegurarse de que los datos de clase estén bien formateados
+  if (data.multiclases && data.multiclases.clasesInfo) {
+    data.multiclases.clasesInfo.forEach(clase => {
+      // NO modificamos las comillas simples en la descripción aquí
+      // Truncar si es demasiado largo para MySQL TEXT (65535 caracteres)
+      if (clase.descripcion && clase.descripcion.length > 65000) {
+        clase.descripcion = clase.descripcion.substring(0, 65000);
+      }
+    });
+  }
+  
+  // 5. Asegurarse de que la información de prioridad esté correctamente formateada
+  if (data.prioridadInfo && data.prioridadInfo.length > 0) {
+    data.prioridadInfo.forEach(prioridad => {
+      if (prioridad.numeroDePrioridad && prioridad.numeroDePrioridad.length > 50) {
+        prioridad.numeroDePrioridad = prioridad.numeroDePrioridad.substring(0, 50);
+      }
+    });
+  }
+  
+  return data;
 }
 
 /**
@@ -516,5 +586,6 @@ module.exports = {
   processSingleHtml,
   processHtmlBatch,
   insertBatchStats,
+  cleanAndValidateData,
   main
 };
