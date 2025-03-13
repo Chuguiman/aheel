@@ -5,8 +5,10 @@ node_modules
 /json/*
 /origen/*
 /media/*
+/src/uploads*
 
 # No ignorar archivos .gitkeep
 !json/.gitkeep
 !origen/.gitkeep
 !media/.gitkeep
+!src/uploads/.gitkeep
