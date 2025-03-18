@@ -484,7 +484,23 @@ async function processGacetaFile(filePath, connection = null) {
           
           try {
             await connection.execute(insertQuery, values);
-            console.log(`    [Fila ${rowNumber}] Insertada correctamente.`);
+            console.log(`    [Fila ${rowNumber}] Insertada correctamente en tabla signos.`);
+            
+            // Ahora insertar en scraping_sic
+            if (id_expediente && expediente_val) {
+              const insertScrapingGacQuery = `INSERT INTO scraping_sic (idsic, nreg) VALUES (?, ?)`;
+              const scrapingValues = [id_expediente, expediente_val];
+              
+              try {
+                await connection.execute(insertScrapingGacQuery, scrapingValues);
+                console.log(`    [Fila ${rowNumber}] Insertada correctamente en tabla scraping_sic.`);
+              } catch (scrapingError) {
+                console.error(`    [Fila ${rowNumber}] Error al insertar en scraping_sic:`, scrapingError);
+                // No consideramos esto como un error total, seguimos contando la fila como procesada
+              }
+            } else {
+              console.log(`    [Fila ${rowNumber}] No se insertó en scraping_sic porque falta id_expediente o expediente_val.`);
+            }
             
             // Agregar a los detalles de procesados
             processedDetails.push({
@@ -516,6 +532,7 @@ async function processGacetaFile(filePath, connection = null) {
         });
         totalErrors++;
       }
+      
     } // Fin for workbook.SheetNames
     
     console.log(`\nProcesamiento completado para el archivo.`);
