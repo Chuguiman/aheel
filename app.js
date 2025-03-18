@@ -8,7 +8,9 @@ const fs = require('fs');
 // Importar el helper de utilidades
 const { ensureDirectoryExists } = require('./src/helpers/utils');
 
-// Importar el módulo de descarga que reutiliza SicScraper
+// Importar procesadores específicos
+const solicitudesProcessor = require('./src/solicitudes-processor');
+const gacetaProcessor = require('./src/gaceta-processor');
 const downloadExpediente = require('./src/reuse-downloader');
 
 // Configuración de Express
@@ -51,7 +53,7 @@ app.get('/', (req, res) => {
 });
 
 // Si tienes estas funciones implementadas, descomenta estas rutas
-/*
+
 // Ruta para procesar solicitudes SIC
 app.post('/process', upload.single('excelFile'), async (req, res) => {
   if (!req.file) {
@@ -91,7 +93,7 @@ app.post('/process-gaceta', upload.single('excelFile'), async (req, res) => {
     return res.status(500).json({ success: false, message: `Error: ${error.message}` });
   }
 });
-*/
+
 
 // Ruta para procesar un expediente individual
 app.post('/api/standalone/process', async (req, res) => {
