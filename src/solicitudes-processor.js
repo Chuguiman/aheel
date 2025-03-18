@@ -1,61 +1,14 @@
-// importar.js - Versión que salta la primera fila del JSON (que son las cabeceras)
+// src/solicitudes-processor.js - Procesador de archivos Excel de Solicitudes SIC
+// (Anteriormente excel-processor.js)
 const xlsx = require('xlsx');
 const mysql = require('mysql2/promise');
 const fs = require('fs');
 const path = require('path');
-const express = require('express');
-const multer = require('multer');
-const bodyParser = require('body-parser');
 
-// Configuración de Express
-const app = express();
-const port = 3000;
-
-// Configuración de Multer para subir archivos
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    const uploadDir = path.join(__dirname, 'uploads');
-    if (!fs.existsSync(uploadDir)) {
-      fs.mkdirSync(uploadDir);
-    }
-    cb(null, uploadDir);
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' + file.originalname);
-  }
-});
-
-// Configurar multer sin restricciones de tipo
-const upload = multer({ storage: storage });
-
-// Middleware
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-// Vista principal
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
-// Ruta para procesar el archivo
-app.post('/process', upload.single('excelFile'), async (req, res) => {
-  if (!req.file) {
-    return res.status(400).json({ success: false, message: 'No se ha subido ningún archivo' });
-  }
-
-  try {
-    // Llamar al procesador con la ruta del archivo subido
-    const result = await processExcelFile(req.file.path);
-    return res.json({ success: true, message: result.message, details: result.details });
-  } catch (error) {
-    console.error('Error al procesar el archivo:', error);
-    return res.status(500).json({ success: false, message: `Error: ${error.message}` });
-  }
-});
-
-// Función de procesamiento - Ahora salta la primera fila del JSON
-async function processExcelFile(excelPath) {
+/**
+ * Función principal para procesar archivos Excel de solicitudes
+ */
+async function processExcelFile(filePath) {
     let connection;
 
     try {
@@ -73,14 +26,14 @@ async function processExcelFile(excelPath) {
         console.log("Conexión exitosa a la base de datos.");
 
         // Verificar existencia del archivo
-        console.log(`Ruta archivo: ${excelPath}`);
-        if (!fs.existsSync(excelPath)) {
-            throw new Error(`El archivo Excel no existe en la ruta especificada: ${excelPath}`);
+        console.log(`Ruta archivo: ${filePath}`);
+        if (!fs.existsSync(filePath)) {
+            throw new Error(`El archivo Excel no existe en la ruta especificada: ${filePath}`);
         }
 
         // Leer el archivo Excel
         console.log("Intentando leer el archivo Excel...");
-        const workbook = xlsx.readFile(excelPath);
+        const workbook = xlsx.readFile(filePath);
         console.log("Archivo Excel leído correctamente.");
 
         // Acceder a la primera hoja
@@ -420,7 +373,26 @@ async function processExcelFile(excelPath) {
     }
 }
 
-// Iniciar el servidor
-app.listen(port, () => {
-  console.log(`Servidor iniciado en http://localhost:${port}`);
-});
+// Si se ejecuta directamente (node solicitudes-processor.js)
+if (require.main === module) {
+    (async () => {
+        try {
+            const filePath = process.argv[2];
+            if (!filePath) {
+                console.error('Error: Debes proporcionar la ruta del archivo Excel como argumento.');
+                process.exit(1);
+            }
+            
+            const result = await processExcelFile(filePath);
+            console.log('Resultado:', result.message);
+        } catch (err) {
+            console.error('Error:', err);
+            process.exit(1);
+        }
+    })();
+}
+
+// Exportar la función para usar desde otros módulos
+module.exports = {
+    processExcelFile
+};

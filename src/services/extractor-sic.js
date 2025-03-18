@@ -501,25 +501,6 @@ function getVigencia($) {
   return vigencia;
 }
 
-/* 
-function getCertificado($) {
-  return $('#MainContent_ctrlTM_trDtRegistration .data').first().text().trim() || 
-         $('#MainContent_ctrlIRD_txtIdRegistration').text().trim();
-}
-
-function getFechaRegistro($) {
-  return $('#MainContent_ctrlTM_trDtRegistration .data').last().text().trim() ||
-         $('#MainContent_ctrlIRD_lblDtRegistration').parent().next('.data').text().trim();
-}
-
-function getFechaRenovacion($) {
-  return $('#MainContent_ctrlIRD_lblDtRenewal').parent().next('.data').text().trim();
-}
-
-function getVigencia($) {
-  return $('#MainContent_ctrlTM_trDtExpiration .data').last().text().trim() ||
-         $('#MainContent_ctrlIRD_lblDtExpiration').parent().next('.data').text().trim();
-} */
 
 function getNumeroRegistroInternacional($) {
   return $('#MainContent_ctrlIRD_txtIntIdRegistration').text().trim();
@@ -1055,48 +1036,8 @@ function getMediaInfo($) {
   
   return mediaNames;
 }
-/* function getMediaInfo($) {
-  const mediaItems = [];
-  const processedIds = new Set(); // Para evitar duplicados
-  
-  // Buscar todos los enlaces de dispositivos con múltiples selectores para cubrir todas las variantes
-  const selectors = [
-    'a.device', 'a.devicePopup', 'a.devicePdf', 
-    '.device a', '#MainContent_ctrlTM_ctrlPictureList_lvDocumentView a', 
-    '#MainContent_ctrlIRD_ctrlPictureList_lvDocumentView a'
-  ];
-  
-  $(selectors.join(', ')).each(function() {
-    const url = $(this).attr('href');
-    if (!url) return;
-    
-    const idMatch = url.match(/[?&]id=([^&]+)/);
-    if (!idMatch || !idMatch[1]) return;
-    
-    const id = idMatch[1];
-    if (processedIds.has(id)) return; // Evitar procesar el mismo ID más de una vez
-    processedIds.add(id);
-    
-    // Determinar el tipo basado en clases y otros atributos
-    let type = 'unknown';
-    
-    // Verificar clases para tipo
-    if ($(this).hasClass('devicePdf')) {
-      type = 'pdf';
-    } else if (url.includes('fmt=mp3') || $(this).closest('.device').hasClass('audio')) {
-      type = 'audio';
-    } else if (url.includes('fmt=jpeg') || url.includes('jpeg_th')) {
-      type = 'image';
-    } else if ($(this).hasClass('devicePopup') || $(this).hasClass('device')) {
-      // Por defecto, la mayoría son imágenes en el sistema SIC
-      type = 'image';
-    }
-    
-    mediaItems.push({ id, type });
-  });
-  
-  return mediaItems;
-} */
+
+
 
 function getTransliteracion($) {
   return $('#MainContent_ctrlIRD_trTransliteration .data').text().trim() || 
