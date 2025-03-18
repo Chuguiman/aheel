@@ -1,4 +1,5 @@
 // src/integrated-workflow.js
+//node src/integrated-workflow.js --downloadLimit=20 --processLimit=30 --autoConfirm=true --cleanupAfterUpload=false
 /**
  * Script integrado para el proceso completo de scraping, procesamiento y carga
  * 

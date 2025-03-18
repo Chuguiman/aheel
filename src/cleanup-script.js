@@ -1,4 +1,4 @@
-    // src/cleanup-script.js
+// src/cleanup-script.js
 /**
  * Script independiente para limpiar y sincronizar el estado del sistema
  * de scraping basado en los registros existentes

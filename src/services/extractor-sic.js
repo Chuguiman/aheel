@@ -22,14 +22,6 @@ async function extractDataWithErrorHandling(expediente) {
     // Cargar el HTML en cheerio
     const $ = cheerio.load(html);
     
-    // Extraer información de solicitantes, contactos y representantes con formato para BD
-    const solicitantesInfo = getSolicitantesInfo($);
-    const contactoInfo = getContactoInfo($);
-    const representanteInfo = getRepresentanteInternacionalInfo($);
-    
-    // Extraer información de prioridad con fechas ya formateadas
-    const prioridadInfo = getPrioridadInfo($);
-    
     // Crear la estructura del JSON
     const data = {
       idsic: expediente,
@@ -62,13 +54,14 @@ async function extractDataWithErrorHandling(expediente) {
       // Información de solicitantes, contactos y representantes (arrays de objetos)
       solicitantesInfo: [
         {
-          representantesInternacionales: representanteInfo.representantes || [],
-          solicitantes: solicitantesInfo.solicitantes || [],
-          contacto: contactoInfo.contactos || []
+          representantesInternacionales: getRepresentanteInternacionalInfo($).representantes || [],
+          solicitantes: getSolicitantesInfo($).solicitantes || [],
+          contacto: getContactoInfo($).contactos || [],
+          apoderado: getApoderado($) || []
         }
       ],
       
-      prioridadInfo: prioridadInfo, // Usar la info de prioridad con fechas ya formateadas
+      prioridadInfo: getPrioridadInfo($), // Usar la info de prioridad con fechas ya formateadas
       
       multiclases: {
         clasesInfo: getClasesInfo($) || [],
@@ -87,9 +80,15 @@ async function extractDataWithErrorHandling(expediente) {
       reivindicacionDeColores: getReivindicacionColores($) || '',
       media: getMediaInfo($),
       
-      // Agregar transliteración y traducción
+      // Campos para traducción
       transliteracion: getTransliteracion($) || '',
-      traduccionEspanol: getTraduccionEspanol($) || ''
+      traduccionEspanol: getTraduccionEspanol($) || '',
+      
+      // Nuevos campos
+      elementosVerbales: getElementosVerbales($),
+      alcanceDerecho:getAlcanceDerecho($),
+      otrosDetalles: getOtrosDetalles($),
+      paisesDesignados: getPaisesDesignados($)
     };
     
     // Agregar redirección si existe
@@ -112,6 +111,7 @@ async function extractDataWithErrorHandling(expediente) {
 }
 
 
+
 /**
  * Inserta los datos en las tablas de la base de datos
  * @param {Object} data - Datos extraídos del expediente
@@ -124,6 +124,28 @@ async function insertToSimPrecarga(data, config) {
   try {
     // Iniciar transacción
     await connection.beginTransaction();
+
+    // Verificar si debemos usar apoderado como contacto
+    const hayContacto = data.solicitantesInfo[0]?.contacto && data.solicitantesInfo[0]?.contacto.length > 0;
+    const hayApoderado = data.solicitantesInfo[0]?.apoderados && data.solicitantesInfo[0]?.apoderados.length > 0;
+    const usarApoderadoComoContacto = !hayContacto && hayApoderado;
+    
+    // Información del contacto (ya sea real o del apoderado si no hay contacto)
+    let nombreContacto, direccionContacto, paisContacto;
+    
+    if (hayContacto) {
+      nombreContacto = data.solicitantesInfo[0].contacto[0].nombre || null;
+      direccionContacto = data.solicitantesInfo[0].contacto[0].direccion || null;
+      paisContacto = data.solicitantesInfo[0].contacto[0].pais || 'CO';
+    } else if (hayApoderado) {
+      nombreContacto = data.solicitantesInfo[0].apoderados[0].fullName || null;
+      direccionContacto = data.solicitantesInfo[0].apoderados[0].direccion || null;
+      paisContacto = data.solicitantesInfo[0].apoderados[0].codPais || 'CO';
+    } else {
+      nombreContacto = null;
+      direccionContacto = null;
+      paisContacto = 'CO';
+    }
     
     // Formatear prioridades
     let prioridadFormateada = '';
@@ -154,9 +176,9 @@ async function insertToSimPrecarga(data, config) {
       solicitante: data.solicitantesInfo[0]?.solicitantes[0]?.fullName || null,
       dirsol: data.solicitantesInfo[0]?.solicitantes[0]?.direccion || null,
       domsol: data.solicitantesInfo[0]?.solicitantes[0]?.codPais || 'CO',
-      contacto: data.solicitantesInfo[0]?.contacto[0]?.nombre || null,
-      dirconta: data.solicitantesInfo[0]?.contacto[0]?.direccion || null,
-      domconta: data.solicitantesInfo[0]?.contacto[0]?.pais || 'CO',
+      contacto: nombreContacto,
+      dirconta: direccionContacto,
+      domconta: paisContacto,
       clases: esEnseñaONombreComercial ? '0' : (data.multiclases?.versionInfo?.clases || '0'),
       gaceta: data.publicacionInfo?.numeroGaceta || null,
       fecha_publicacion: data.publicacionInfo?.fechaPublicacion || null,
@@ -754,6 +776,49 @@ function getContactoInfo($) {
 }
 
 /**
+ * Obtiene información del apoderado del HTML
+ * @param {Object} $ - Objeto cheerio con el HTML cargado
+ * @returns {Array} - Array con información de apoderados
+ */
+function getApoderado($) {
+  const apoderados = [];
+  
+  // Buscar en la tabla de apoderados (varios selectores para cubrir diferentes estructuras HTML)
+  $(
+    '#MainContent_ctrlTM_ctrlApplicant_ctrlAgent_gvCustomers tr.alt1, ' + 
+    '#MainContent_ctrlIRD_ctrlApplicant_ctrlAgent_gvCustomers tr.alt1, ' + 
+    '#MainContent_ctrlIRA_ctrlApplicant_ctrlAgent_gvCustomers tr.alt1'
+  ).each(function() {
+    const apoderado = {};
+    
+    apoderado.numeroIdentificacion = $(this).find('td').eq(0).text().trim();
+    apoderado.identificacionOMPI = $(this).find('td').eq(1).text().trim();
+    
+    const nombre = $(this).find('td').eq(2).text().trim();
+    const apellido = $(this).find('td').eq(3).text().trim();
+    
+    // Normalizar el nombre completo: eliminar espacios innecesarios y convertir a mayúsculas
+    apoderado.fullName = normalizeText(apellido ? `${nombre} ${apellido}` : nombre);
+    
+    let direccion = $(this).find('td').eq(4).text().trim();
+    direccion = direccion.replace('Dirección Física : ', '');
+    apoderado.direccion = direccion;
+    
+    // Extraer código de país de la dirección
+    const match = direccion.match(/\(([^)]+)\)$/);
+    if (match) {
+      apoderado.codPais = match[1];
+    } else {
+      apoderado.codPais = 'CO'; // Por defecto
+    }
+    
+    apoderados.push(apoderado);
+  });
+  
+  return apoderados;
+}
+
+/**
  * Obtiene información de prioridad del expediente
  * @param {Object} $ - Objeto cheerio con el HTML cargado
  * @returns {Array} - Array de objetos con información de prioridad con fechas ya formateadas
@@ -1047,6 +1112,68 @@ function getTransliteracion($) {
 function getTraduccionEspanol($) {
   return $('#MainContent_ctrlIRD_trSpanishTrans .data').text().trim() || 
          $('#MainContent_ctrlTM_trSpanishTrans .data').text().trim();
+}
+
+/**
+ * Función para extraer elementos verbales del HTML
+ * @param {Object} $ - Objeto cheerio con el HTML cargado
+ * @returns {string} - Elementos verbales o string vacío
+ */
+function getElementosVerbales($) {
+  return $('#MainContent_ctrlIRA_trVerbalElements .data').text().trim() ||
+         $('#MainContent_ctrlTM_trVerbalElements .data').text().trim() ||
+         $('td.label:contains("Elementos verbales")').next('td.data').text().trim() || '';
+}
+
+/**
+ * Función para extraer el alcance del derecho del HTML
+ * @param {Object} $ - Objeto cheerio con el HTML cargado
+ * @returns {string} - Alcance del derecho o string vacío
+ */
+function getAlcanceDerecho($) {
+  return $('#MainContent_ctrlIRA_trDisclaimer .data').text().trim() ||
+         $('#MainContent_ctrlTM_trDisclaimer .data').text().trim() ||
+         $('td.label:contains("Alcance del derecho")').next('td.data').text().trim() || '';
+}
+
+/**
+ * Función para extraer otros detalles de la solicitud del HTML
+ * @param {Object} $ - Objeto cheerio con el HTML cargado
+ * @returns {string} - Otros detalles o string vacío
+ */
+function getOtrosDetalles($) {
+  return $('#MainContent_ctrlIRA_trAdditionaldetails .data').text().trim() ||
+         $('#MainContent_ctrlTM_trAdditionaldetails .data').text().trim() ||
+         $('td.label:contains("Otros detalles de la solicitud")').next('td.data').text().trim() || '';
+}
+
+/**
+ * Función para extraer los países designados del HTML
+ * @param {Object} $ - Objeto cheerio con el HTML cargado
+ * @returns {Array} - Array con información de países designados
+ */
+function getPaisesDesignados($) {
+  const paises = [];
+  
+  // Buscar tabla de países designados
+  $('#MainContent_ctrlIRA_ctrlDesignatedCountries_gvwCountryList tr, #MainContent_ctrlTM_ctrlDesignatedCountries_gvwCountryList tr').each((i, elem) => {
+    if (i > 0) { // Saltar la fila del encabezado
+      const tds = $(elem).find('td');
+      if (tds.length >= 2) {
+        const codigo = $(tds[0]).text().trim();
+        const nombre = $(tds[1]).text().trim();
+        
+        if (codigo && nombre) {
+          paises.push({
+            codigo: codigo,
+            nombre: nombre
+          });
+        }
+      }
+    }
+  });
+  
+  return paises;
 }
 
 /**
