@@ -13,6 +13,7 @@ const { SicScraper } = require('./services/scraper');
  * @param {string} expediente - Identificador del expediente
  * @returns {Promise<Object>} - Resultado de la operación
  */
+// Modified downloadExpediente function with better error handling
 async function downloadExpediente(expediente) {
   let browser = null;
   let page = null;
@@ -75,9 +76,10 @@ async function downloadExpediente(expediente) {
         await page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 30000 });
       } catch (navError) {
         console.log('No se detectó navegación después de cambiar el select, continuando...');
+        // Esto no deberíamos tratarlo como un error fatal
       }
     } else {
-      // El elemento select no existe en esta página, por lo que puedes continuar con otras acciones
+      // El elemento select no existe en esta página, pero esto no debería ser un error crítico
       console.log('El elemento select no se encontró en la página. Continuando con otras acciones...');
     }
 
@@ -100,8 +102,16 @@ async function downloadExpediente(expediente) {
     console.log('Descargando archivos relacionados...');
     
     // Usar la función de SicScraper para descargar los archivos relacionados
-    const mediaTypes = await scraper.downloadRelatedFiles(expediente);
-    const mediaCount = Object.keys(mediaTypes).length;
+    let mediaTypes = {};
+    let mediaCount = 0;
+    
+    try {
+      mediaTypes = await scraper.downloadRelatedFiles(expediente);
+      mediaCount = Object.keys(mediaTypes).length;
+    } catch (mediaError) {
+      console.warn(`⚠️ Advertencia al descargar archivos multimedia: ${mediaError.message}`);
+      // Continuamos incluso si hay un error con los archivos multimedia
+    }
     
     // Cerrar el scraper
     await scraper.close();
@@ -111,7 +121,7 @@ async function downloadExpediente(expediente) {
       success: true,
       htmlPath: htmlPath,
       mediaCount: mediaCount,
-      mediaPath: path.join('media', expediente)
+      mediaPath: path.join('media', expediente),
     };
     
   } catch (error) {
@@ -131,6 +141,26 @@ async function downloadExpediente(expediente) {
       }
     } catch (screenshotError) {
       console.log('Error al tomar screenshot:', screenshotError.message);
+    }
+    
+    // Comprobar si el HTML se descargó a pesar del error
+    const nombreArchivo = expediente.replace(/\//g, '_');
+    const htmlPath = path.join('origen', `${nombreArchivo}.html`);
+    
+    // Si el HTML existe, consideramos que la operación fue parcialmente exitosa
+    if (fs.existsSync(htmlPath)) {
+      console.log(`⚠️ Se detectó error pero el HTML fue descargado en: ${htmlPath}`);
+      
+      // Cerrar el scraper antes de retornar
+      if (scraper) await scraper.close();
+      
+      return {
+        success: true, // Cambiamos a true si al menos el HTML se descargó
+        htmlPath: htmlPath,
+        mediaCount: 0,
+        mediaPath: path.join('media', expediente),
+        warning: error.message // Incluimos el error como advertencia
+      };
     }
     
     // Cerrar el scraper en caso de error

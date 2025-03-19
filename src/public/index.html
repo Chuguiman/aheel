@@ -1,694 +1,904 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Procesador de Excel SIC</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Estilos para el área de arrastre */
-    .drag-area.active {
-      border-color: #3b82f6; /* blue-500 */
-      background-color: #dbeafe; /* blue-100 */
-    }
-    
-    /* Estilos para las tablas desplegables */
-    .detail-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease-out;
-    }
-    
-    .detail-content.show {
-      max-height: 500px;
-      overflow-y: auto;
-    }
-    
-    /* Estilos para pestañas */
-    .tab-content {
-      display: none;
-    }
-    
-    .tab-content.active {
-      display: block;
-    }
-    
-    .tab.active {
-      background-color: #f3f4f6; /* gray-100 */
-      border-color: #3b82f6; /* blue-500 */
-      color: #1f2937; /* gray-800 */
-      font-weight: 600;
-    }
-  </style>
-</head>
-<body class="pt-8 bg-slate-50">
-  <div class="max-w-4xl mx-auto px-4">
-    <div class="flex justify-center">
-      <div class="w-full">
-        <!-- Logo -->
-        <div class="text-center mb-8">
-          <!-- <img src="https://via.placeholder.com/200x80?text=LOGO" alt="Logo" class="mx-auto" style="max-width: 200px;"> -->
-        </div>
-        
-        <!-- Tarjeta Principal -->
-        <div class="bg-white shadow rounded mb-6">
-          <div class="bg-slate-700 text-white p-4 rounded-t">
-            <h4 class="text-lg font-semibold">Procesador de Archivos Excel SIC</h4>
+  <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesador de Excel SIC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Estilos para el área de arrastre */
+      .drag-area.active {
+        border-color: #3b82f6; /* blue-500 */
+        background-color: #dbeafe; /* blue-100 */
+      }
+      
+      /* Estilos para las tablas desplegables */
+      .detail-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+      
+      .detail-content.show {
+        max-height: 500px;
+        overflow-y: auto;
+      }
+      
+      /* Estilos para pestañas */
+      .tab-content {
+        display: none;
+      }
+      
+      .tab-content.active {
+        display: block;
+      }
+      
+      .tab.active {
+        background-color: #f3f4f6; /* gray-100 */
+        border-color: #3b82f6; /* blue-500 */
+        color: #1f2937; /* gray-800 */
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body class="pt-8 bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="flex justify-center">
+        <div class="w-full">
+          <!-- Logo -->
+          <div class="text-center mb-8">
+            <!-- <img src="https://via.placeholder.com/200x80?text=LOGO" alt="Logo" class="mx-auto" style="max-width: 200px;"> -->
           </div>
           
-          <!-- Pestañas -->
-          <div class="border-b border-gray-200">
-            <ul class="flex -mb-px" id="tabs">
-              <li class="mr-1">
-                <button id="tab-solicitudes" class="tab active inline-block py-3 px-4 text-gray-600 hover:text-gray-800 border-b-2 border-transparent" data-target="solicitudes-content">1. Descarga Solicitudes</button>
-              </li>
-              <li class="mr-1">
-                <button id="tab-gaceta" class="tab inline-block py-3 px-4 text-gray-600 hover:text-gray-800 border-b-2 border-transparent" data-target="gaceta-content">2. Descarga Gaceta SIC</button>
-              </li>
-              <li>
-                <button id="tab-individual" class="tab inline-block py-3 px-4 text-gray-600 hover:text-gray-800 border-b-2 border-transparent" data-target="individual-content">3. Descarga Individual</button>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="p-4">
-            <!-- Contenido de pestaña Solicitudes -->
-            <div id="solicitudes-content" class="tab-content active">
-              <!-- Sección de carga de archivo para Solicitudes -->
-              <div id="uploadForm-solicitudes" class="upload-form">
-                <h5 class="mb-3 text-lg font-medium">Cargar archivo Excel de Solicitudes</h5>
-                <div id="dragArea-solicitudes" class="drag-area border-2 border-dashed border-gray-300 rounded-lg p-12 text-center transition-all duration-300 mb-5">
-                  <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
-                  <h5 class="text-xl font-medium mb-2">Arrastra y suelta tu archivo Excel aquí</h5>
-                  <p class="mb-4">o</p>
-                  <button type="button" class="browse-btn border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition">Seleccionar archivo</button>
-                  <input type="file" class="file-input" accept=".xls,.xlsx,.xlsm" hidden data-process-url="/process">
-                </div>
-                <div class="file-details mt-4 hidden">
-                  <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 flex items-center justify-between">
-                    <span><strong>Archivo seleccionado:</strong> <span class="file-name">Ninguno</span></span>
-                    <button type="button" class="remove-file text-blue-500 hover:text-blue-700" aria-label="Eliminar">&times;</button>
-                  </div>
-                </div>
-                <div class="mt-6">
-                  <button type="button" class="submit-btn w-full bg-indigo-500 text-white py-3 rounded text-lg disabled:opacity-50" disabled>Procesar archivo</button>
-                </div>
-              </div>
+          <!-- Tarjeta Principal -->
+          <div class="bg-white shadow rounded mb-6">
+            <div class="bg-slate-700 text-white p-4 rounded-t">
+              <h4 class="text-lg font-semibold">Procesador de Archivos Excel SIC</h4>
             </div>
             
-            <!-- Contenido de pestaña Gaceta SIC -->
-            <div id="gaceta-content" class="tab-content">
-              <!-- Sección de carga de archivo para Gaceta SIC -->
-              <div id="uploadForm-gaceta" class="upload-form">
-                <h5 class="mb-3 text-lg font-medium">Cargar archivo Excel de Gaceta SIC</h5>
-                <div id="dragArea-gaceta" class="drag-area border-2 border-dashed border-gray-300 rounded-lg p-12 text-center transition-all duration-300 mb-5">
-                  <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
-                  <h5 class="text-xl font-medium mb-2">Arrastra y suelta tu archivo Excel aquí</h5>
-                  <p class="mb-4">o</p>
-                  <button type="button" class="browse-btn border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition">Seleccionar archivo</button>
-                  <input type="file" class="file-input" accept=".xls,.xlsx,.xlsm" hidden data-process-url="/process-gaceta">
-                </div>
-                <div class="file-details mt-4 hidden">
-                  <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 flex items-center justify-between">
-                    <span><strong>Archivo seleccionado:</strong> <span class="file-name">Ninguno</span></span>
-                    <button type="button" class="remove-file text-blue-500 hover:text-blue-700" aria-label="Eliminar">&times;</button>
-                  </div>
-                </div>
-                <div class="mt-6">
-                  <button type="button" class="submit-btn w-full bg-indigo-500 text-white py-3 rounded text-lg disabled:opacity-50" disabled>Procesar archivo</button>
-                </div>
-              </div>
+            <!-- Pestañas -->
+            <div class="border-b border-gray-200">
+              <ul class="flex -mb-px" id="tabs">
+                <li class="mr-1">
+                  <button id="tab-solicitudes" class="tab active inline-block py-3 px-4 text-gray-600 hover:text-gray-800 border-b-2 border-transparent" data-target="solicitudes-content">1. Descarga Solicitudes</button>
+                </li>
+                <li class="mr-1">
+                  <button id="tab-gaceta" class="tab inline-block py-3 px-4 text-gray-600 hover:text-gray-800 border-b-2 border-transparent" data-target="gaceta-content">2. Descarga Gaceta SIC</button>
+                </li>
+                <li>
+                  <button id="tab-individual" class="tab inline-block py-3 px-4 text-gray-600 hover:text-gray-800 border-b-2 border-transparent" data-target="individual-content">3. Descarga Individual</button>
+                </li>
+              </ul>
             </div>
             
-            <!-- Contenido de pestaña Individual -->
-            <div id="individual-content" class="tab-content">
-              <div id="uploadForm-individual" class="upload-form">
-                <h5 class="mb-3 text-lg font-medium">Descargar expediente individual</h5>
-                <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-700 p-4 mb-5">
-                  <p class="text-sm">Ingrese el número de expediente para descargar la información. Puede usar formato ejemplos: <strong>SD2022/0049537</strong> o solo <strong>11162276</strong>.</p>
-                </div>
-                <div class="mb-5">
-                  <label for="expedienteInput" class="block mb-2 text-sm font-medium text-gray-700">Número de Expediente</label>
-                  <div class="flex">
-                    <input type="text" id="expedienteInput" class="block w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ej: SD2022/0049537">
-                    <button type="button" id="clearExpedienteBtn" class="ml-2 p-3 text-gray-500 hover:text-gray-700 focus:outline-none" aria-label="Limpiar">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-                      </svg>
-                    </button>
+            <div class="p-4">
+              <!-- Contenido de pestaña Solicitudes -->
+              <div id="solicitudes-content" class="tab-content active">
+                <!-- Sección de carga de archivo para Solicitudes -->
+                <div id="uploadForm-solicitudes" class="upload-form">
+                  <h5 class="mb-3 text-lg font-medium">Cargar archivo Excel de Solicitudes</h5>
+                  <div id="dragArea-solicitudes" class="drag-area border-2 border-dashed border-gray-300 rounded-lg p-12 text-center transition-all duration-300 mb-5">
+                    <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
+                    <h5 class="text-xl font-medium mb-2">Arrastra y suelta tu archivo Excel aquí</h5>
+                    <p class="mb-4">o</p>
+                    <button type="button" class="browse-btn border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition">Seleccionar archivo</button>
+                    <input type="file" class="file-input" accept=".xls,.xlsx,.xlsm" hidden data-process-url="/process">
                   </div>
-                </div>
-                <div class="mt-6">
-                  <button type="button" id="processIndividualBtn" class="w-full bg-indigo-500 text-white py-3 rounded text-lg disabled:opacity-50">Procesar expediente</button>
+                  <div class="file-details mt-4 hidden">
+                    <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 flex items-center justify-between">
+                      <span><strong>Archivo seleccionado:</strong> <span class="file-name">Ninguno</span></span>
+                      <button type="button" class="remove-file text-blue-500 hover:text-blue-700" aria-label="Eliminar">&times;</button>
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <button type="button" class="submit-btn w-full bg-indigo-500 text-white py-3 rounded text-lg disabled:opacity-50" disabled>Procesar archivo</button>
+                  </div>
                 </div>
               </div>
               
-              <!-- Sección para mostrar información del expediente procesado -->
-              <div id="individualResultSection" style="display: none;" class="mt-6">
-                <div id="individualResultAlert" class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">
-                  <h5 class="font-semibold">¡Expediente procesado!</h5>
-                  <p id="individualResultMessage"></p>
+              <!-- Contenido de pestaña Gaceta SIC -->
+              <div id="gaceta-content" class="tab-content">
+                <!-- Sección de carga de archivo para Gaceta SIC -->
+                <div id="uploadForm-gaceta" class="upload-form">
+                  <h5 class="mb-3 text-lg font-medium">Cargar archivo Excel de Gaceta SIC</h5>
+                  <div id="dragArea-gaceta" class="drag-area border-2 border-dashed border-gray-300 rounded-lg p-12 text-center transition-all duration-300 mb-5">
+                    <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
+                    <h5 class="text-xl font-medium mb-2">Arrastra y suelta tu archivo Excel aquí</h5>
+                    <p class="mb-4">o</p>
+                    <button type="button" class="browse-btn border border-blue-500 text-blue-500 px-4 py-2 rounded hover:bg-blue-500 hover:text-white transition">Seleccionar archivo</button>
+                    <input type="file" class="file-input" accept=".xls,.xlsx,.xlsm" hidden data-process-url="/process-gaceta">
+                  </div>
+                  <div class="file-details mt-4 hidden">
+                    <div class="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 flex items-center justify-between">
+                      <span><strong>Archivo seleccionado:</strong> <span class="file-name">Ninguno</span></span>
+                      <button type="button" class="remove-file text-blue-500 hover:text-blue-700" aria-label="Eliminar">&times;</button>
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <button type="button" class="submit-btn w-full bg-indigo-500 text-white py-3 rounded text-lg disabled:opacity-50" disabled>Procesar archivo</button>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Contenido de pestaña Individual -->
+              <div id="individual-content" class="tab-content">
+                <div id="uploadForm-individual" class="upload-form">
+                  <h5 class="mb-3 text-lg font-medium">Descargar expediente individual</h5>
+                  <div class="bg-blue-50 border-l-4 border-blue-500 text-blue-700 p-4 mb-5">
+                    <p class="text-sm">Ingrese el número de expediente para descargar la información. Puede usar formato ejemplos: <strong>SD2022/0049537</strong> o solo <strong>11162276</strong>.</p>
+                  </div>
+                  <div class="mb-5">
+                    <label for="expedienteInput" class="block mb-2 text-sm font-medium text-gray-700">Número de Expediente</label>
+                    <div class="flex">
+                      <input type="text" id="expedienteInput" class="block w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Ej: SD2022/0049537">
+                      <button type="button" id="clearExpedienteBtn" class="ml-2 p-3 text-gray-500 hover:text-gray-700 focus:outline-none" aria-label="Limpiar">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-6">
+                    <button type="button" id="processIndividualBtn" class="w-full bg-indigo-500 text-white py-3 rounded text-lg disabled:opacity-50">Procesar expediente</button>
+                  </div>
                 </div>
                 
-                <div class="bg-white border rounded-lg shadow-sm p-4 mb-4">
-                  <h6 class="text-lg font-medium mb-2">Detalles del expediente</h6>
-                  <div class="space-y-2">
-                    <div class="flex items-start">
-                      <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                        </svg>
+                <!-- Sección para mostrar información del expediente procesado -->
+                <div id="individualResultSection" style="display: none;" class="mt-6">
+                  <div id="individualResultAlert" class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">
+                    <h5 class="font-semibold">¡Expediente procesado!</h5>
+                    <p id="individualResultMessage"></p>
+                  </div>
+                  
+                  <div class="bg-white border rounded-lg shadow-sm p-4 mb-4">
+                    <h6 class="text-lg font-medium mb-2">Detalles del expediente</h6>
+                    <div class="space-y-2">
+                      <div class="flex items-start">
+                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="ml-3">
+                          <p class="text-sm text-gray-700"><span class="font-medium">HTML:</span> <span id="individualHtmlPath">-</span></p>
+                        </div>
                       </div>
-                      <div class="ml-3">
-                        <p class="text-sm text-gray-700"><span class="font-medium">HTML:</span> <span id="individualHtmlPath">-</span></p>
+                      <div class="flex items-start">
+                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="ml-3">
+                          <p class="text-sm text-gray-700"><span class="font-medium">JSON:</span> <span id="individualJsonPath">-</span></p>
+                        </div>
+                      </div>
+                      <div class="flex items-start">
+                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="ml-3">
+                          <p class="text-sm text-gray-700"><span class="font-medium">Archivos multimedia:</span> <span id="individualMediaCount">-</span></p>
+                        </div>
                       </div>
                     </div>
-                    <div class="flex items-start">
-                      <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                        </svg>
-                      </div>
-                      <div class="ml-3">
-                        <p class="text-sm text-gray-700"><span class="font-medium">JSON:</span> <span id="individualJsonPath">-</span></p>
+                  </div>
+                  
+                  <div>
+                    <button type="button" id="newIndividualBtn" class="w-full bg-indigo-500 text-white py-3 rounded text-lg">Procesar otro expediente</button>
+                  </div>
+                </div>
+                
+                <!-- Sección de procesamiento -->
+                <div id="individualProcessingSection" style="display: none;">
+                  <h5 class="mb-3 text-lg font-medium">Procesando expediente...</h5>
+                  <div class="w-full h-6 bg-gray-300 rounded mb-3 overflow-hidden">
+                    <div class="h-full bg-blue-500 animate-pulse" style="width: 100%;"></div>
+                  </div>
+                  <p class="text-gray-600">Por favor, no cierre esta ventana hasta que el proceso haya terminado.</p>
+                </div>
+              </div>
+              
+              <!-- Sección de procesamiento -->
+              <div id="processingSection" style="display: none;">
+                <h5 class="mb-3 text-lg font-medium">Procesando archivo...</h5>
+                <div class="w-full h-6 bg-gray-300 rounded mb-3 overflow-hidden">
+                  <div class="h-full bg-blue-500 animate-pulse" style="width: 100%;"></div>
+                </div>
+                <p class="text-gray-600">Por favor, no cierre esta ventana hasta que el proceso haya terminado.</p>
+              </div>
+              
+              <!-- Sección de resultados -->
+              <div id="resultSection" style="display: none;">
+                <div id="resultAlert" class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">
+                  <h5 class="font-semibold">¡Proceso completado!</h5>
+                  <p id="resultMessage"></p>
+                  <hr class="my-2">
+                  <p class="mb-0">Los datos han sido importados correctamente a la base de datos.</p>
+                </div>
+                
+                <!-- Secciones de detalles -->
+                <div id="details-container" class="mb-6">
+                  <!-- Filas con errores -->
+                  <div class="mb-3 border border-gray-200 rounded overflow-hidden">
+                    <div id="error-header" class="bg-red-100 text-red-700 p-3 cursor-pointer flex justify-between items-center" onclick="toggleSection('error-details')">
+                      <span class="font-medium">Filas con errores <span id="error-count" class="font-normal text-sm">(0)</span></span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <div id="error-details" class="detail-content">
+                      <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                          <thead class="bg-gray-50">
+                            <tr>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fila</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Número de Caso</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Motivo del Error</th>
+                            </tr>
+                          </thead>
+                          <tbody id="error-table" class="bg-white divide-y divide-gray-200">
+                            <!-- Se llenará dinámicamente -->
+                          </tbody>
+                        </table>
                       </div>
                     </div>
-                    <div class="flex items-start">
-                      <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                        </svg>
+                  </div>
+                  
+                  <!-- Filas saltadas -->
+                  <div class="mb-3 border border-gray-200 rounded overflow-hidden">
+                    <div id="skipped-header" class="bg-yellow-100 text-yellow-700 p-3 cursor-pointer flex justify-between items-center" onclick="toggleSection('skipped-details')">
+                      <span class="font-medium">Filas saltadas <span id="skipped-count" class="font-normal text-sm">(0)</span></span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <div id="skipped-details" class="detail-content">
+                      <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                          <thead class="bg-gray-50">
+                            <tr>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fila</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Número de Caso</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Motivo</th>
+                            </tr>
+                          </thead>
+                          <tbody id="skipped-table" class="bg-white divide-y divide-gray-200">
+                            <!-- Se llenará dinámicamente -->
+                          </tbody>
+                        </table>
                       </div>
-                      <div class="ml-3">
-                        <p class="text-sm text-gray-700"><span class="font-medium">Archivos multimedia:</span> <span id="individualMediaCount">-</span></p>
+                    </div>
+                  </div>
+                  
+                  <!-- Filas procesadas -->
+                  <div class="mb-3 border border-gray-200 rounded overflow-hidden">
+                    <div id="processed-header" class="bg-green-100 text-green-700 p-3 cursor-pointer flex justify-between items-center" onclick="toggleSection('processed-details')">
+                      <span class="font-medium">Filas procesadas correctamente <span id="processed-count" class="font-normal text-sm">(0)</span></span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                    <div id="processed-details" class="detail-content">
+                      <div class="overflow-x-auto">
+                        <table class="min-w-full divide-y divide-gray-200">
+                          <thead class="bg-gray-50">
+                            <tr>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fila</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Número de Caso</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
+                              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Código</th>
+                            </tr>
+                          </thead>
+                          <tbody id="processed-table" class="bg-white divide-y divide-gray-200">
+                            <!-- Se llenará dinámicamente -->
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
                 </div>
                 
                 <div>
-                  <button type="button" id="newIndividualBtn" class="w-full bg-indigo-500 text-white py-3 rounded text-lg">Procesar otro expediente</button>
+                  <button type="button" id="newProcessBtn" class="w-full bg-indigo-500 text-white py-3 rounded text-lg">Procesar otro archivo</button>
                 </div>
-              </div>
-              
-              <!-- Sección de procesamiento -->
-              <div id="individualProcessingSection" style="display: none;">
-                <h5 class="mb-3 text-lg font-medium">Procesando expediente...</h5>
-                <div class="w-full h-6 bg-gray-300 rounded mb-3 overflow-hidden">
-                  <div class="h-full bg-blue-500 animate-pulse" style="width: 100%;"></div>
-                </div>
-                <p class="text-gray-600">Por favor, no cierre esta ventana hasta que el proceso haya terminado.</p>
-              </div>
-            </div>
-            
-            <!-- Sección de procesamiento -->
-            <div id="processingSection" style="display: none;">
-              <h5 class="mb-3 text-lg font-medium">Procesando archivo...</h5>
-              <div class="w-full h-6 bg-gray-300 rounded mb-3 overflow-hidden">
-                <div class="h-full bg-blue-500 animate-pulse" style="width: 100%;"></div>
-              </div>
-              <p class="text-gray-600">Por favor, no cierre esta ventana hasta que el proceso haya terminado.</p>
-            </div>
-            
-            <!-- Sección de resultados -->
-            <div id="resultSection" style="display: none;">
-              <div id="resultAlert" class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">
-                <h5 class="font-semibold">¡Proceso completado!</h5>
-                <p id="resultMessage"></p>
-                <hr class="my-2">
-                <p class="mb-0">Los datos han sido importados correctamente a la base de datos.</p>
-              </div>
-              
-              <!-- Secciones de detalles -->
-              <div id="details-container" class="mb-6">
-                <!-- Filas con errores -->
-                <div class="mb-3 border border-gray-200 rounded overflow-hidden">
-                  <div id="error-header" class="bg-red-100 text-red-700 p-3 cursor-pointer flex justify-between items-center" onclick="toggleSection('error-details')">
-                    <span class="font-medium">Filas con errores <span id="error-count" class="font-normal text-sm">(0)</span></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                  <div id="error-details" class="detail-content">
-                    <div class="overflow-x-auto">
-                      <table class="min-w-full divide-y divide-gray-200">
-                        <thead class="bg-gray-50">
-                          <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fila</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Número de Caso</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Motivo del Error</th>
-                          </tr>
-                        </thead>
-                        <tbody id="error-table" class="bg-white divide-y divide-gray-200">
-                          <!-- Se llenará dinámicamente -->
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Filas saltadas -->
-                <div class="mb-3 border border-gray-200 rounded overflow-hidden">
-                  <div id="skipped-header" class="bg-yellow-100 text-yellow-700 p-3 cursor-pointer flex justify-between items-center" onclick="toggleSection('skipped-details')">
-                    <span class="font-medium">Filas saltadas <span id="skipped-count" class="font-normal text-sm">(0)</span></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                  <div id="skipped-details" class="detail-content">
-                    <div class="overflow-x-auto">
-                      <table class="min-w-full divide-y divide-gray-200">
-                        <thead class="bg-gray-50">
-                          <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fila</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Número de Caso</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Motivo</th>
-                          </tr>
-                        </thead>
-                        <tbody id="skipped-table" class="bg-white divide-y divide-gray-200">
-                          <!-- Se llenará dinámicamente -->
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Filas procesadas -->
-                <div class="mb-3 border border-gray-200 rounded overflow-hidden">
-                  <div id="processed-header" class="bg-green-100 text-green-700 p-3 cursor-pointer flex justify-between items-center" onclick="toggleSection('processed-details')">
-                    <span class="font-medium">Filas procesadas correctamente <span id="processed-count" class="font-normal text-sm">(0)</span></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                  </div>
-                  <div id="processed-details" class="detail-content">
-                    <div class="overflow-x-auto">
-                      <table class="min-w-full divide-y divide-gray-200">
-                        <thead class="bg-gray-50">
-                          <tr>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Fila</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Número de Caso</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
-                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Código</th>
-                          </tr>
-                        </thead>
-                        <tbody id="processed-table" class="bg-white divide-y divide-gray-200">
-                          <!-- Se llenará dinámicamente -->
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div>
-                <button type="button" id="newProcessBtn" class="w-full bg-indigo-500 text-white py-3 rounded text-lg">Procesar otro archivo</button>
               </div>
             </div>
           </div>
-        </div>
-        
-        <!-- Tarjeta de Instrucciones -->
-        <div class="bg-white shadow rounded">
-          <div class="bg-gray-100 p-4 rounded-t">
-            <h5 class="text-lg font-semibold">Instrucciones</h5>
-          </div>
-          <div class="p-4">
-            <div class="mb-4">
-              <p class="font-medium mb-2">Seleccione el tipo de procesamiento según el archivo Excel que desea cargar:</p>
-              
-              <div class="border-l-4 border-blue-500 pl-4 py-2 mb-4">
-                <h6 class="font-semibold">1. Descarga Solicitudes</h6>
-                <p class="text-sm text-gray-600">Para procesar archivos Excel de solicitudes de la SIC.*Recordar haber eliminado las 6 primeras filas de cada excel.</p>
-              </div>
-              
-              <div class="border-l-4 border-green-500 pl-4 py-2 mb-4">
-                <h6 class="font-semibold">2. Descarga Gaceta SIC</h6>
-                <p class="text-sm text-gray-600">Para procesar archivos Excel de la Gaceta SIC. El sistema comienza a procesar desde la fila 10, columna B y extrae hipervínculos.</p>
-              </div>
-              
-              <div class="border-l-4 border-indigo-500 pl-4 py-2">
-                <h6 class="font-semibold">3. Descarga Individual</h6>
-                <p class="text-sm text-gray-600">Para descargar información de un expediente específico ingresando su número. Compatible con formatos SD2022/0049537 o 01029150 para expedientes previos a Junio de 2016.</p>
-              </div>
+          
+          <!-- Tarjeta de Instrucciones -->
+          <div class="bg-white shadow rounded">
+            <div class="bg-gray-100 p-4 rounded-t">
+              <h5 class="text-lg font-semibold">Instrucciones</h5>
             </div>
-            
-            <ol class="list-decimal list-inside mb-4">
-              <li>Seleccione el tipo de procesamiento usando las pestañas.</li>
-              <li>Para las pestañas 1 y 2: Arrastre o seleccione el archivo Excel (.xls, .xlsx o .xlsm).</li>
-              <li>Para la pestaña 3: Ingrese el número de expediente que desea consultar.</li>
-              <li>Haga clic en "Procesar" para iniciar el proceso correspondiente.</li>
-              <li>Espere a que el proceso termine. No cierre la ventana.</li>
-              <li>Una vez completado, podrá revisar los detalles del procesamiento.</li>
-            </ol>
+            <div class="p-4">
+              <div class="mb-4">
+                <p class="font-medium mb-2">Seleccione el tipo de procesamiento según el archivo Excel que desea cargar:</p>
+                
+                <div class="border-l-4 border-blue-500 pl-4 py-2 mb-4">
+                  <h6 class="font-semibold">1. Descarga Solicitudes</h6>
+                  <p class="text-sm text-gray-600">Para procesar archivos Excel de solicitudes de la SIC.*Recordar haber eliminado las 6 primeras filas de cada excel.</p>
+                </div>
+                
+                <div class="border-l-4 border-green-500 pl-4 py-2 mb-4">
+                  <h6 class="font-semibold">2. Descarga Gaceta SIC</h6>
+                  <p class="text-sm text-gray-600">Para procesar archivos Excel de la Gaceta SIC. El sistema comienza a procesar desde la fila 10, columna B y extrae hipervínculos.</p>
+                </div>
+                
+                <div class="border-l-4 border-indigo-500 pl-4 py-2">
+                  <h6 class="font-semibold">3. Descarga Individual</h6>
+                  <p class="text-sm text-gray-600">Para descargar información de un expediente específico ingresando su número. Compatible con formatos SD2022/0049537 o 01029150 para expedientes previos a Junio de 2016.</p>
+                </div>
+              </div>
+              
+              <ol class="list-decimal list-inside mb-4">
+                <li>Seleccione el tipo de procesamiento usando las pestañas.</li>
+                <li>Para las pestañas 1 y 2: Arrastre o seleccione el archivo Excel (.xls, .xlsx o .xlsm).</li>
+                <li>Para la pestaña 3: Ingrese el número de expediente que desea consultar.</li>
+                <li>Haga clic en "Procesar" para iniciar el proceso correspondiente.</li>
+                <li>Espere a que el proceso termine. No cierre la ventana.</li>
+                <li>Una vez completado, podrá revisar los detalles del procesamiento.</li>
+              </ol>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Scripts -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Cambio de pestañas
-      const tabs = document.querySelectorAll('.tab:not([disabled])');
-      tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-          // Quitar la clase activa de todas las pestañas y contenidos
-          document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-          document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Cambio de pestañas
+        const tabs = document.querySelectorAll('.tab:not([disabled])');
+        tabs.forEach(tab => {
+          tab.addEventListener('click', function() {
+            // Quitar la clase activa de todas las pestañas y contenidos
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            
+            // Añadir la clase activa a la pestaña actual
+            this.classList.add('active');
+            
+            // Mostrar el contenido correspondiente
+            const targetId = this.getAttribute('data-target');
+            document.getElementById(targetId).classList.add('active');
+          });
+        });
+        
+        // Función para alternar la visibilidad de una sección
+        window.toggleSection = function(sectionId) {
+          const section = document.getElementById(sectionId);
+          section.classList.toggle('show');
           
-          // Añadir la clase activa a la pestaña actual
-          this.classList.add('active');
+          // Cambiar el ícono
+          const header = document.getElementById(sectionId.replace('details', 'header'));
+          if (header) {
+            const icon = header.querySelector('svg');
+            if (section.classList.contains('show')) {
+              icon.style.transform = 'rotate(180deg)';
+            } else {
+              icon.style.transform = 'rotate(0)';
+            }
+          }
+        }
+        
+        // Función para llenar una tabla con datos
+        function fillTable(tableId, data) {
+          const tableBody = document.getElementById(tableId);
+          tableBody.innerHTML = '';
           
-          // Mostrar el contenido correspondiente
-          const targetId = this.getAttribute('data-target');
-          document.getElementById(targetId).classList.add('active');
+          if (data && data.length > 0) {
+            data.forEach(item => {
+              const row = document.createElement('tr');
+              row.className = 'hover:bg-gray-50';
+              
+              if (tableId === 'processed-table') {
+                row.innerHTML = `
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.fila}</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.numero_caso || '-'}</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.id || '-'}</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.codigo || '-'}</td>
+                `;
+              } else {
+                row.innerHTML = `
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.fila}</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.numero_caso || '-'}</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.motivo || '-'}</td>
+                `;
+              }
+              
+              tableBody.appendChild(row);
+            });
+          } else {
+            const row = document.createElement('tr');
+            if (tableId === 'processed-table') {
+              row.innerHTML = '<td colspan="4" class="px-6 py-4 text-center text-sm text-gray-500">No hay datos</td>';
+            } else {
+              row.innerHTML = '<td colspan="3" class="px-6 py-4 text-center text-sm text-gray-500">No hay datos</td>';
+            }
+            tableBody.appendChild(row);
+          }
+        }
+        
+        // Actualizar contadores
+        function updateCounts(details) {
+          if (details.errores) {
+            document.getElementById('error-count').textContent = `(${details.errores.length})`;
+            // Si hay errores, mostrar automáticamente esa sección
+            if (details.errores.length > 0) {
+              document.getElementById('error-details').classList.add('show');
+              document.getElementById('error-header').querySelector('svg').style.transform = 'rotate(180deg)';
+            }
+          }
+          
+          if (details.saltadas) {
+            document.getElementById('skipped-count').textContent = `(${details.saltadas.length})`;
+          }
+          
+          if (details.procesadas) {
+            document.getElementById('processed-count').textContent = `(${details.procesadas.length})`;
+          }
+        }
+        
+        // Configurar todos los formularios de carga
+        document.querySelectorAll('.upload-form').forEach(form => {
+          const dragArea = form.querySelector('.drag-area');
+          const fileInput = form.querySelector('.file-input');
+          const browseBtn = form.querySelector('.browse-btn');
+          const fileDetails = form.querySelector('.file-details');
+          const fileName = form.querySelector('.file-name');
+          const removeFile = form.querySelector('.remove-file');
+          const submitBtn = form.querySelector('.submit-btn');
+          
+          // Si no hay elementos, saltar esta iteración (para el formulario individual)
+          if (!dragArea || !fileInput) return;
+          
+          // Cuando se hace clic en el botón de seleccionar archivo
+          browseBtn.addEventListener('click', () => {
+            fileInput.click();
+          });
+          
+          // Cuando se selecciona un archivo
+          fileInput.addEventListener('change', function() {
+            handleFile(this);
+          });
+          
+          // Cuando se arrastra un archivo sobre el área
+          dragArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dragArea.classList.add('active');
+          });
+          
+          // Cuando se deja de arrastrar sobre el área
+          dragArea.addEventListener('dragleave', () => {
+            dragArea.classList.remove('active');
+          });
+          
+          // Cuando se suelta el archivo en el área
+          dragArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dragArea.classList.remove('active');
+            
+            if (e.dataTransfer.files.length > 0) {
+              fileInput.files = e.dataTransfer.files;
+              handleFile(fileInput);
+            }
+          });
+          
+          // Función para manejar el archivo seleccionado
+          function handleFile(input) {
+            if (input.files.length > 0) {
+              const file = input.files[0];
+              const validExtensions = ['.xls', '.xlsx', '.xlsm'];
+              const fileExt = '.' + file.name.split('.').pop().toLowerCase();
+              
+              if (validExtensions.includes(fileExt)) {
+                fileName.textContent = file.name;
+                fileDetails.classList.remove('hidden');
+                submitBtn.disabled = false;
+              } else {
+                alert('Por favor, seleccione un archivo Excel válido (.xls, .xlsx, .xlsm)');
+                resetFileInput();
+              }
+            }
+          }
+          
+          // Resetear el campo de archivo
+          function resetFileInput() {
+            fileInput.value = '';
+            fileName.textContent = 'Ninguno';
+            fileDetails.classList.add('hidden');
+            submitBtn.disabled = true;
+          }
+          
+          // Remover el archivo seleccionado
+          removeFile.addEventListener('click', resetFileInput);
+          
+          // Enviar el formulario
+          submitBtn.addEventListener('click', async () => {
+            if (fileInput.files.length === 0) return;
+            
+            // Crear FormData y agregar el archivo
+            const formData = new FormData();
+            formData.append('excelFile', fileInput.files[0]);
+            
+            // URL de procesamiento
+            const processUrl = fileInput.getAttribute('data-process-url');
+            if (!processUrl) {
+              alert('Error: No se ha definido la URL de procesamiento');
+              return;
+            }
+            
+            // Ocultar todos los contenidos de pestañas
+            document.querySelectorAll('.tab-content').forEach(content => {
+              content.style.display = 'none';
+            });
+            
+            // Mostrar la sección de procesamiento
+            document.getElementById('processingSection').style.display = 'block';
+            
+            try {
+              const response = await fetch(processUrl, {
+                method: 'POST',
+                body: formData
+              });
+              
+              const result = await response.json();
+              
+              // Ocultar procesamiento y mostrar resultados
+              document.getElementById('processingSection').style.display = 'none';
+              document.getElementById('resultSection').style.display = 'block';
+              
+              if (result.success) {
+                document.getElementById('resultAlert').className = 'bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4';
+                document.getElementById('resultAlert').querySelector('h5').textContent = '¡Proceso completado!';
+                document.getElementById('resultMessage').textContent = result.message;
+                
+                // Si hay detalles, mostrarlos
+                if (result.details) {
+                  document.getElementById('details-container').style.display = 'block';
+                  fillTable('error-table', result.details.errores);
+                  fillTable('skipped-table', result.details.saltadas);
+                  fillTable('processed-table', result.details.procesadas);
+                  updateCounts(result.details);
+                }
+              } else {
+                document.getElementById('resultAlert').className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';
+                document.getElementById('resultAlert').querySelector('h5').textContent = 'Error en el proceso';
+                document.getElementById('resultMessage').textContent = result.message;
+                document.getElementById('details-container').style.display = 'none';
+              }
+            } catch (error) {
+              document.getElementById('processingSection').style.display = 'none';
+              document.getElementById('resultSection').style.display = 'block';
+              document.getElementById('resultAlert').className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';
+              document.getElementById('resultAlert').querySelector('h5').textContent = 'Error en el proceso';
+              document.getElementById('resultMessage').textContent = 'Ha ocurrido un error al procesar el archivo. Por favor, inténtelo de nuevo.';
+              document.getElementById('details-container').style.display = 'none';
+              console.error('Error:', error);
+            }
+          });
+        });
+        
+        // Iniciar un nuevo proceso
+        document.getElementById('newProcessBtn').addEventListener('click', () => {
+          // Restablecer todos los campos de archivo
+          document.querySelectorAll('.file-input').forEach(input => {
+            input.value = '';
+          });
+          
+          document.querySelectorAll('.file-name').forEach(name => {
+            name.textContent = 'Ninguno';
+          });
+          
+          document.querySelectorAll('.file-details').forEach(details => {
+            details.classList.add('hidden');
+          });
+          
+          document.querySelectorAll('.submit-btn').forEach(btn => {
+            btn.disabled = true;
+          });
+          
+          // Ocultar resultados
+          document.getElementById('resultSection').style.display = 'none';
+          
+          // Mostrar la pestaña activa
+          const activeTab = document.querySelector('.tab.active');
+          if (activeTab) {
+            const targetId = activeTab.getAttribute('data-target');
+            if (targetId) {
+              document.getElementById(targetId).style.display = 'block';
+            }
+          }
+        });
+
+        // NUEVAS FUNCIONES PARA PROCESAMIENTO INDIVIDUAL
+        
+        // Limpiar campo de expediente
+        document.getElementById('clearExpedienteBtn').addEventListener('click', () => {
+          document.getElementById('expedienteInput').value = '';
+          document.getElementById('expedienteInput').focus();
+        });
+        
+        document.getElementById('processIndividualBtn').addEventListener('click', async () => {
+        const expediente = document.getElementById('expedienteInput').value.trim();
+        
+        // Make sure the expediente is valid
+        if (!expediente) {
+          alert('Por favor, ingrese un número de expediente válido');
+          return;
+        }
+        
+        // Hide form and show processing section
+        document.getElementById('uploadForm-individual').style.display = 'none';
+        document.getElementById('individualProcessingSection').style.display = 'block';
+        
+        try {
+          console.log('Enviando solicitud para procesar expediente:', expediente);
+          const response = await fetch('/api/standalone/process', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ expediente })
+          });
+          
+          // Add debugging to see what's happening with the response
+          console.log('Response status:', response.status);
+          console.log('Response OK:', response.ok);
+          
+          // Verify HTTP response status
+          if (!response.ok) {
+            throw new Error(`Error de servidor: ${response.status} ${response.statusText}`);
+          }
+          
+          const result = await response.json();
+          console.log('Respuesta del servidor:', result);            
+            // Asegurarse de que el objeto result contiene la propiedad expediente
+            if (!result.expediente && expediente) {
+              result.expediente = expediente;
+            }
+            
+            // Usar la función mejorada para mostrar resultados con la opción de JSON
+            showResultWithJsonOption(result);
+            
+          } catch (error) {
+            console.error('Error en el proceso:', error);
+            
+            document.getElementById('individualProcessingSection').style.display = 'none';
+            document.getElementById('individualResultSection').style.display = 'block';
+            document.getElementById('individualResultAlert').className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';
+            document.getElementById('individualResultAlert').querySelector('h5').textContent = 'Error en el proceso';
+            document.getElementById('individualResultMessage').textContent = `Ha ocurrido un error al procesar el expediente: ${error.message}. Por favor, inténtelo de nuevo.`;
+            
+            // Actualizar detalles con valores predeterminados en caso de error
+            document.getElementById('individualHtmlPath').textContent = 'No disponible';
+            document.getElementById('individualJsonPath').textContent = 'No disponible';
+            document.getElementById('individualMediaCount').textContent = '0 archivos';
+            
+            if (document.getElementById('individualPdfProcessed')) {
+              document.getElementById('individualPdfProcessed').textContent = 'No procesados';
+            }
+          }
+        });
+        
+        // Iniciar un nuevo proceso individual
+        document.getElementById('newIndividualBtn').addEventListener('click', () => {
+          // Limpiar campo de expediente
+          document.getElementById('expedienteInput').value = '';
+          
+          // Ocultar resultados y mostrar formulario
+          document.getElementById('individualResultSection').style.display = 'none';
+          document.getElementById('uploadForm-individual').style.display = 'block';
         });
       });
-      
-      // Función para alternar la visibilidad de una sección
-      window.toggleSection = function(sectionId) {
-        const section = document.getElementById(sectionId);
-        section.classList.toggle('show');
-        
-        // Cambiar el ícono
-        const header = document.getElementById(sectionId.replace('details', 'header'));
-        if (header) {
-          const icon = header.querySelector('svg');
-          if (section.classList.contains('show')) {
-            icon.style.transform = 'rotate(180deg)';
-          } else {
-            icon.style.transform = 'rotate(0)';
-          }
-        }
-      }
-      
-      // Función para llenar una tabla con datos
-      function fillTable(tableId, data) {
-        const tableBody = document.getElementById(tableId);
-        tableBody.innerHTML = '';
-        
-        if (data && data.length > 0) {
-          data.forEach(item => {
-            const row = document.createElement('tr');
-            row.className = 'hover:bg-gray-50';
-            
-            if (tableId === 'processed-table') {
-              row.innerHTML = `
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.fila}</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.numero_caso || '-'}</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.id || '-'}</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.codigo || '-'}</td>
-              `;
-            } else {
-              row.innerHTML = `
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.fila}</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">${item.numero_caso || '-'}</td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">${item.motivo || '-'}</td>
-              `;
-            }
-            
-            tableBody.appendChild(row);
-          });
-        } else {
-          const row = document.createElement('tr');
-          if (tableId === 'processed-table') {
-            row.innerHTML = '<td colspan="4" class="px-6 py-4 text-center text-sm text-gray-500">No hay datos</td>';
-          } else {
-            row.innerHTML = '<td colspan="3" class="px-6 py-4 text-center text-sm text-gray-500">No hay datos</td>';
-          }
-          tableBody.appendChild(row);
-        }
-      }
-      
-      // Actualizar contadores
-      function updateCounts(details) {
-        if (details.errores) {
-          document.getElementById('error-count').textContent = `(${details.errores.length})`;
-          // Si hay errores, mostrar automáticamente esa sección
-          if (details.errores.length > 0) {
-            document.getElementById('error-details').classList.add('show');
-            document.getElementById('error-header').querySelector('svg').style.transform = 'rotate(180deg)';
-          }
-        }
-        
-        if (details.saltadas) {
-          document.getElementById('skipped-count').textContent = `(${details.saltadas.length})`;
-        }
-        
-        if (details.procesadas) {
-          document.getElementById('processed-count').textContent = `(${details.procesadas.length})`;
-        }
-      }
-      
-      // Configurar todos los formularios de carga
-      document.querySelectorAll('.upload-form').forEach(form => {
-        const dragArea = form.querySelector('.drag-area');
-        const fileInput = form.querySelector('.file-input');
-        const browseBtn = form.querySelector('.browse-btn');
-        const fileDetails = form.querySelector('.file-details');
-        const fileName = form.querySelector('.file-name');
-        const removeFile = form.querySelector('.remove-file');
-        const submitBtn = form.querySelector('.submit-btn');
-        
-        // Si no hay elementos, saltar esta iteración (para el formulario individual)
-        if (!dragArea || !fileInput) return;
-        
-        // Cuando se hace clic en el botón de seleccionar archivo
-        browseBtn.addEventListener('click', () => {
-          fileInput.click();
-        });
-        
-        // Cuando se selecciona un archivo
-        fileInput.addEventListener('change', function() {
-          handleFile(this);
-        });
-        
-        // Cuando se arrastra un archivo sobre el área
-        dragArea.addEventListener('dragover', (e) => {
-          e.preventDefault();
-          dragArea.classList.add('active');
-        });
-        
-        // Cuando se deja de arrastrar sobre el área
-        dragArea.addEventListener('dragleave', () => {
-          dragArea.classList.remove('active');
-        });
-        
-        // Cuando se suelta el archivo en el área
-        dragArea.addEventListener('drop', (e) => {
-          e.preventDefault();
-          dragArea.classList.remove('active');
-          
-          if (e.dataTransfer.files.length > 0) {
-            fileInput.files = e.dataTransfer.files;
-            handleFile(fileInput);
-          }
-        });
-        
-        // Función para manejar el archivo seleccionado
-        function handleFile(input) {
-          if (input.files.length > 0) {
-            const file = input.files[0];
-            const validExtensions = ['.xls', '.xlsx', '.xlsm'];
-            const fileExt = '.' + file.name.split('.').pop().toLowerCase();
-            
-            if (validExtensions.includes(fileExt)) {
-              fileName.textContent = file.name;
-              fileDetails.classList.remove('hidden');
-              submitBtn.disabled = false;
-            } else {
-              alert('Por favor, seleccione un archivo Excel válido (.xls, .xlsx, .xlsm)');
-              resetFileInput();
-            }
-          }
-        }
-        
-        // Resetear el campo de archivo
-        function resetFileInput() {
-          fileInput.value = '';
-          fileName.textContent = 'Ninguno';
-          fileDetails.classList.add('hidden');
-          submitBtn.disabled = true;
-        }
-        
-        // Remover el archivo seleccionado
-        removeFile.addEventListener('click', resetFileInput);
-        
-        // Enviar el formulario
-        submitBtn.addEventListener('click', async () => {
-          if (fileInput.files.length === 0) return;
-          
-          // Crear FormData y agregar el archivo
-          const formData = new FormData();
-          formData.append('excelFile', fileInput.files[0]);
-          
-          // URL de procesamiento
-          const processUrl = fileInput.getAttribute('data-process-url');
-          if (!processUrl) {
-            alert('Error: No se ha definido la URL de procesamiento');
+
+      // Función para añadir el campo de PDFs procesados si aún no existe
+      function updateIndividualResultSection() {
+        try {
+          // Si la sección ya tiene el elemento de PDFs, no hacer nada
+          if (document.getElementById('individualPdfProcessed')) {
             return;
           }
           
-          // Ocultar todos los contenidos de pestañas
-          document.querySelectorAll('.tab-content').forEach(content => {
-            content.style.display = 'none';
-          });
+          // Buscar el contenedor donde se muestran los detalles
+          const detallesContainer = document.querySelector('#individualResultSection .space-y-2');
           
-          // Mostrar la sección de procesamiento
-          document.getElementById('processingSection').style.display = 'block';
-          
-          try {
-            const response = await fetch(processUrl, {
-              method: 'POST',
-              body: formData
-            });
-            
-            const result = await response.json();
-            
-            // Ocultar procesamiento y mostrar resultados
-            document.getElementById('processingSection').style.display = 'none';
-            document.getElementById('resultSection').style.display = 'block';
-            
-            if (result.success) {
-              document.getElementById('resultAlert').className = 'bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4';
-              document.getElementById('resultAlert').querySelector('h5').textContent = '¡Proceso completado!';
-              document.getElementById('resultMessage').textContent = result.message;
-              
-              // Si hay detalles, mostrarlos
-              if (result.details) {
-                document.getElementById('details-container').style.display = 'block';
-                fillTable('error-table', result.details.errores);
-                fillTable('skipped-table', result.details.saltadas);
-                fillTable('processed-table', result.details.procesadas);
-                updateCounts(result.details);
-              }
-            } else {
-              document.getElementById('resultAlert').className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';
-              document.getElementById('resultAlert').querySelector('h5').textContent = 'Error en el proceso';
-              document.getElementById('resultMessage').textContent = result.message;
-              document.getElementById('details-container').style.display = 'none';
-            }
-          } catch (error) {
-            document.getElementById('processingSection').style.display = 'none';
-            document.getElementById('resultSection').style.display = 'block';
-            document.getElementById('resultAlert').className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';
-            document.getElementById('resultAlert').querySelector('h5').textContent = 'Error en el proceso';
-            document.getElementById('resultMessage').textContent = 'Ha ocurrido un error al procesar el archivo. Por favor, inténtelo de nuevo.';
-            document.getElementById('details-container').style.display = 'none';
-            console.error('Error:', error);
+          if (!detallesContainer) {
+            console.warn('No se encontró el contenedor de detalles');
+            return;
           }
-        });
-      });
-      
-      // Iniciar un nuevo proceso
-      document.getElementById('newProcessBtn').addEventListener('click', () => {
-        // Restablecer todos los campos de archivo
-        document.querySelectorAll('.file-input').forEach(input => {
-          input.value = '';
-        });
-        
-        document.querySelectorAll('.file-name').forEach(name => {
-          name.textContent = 'Ninguno';
-        });
-        
-        document.querySelectorAll('.file-details').forEach(details => {
-          details.classList.add('hidden');
-        });
-        
-        document.querySelectorAll('.submit-btn').forEach(btn => {
-          btn.disabled = true;
-        });
-        
-        // Ocultar resultados
-        document.getElementById('resultSection').style.display = 'none';
-        
-        // Mostrar la pestaña activa
-        const activeTab = document.querySelector('.tab.active');
-        if (activeTab) {
-          const targetId = activeTab.getAttribute('data-target');
-          if (targetId) {
-            document.getElementById(targetId).style.display = 'block';
-          }
-        }
-      });
-
-      // NUEVAS FUNCIONES PARA PROCESAMIENTO INDIVIDUAL
-      
-      // Limpiar campo de expediente
-      document.getElementById('clearExpedienteBtn').addEventListener('click', () => {
-        document.getElementById('expedienteInput').value = '';
-        document.getElementById('expedienteInput').focus();
-      });
-      
-      document.getElementById('processIndividualBtn').addEventListener('click', async () => {
-  const expediente = document.getElementById('expedienteInput').value.trim();
-  
-  if (!expediente) {
-    alert('Por favor, ingrese un número de expediente válido');
-    return;
-  }
-  
-  // Ocultar formulario y mostrar sección de procesamiento
-  document.getElementById('uploadForm-individual').style.display = 'none';
-  document.getElementById('individualProcessingSection').style.display = 'block';
-  
-  try {
-    console.log('Enviando solicitud para procesar expediente:', expediente);
-    const response = await fetch('/api/standalone/process', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ expediente })
-    });
-    
-    const result = await response.json();
-    console.log('Respuesta del servidor:', result);
-    
-    
-          // Ocultar procesamiento
-          document.getElementById('individualProcessingSection').style.display = 'none';
           
-          // Mostrar resultados
-          document.getElementById('individualResultSection').style.display = 'block';
+          // Crear un nuevo elemento para la información de PDFs
+          const pdfInfoElement = document.createElement('div');
+          pdfInfoElement.className = 'flex items-start';
+          pdfInfoElement.innerHTML = `
+            <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="ml-3">
+              <p class="text-sm text-gray-700"><span class="font-medium">PDFs procesados:</span> <span id="individualPdfProcessed">-</span></p>
+            </div>
+          `;
           
-          if (result.success) {
-            document.getElementById('individualResultAlert').className = 'bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4';
-            document.getElementById('individualResultAlert').querySelector('h5').textContent = '¡Expediente procesado!';
-            document.getElementById('individualResultMessage').textContent = result.message;
-            
-            // Actualizar detalles
-            document.getElementById('individualHtmlPath').textContent = result.details.htmlPath || 'No disponible';
-            document.getElementById('individualJsonPath').textContent = result.details.jsonPath || 'No disponible';
-            document.getElementById('individualMediaCount').textContent = result.details.mediaCount + ' archivos';
-          } else {
-            document.getElementById('individualResultAlert').className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';
-            document.getElementById('individualResultAlert').querySelector('h5').textContent = 'Error en el proceso';
-            document.getElementById('individualResultMessage').textContent = result.message;
-          }
+          // Añadir al contenedor de detalles
+          detallesContainer.appendChild(pdfInfoElement);
         } catch (error) {
-          document.getElementById('individualProcessingSection').style.display = 'none';
-          document.getElementById('individualResultSection').style.display = 'block';
+          console.error('Error al actualizar sección de resultados:', error);
+        }
+      }
+
+      // Función para mostrar resultados con opción de JSON
+      function showResultWithJsonOption(result) {
+        console.log('Mostrando resultados:', result);
+        
+        // Ocultar procesamiento
+        document.getElementById('individualProcessingSection').style.display = 'none';
+        
+        // Mostrar resultados
+        document.getElementById('individualResultSection').style.display = 'block';
+        
+        if (result.success) {
+          document.getElementById('individualResultAlert').className = 'bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4';
+          document.getElementById('individualResultAlert').querySelector('h5').textContent = '¡Expediente procesado!';
+          document.getElementById('individualResultMessage').textContent = result.message;
+          
+          // Verificar que details existe antes de intentar acceder a sus propiedades
+          const details = result.details || {};
+          
+          // Asegurarnos de usar el número de expediente correcto
+          const expediente = result.expediente;
+          
+          // Actualizar detalles - asegurando que mostramos el expediente correcto
+          document.getElementById('individualHtmlPath').textContent = details.htmlPath || 'No disponible';
+          document.getElementById('individualJsonPath').textContent = details.jsonPath || 'No disponible';
+          document.getElementById('individualMediaCount').textContent = 
+            (details.mediaCount !== undefined) ? `${details.mediaCount} archivos` : '0 archivos';
+          
+          // Actualizar información de PDFs procesados
+          if (document.getElementById('individualPdfProcessed')) {
+            const pdfInfo = details.pdfProcesados !== undefined 
+              ? `${details.pdfProcesados} procesados, ${details.pdfErrores} con errores`
+              : 'Ninguno';
+            document.getElementById('individualPdfProcessed').textContent = pdfInfo;
+          }
+          
+          // Mostrar la opción de convertir a JSON si no se ha convertido aún
+          if (!details.jsonPath) {
+            // Agregar el botón de conversión a JSON si no existe
+            if (!document.getElementById('convertToJsonBtn')) {
+              const btnContainer = document.createElement('div');
+              btnContainer.id = 'jsonConversionContainer';
+              btnContainer.className = 'mt-4 mb-4';
+              btnContainer.innerHTML = `
+                <button type="button" id="convertToJsonBtn" class="w-full bg-blue-500 text-white py-3 rounded text-lg mb-3">
+                  Convertir a JSON y cargar a MySQL
+                </button>
+              `;
+              
+              // Insertar antes del botón "Procesar otro expediente"
+              const newIndividualBtn = document.getElementById('newIndividualBtn');
+              newIndividualBtn.parentNode.insertBefore(btnContainer, newIndividualBtn);
+              
+              // Agregar evento al botón
+              document.getElementById('convertToJsonBtn').addEventListener('click', () => {
+                // Usar el expediente de la respuesta, no el del campo de entrada
+                convertHtmlToJsonAndSave(expediente);
+              });
+            }
+          } else {
+            // Remover el botón si ya existe y el JSON ya ha sido generado
+            const convertBtn = document.getElementById('jsonConversionContainer');
+            if (convertBtn) {
+              convertBtn.remove();
+            }
+          }
+        } else {
           document.getElementById('individualResultAlert').className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';
           document.getElementById('individualResultAlert').querySelector('h5').textContent = 'Error en el proceso';
-          document.getElementById('individualResultMessage').textContent = 'Ha ocurrido un error al procesar el expediente. Por favor, inténtelo de nuevo.';
-          console.error('Error:', error);
+          document.getElementById('individualResultMessage').textContent = result.message || 'Ha ocurrido un error desconocido';
+          
+          // Para errores, podemos intentar mostrar HTML y multimedia si existe
+          const details = result.details || {};
+          document.getElementById('individualHtmlPath').textContent = details.htmlPath || 'No disponible';
+          document.getElementById('individualJsonPath').textContent = details.jsonPath || 'No disponible';
+          document.getElementById('individualMediaCount').textContent = 
+            (details.mediaCount !== undefined) ? `${details.mediaCount} archivos` : '0 archivos';
+          
+          // Remover el botón de conversión si existe
+          const convertBtn = document.getElementById('jsonConversionContainer');
+          if (convertBtn) {
+            convertBtn.remove();
+          }
         }
-      });
-      
-      // Iniciar un nuevo proceso individual
-      document.getElementById('newIndividualBtn').addEventListener('click', () => {
-        // Limpiar campo de expediente
-        document.getElementById('expedienteInput').value = '';
+      }
+
+      // Función para convertir HTML a JSON y guardar en MySQL
+      async function convertHtmlToJsonAndSave(expediente) {
+        // Mostrar cargando
+        const convertBtn = document.getElementById('convertToJsonBtn');
+        const btnOriginalText = convertBtn.textContent;
+        convertBtn.textContent = 'Procesando...';
+        convertBtn.disabled = true;
         
-        // Ocultar resultados y mostrar formulario
-        document.getElementById('individualResultSection').style.display = 'none';
-        document.getElementById('uploadForm-individual').style.display = 'block';
-      });
-    });
-  </script>
-</body>
-</html>
+        try {
+          // Llamar al API para convertir y guardar
+          const response = await fetch('/api/standalone/convert-to-json', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ expediente })
+          });
+          
+          const result = await response.json();
+          
+          // Actualizar la UI con el resultado
+          if (result.success) {
+            // Actualizar el campo jsonPath
+            document.getElementById('individualJsonPath').textContent = result.jsonPath || 'No disponible';
+            
+            // Mostrar una notificación de éxito
+            const alertBox = document.getElementById('individualResultAlert');
+            alertBox.className = 'bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4';
+            document.getElementById('individualResultMessage').textContent = 
+              'Expediente procesado y convertido a JSON correctamente. Datos guardados en MySQL.';
+            
+            // Remover el botón de conversión
+            const container = document.getElementById('jsonConversionContainer');
+            if (container) {
+              container.remove();
+            }
+          } else {
+            // Mostrar un mensaje de error
+            convertBtn.textContent = btnOriginalText;
+            convertBtn.disabled = false;
+            
+            // Mostrar un mensaje de error en un nuevo elemento
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'mt-2 mb-2 text-red-600 text-sm';
+            errorDiv.textContent = `Error: ${result.message}`;
+            
+            const container = document.getElementById('jsonConversionContainer');
+            if (container) {
+              container.appendChild(errorDiv);
+            }
+            
+            // Eliminar el mensaje de error después de 5 segundos
+            setTimeout(() => {
+              if (errorDiv.parentNode) {
+                errorDiv.remove();
+              }
+            }, 5000);
+          }
+        } catch (error) {
+          console.error('Error en la conversión:', error);
+          convertBtn.textContent = btnOriginalText;
+          convertBtn.disabled = false;
+          
+          // Mostrar un mensaje de error en un nuevo elemento
+          const errorDiv = document.createElement('div');
+          errorDiv.className = 'mt-2 mb-2 text-red-600 text-sm';
+          errorDiv.textContent = `Error de conexión: ${error.message}`;
+          
+          const container = document.getElementById('jsonConversionContainer');
+          if (container) {
+            container.appendChild(errorDiv);
+          }
+          
+          // Eliminar el mensaje de error después de 5 segundos
+          setTimeout(() => {
+            if (errorDiv.parentNode) {
+              errorDiv.remove();
+            }
+          }, 5000);
+        }
+      }
+    </script>
+  </body>
+  </html>

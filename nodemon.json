@@ -1,0 +1,9 @@
+{
+    "ignore": [
+      "media/*",
+      "origen/*",
+      "json/*",
+      "node_modules/*"
+    ],
+    "delay": "2500"
+  }
