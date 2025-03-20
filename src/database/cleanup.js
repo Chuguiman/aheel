@@ -92,7 +92,7 @@ async function cleanupHtmlFiles(existingIdsic) {
 }
 
 /**
- * Actualiza el estado de expedientes en scraping_gac_29k a 'DONE'
+ * Actualiza el estado de expedientes en scraping_sic a 'DONE'
  * para aquellos que ya existen en sim_precarga2_sic
  * @param {Array} existingIdsic - IDs que ya existen en la tabla
  * @returns {Promise<number>} Número de registros actualizados
@@ -110,7 +110,7 @@ async function updateExistingExpedientesStatus(existingIdsic) {
     
     // Actualizar el estado a DONE
     const [result] = await connection.execute(
-      `UPDATE scraping_gac_29k 
+      `UPDATE scraping_sic 
        SET status = 'DONE' 
        WHERE idsic IN (${placeholders}) AND status != 'DONE'`,
       existingIdsic
@@ -152,7 +152,7 @@ async function updatePendingHtmlStatus() {
     
     // Actualizar el estado a PENDING (si no están marcados como tal)
     const [result] = await connection.execute(
-      `UPDATE scraping_gac_29k 
+      `UPDATE scraping_sic 
        SET status = 'PENDING' 
        WHERE idsic IN (${placeholders}) AND (status IS NULL OR status = 'FAILED')`,
       pendingHtmlIdsic

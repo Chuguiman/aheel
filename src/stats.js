@@ -17,12 +17,12 @@ async function getStats() {
   try {
     const stats = {};
     
-    // 1. Estadísticas de scraping_gac_29k
+    // 1. Estadísticas de scraping_sic
     const [scrapingStats] = await connection.execute(`
       SELECT
         status,
         COUNT(*) as count
-      FROM scraping_gac_29k
+      FROM scraping_sic
       GROUP BY status
       ORDER BY
         CASE
@@ -132,8 +132,8 @@ async function main() {
     
     const stats = await getStats();
     
-    // Mostrar estadísticas de scraping_gac_29k
-    console.log('ESTADO DE EXPEDIENTES (scraping_gac_29k):');
+    // Mostrar estadísticas de scraping_sic
+    console.log('ESTADO DE EXPEDIENTES (scraping_sic):');
     console.log('----------------------------------------');
     
     let totalExpedientes = 0;

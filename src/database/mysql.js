@@ -42,7 +42,7 @@ async function getExpedientes(limit = 1000, offset = 0) {
   const conn = await connect();
   try {
     const [rows] = await conn.execute(
-      'SELECT idsic FROM scraping_gac_29k ORDER BY `idsic` DESC LIMIT ?, ?',
+      'SELECT idsic FROM scraping_sic ORDER BY `idsic` DESC LIMIT ?, ?',
       [offset, limit]
     );
     return rows.map(row => row.idsic);

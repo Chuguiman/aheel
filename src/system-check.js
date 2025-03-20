@@ -219,12 +219,12 @@ async function checkDatabase(results) {
     const [pysRows] = await connection.execute('SELECT COUNT(*) as count FROM precarga_pys_sim');
     results.database.precarga.pys = pysRows[0].count;
     
-    // Verificar tabla scraping_gac_29k
+    // Verificar tabla scraping_sic
     const [scrapingRows] = await connection.execute(`
       SELECT
         status,
         COUNT(*) as count
-      FROM scraping_gac_29k
+      FROM scraping_sic
       GROUP BY status
     `);
     

@@ -57,13 +57,13 @@ async function workerProcess() {
     
     if (results.processed.length > 0) {
       for (const exp of results.processed) {
-        await connection.query('UPDATE scraping_gac_29k SET status = ? WHERE idsic = ?', ['DOWNLOADED', exp]);
+        await connection.query('UPDATE scraping_sic SET status = ? WHERE idsic = ?', ['DOWNLOADED', exp]);
       }
     }
     
     if (results.failed.length > 0) {
       for (const exp of results.failed) {
-        await connection.query('UPDATE scraping_gac_29k SET status = ? WHERE idsic = ?', ['DOWNLOAD_FAILED', exp]);
+        await connection.query('UPDATE scraping_sic SET status = ? WHERE idsic = ?', ['DOWNLOAD_FAILED', exp]);
       }
     }
     
@@ -131,7 +131,7 @@ async function main() {
     
     // Obtener expedientes pendientes
     const [rows] = await connection.query(`
-      SELECT idsic FROM scraping_gac_29k 
+      SELECT idsic FROM scraping_sic 
       WHERE status = 'PENDING' AND active = 1
       ORDER BY idsic DESC
       LIMIT ?

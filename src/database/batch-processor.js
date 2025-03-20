@@ -7,6 +7,10 @@ const mysql = require('mysql2/promise');
 const config = require('../config/mysql.config');
 const path = require('path');
 const fs = require('fs').promises;
+const dbConnector = require('./db-connector');
+
+// Definir la tabla correcta a usar
+const SCRAPING_TABLE = 'scraping_sic'; // o 'scraping_gac_29k'
 
 /**
  * Obtiene los expedientes pendientes de la base de datos
@@ -18,7 +22,7 @@ async function getPendingExpedientes(limit = 10) {
   
   try {
     const [rows] = await connection.execute(`
-      SELECT idsic FROM scraping_gac_29k 
+      SELECT idsic FROM ${SCRAPING_TABLE} 
       WHERE status = 'PENDING' AND active = 1
       ORDER BY idsic DESC
       LIMIT ${limit}`
@@ -33,6 +37,7 @@ async function getPendingExpedientes(limit = 10) {
   }
 }
 
+
 /**
  * Marca un expediente como completado
  * @param {string} expediente - ID del expediente
@@ -41,8 +46,7 @@ async function markDone(expediente) {
   const connection = await mysql.createConnection(config);
   
   try {
-    await connection.execute(
-      'UPDATE scraping_gac_29k SET status = "DONE" WHERE idsic = ?',
+    await connection.execute(`UPDATE ${SCRAPING_TABLE} SET status = "DONE" WHERE idsic = ?`,
       [expediente]
     );
     console.log(`✅ Expediente ${expediente} marcado como DONE`);
@@ -63,7 +67,7 @@ async function markFailed(expediente) {
   
   try {
     await connection.execute(
-      'UPDATE scraping_gac_29k SET status = "FAILED" WHERE idsic = ?',
+      `UPDATE ${SCRAPING_TABLE} SET status = "FAILED" WHERE idsic = ?`,
       [expediente]
     );
     console.log(`⚠️ Expediente ${expediente} marcado como FAILED`);
@@ -297,30 +301,10 @@ function convertToMySQLDateFormat(fechaStr) {
   }
 }
 
-  /**
- * [DEPRECATED] Inserta los datos extraídos en la tabla sim_precarga2_sic
- * Se recomienda usar la función insertToSimPrecarga del módulo extractor-sic.js
- * @param {Object} data - Datos extraídos del expediente
- * @returns {Promise<boolean>} - true si se insertó correctamente
- */
-async function insertToSimPrecarga(data) {
-  console.warn('⚠️ Usando la versión deprecada de insertToSimPrecarga. Se recomienda usar la del módulo extractor-sic.js');
-  
-  try {
-    // Importar el nuevo módulo y usar su función
-    const { insertToSimPrecarga: newInsertToSimPrecarga } = require('../services/extractor-sic');
-    const config = require('../config/mysql.config');
-    
-    // Llamar a la nueva implementación
-    const result = await newInsertToSimPrecarga(data, config);
-    
-    return result.success;
-  } catch (error) {
-    console.error(`❌ Error al insertar en sim_precarga2_sic para expediente ${data.idsic || 'desconocido'}:`, error);
-    return false;
-  }
-}
+// Para insertar datos, usar la función desde db-connector
+const insertToSimPrecarga = dbConnector.insertToSimPrecarga;
 
+// Exportar las funciones de procesamiento por lotes
 module.exports = {
   getPendingExpedientes,
   markDone,
@@ -330,5 +314,9 @@ module.exports = {
   htmlExists,
   jsonExists,
   cleanupHtmlIfJsonExists,
-  insertToSimPrecarga 
+  insertToSimPrecarga: dbConnector.insertToSimPrecarga,
+  getFailedExpedientes: dbConnector.getFailedExpedientes,
+  getDownloadedExpedientes: dbConnector.getDownloadedExpedientes,
+  insertBatchStats: dbConnector.insertBatchStats,
+  createStatsTableIfNotExists: dbConnector.createStatsTableIfNotExists,
 };

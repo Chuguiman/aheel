@@ -6,12 +6,23 @@
 require('dotenv').config();
 const fs = require('fs').promises;
 const path = require('path');
-const mysql = require('mysql2/promise');
-const config = require('./config/mysql.config');
-const { extractDataWithErrorHandling, insertToSimPrecarga } = require('./services/extractor-sic');
-const batchProcessor = require('./database/batch-processor');
+const { extractDataWithErrorHandling } = require('./services/extractor-sic');
+const { 
+  storeJsonFile, 
+  markFailed, 
+  markDone, 
+  cleanupHtmlIfJsonExists,
+  storeFailureInDb
+} = require('./database/batch-processor');
+const { 
+  insertToSimPrecarga, 
+  getFailedExpedientes, 
+  getDownloadedExpedientes, 
+  insertBatchStats, 
+  createStatsTableIfNotExists 
+} = require('./database/db-connector');
 const { randomDelay } = require('./helpers/utils');
-
+const config = require('./config/mysql.config');
 
 /**
  * Obtiene la lista de expedientes que tienen HTML pero no JSON
@@ -109,12 +120,9 @@ function extractRedirectUrl(html) {
 
 /**
  * Procesa un solo archivo HTML, extrae datos y guarda como JSON
- */
-// Modificación para process-html-to-json.js
-
-/**
- * Procesa un solo archivo HTML, extrae datos y guarda como JSON
  * Versión mejorada que gestiona mejor las direcciones duplicadas y caracteres especiales
+ * @param {string} expediente - Número de expediente a procesar
+ * @returns {Promise<boolean>} - true si se procesó correctamente, false si hubo un error
  */
 async function processSingleHtml(expediente) {
   try {
@@ -156,7 +164,7 @@ async function processSingleHtml(expediente) {
     
     // Guardar como JSON
     console.log(`💾 Guardando JSON para expediente ${expediente}...`);
-    await batchProcessor.storeJsonFile(expediente, data);
+    await storeJsonFile(expediente, data);
     
     // Insertar en la base de datos usando la función existente
     console.log(`📊 Insertando datos en la base de datos para ${expediente}...`);
@@ -165,19 +173,19 @@ async function processSingleHtml(expediente) {
     if (!insertResult.success) {
       // Si la inserción falló, marcar como fallido y registrar el error
       console.error(`❌ Error al insertar datos en la base de datos para ${expediente}: ${insertResult.error || "Error desconocido"}`);
-      await batchProcessor.markFailed(expediente);
-      await batchProcessor.storeFailureInDb(expediente, insertResult.error || "Error desconocido al insertar en la base de datos", 1);
+      await markFailed(expediente);
+      await storeFailureInDb(expediente, insertResult.error || "Error desconocido al insertar en la base de datos", 1);
       return false;
     }
     
     // Marcar como completado en la base de datos
     console.log(`✏️ Actualizando estado en BD para ${expediente}...`);
-    await batchProcessor.markDone(expediente);
+    await markDone(expediente);
     
     // Eliminar HTML si está configurado
     if (process.env.CLEAN_HTML === 'true') {
       console.log(`🗑️ Eliminando HTML original para ${expediente}...`);
-      await batchProcessor.cleanupHtmlIfJsonExists(expediente);
+      await cleanupHtmlIfJsonExists(expediente);
     }
     
     console.log(`✅ Procesamiento completo para expediente ${expediente}`);
@@ -185,8 +193,8 @@ async function processSingleHtml(expediente) {
   } catch (error) {
     console.error(`❌ Error al procesar HTML para expediente ${expediente}:`, error);
     try {
-      await batchProcessor.markFailed(expediente);
-      await batchProcessor.storeFailureInDb(expediente, error.message, 1);
+      await markFailed(expediente);
+      await storeFailureInDb(expediente, error.message, 1);
     } catch (dbError) {
       console.error(`❌ Error adicional al registrar fallo en BD:`, dbError);
     }
@@ -252,104 +260,6 @@ function cleanAndValidateData(data) {
   }
   
   return data;
-}
-
-/**
- * Recupera expedientes fallidos para reintentar
- */
-async function getFailedExpedientes(limit = 100) {
-  const connection = await mysql.createConnection(config);
-  
-  try {
-    console.log(`🔍 Buscando expedientes con status='FAILED' y active=1, límite=${limit}`);
-    
-    // Consulta directa sin usar parámetros en LIMIT
-    const [rows] = await connection.execute(`
-      SELECT idsic FROM scraping_gac_29k 
-      WHERE status = 'FAILED' AND active = 1
-      ORDER BY idsic DESC
-      LIMIT ${parseInt(limit)}
-    `);
-    
-    console.log(`📋 Encontrados ${rows.length} expedientes fallidos`);
-    
-    return rows.map(row => row.idsic);
-  } catch (error) {
-    console.error('❌ Error al obtener expedientes fallidos:', error);
-    throw error;
-  } finally {
-    await connection.end();
-  }
-}
-
-/**
- * Recupera expedientes descargados pero no procesados
- */
-async function getDownloadedExpedientes(limit = 100) {
-  const connection = await mysql.createConnection(config);
-  
-  try {
-    console.log(`🔍 Buscando expedientes con status='DOWNLOADED' y active=1, límite=${limit}`);
-    
-    // Consulta directa sin usar parámetros en LIMIT
-    const [rows] = await connection.execute(`
-      SELECT idsic FROM scraping_gac_29k 
-      WHERE status = 'DOWNLOADED' AND active = 1
-      ORDER BY idsic DESC
-      LIMIT ${parseInt(limit)}
-    `);
-    
-    console.log(`📋 Encontrados ${rows.length} expedientes descargados y no procesados`);
-    
-    // Verificar que los archivos HTML existen para estos expedientes
-    const expedientesConHTML = [];
-    for (const row of rows) {
-      const htmlPath = path.join(process.cwd(), 'origen', `${row.idsic}.html`);
-      try {
-        await fs.access(htmlPath);
-        expedientesConHTML.push(row.idsic);
-      } catch (error) {
-        console.warn(`⚠️ Expediente ${row.idsic} marcado como DOWNLOADED pero no se encuentra el HTML`);
-      }
-    }
-    
-    console.log(`📊 De los ${rows.length} expedientes, ${expedientesConHTML.length} tienen archivo HTML disponible`);
-    
-    return expedientesConHTML;
-  } catch (error) {
-    console.error('❌ Error al obtener expedientes descargados:', error);
-    throw error;
-  } finally {
-    await connection.end();
-  }
-}
-
-/**
- * Registra estadísticas de procesamiento en la base de datos
- */
-async function insertBatchStats(total, successful, failed, batchId) {
-  const connection = await mysql.createConnection(config);
-  
-  try {
-    await connection.execute(
-      `INSERT INTO processing_stats 
-       (batch_id, total_expedientes, successful_expedientes, failed_expedientes, notes)
-       VALUES (?, ?, ?, ?, ?)`,
-      [batchId, total, successful, failed, `Lote #${batchId} procesado`]
-    );
-    
-    // Actualizar end_time
-    await connection.execute(
-      `UPDATE processing_stats SET end_time = NOW() WHERE batch_id = ? AND end_time IS NULL`,
-      [batchId]
-    );
-    
-    console.log(`📊 Estadísticas del lote #${batchId} guardadas en la base de datos`);
-  } catch (error) {
-    console.error(`❌ Error al guardar estadísticas del lote #${batchId}:`, error);
-  } finally {
-    await connection.end();
-  }
 }
 
 /**
@@ -448,32 +358,6 @@ async function processHtmlBatch(expedientes, maxWorkers = 3) {
   }
   
   return results;
-}
-
-/**
- * Crea la tabla de estadísticas si no existe
- */
-async function createStatsTableIfNotExists() {
-  const connection = await mysql.createConnection(config);
-  
-  try {
-    await connection.execute(`
-      CREATE TABLE IF NOT EXISTS processing_stats (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        batch_id INT NOT NULL,
-        start_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-        end_time TIMESTAMP NULL,
-        total_expedientes INT DEFAULT 0,
-        successful_expedientes INT DEFAULT 0,
-        failed_expedientes INT DEFAULT 0,
-        notes TEXT
-      )
-    `);
-  } catch (error) {
-    console.error('❌ Error al crear tabla de estadísticas:', error);
-  } finally {
-    await connection.end();
-  }
 }
 
 /**
@@ -581,11 +465,8 @@ if (require.main === module) {
 
 module.exports = { 
   getHtmlWithoutJson,
-  getFailedExpedientes,
-  getDownloadedExpedientes,
   processSingleHtml,
   processHtmlBatch,
-  insertBatchStats,
   cleanAndValidateData,
   main
 };
