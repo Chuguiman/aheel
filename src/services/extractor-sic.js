@@ -22,13 +22,29 @@ async function extractDataWithErrorHandling(expediente) {
     // Cargar el HTML en cheerio
     const $ = cheerio.load(html);
     
+    // Obtener el número de solicitud del HTML
+    let numeroSolicitud = getNumeroSolicitud($);
+
+    // Verificar explícitamente si el expediente es igual al número de solicitud
+    let idsicValue = '';
+    if (expediente !== numeroSolicitud && numeroSolicitud) {
+      idsicValue = expediente;
+    }
+    
+    // Si no se pudo extraer numeroSolicitud, usar expediente como respaldo
+    if (!numeroSolicitud) {
+      numeroSolicitud = expediente;
+      // En este caso, idsic debe estar vacío porque son iguales
+      idsicValue = ''; 
+    }
+            
     // Crear la estructura del JSON
     const data = {
-      idsic: expediente,
+      numeroSolicitud: numeroSolicitud,
+      idsic: idsicValue,
       refClient: getRefCliente($) || '',
       estado: getEstado($) || '',
       fechaRadicacion: formatearFecha(getFechaSolicitud($)) || getFechaSolicitud($) || '',
-      numeroSolicitud: getNumeroSolicitud($) || '',
       fechaPresentacion: formatearFecha(getFechaPresentacion($)) || getFechaPresentacion($) || '',
       tipoSolicitud: getTipoSolicitud($) || 'SD Solicitud de Signos Distintivos',
       fechaOrdenPublicacion: formatearFecha(getFechaOrdenPublicacion($)) || getFechaOrdenPublicacion($) || '',
@@ -400,6 +416,7 @@ function getRepresentanteInternacionalInfo($) {
 }
 
 
+
 /**
  * Obtiene información del representante o apoderado
  * @param {Object} $ - Objeto cheerio con el HTML cargado
@@ -455,87 +472,100 @@ function getSolicitantesInfo($) {
   let direccionPrimero = '';
   let paisPrimero = 'CO';
   
-  // Primera opción
-  let solicitanteRows = $('#MainContent_ctrlIRD_ctrlApplicant_ctrlApplicant_gvCustomers tr.alt1');
+  // Modificado para capturar cualquier fila de datos, no solo las con clase alt1
+  const selectors = [
+    '#MainContent_ctrlIRD_ctrlApplicant_ctrlApplicant_gvCustomers tr',
+    '#MainContent_ctrlTM_ctrlApplicant_ctrlApplicant_gvCustomers tr',
+    '#MainContent_ctrlIRA_ctrlApplicant_ctrlApplicant_gvCustomers tr'
+  ];
   
-  // Segunda opción
-  if (solicitanteRows.length === 0) {
-    solicitanteRows = $('#MainContent_ctrlTM_ctrlApplicant_ctrlApplicant_gvCustomers tr.alt1');
-  }
-  
-  // Tercera opción
-  if (solicitanteRows.length === 0) {
-    solicitanteRows = $('#MainContent_ctrlIRA_ctrlApplicant_ctrlApplicant_gvCustomers tr.alt1');
-  }
-  
-  solicitanteRows.each(function(index) {
-    const solicitante = {};
+  for (const selector of selectors) {
+    const rows = $(selector);
     
-    solicitante.numeroIdentificacion = $(this).find('td').eq(0).text().trim();
-    
-    if (solicitante.numeroIdentificacion.includes('Mostrar / Ocultar columnas')) {
-      return;
-    }
-    
-    solicitante.identificacionOMPI = $(this).find('td').eq(1).text().trim();
-    
-    // Pueden haber diferentes columnas dependiendo del expediente
-    const tdCount = $(this).find('td').length;
-    let nombreIdx = 1;
-    let apellidoIdx = 2;
-    let direccionIdx = 3;
-    
-    if (tdCount > 4) {
-      nombreIdx = 2;
-      apellidoIdx = 3;
-      direccionIdx = 4;
-    }
-    
-    const nombre = $(this).find('td').eq(nombreIdx).text().trim();
-    const apellido = tdCount > apellidoIdx ? $(this).find('td').eq(apellidoIdx).text().trim() : '';
-    
-    // Normalizar el nombre completo: eliminar espacios innecesarios y convertir a mayúsculas
-    solicitante.fullName = normalizeText(apellido ? `${nombre} ${apellido}` : nombre);
-    
-    // Procesar la dirección - extraer solo la primera dirección física para cada solicitante
-    let direccionCompleta = $(this).find('td').eq(direccionIdx).text().trim() || 
-                  $(this).find('td').last().text().trim();
-    
-    // Extraer solo la primera dirección física
-    const direccionesFisicas = direccionCompleta.split('Dirección Física :');
-    if (direccionesFisicas.length > 1) {
-      // Tomar solo la primera dirección y limpiarla
-      const primeraDireccion = direccionesFisicas[1].split('Dirección Física :')[0].trim();
-      direccionCompleta = "Dirección Física : " + primeraDireccion;
-    }
-    
-    solicitante.direccion = direccionCompleta;
-    
-    // Extraer el código de país de la dirección
-    const match = direccionCompleta.match(/\(([^)]+)\)$/);
-    if (match) {
-      solicitante.codPais = match[1];
-    } else {
-      solicitante.codPais = 'CO'; // Por defecto
-    }
-    
-    // Para el primer solicitante, guardar información separada para la base de datos
-    if (index === 0) {
-      direccionPrimero = solicitante.direccion;
-      paisPrimero = solicitante.codPais;
-    }
-    
-    // Añadir al array de solicitantes
-    solicitantes.push(solicitante);
-    
-    // Añadir a la concatenación de nombres
-    if (solicitante.fullName) {
-      if (nombresConcatenados) {
-        nombresConcatenados += ' | ';
+    if (rows.length > 0) {
+      rows.each(function(index) {
+        // Skip header rows (those with th elements) and pager rows
+        if ($(this).find('th').length > 0 || $(this).hasClass('gridview_pager')) {
+          return;
+        }
+        
+        const solicitante = {};
+        
+        solicitante.numeroIdentificacion = $(this).find('td').eq(0).text().trim();
+        
+        // Skip if it contains the dropdown text or empty
+        if (!solicitante.numeroIdentificacion || 
+            solicitante.numeroIdentificacion.includes('Mostrar / Ocultar columnas')) {
+          return;
+        }
+        
+        // Pueden haber diferentes columnas dependiendo del expediente
+        const tdCount = $(this).find('td').length;
+        let nombreIdx = 1;
+        let apellidoIdx = 2;
+        let direccionIdx = 3;
+        
+        if (tdCount > 4) {
+          nombreIdx = 2;
+          apellidoIdx = 3;
+          direccionIdx = 4;
+        }
+        
+        const nombre = $(this).find('td').eq(nombreIdx).text().trim();
+        const apellido = tdCount > apellidoIdx ? $(this).find('td').eq(apellidoIdx).text().trim() : '';
+        
+        // Normalizar el nombre completo: eliminar espacios innecesarios y convertir a mayúsculas
+        solicitante.fullName = normalizeText(apellido ? `${nombre} ${apellido}` : nombre);
+        
+        // Procesar la dirección - extraer solo la primera dirección física para cada solicitante
+        let direccionCompleta = $(this).find('td').eq(direccionIdx).text().trim() || 
+                      $(this).find('td').last().text().trim();
+        
+        // Extraer solo la primera dirección física
+        const direccionesFisicas = direccionCompleta.split('Dirección Física :');
+        if (direccionesFisicas.length > 1) {
+          // Tomar solo la primera dirección y limpiarla
+          const primeraDireccion = direccionesFisicas[1].split('Dirección Física :')[0].trim();
+          direccionCompleta = "Dirección Física : " + primeraDireccion;
+        }
+        
+        solicitante.direccion = direccionCompleta;
+        
+        // Extraer el código de país de la dirección
+        const match = direccionCompleta.match(/\(([^)]+)\)$/);
+        if (match) {
+          solicitante.codPais = match[1];
+        } else {
+          solicitante.codPais = 'CO'; // Por defecto
+        }
+        
+        // Solo agregar si tenemos datos válidos
+        if (solicitante.numeroIdentificacion && solicitante.fullName) {
+          // Para el primer solicitante, guardar información separada para la base de datos
+          if (solicitantes.length === 0) {
+            direccionPrimero = solicitante.direccion;
+            paisPrimero = solicitante.codPais;
+          }
+          
+          // Añadir al array de solicitantes
+          solicitantes.push(solicitante);
+          
+          // Añadir a la concatenación de nombres
+          if (solicitante.fullName) {
+            if (nombresConcatenados) {
+              nombresConcatenados += ' | ';
+            }
+            nombresConcatenados += solicitante.fullName;
+          }
+        }
+      });
+      
+      // Si encontramos solicitantes, dejar de buscar en los otros selectores
+      if (solicitantes.length > 0) {
+        break;
       }
-      nombresConcatenados += solicitante.fullName;
     }
-  });
+  }
   
   // Devolver un objeto con ambos: el array de solicitantes y los datos formateados para la BD
   return {
@@ -606,7 +636,7 @@ function getContactoInfo($) {
  * @param {Object} $ - Objeto cheerio con el HTML cargado
  * @returns {Array} - Array con información de apoderados
  */
-function getApoderado($) {
+/* function getApoderado($) {
   const apoderados = [];
   
   // Buscar en la tabla de apoderados (varios selectores para cubrir diferentes estructuras HTML)
@@ -640,6 +670,96 @@ function getApoderado($) {
     
     apoderados.push(apoderado);
   });
+  
+  return apoderados;
+} */
+
+/**
+ * Obtiene información del apoderado del HTML con validación más estricta
+ * @param {Object} $ - Objeto cheerio con el HTML cargado
+ * @returns {Array} - Array con información de apoderados
+ */
+function getApoderado($) {
+  const apoderados = [];
+  
+  // SOLO usar los selectores específicos para apoderados
+  const selectores = [
+    '#MainContent_ctrlTM_ctrlApplicant_ctrlAgent_gvCustomers tr.alt1', 
+    '#MainContent_ctrlIRD_ctrlApplicant_ctrlAgent_gvCustomers tr.alt1', 
+    '#MainContent_ctrlIRA_ctrlApplicant_ctrlAgent_gvCustomers tr.alt1'
+  ];
+  
+  // Verificar si estos selectores exactos existen en el HTML
+  let foundSelector = false;
+  for (const selector of selectores) {
+    if ($(selector).length > 0) {
+      foundSelector = true;
+      
+      // Procesar SOLO los apoderados encontrados específicamente
+      $(selector).each(function() {
+        const apoderado = {};
+        
+        // Asegurarse de que esta fila sea realmente de un apoderado
+        const rowContent = $(this).text().toLowerCase();
+        // Excluir filas que contengan palabras clave que indiquen que no son apoderados
+        if (rowContent.includes('fecha de') || 
+            rowContent.includes('vigencia') || 
+            rowContent.includes('solicitud') ||
+            rowContent.includes('gaceta') ||
+            rowContent.includes('caducado')) {
+          return; // Saltar esta fila
+        }
+        
+        apoderado.numeroIdentificacion = $(this).find('td').eq(0).text().trim();
+        apoderado.identificacionOMPI = $(this).find('td').eq(1).text().trim();
+        
+        const nombre = $(this).find('td').eq(2).text().trim();
+        const apellido = $(this).find('td').eq(3).text().trim();
+        
+        // Normalizar el nombre completo
+        apoderado.fullName = normalizeText(apellido ? `${nombre} ${apellido}` : nombre);
+        
+        let direccion = $(this).find('td').eq(4).text().trim();
+        direccion = direccion.replace('Dirección Física : ', '');
+        apoderado.direccion = direccion;
+        
+        // Extraer código de país de la dirección
+        const match = direccion.match(/\(([^)]+)\)$/);
+        if (match) {
+          apoderado.codPais = match[1];
+        } else {
+          apoderado.codPais = 'CO'; // Por defecto
+        }
+        
+        // Validar que realmente tenemos la información de un apoderado
+        if (apoderado.numeroIdentificacion && 
+            apoderado.fullName && 
+            !isNaN(apoderado.numeroIdentificacion)) {
+          apoderados.push(apoderado);
+        }
+      });
+      
+      break; // Una vez encontrado un selector, no buscar más
+    }
+  }
+  
+  // Si no se encuentra ningún selector válido, buscar en una tabla específica
+  if (!foundSelector) {
+    // Intentar buscar una tabla específica de apoderados
+    const tablaApoderados = $('table:contains("Apoderado")').filter(function() {
+      const texto = $(this).text().toLowerCase();
+      return texto.includes('apoderado') && 
+             !texto.includes('fecha de') && 
+             !texto.includes('vigencia');
+    });
+    
+    if (tablaApoderados.length > 0) {
+      tablaApoderados.find('tr.alt1').each(function() {
+        // Aplicar la misma lógica que arriba para extraer apoderados
+        // ...
+      });
+    }
+  }
   
   return apoderados;
 }
@@ -835,29 +955,95 @@ function getCaracteresEstandar($) {
   return $('#MainContent_ctrlIRD_cbDeclaration').is(':checked');
 }
 
-function getTipoSignoDistintivo($) {
+/* function getTipoSignoDistintivo($) {
   return $('#MainContent_ctrlTM_trTMNature .data').text().trim() ||
          $('#MainContent_ctrlIRD_trTMNature .data').text().trim() ||
          $('#MainContent_ctrlIRA_trTMNature .data').text().trim() ||
          $('td.label:contains("Tipo de Signo")').next('td.data').text().trim() ||
          'Marca';
+} */
+
+function getTipoSignoDistintivo($) {
+  // Intenta múltiples selectores
+  let tipo = $('#MainContent_ctrlTM_trTMNature .data').text().trim();
+  if (tipo) return tipo;
+  
+  tipo = $('#MainContent_ctrlIRD_trTMNature .data').text().trim();
+  if (tipo) return tipo;
+  
+  tipo = $('#MainContent_ctrlIRA_trTMNature .data').text().trim();
+  if (tipo) return tipo;
+  
+  // Buscar por contenido del texto
+  const tipoLabel = $('td.label:contains("Tipo de Signo")');
+  if (tipoLabel.length) {
+    tipo = tipoLabel.next('td.data').text().trim();
+    if (tipo) return tipo;
+  }
+  
+  // Valor por defecto
+  return 'Marca';
 }
 
-function getNaturaleza($) {
+/* function getNaturaleza($) {
   return $('#MainContent_ctrlTM_trTMType .data').text().trim() ||
          $('#MainContent_ctrlIRD_trTMType .data').text().trim() ||
          $('#MainContent_ctrlIRA_trTMType .data').text().trim() ||
          $('td.label:contains("Naturaleza")').next('td.data').text().trim() ||
          'Mixta';
+} */
+
+function getNaturaleza($) {
+  // Intenta múltiples selectores
+  let naturaleza = $('#MainContent_ctrlTM_trTMType .data').text().trim();
+  if (naturaleza) return naturaleza;
+  
+  naturaleza = $('#MainContent_ctrlIRD_trTMType .data').text().trim();
+  if (naturaleza) return naturaleza;
+  
+  naturaleza = $('#MainContent_ctrlIRA_trTMType .data').text().trim();
+  if (naturaleza) return naturaleza;
+  
+  // Buscar por contenido del texto
+  const naturalezaLabel = $('td.label:contains("Naturaleza")');
+  if (naturalezaLabel.length) {
+    naturaleza = naturalezaLabel.next('td.data').text().trim();
+    if (naturaleza) return naturaleza;
+  }
+  
+  // Valor por defecto
+  return 'Mixta';
 }
 
-function getDenominacion($) {
+/* function getDenominacion($) {
   const denom = $('#MainContent_ctrlTM_trDenomination .data').text().trim() ||
          $('#MainContent_ctrlIRD_trTMName .data').text().trim() ||
          $('#MainContent_ctrlIRA_trTMName .data').text().trim() ||
          $('td.label:contains("Denominación del Signo")').next('td.data').text().trim();
   
   return denom.toUpperCase(); // Asegurar que esté en mayúsculas como en el original
+} */
+
+function getDenominacion($) {
+  // Intenta múltiples selectores para obtener la denominación
+  let denom = $('#MainContent_ctrlTM_trDenomination .data').text().trim();
+  if (denom) return denom.toUpperCase();
+  
+  denom = $('#MainContent_ctrlIRD_trTMName .data').text().trim();
+  if (denom) return denom.toUpperCase();
+  
+  denom = $('#MainContent_ctrlIRA_trTMName .data').text().trim();
+  if (denom) return denom.toUpperCase();
+  
+  // Buscar por contenido del texto en lugar de ID específico
+  const denomLabel = $('td.label:contains("Denominación del Signo")');
+  if (denomLabel.length) {
+    denom = denomLabel.next('td.data').text().trim();
+    if (denom) return denom.toUpperCase();
+  }
+  
+  console.warn('No contiene denominación.');
+  return '';
 }
 
 

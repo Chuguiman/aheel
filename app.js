@@ -112,9 +112,6 @@ app.post('/api/standalone/process', async (req, res) => {
     const resultadoDescarga = await downloadExpediente(expediente);
     console.log('Resultado de descarga:', JSON.stringify(resultadoDescarga, null, 2));
     
-    // Procesar el expediente utilizando el downloader que reutiliza SicScraper
-    //const resultadoDescarga = await downloadExpediente(expediente);
-    
     // Aunque el resultado muestre error, comprobamos si se descargó realmente el HTML
     const nombreExpediente = expediente.replace(/\//g, '_');
     const rutaHtml = path.join(process.cwd(), 'origen', `${nombreExpediente}.html`);
@@ -152,8 +149,13 @@ app.post('/api/standalone/process', async (req, res) => {
         
         if (tieneArchivoPDF) {
           try {
-            resultadoProcesoPDF = await procesarPdfsExpediente(expediente);
-            console.log(`Resultado procesamiento PDFs: ${JSON.stringify(resultadoProcesoPDF)}`);
+            // Comprobamos si la función existe antes de llamarla
+            if (typeof procesarPdfsExpediente === 'function') {
+              resultadoProcesoPDF = await procesarPdfsExpediente(expediente);
+              console.log(`Resultado procesamiento PDFs: ${JSON.stringify(resultadoProcesoPDF)}`);
+            } else {
+              console.log("La función procesarPdfsExpediente no está disponible");
+            }
           } catch (errPdf) {
             console.error(`Error al procesar PDFs: ${errPdf.message}`);
             resultadoProcesoPDF.errores += 1;
@@ -193,7 +195,11 @@ app.post('/api/standalone/process', async (req, res) => {
           mediaCount: conteoMedia,
           mediaPath: path.join('media', nombreExpediente),
           pdfProcesados: resultadoProcesoPDF.procesados,
-          pdfErrores: resultadoProcesoPDF.errores
+          pdfErrores: resultadoProcesoPDF.errores,
+          htmlStatus: 'success', // Nuevo campo para estado HTML
+          jsonStatus: jsonExiste ? 'success' : 'pending', // Nuevo campo para estado JSON
+          mediaStatus: conteoMedia > 0 ? 'success' : 'warning', // Nuevo campo para estado media
+          mysqlStatus: jsonExiste ? 'success' : 'pending' // Nuevo campo para estado MySQL
         }
       };
       
@@ -252,11 +258,15 @@ app.post('/api/standalone/convert-to-json', async (req, res) => {
       });
     }
     
-    // Procesar el HTML a JSON
-    console.log(`📄 Procesando HTML: ${htmlPath}`);
+    // Importar las funciones especializadas
+    const { processHtmlSingle, insertToSimPrecargaSingle } = require('./src/services/single-processor');
+    const config = require('./src/config/mysql.config');
+    
+    // Procesar el HTML a JSON usando la función especializada
+    console.log(`📄 Procesando HTML individual: ${htmlPath}`);
     let jsonData;
     try {
-      jsonData = await processHtmlBatch(htmlPath);
+      jsonData = await processHtmlSingle(htmlPath);
     } catch (processError) {
       return res.status(500).json({
         success: false,
@@ -281,32 +291,53 @@ app.post('/api/standalone/convert-to-json', async (req, res) => {
     fs.writeFileSync(jsonPath, JSON.stringify(jsonData, null, 2));
     console.log(`💾 JSON guardado en: ${jsonPath}`);
     
-    // Guardar en la base de datos
-    console.log(`🗃️ Guardando en la base de datos...`);
+    // Guardar en la base de datos usando la función especializada
+    console.log(`🗃️ Guardando en la base de datos usando función especializada...`);
     let dbResult;
+    let mysqlStatus = 'error';
+    let mysqlError = null;
+    
     try {
-      dbResult = await saveToDatabase(jsonData, expediente);
+      // Usar la función especializada para inserción individual
+      dbResult = await insertToSimPrecargaSingle(jsonData, config);
+      
+      // Verificar resultado
+      if (dbResult && dbResult.success) {
+        console.log('✅ Datos guardados correctamente en MySQL');
+        mysqlStatus = 'success';
+      } else {
+        throw new Error(dbResult.error || 'Error desconocido al insertar en MySQL');
+      }
     } catch (dbError) {
+      console.error(`❌ Error al guardar en MySQL:`, dbError);
+      mysqlError = dbError.message || 'Error desconocido';
+      mysqlStatus = 'error';
+      
       return res.json({
         success: true,
         warning: true,
-        message: `Expediente convertido a JSON pero hubo un error al guardar en la base de datos: ${dbError.message}`,
-        jsonPath: `json/${nombreArchivo}.json`
+        message: `Expediente convertido a JSON pero hubo un error al guardar en la base de datos: ${mysqlError}`,
+        jsonPath: `json/${nombreArchivo}.json`,
+        mysqlStatus: mysqlStatus,
+        mysqlError: mysqlError
       });
     }
     
+    // Respuesta exitosa
     return res.json({
       success: true,
       message: 'Expediente convertido a JSON y guardado en la base de datos',
       jsonPath: `json/${nombreArchivo}.json`,
-      dbResult
+      dbResult,
+      mysqlStatus: mysqlStatus
     });
     
   } catch (error) {
     console.error(`❌ Error al convertir a JSON: ${error.message}`);
     return res.status(500).json({
       success: false,
-      message: `Error al procesar: ${error.message}`
+      message: `Error al procesar: ${error.message}`,
+      mysqlStatus: 'error'
     });
   }
 });

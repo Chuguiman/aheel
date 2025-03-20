@@ -143,7 +143,7 @@
                   </div>
                 </div>
                 
-                <!-- Sección para mostrar información del expediente procesado -->
+                <!-- Sección para mostrar información del expediente procesado - Versión actualizada -->
                 <div id="individualResultSection" style="display: none;" class="mt-6">
                   <div id="individualResultAlert" class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">
                     <h5 class="font-semibold">¡Expediente procesado!</h5>
@@ -153,8 +153,9 @@
                   <div class="bg-white border rounded-lg shadow-sm p-4 mb-4">
                     <h6 class="text-lg font-medium mb-2">Detalles del expediente</h6>
                     <div class="space-y-2">
-                      <div class="flex items-start">
-                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500">
+                      <!-- HTML Status -->
+                      <div class="flex items-start bg-green-100 p-2 rounded">
+                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500" data-status="individualHtmlStatus">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                           </svg>
@@ -163,24 +164,52 @@
                           <p class="text-sm text-gray-700"><span class="font-medium">HTML:</span> <span id="individualHtmlPath">-</span></p>
                         </div>
                       </div>
-                      <div class="flex items-start">
-                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500">
+                      
+                      <!-- JSON Status -->
+                      <div class="flex items-start bg-orange-100 p-2 rounded">
+                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-orange-500" data-status="individualJsonStatus">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-9a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1zm0 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z" clip-rule="evenodd" />
                           </svg>
                         </div>
                         <div class="ml-3">
                           <p class="text-sm text-gray-700"><span class="font-medium">JSON:</span> <span id="individualJsonPath">-</span></p>
                         </div>
                       </div>
-                      <div class="flex items-start">
-                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-green-500">
+                      
+                      <!-- Media Status -->
+                      <div class="flex items-start bg-yellow-100 p-2 rounded">
+                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-yellow-500" data-status="individualMediaStatus">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd" />
                           </svg>
                         </div>
                         <div class="ml-3">
                           <p class="text-sm text-gray-700"><span class="font-medium">Archivos multimedia:</span> <span id="individualMediaCount">-</span></p>
+                        </div>
+                      </div>
+                      
+                      <!-- MySQL Status -->
+                      <div class="flex items-start bg-orange-100 p-2 rounded">
+                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-orange-500" data-status="individualMysqlStatus">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-9a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1zm0 4a1 1 0 011-1h2a1 1 0 110 2h-2a1 1 0 01-1-1z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="ml-3">
+                          <p class="text-sm text-gray-700"><span class="font-medium">MySQL:</span> <span id="individualMysqlStatus">Pendiente</span></p>
+                        </div>
+                      </div>
+                      
+                      <!-- PDFs procesados si existen -->
+                      <div id="pdfStatusContainer" class="flex items-start bg-gray-100 p-2 rounded">
+                        <div class="flex-shrink-0 w-5 h-5 mt-0.5 text-gray-500" data-status="individualPdfStatus">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clip-rule="evenodd" />
+                          </svg>
+                        </div>
+                        <div class="ml-3">
+                          <p class="text-sm text-gray-700"><span class="font-medium">PDFs procesados:</span> <span id="individualPdfProcessed">-</span></p>
                         </div>
                       </div>
                     </div>
@@ -190,7 +219,7 @@
                     <button type="button" id="newIndividualBtn" class="w-full bg-indigo-500 text-white py-3 rounded text-lg">Procesar otro expediente</button>
                   </div>
                 </div>
-                
+
                 <!-- Sección de procesamiento -->
                 <div id="individualProcessingSection" style="display: none;">
                   <h5 class="mb-3 text-lg font-medium">Procesando expediente...</h5>
@@ -199,7 +228,6 @@
                   </div>
                   <p class="text-gray-600">Por favor, no cierre esta ventana hasta que el proceso haya terminado.</p>
                 </div>
-              </div>
               
               <!-- Sección de procesamiento -->
               <div id="processingSection" style="display: none;">
@@ -734,6 +762,7 @@
       }
 
       // Función para mostrar resultados con opción de JSON
+      // Modificar la función showResultWithJsonOption para usar estados visuales
       function showResultWithJsonOption(result) {
         console.log('Mostrando resultados:', result);
         
@@ -767,6 +796,23 @@
               : 'Ninguno';
             document.getElementById('individualPdfProcessed').textContent = pdfInfo;
           }
+          
+          // Actualizar los iconos según los estados
+          // 1. HTML - Siempre verde si llegamos a este punto
+          updateStatusIcon('individualHtmlStatus', 'success');
+          
+          // 2. JSON - Verde si existe, naranja si no existe
+          const jsonStatus = details.jsonStatus || (details.jsonPath ? 'success' : 'pending');
+          updateStatusIcon('individualJsonStatus', jsonStatus);
+          
+          // 3. Media - Verde si hay archivos, naranja/amarillo si no hay, púrpura si hay archivos
+          const mediaStatus = details.mediaStatus || 
+                            (details.mediaCount && details.mediaCount > 0 ? 'media' : 'warning');
+          updateStatusIcon('individualMediaStatus', mediaStatus);
+          
+          // 4. MySQL - Verde si está en la base de datos, pendiente si no
+          const mysqlStatus = details.mysqlStatus || (details.jsonPath ? 'success' : 'pending');
+          updateStatusIcon('individualMysqlStatus', mysqlStatus);
           
           // Mostrar la opción de convertir a JSON si no se ha convertido aún
           if (!details.jsonPath) {
@@ -810,6 +856,12 @@
           document.getElementById('individualMediaCount').textContent = 
             (details.mediaCount !== undefined) ? `${details.mediaCount} archivos` : '0 archivos';
           
+          // Actualizar iconos para mostrar error
+          updateStatusIcon('individualHtmlStatus', 'error');
+          updateStatusIcon('individualJsonStatus', 'error');
+          updateStatusIcon('individualMediaStatus', 'error');
+          updateStatusIcon('individualMysqlStatus', 'error');
+          
           // Remover el botón de conversión si existe
           const convertBtn = document.getElementById('jsonConversionContainer');
           if (convertBtn) {
@@ -818,7 +870,58 @@
         }
       }
 
+
+      // Función para actualizar el estado visual de los iconos
+      function updateStatusIcon(elementId, status) {
+        // Buscar el elemento SVG padre
+        const svgContainer = document.querySelector(`[data-status="${elementId}"]`);
+        if (!svgContainer) {
+          console.warn(`Elemento con data-status="${elementId}" no encontrado`);
+          return;
+        }
+        
+        // Definir colores según el estado
+        let color, bgColor;
+        
+        switch(status) {
+          case 'success':
+            color = 'text-green-500';
+            bgColor = 'bg-green-100';
+            break;
+          case 'warning':
+            color = 'text-yellow-500';
+            bgColor = 'bg-yellow-100';
+            break;
+          case 'pending':
+            color = 'text-orange-500';
+            bgColor = 'bg-orange-100';
+            break;
+          case 'error':
+            color = 'text-red-500';
+            bgColor = 'bg-red-100';
+            break;
+          case 'media':
+            color = 'text-purple-500';
+            bgColor = 'bg-purple-100';
+            break;
+          default:
+            color = 'text-gray-500';
+            bgColor = 'bg-gray-100';
+        }
+        
+        // Actualizar clases del contenedor
+        svgContainer.className = `flex-shrink-0 w-5 h-5 mt-0.5 ${color}`;
+        
+        // También podemos actualizar el elemento padre para el fondo
+        const parentRow = svgContainer.closest('.flex');
+        if (parentRow) {
+          parentRow.className = `flex items-start ${bgColor} p-2 rounded`;
+        }
+      }
+
+      
       // Función para convertir HTML a JSON y guardar en MySQL
+      // Función mejorada para convertir HTML a JSON y guardar en MySQL
       async function convertHtmlToJsonAndSave(expediente) {
         // Mostrar cargando
         const convertBtn = document.getElementById('convertToJsonBtn');
@@ -826,7 +929,14 @@
         convertBtn.textContent = 'Procesando...';
         convertBtn.disabled = true;
         
+        // Cambiar estado de MySQL a "procesando"
+        updateStatusIcon('individualMysqlStatus', 'pending');
+        document.getElementById('individualMysqlStatus').textContent = 'Procesando...';
+        
         try {
+          // Mostrar mensaje de procesamiento
+          document.getElementById('individualResultMessage').textContent = 'Procesando HTML a JSON y cargando en MySQL...';
+          
           // Llamar al API para convertir y guardar
           const response = await fetch('/api/standalone/convert-to-json', {
             method: 'POST',
@@ -836,18 +946,49 @@
             body: JSON.stringify({ expediente })
           });
           
+          // Verificar si la respuesta es JSON
+          const contentType = response.headers.get('content-type');
+          if (!contentType || !contentType.includes('application/json')) {
+            throw new Error(`Respuesta no válida del servidor: ${response.status} ${response.statusText}`);
+          }
+          
           const result = await response.json();
+          console.log('Respuesta de conversión:', result);
           
           // Actualizar la UI con el resultado
           if (result.success) {
             // Actualizar el campo jsonPath
             document.getElementById('individualJsonPath').textContent = result.jsonPath || 'No disponible';
             
+            // Actualizar el estado del icono JSON a éxito
+            updateStatusIcon('individualJsonStatus', 'success');
+            
+            // Actualizar el estado del icono MySQL según result.mysqlStatus
+            const mysqlStatus = result.mysqlStatus || 'error';
+            updateStatusIcon('individualMysqlStatus', mysqlStatus);
+            
+            if (mysqlStatus === 'success') {
+              document.getElementById('individualMysqlStatus').textContent = 'Datos guardados con éxito';
+            } else if (result.warning) {
+              document.getElementById('individualMysqlStatus').textContent = 'Error: ' + 
+                (result.mysqlError?.substring(0, 50) || 'Error al guardar en MySQL');
+            }
+            
             // Mostrar una notificación de éxito
             const alertBox = document.getElementById('individualResultAlert');
             alertBox.className = 'bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4';
-            document.getElementById('individualResultMessage').textContent = 
-              'Expediente procesado y convertido a JSON correctamente. Datos guardados en MySQL.';
+            
+            // Mensaje según el estado
+            if (mysqlStatus === 'success') {
+              document.getElementById('individualResultMessage').textContent = 
+                'Expediente procesado y convertido a JSON correctamente. Datos guardados en MySQL.';
+            } else {
+              document.getElementById('individualResultMessage').textContent = 
+                'Expediente procesado y convertido a JSON correctamente, pero hubo un error al guardar en MySQL.';
+                
+              // Agregar clase de advertencia al alert
+              alertBox.className = 'bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4';
+            }
             
             // Remover el botón de conversión
             const container = document.getElementById('jsonConversionContainer');
@@ -859,6 +1000,16 @@
             convertBtn.textContent = btnOriginalText;
             convertBtn.disabled = false;
             
+            // Actualizar el estado del icono MySQL a error
+            updateStatusIcon('individualMysqlStatus', 'error');
+            document.getElementById('individualMysqlStatus').textContent = 'Error al guardar';
+            
+            // Cambiar el alert a error
+            const alertBox = document.getElementById('individualResultAlert');
+            alertBox.className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';
+            document.getElementById('individualResultMessage').textContent = 
+              `Error: ${result.message || 'Ocurrió un error al procesar el expediente'}`;
+            
             // Mostrar un mensaje de error en un nuevo elemento
             const errorDiv = document.createElement('div');
             errorDiv.className = 'mt-2 mb-2 text-red-600 text-sm';
@@ -869,17 +1020,27 @@
               container.appendChild(errorDiv);
             }
             
-            // Eliminar el mensaje de error después de 5 segundos
+            // Eliminar el mensaje de error después de 10 segundos
             setTimeout(() => {
               if (errorDiv.parentNode) {
                 errorDiv.remove();
               }
-            }, 5000);
+            }, 10000);
           }
         } catch (error) {
           console.error('Error en la conversión:', error);
           convertBtn.textContent = btnOriginalText;
           convertBtn.disabled = false;
+          
+          // Actualizar el estado del icono MySQL a error
+          updateStatusIcon('individualMysqlStatus', 'error');
+          document.getElementById('individualMysqlStatus').textContent = 'Error en la conexión';
+          
+          // Cambiar el alert a error
+          const alertBox = document.getElementById('individualResultAlert');
+          alertBox.className = 'bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4';
+          document.getElementById('individualResultMessage').textContent = 
+            `Error de conexión: ${error.message}`;
           
           // Mostrar un mensaje de error en un nuevo elemento
           const errorDiv = document.createElement('div');
@@ -891,14 +1052,14 @@
             container.appendChild(errorDiv);
           }
           
-          // Eliminar el mensaje de error después de 5 segundos
+          // Eliminar el mensaje de error después de 10 segundos
           setTimeout(() => {
             if (errorDiv.parentNode) {
               errorDiv.remove();
             }
-          }, 5000);
+          }, 10000);
         }
-      }
+      }   
     </script>
   </body>
   </html>
