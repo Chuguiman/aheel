@@ -106,7 +106,7 @@ async function main() {
     
     // Procesar los expedientes pendientes
     const maxWorkers = parseInt(process.env.MAX_WORKERS || '3');
-    const batchSize = parseInt(process.env.BATCH_SIZE || '100');
+    const batchSize = parseInt(process.env.BATCH_SIZE || '20');
     
     console.log(`🛠️ Procesando con ${maxWorkers} workers en paralelo...`);
     console.log(`📦 Tamaño de lote configurado: ${batchSize}`);

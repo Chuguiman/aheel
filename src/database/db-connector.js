@@ -8,7 +8,7 @@ const config = require('../config/mysql.config');
      * @param {Object} config - Configuración de la base de datos
      * @returns {Promise<Object>} - Resultado de la operación
      */
-    async function insertToSimPrecarga(data, config) {
+/*     async function insertToSimPrecarga(data, config) {
         const connection = await mysql.createConnection(config);
         
         try {
@@ -170,9 +170,184 @@ const config = require('../config/mysql.config');
         } finally {
         await connection.end();
         }
-    }
+    } */
     
-  
+    /**
+ * Inserta los datos en las tablas de la base de datos
+ * @param {Object} data - Datos extraídos del expediente
+ * @param {Object} config - Configuración de la base de datos
+ * @returns {Promise<Object>} - Resultado de la operación
+ */
+async function insertToSimPrecarga(data, config) {
+    const connection = await mysql.createConnection(config);
+    
+    try {
+        // Iniciar transacción
+        await connection.beginTransaction();
+
+        // Obtener los datos de representantes del nuevo formato
+        const representantes = data.solicitantesInfo[0] || {};
+                
+        // Verificar si hay contacto y apoderado
+        const hayContacto = representantes.contactos && representantes.contactos.length > 0;
+        const hayApoderado = representantes.apoderados && representantes.apoderados.length > 0;
+                
+        // Información del contacto (ya sea real o del apoderado si no hay contacto)
+        let nombreContacto, direccionContacto, paisContacto;
+                
+        if (hayContacto) {
+            nombreContacto = representantes.contactos[0].nombre || null;
+            direccionContacto = representantes.contactos[0].direccion || null;
+            paisContacto = representantes.contactos[0].pais || 'CO';
+        } else if (hayApoderado) {
+            nombreContacto = representantes.apoderados[0].fullName || null;
+            direccionContacto = representantes.apoderados[0].direccion || null;
+            paisContacto = representantes.apoderados[0].codPais || 'CO';
+        } else {
+            nombreContacto = null;
+            direccionContacto = null;
+            paisContacto = 'CO';
+        }
+        
+        // Formatear prioridades
+        let prioridadFormateada = '';
+        if (data.prioridadInfo && data.prioridadInfo.length > 0) {
+            prioridadFormateada = data.prioridadInfo.map(p => 
+                `${p.pais} | ${p.fechaDePrioridad} | ${p.numeroDePrioridad}`
+            ).join(' # ');
+            
+            // Asegurarnos de que no exceda el tamaño máximo
+            if (prioridadFormateada.length > 250) {
+                prioridadFormateada = prioridadFormateada.substring(0, 250);
+            }
+        }
+        
+        // Determinar tipo de signo distintivo
+        const tipoSigno = (data.tipoDeSignoDistintivo || '').toLowerCase();
+        const esEnseñaONombreComercial = tipoSigno.includes('enseña') || tipoSigno.includes('nombre comercial');
+        const escapedDenominacion = escapeForSQL(data.denominacionDelSigno);
+        
+        // Obtener datos del solicitante principal
+        const solicitantePrincipal = representantes.solicitantes && representantes.solicitantes.length > 0 
+            ? representantes.solicitantes[0] 
+            : null;
+        
+        // Preparar datos para inserción según el formato de la tabla
+        const insertData = {
+            tiporeg: data.tipoSolicitud || null,
+            denominacion: escapedDenominacion || null,
+            tipo_denomi: data.tipoDeSignoDistintivo || null,
+            tipomarca: data.naturaleza || null,
+            expediente: data.numeroSolicitud || null,
+            fecha_solicitud: data.fechaRadicacion || null,
+            solicitante: solicitantePrincipal?.fullName || null,
+            dirsol: solicitantePrincipal?.direccion || null,
+            domsol: solicitantePrincipal?.codPais || 'CO',
+            contacto: nombreContacto,
+            dirconta: direccionContacto,
+            domconta: paisContacto,
+            clases: esEnseñaONombreComercial ? '0' : (data.multiclases?.versionInfo?.clases || '0'),
+            gaceta: data.publicacionInfo?.numeroGaceta || null,
+            fecha_publicacion: data.publicacionInfo?.fechaPublicacion || null,
+            prioridad: prioridadFormateada || null,
+            certi: data.certificadoInfo?.certificado || null,
+            vigencia: data.certificadoInfo?.vigencia || data.certificadoInfo?.fechaRenovacion || null,
+            estado: data.estado || null,
+            idsic: data.idsic || null,
+            regintal: data.registroInternacionalInfo?.numeroRegistroInternacional || null,
+            media: data.media?.[0] || null,
+            reinvc: data.reivindicacionDeColores || null,
+            vniza: esEnseñaONombreComercial ? '0' : (data.multiclases?.versionInfo?.version || '0'),
+            codigos_viena: null
+        };
+        
+        // Convertir valores undefined a null
+        Object.keys(insertData).forEach(key => {
+            if (insertData[key] === undefined) {
+                insertData[key] = null;
+            }
+        });
+        
+        // Registrar información antes de insertar
+        console.log(`ℹ️ Datos a insertar para expediente ${data.numeroSolicitud || data.idsic}:`);
+        console.log(`- Tipo: ${insertData.tipo_denomi}`);
+        console.log(`- Clases: ${insertData.clases}`);
+        console.log(`- Versión Niza: ${insertData.vniza}`);
+        
+        // Ejecutar SQL para insertar en sim_precarga2_sic
+        const sqlPrecarga = `
+            INSERT INTO sim_precarga2_sic (
+                tiporeg, denominacion, tipo_denomi, tipomarca, expediente, 
+                fecha_solicitud, solicitante, dirsol, domsol, contacto, 
+                dirconta, domconta, clases, gaceta, fecha_publicacion, 
+                prioridad, certi, vigencia, estado, idsic, 
+                regintal, media, reinvc, vniza, codigos_viena
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ON DUPLICATE KEY UPDATE
+                tiporeg = VALUES(tiporeg),
+                denominacion = VALUES(denominacion),
+                tipo_denomi = VALUES(tipo_denomi),
+                tipomarca = VALUES(tipomarca),
+                fecha_solicitud = VALUES(fecha_solicitud),
+                solicitante = VALUES(solicitante),
+                dirsol = VALUES(dirsol),
+                domsol = VALUES(domsol),
+                contacto = VALUES(contacto),
+                dirconta = VALUES(dirconta),
+                domconta = VALUES(domconta),
+                clases = VALUES(clases),
+                gaceta = VALUES(gaceta),
+                fecha_publicacion = VALUES(fecha_publicacion),
+                prioridad = VALUES(prioridad),
+                certi = VALUES(certi),
+                vigencia = VALUES(vigencia),
+                estado = VALUES(estado),
+                regintal = VALUES(regintal),
+                media = VALUES(media),
+                reinvc = VALUES(reinvc),
+                vniza = VALUES(vniza),
+                codigos_viena = VALUES(codigos_viena)
+        `;
+        
+        await connection.execute(sqlPrecarga, [
+            insertData.tiporeg, insertData.denominacion, insertData.tipo_denomi, insertData.tipomarca, insertData.expediente,
+            insertData.fecha_solicitud, insertData.solicitante, insertData.dirsol, insertData.domsol, insertData.contacto,
+            insertData.dirconta, insertData.domconta, insertData.clases, insertData.gaceta, insertData.fecha_publicacion,
+            insertData.prioridad, insertData.certi, insertData.vigencia, insertData.estado, insertData.idsic,
+            insertData.regintal, insertData.media, insertData.reinvc, insertData.vniza, insertData.codigos_viena
+        ]);
+        
+        // 2. Insertar productos y servicios solo si hay clases definidas y no es enseña o nombre comercial
+        if (!esEnseñaONombreComercial && data.multiclases?.clasesInfo?.length > 0) {
+            for (const claseInfo of data.multiclases.clasesInfo) {
+                const sqlProductos = `
+                    INSERT INTO precarga_pys_sim (numsol, idsic, nclas, descpys)
+                    VALUES (?, ?, ?, ?)
+                    ON DUPLICATE KEY UPDATE descpys = VALUES(descpys)
+                `;
+                
+                await connection.execute(sqlProductos, [
+                    data.numeroSolicitud, data.idsic, claseInfo.clase, claseInfo.descripcion
+                ]);
+            }
+        }
+        
+        // Confirmar transacción
+        await connection.commit();
+        console.log(`✅ Datos insertados con éxito para expediente ${data.numeroSolicitud || data.idsic}`);
+        
+        return { success: true };
+    } catch (error) {
+        // Revertir transacción en caso de error
+        await connection.rollback();
+        console.error(`❌ Error al insertar datos en la base de datos para expediente ${data.numeroSolicitud || data.idsic}:`, error);
+        console.error(`Detalles: ${error.sqlMessage || error.message}`);
+        
+        return { success: false, error: error.message };
+    } finally {
+        await connection.end();
+    }
+}
 
     /**
      * Crea la tabla de estadísticas si no existe

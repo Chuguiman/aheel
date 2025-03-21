@@ -7,6 +7,7 @@ require('dotenv').config();
 const fs = require('fs').promises;
 const path = require('path');
 const { extractDataWithErrorHandling } = require('./services/extractor-sic');
+const { extraerRepresentantes } = require('./helpers/representantes-extractor');
 const { 
   storeJsonFile, 
   markFailed, 
